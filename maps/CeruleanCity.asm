@@ -179,7 +179,7 @@ CeruleanCityRocketScript:
 	loadtrainer GRUNTM, ROCKET_CERULEAN
 	startbattle
 	reloadmapafterbattle
-;	setevent EVENT_BEAT_CERULEAN_ROCKET ; unused ?
+;	setevent EVENT_BEAT_CERULEAN_ROCKET
 	opentext
 .beatRocket
 	writetext CeruleanCityRocketIllReturnTheTMText
@@ -194,7 +194,7 @@ CeruleanCityRocketScript:
 	special FadeBlackQuickly
 	closetext
 	disappear CERULEANCITY_ROCKET
-	setevent EVENT_ROCKET_CERULEAN_CITY
+	setscene SCENE_CERULEAN_CITY_NOOP ; Should fix the invisible Rocket that speaks to player 
 	special FadeInQuickly
 	end
 .NoRoom

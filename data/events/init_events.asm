@@ -120,7 +120,7 @@ InitialEvents:
 	dw EVENT_RIVAL_CERULEAN_CITY ; Holger change
 	dw EVENT_INITIALIZED_EVENTS
 	dw EVENT_ROCKET_CERULEAN_CITY ; Holger change
-	dw EVENT_COP_CERULEAN_1 ; Holger change - Block the door
+	dw EVENT_COP_CERULEAN_2 ; Holger change - Block the door
 	dw -1 ; end
 
 InitialEngineFlags:
