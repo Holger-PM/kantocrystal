@@ -1,59 +1,54 @@
 # Pokémon Kanto Crystal (Working Title)
 This is *another* Kanto remake based on the [pokecrystal disassembly](https://github.com/pret/pokecrystal). 
 
-My goal is to complete this project by following a two-step approach:
-- **The "Base Project"**: Recreating a faithful Kanto experience using the stability and features of the Crystal engine.
-
-- **Personnals Tweaks**: Once the vanilla base is stable, I will implement custom changes, balancing, and personal tastes to create *another* unique version of Kanto.
+> **Kanto Crystal** is a personal endeavor to recreate the authentic "game feel" of Generation 1. Unlike many other remakes, this remains a native **Game Boy Color experience**.
+> 
+> My goal is to offer a version of Kanto that is **smoother and bug-free** while honoring the 8-bit aesthetic.
+I chose this path specifically because the original charm was lost in the transition to Gen 3 sprites and beyond. This is a restoration of the world we love, given the stability and strategic depth it deserves on its original hardware.
 
 ## What to Expect ?
 
-It aims to bridge the gap between the classic Gen 1 atmosphere and the technical refinements of Gen 2. 
-To avoid confusion, here is how the game handles the generation gap:
+This project aims to bridge the gap between the classic Gen 1 atmosphere and the technical refinements of Gen 2. 
+Here is how the game handles the generation gap:
 
-### ✅ **From Gen 1 (Red/Blue/Yellow):** 
-* The 151 Pokémon
-* Kanto region
-* Original storyline
+### ✅ **From Gen 1** 
+* The Original **151 Pokémon**
+* **Kanto Region** restored
+* **Original storyline**
 * Trainers rosters
 * Wild encounters (I want to make this faithful as possible but I'll probably can't, due to the lack of diversity and the fact that in Gen. 1... A lot of Pokémon aren't available)
-* Learnsets
-* Moves
-* CAPITALISATION!
-* Play with Red (But the gender choice features will be available)
-* Town Map is an item
+* **Dialogues** are kept faithful to the original
+* CAPITALIZATION for NAMES and PLACES
+* **Town Map** remains a Bag item
+* **Soundtrack** (Gen 2 Stereo option included).
   
-### ✅ **From Gen 2 (Crystal):** 
-* Polished Battle Engine.
-* Held Items
-* The Special Split (Stat Attack/Defense)
-* Move Deleter/Relearner
-* Moves animations
+### ✅ **From Gen 2** 
+* **Polished Battle Engine:** Move animations and fluid interface.
+* **Held Items:** Pokémon can hold berries and items.
+* **The Special Split:** Separate Special Attack and Special Defense stats.
+* **Shinies:** Rare color variants are available.
+* **Day/Night Cycle:** Dynamic palettes and thematic encounter shifts.
+* **Bag System:** Categorized pockets and item shortcuts.
+* **Running Shoes:** Integrated for faster exploration.
+* **Gender Choice:** Play as Red or Leaf.
+* **Stereo** audio option
 * Sprites
-* Shiny
-* Day/Night cycle
+* Move Deleter/Relearner
 * Wild Encounters have a little level variation (I intend to match the established level curve of Yellow Legacy)
-* Bag System
-* Item shortcuts
-* Gender choice
-* Stereo audio option
 
-### ✅ **Dev. Stuff:** 
-* [Bug fixes](https://pret.github.io/pokecrystal/bugs_and_glitches.html)
-* [Design flaws](https://pret.github.io/pokecrystal/design_flaws.html) corrected for Crystal engine
-* 60fps and Running Shoes [branch](https://github.com/fellowship-of-the-roms/pokecrystal/tree/Doublespeed-60fps-Running-Shoes) merged
-* Colored Poké Balls to match ball type and new Poké Ball sprite added
-* New text speed options: Instant, Fast, and Medium (Fast being the default)
+### ✅ **Dev Stuff** 
+* **[60 FPS](https://github.com/fellowship-of-the-roms/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)**: Smooth gameplay.
+* **[Bug fixes](https://pret.github.io/pokecrystal/bugs_and_glitches.html)**: Corrected documented RBY and Crystal glitches
+* **Text Speed:** "Instant," "Fast," and "Medium" options (Fast is default).
+* **Poké Balls:** Colored sprites to match the Ball type thrown.
   
 ### ❌ **Removed:** 
 * Critical ratio is not related to stat speed
 * Karate Chop, Razor Leaf or Slash don't crit' all the time.
 * Wrap things aren't possible anymore.
 * Johto region
-* Pokémon beyond #151
 * Radio system
 * No eggs
-
 
 ## Roadmap
 
@@ -102,7 +97,7 @@ To avoid confusion, here is how the game handles the generation gap:
       
 - [ ] Cinnabar Island
 
-## Credits 📜
+## Credits
 This repository is a fork of Dreams897's [Pokémon Red Remastered](https://github.com/dreams897/pokemon-red-remastered/).
 * Vortyne with **[pureRGB](https://github.com/Vortyne/pureRGB)**, I learned a lot from his code.
 * **[Yellow Legacy](https://github.com/cRz-Shadows/Pokemon_Yellow_Legacy)**, the same for this one.
@@ -120,7 +115,7 @@ Huge thanks to the [**pret**](https://github.com/pret) team for the pokecrystal 
 
 First of all, thank you for reading this far. Below is a breakdown of the complex design choices made for this project to clarify the hybrid nature of the game.
 
-## ⚔️ Battle Mechanics ⚔️
+## Battle Mechanics 
 
 ### Learnsets - TODO
 As in Gen. 1
@@ -190,19 +185,4 @@ Switched Good Rod and Super Rod locations
 ### Slot cost for HMs
 I am still deciding how to handle these. While faithful to the original, the "HM Slave" requirement can be tedious. I am exploring options to make HMs less restrictive for the player's party.
 
-* A mostly vanilla take on Red Version with many updated features from different generations (see list below)
-* All documented [bugs and glitches](https://pret.github.io/pokecrystal/bugs_and_glitches.html) fixed and 
-* 60fps and Running Shoes [branch](https://github.com/fellowship-of-the-roms/pokecrystal/tree/Doublespeed-60fps-Running-Shoes) merged
-
-
-
-
-## Frequently Asked Questions
-
-
-
-
-
-### Q: Is there a Move Deleter/Relearner?
-**A**: There will be a new house in Fuchsia City with both a Move Deleter and Relearner added! Also Bill's grampa is still next to it.
 
