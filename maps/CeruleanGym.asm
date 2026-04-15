@@ -1,7 +1,7 @@
 	object_const_def
 	const CERULEANGYM_MISTY
-	const CERULEANGYM_SWIMMERF_JILL
-	const CERULEANGYM_SWIMMERF_LISA
+	const CERULEANGYM_LASS_SHARON
+;	const CERULEANGYM_SWIMMERF_LISA
 	const CERULEANGYM_SWIMMERM_JAMES
 	const CERULEANGYM_GYM_GUIDE
 
@@ -24,8 +24,8 @@ CeruleanGymMistyScript:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_MISTY
 	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES
-	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA
-	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_JILL
+;	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA
+	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_SHARON
 	opentext
 	writetext ReceivedCascadeBadgeText
 	playsound SFX_GET_KEY_ITEM_1
@@ -35,10 +35,10 @@ CeruleanGymMistyScript:
 	writetext CeruleanGymMistyCascadeBadgeInfoText
 	waitbutton
 	closetext
-	end
+	end ; Holger note : Add the TM_BUBBLEBEAM
 
-CeruleanGymTrainerSwimmerfJill:
-	trainer SWIMMERF, JILL2, EVENT_BEAT_CERULEAN_GYM_TRAINER_JILL, CeruleanGymBattleText1, CeruleanGymEndBattleText1, 0, .Script
+CeruleanGymTrainerJrtrainerfSharon:
+	trainer SWIMMERF, SHARON2, EVENT_BEAT_CERULEAN_GYM_TRAINER_SHARON, CeruleanGymBattleText1, CeruleanGymEndBattleText1, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -48,16 +48,16 @@ CeruleanGymTrainerSwimmerfJill:
 	closetext
 	end
 	
-CeruleanGymTrainerSwimmerfLisa:
-	trainer SWIMMERF, LISA2, EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA, SwimmerfLisaSeenText, SwimmerfLisaBeatenText, 0, .Script
+;CeruleanGymTrainerSwimmerfLisa:
+;	trainer SWIMMERF, LISA2, EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA, SwimmerfLisaSeenText, SwimmerfLisaBeatenText, 0, .Script
 
-.Script:
-	endifjustbattled
-	opentext
-	writetext SwimmerfLisaAfterBattleText
-	waitbutton
-	closetext
-	end
+;.Script:
+;	endifjustbattled
+;	opentext
+;	writetext SwimmerfLisaAfterBattleText
+;	waitbutton
+;	closetext
+;	end
 
 CeruleanGymTrainerSwimmermJames:
 	trainer SWIMMERM, JAMES2, EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES, CeruleanGymBattleText2, CeruleanGymEndBattleText2, 0, .Script
@@ -213,21 +213,21 @@ CeruleanGymAfterBattleText1:
 	cont "you really are."
 	done
 	
-SwimmerfLisaSeenText:
-	text "Glub…"
+;SwimmerfLisaSeenText:
+;	text "Glub…"
 
-	para "Come and get me!"
-	done
+;	para "Come and get me!"
+;	done
 	
-SwimmerfLisaBeatenText:
-	text "Ooh.."
-	line "you got me…"
-	done
+;SwimmerfLisaBeatenText:
+;	text "Ooh.."
+;	line "you got me…"
+;	done
 	
-SwimmerfLisaAfterBattleText:
-	text "Don't be too smug"
-	line "about beating me."
-	done
+;SwimmerfLisaAfterBattleText:
+;	text "Don't be too smug"
+;	line "about beating me."
+;	done
 
 CeruleanGymBattleText2:
 	text "Splash!"
@@ -290,7 +290,7 @@ CeruleanGym_MapEvents:
 
 	def_object_events
 	object_event  4,  2, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanGymMistyScript, -1
-	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, CeruleanGymTrainerSwimmerfJill, -1
-	object_event  3,  7, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, CeruleanGymTrainerSwimmerfLisa, -1
+	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, CeruleanGymTrainerJrtrainerfSharon, -1		; SHARON
+;	object_event  3,  7, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, CeruleanGymTrainerSwimmerfLisa, -1
 	object_event  8,  8, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, CeruleanGymTrainerSwimmermJames, -1
 	object_event  7, 10, SPRITE_GYM_GUIDE_KANTO, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanGymGuideScript, -1
