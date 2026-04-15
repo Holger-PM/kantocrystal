@@ -190,69 +190,69 @@ ItemNames::
 	li "MUSIC MAIL"
 	li "MIRAGE MAIL"
 	li "TERU-SAMA"
-	assert_list_length NUM_ITEMS
-	li "TM01"
-	li "TM02"
-	li "TM03"
-	li "TM04"
-	li "TERU-SAMA"
-	li "TM05"
-	li "TM06"
-	li "TM07"
-	li "TM08"
-	li "TM09"
-	li "TM10"
-	li "TM11"
-	li "TM12"
-	li "TM13"
-	li "TM14"
-	li "TM15"
-	li "TM16"
-	li "TM17"
-	li "TM18"
-	li "TM19"
-	li "TM20"
-	li "TM21"
-	li "TM22"
-	li "TM23"
-	li "TM24"
-	li "TM25"
-	li "TM26"
-	li "TM27"
-	li "TM28"
-	li "TERU-SAMA"
-	li "TM29"
-	li "TM30"
-	li "TM31"
-	li "TM32"
-	li "TM33"
-	li "TM34"
-	li "TM35"
-	li "TM36"
-	li "TM37"
-	li "TM38"
-	li "TM39"
-	li "TM40"
-	li "TM41"
-	li "TM42"
-	li "TM43"
-	li "TM44"
-	li "TM45"
-	li "TM46"
-	li "TM47"
-	li "TM48"
-	li "TM49"
-	li "TM50"
-	li "TM51"
-	li "TM52"
+	assert_list_length NUM_ITEMS ; Holger note: TODO Specify moves
+	li "TM01" 		; DYNAMICPUNCH
+	li "TM02" 		; HEADBUTT
+	li "TM03" 		; CURSE
+	li "TM04" 		; ROLLOUT
+	li "TERU-SAMA" 	; ITEM_C3
+	li "TM05" 		; ROAR
+	li "TM06" 		; TOXIC
+	li "TM07" 		; ZAP_CANNON
+	li "TM08"		; ROCK_SMASH
+	li "TM09"		; PSYCH_UP
+	li "TM10"		; HIDDEN_POWER
+	li "TM11"		; SUNNY_DAY
+	li "TM12"		; WATER_GUN    ; added and switched with Sweet Scent
+	li "TM13"		; SNORE  
+	li "TM14"		; BLIZZARD 
+	li "TM15"		; HYPER_BEAM
+	li "TM16"		; ICY_WIND 
+	li "TM17"		; PROTECT 
+	li "TM18"		; RAIN_DANCE
+	li "TM19"		; GIGA_DRAIN
+	li "TM20"		; ENDURE 
+	li "TM21"		; FRUSTRATION
+	li "TM22"		; SOLARBEAM 
+	li "TM23"		; IRON_TAIL
+	li "TM24"		; DRAGONBREATH
+	li "TM25"		; THUNDER
+	li "TM26"		; EARTHQUAKE
+	li "TM27"		; RETURN
+	li "TM28"		; DIG
+	li "TERU-SAMA"	; ITEM_DC 
+	li "TM29"		; PSYCHIC_M
+	li "TM30"		; SHADOW_BALL
+	li "TM31"		; MUD_SLAP 
+	li "TM32"		; DOUBLE_TEAM
+	li "TM33"		; ICE_PUNCH
+	li "TM34"		; BIDE         ; added and switched with Swagger
+	li "TM35"		; SLEEP_TALK
+	li "TM36"		; SLUDGE_BOMB
+	li "TM37"		; SANDSTORM
+	li "TM38"		; FIRE_BLAST	
+	li "TM39"		; SWIFT 
+	li "TM40"		; DEFENSE_CURL
+	li "TM41"		; THUNDERPUNCH
+	li "TM42"		; DREAM_EATER 
+	li "TM43"		; DETECT  
+	li "TM44"		; REST 
+	li "TM45"		; ATTRACT
+	li "TM46"		; THIEF
+	li "TM47"		; STEEL_WING
+	li "TM48"		; FIRE_PUNCH
+	li "TM49"		; FURY_CUTTER
+	li "TM50"		; NIGHTMARE
+	li "TM51"		; SWAGGER
+	li "TM52"		; SWEET_SCENT
 	assert_list_length NUM_ITEMS + NUM_TMS + 2 ; count ITEM_C3 and ITEM_DC
-	li "HM01"
-	li "HM02"
-	li "HM03"
-	li "HM04"
-	li "HM05"
-	li "HM06"
-	li "HM07"
+	li "HM01"		; CUT	
+	li "HM02"		; FLY 
+	li "HM03"		; SURF
+	li "HM04"		; STRENGTH
+	li "HM05"		; FLASH 
+	li "HM06"		; WHIRLPOOL
+	li "HM07"		; WATERFALL 
 	assert_list_length NUM_ITEMS + NUM_TMS + 2 + NUM_HMS ; count ITEM_C3 and ITEM_DC
 	li "TERU-SAMA"
 	li "TERU-SAMA"
