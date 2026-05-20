@@ -1646,7 +1646,7 @@
 	const EVENT_BEAT_COOLTRAINERM_DARIN
 	const EVENT_BEAT_COOLTRAINERF_CARA
 	const EVENT_BEAT_TWINS_LEA_AND_PIA
-	const EVENT_BEAT_BUG_CATCHER_WAYNE
+	const_skip ; unused (EVENT_BEAT_BUG_CATCHER_WAYNE to Viridian Forest)
 	const EVENT_BEAT_BEAUTY_OLIVIA
 	const EVENT_BEAT_POKEFANF_JAIME
 	const EVENT_BEAT_CAMPER_QUENTIN
@@ -2074,6 +2074,8 @@
 
 ; New to Kanto Crystal
 	const EVENT_BEAT_SAILOR_VINCENT ; Vermilion Gym
-
-	const_next 2342
-DEF NUM_EVENTS EQU const_value ; 1097 with Kanto events
+	const EVENT_BEAT_VIRIDIAN_FOREST_LASS_DANA ; Viridian Forest
+	const EVENT_BEAT_BUG_CATCHER_WAYNE ; Viridian Forest
+	
+	const_next 2340
+DEF NUM_EVENTS EQU const_value ; 1099 with Kanto events
