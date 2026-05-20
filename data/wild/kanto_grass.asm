@@ -240,58 +240,58 @@ KantoGrassWildMons:
 	db 25 percent, 25 percent, 25 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		min, max
-	db 25, PIDGEY,        2,  3
-	db 20, PIDGEY,   	  3,  4
-	db 20, PIDGEY,  	  2,  4
-	db 15, RATTATA, 	  2,  4
-	db 10, RATTATA,  	  2,  3
-	db 10, RATTATA,  	  4,  5
-	db  5, SPEAROW,   	  2,  5
+	db 30, PIDGEY,        3,  3
+	db 20, PIDGEY,        4,  4
+	db 25, RATTATA, 	  2,  3
+	db 10, PIDGEY,   	  2,  2
+	db  5, PIDGEY,  	  5,  5
+	db  5, RATTATA,  	  4,  4
+	db  5, SPEAROW,   	  4,  5
 	; day
-	db 25, PIDGEY,        2,  3
-	db 20, PIDGEY,   	  3,  4
-	db 20, PIDGEY,  	  2,  4
-	db 15, RATTATA, 	  2,  4
-	db 10, RATTATA,  	  2,  3
-	db 10, RATTATA,  	  4,  5
-	db  5, SPEAROW,   	  2,  5
+	db 30, PIDGEY,        3,  3
+	db 20, PIDGEY,        4,  4
+	db 25, RATTATA, 	  2,  3
+	db 10, PIDGEY,   	  2,  2
+	db  5, PIDGEY,  	  5,  5
+	db  5, RATTATA,  	  4,  4
+	db  5, SPEAROW,   	  4,  5
 	; night
-	db 25, PIDGEY,        2,  3
-	db 20, PIDGEY,   	  3,  4
-	db 20, PIDGEY,  	  2,  4
-	db 15, RATTATA, 	  2,  4
-	db 10, RATTATA,  	  2,  3
-	db 10, RATTATA,  	  4,  5
-	db  5, SPEAROW,   	  2,  5
+	db 30, PIDGEY,        3,  3
+	db 20, PIDGEY,        4,  4
+	db 25, RATTATA, 	  2,  3
+	db 10, PIDGEY,   	  2,  2
+	db  5, PIDGEY,  	  5,  5
+	db  5, RATTATA,  	  4,  4
+	db  5, SPEAROW,   	  4,  5
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_2
 	db 25 percent, 25 percent, 25 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		min, max
-	db 30, PIDGEY, 	      5,  7
-	db 20, RATTATA, 	  5,  6
-	db 15, NIDORAN_F, 	  6,  6
+	db 30, PIDGEY, 	      5,  6
+	db 20, RATTATA,       5,  5
 	db 15, VULPIX, 	   	  5,  7
+	db 15, NIDORAN_F, 	  6,  6
 	db 10, NIDORAN_M, 	  6,  6
-	db  4, RATTATA, 	  7,  8
-	db  1, PIDGEY, 	      8,  8
+	db  5, PIDGEY, 	      8,  8
+	db  5, RATTATA,       8,  8
 	; day
-	db 30, PIDGEY, 	      5,  7
-	db 20, RATTATA, 	  5,  6
-	db 15, NIDORAN_F, 	  6,  6
+	db 30, PIDGEY, 	      5,  6
+	db 20, RATTATA,       5,  5
 	db 15, VULPIX, 	   	  5,  7
+	db 15, NIDORAN_F, 	  6,  6
 	db 10, NIDORAN_M, 	  6,  6
-	db  4, RATTATA, 	  7,  8
-	db  1, PIDGEY, 	      8,  8
+	db  5, PIDGEY, 	      8,  8
+	db  5, RATTATA,       8,  8
 	; night
-	db 30, PIDGEY, 	      5,  7
-	db 20, RATTATA, 	  5,  6
-	db 15, NIDORAN_F, 	  6,  6
+	db 30, PIDGEY, 	      5,  6
+	db 20, RATTATA,       5,  5
 	db 15, VULPIX, 	   	  5,  7
+	db 15, NIDORAN_F, 	  6,  6
 	db 10, NIDORAN_M, 	  6,  6
-	db  4, RATTATA, 	  7,  8
-	db  1, PIDGEY, 	      8,  8
+	db  5, PIDGEY, 	      8,  8
+	db  5, RATTATA,       8,  8
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_3
@@ -762,29 +762,26 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		min, max
-	db 25, RATTATA, 	   2,  4
-	db 20, SPEAROW, 	   2,  6
-	db 20, RATTATA, 	   2,  5
-	db 15, NIDORAN_M, 	   2,  4
-	db 10, MANKEY, 	   	   3,  5
-	db  5, NIDORAN_F, 	   2,  4
-	db  5, NIDORAN_F, 	   2,  4
+	db 30, NIDORAN_M, 	   3,  4
+	db 25, NIDORAN_F, 	   3,  4
+	db 20, MANKEY,         4,  4 
+	db 15, SPEAROW,        5,  6
+	db  5, MANKEY,         5,  5
+	db  5, RATTATA,        5,  5
 	; day
-	db 25, RATTATA, 	   2,  4
-	db 20, RATTATA, 	   2,  5
-	db 20, SPEAROW, 	   2,  6
-	db 15, NIDORAN_F, 	   2,  4
-	db 10, MANKEY, 	   	   3,  5
-	db  5, NIDORAN_M, 	   2,  4
-	db  5, NIDORAN_M, 	   2,  4
+	db 30, NIDORAN_M, 	   3,  4
+	db 25, NIDORAN_F, 	   3,  4
+	db 20, MANKEY,         4,  4 
+	db 15, SPEAROW,        5,  6
+	db  5, MANKEY,         5,  5
+	db  5, RATTATA,        5,  5
 	; night
-	db 25, RATTATA, 	   2,  4
-	db 20, SPEAROW, 	   2,  6
-	db 15, MANKEY, 	   	   3,  5
-	db 15, MANKEY, 	   	   2,  4
-	db 15, RATTATA, 	   2,  5
-	db  5, NIDORAN_M, 	   2,  4
-	db  5, NIDORAN_F, 	   2,  4
+	db 30, NIDORAN_M, 	   3,  4
+	db 25, NIDORAN_F, 	   3,  4
+	db 20, MANKEY,         4,  4 
+	db 15, SPEAROW,        5,  6
+	db  5, MANKEY,         5,  5
+	db  5, RATTATA,        5,  5
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_24
