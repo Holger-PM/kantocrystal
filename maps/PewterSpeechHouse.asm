@@ -1,7 +1,7 @@
 	object_const_def
 	const PEWTERSPEECHHOUSE_GAMBLER
 	const PEWTERSPEECHHOUSE_YOUNGSTER
-	const PEWTERSPEECHHOUSE_COOLTRAINER_M
+;	const PEWTERSPEECHHOUSE_COOLTRAINER_M
 
 PewterSpeechHouse_MapScripts:
 	def_scene_scripts
@@ -27,13 +27,13 @@ PewterSpeechHouseYoungsterScript:
 	closetext
 	end
 
-PewterSpeechHouseCooltrainerMScript:
-	faceplayer
-	opentext
-	writetext PewterSpeechHouseCooltrainerText
-	waitbutton
-	closetext
-	end
+;PewterSpeechHouseCooltrainerMScript:
+;	faceplayer
+;	opentext
+;	writetext PewterSpeechHouseCooltrainerText
+;	waitbutton
+;	closetext
+;	end
 
 PewterSpeechHouseGamblerText:
 	text "#MON learn new"
@@ -55,19 +55,19 @@ PewterSpeechHouseYoungsterText:
 	line "sure thing!"
 	done
 	
-PewterSpeechHouseCooltrainerText:
-	text "#MON can be fed"
-	line "a BERRY based on"
-	cont "their STATUS."
-	
-	para "But, I'm no"
-	line "expert!"
-	
-	para "There's a man in"
-	line "CERULEAN who knows"
-	cont "everything about"
-	cont "BERRY trees."
-	done
+;PewterSpeechHouseCooltrainerText:
+;	text "#MON can be fed"
+;	line "a BERRY based on"
+;	cont "their STATUS."
+;	
+;	para "But, I'm no"
+;	line "expert!"
+;	
+;	para "There's a man in"
+;	line "CERULEAN who knows"
+;	cont "everything about"
+;	cont "BERRY trees."
+;	done
 
 PewterSpeechHouse_MapEvents:
 	db 0, 0 ; filler
@@ -85,4 +85,4 @@ PewterSpeechHouse_MapEvents:
 	def_object_events
 	object_event  2,  3, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PewterSpeechHouseGamblerScript, -1
 	object_event  4,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PewterSpeechHouseYoungsterScript, -1
-	object_event  7,  2, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PewterSpeechHouseCooltrainerMScript, -1
+;	object_event  7,  2, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PewterSpeechHouseCooltrainerMScript, -1
