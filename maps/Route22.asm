@@ -86,7 +86,7 @@ Rival1ScriptCont:
 	
 RivalHasCharmanderBattle1:
 	winlosstext Route22Rival1DefeatedText, Route22AmIGreatOrWhatText
-	loadtrainer BLUE2, BLUE2_CHARMANDER
+	loadtrainer BLUE2, BLUE1_1_CHARMANDER
 	startbattle
 	reloadmapafterbattle
 	opentext
@@ -101,7 +101,7 @@ RivalHasCharmanderBattle1:
 	
 RivalHasSquirtleBattle1:
 	winlosstext Route22Rival1DefeatedText, Route22AmIGreatOrWhatText
-	loadtrainer BLUE2, BLUE2_SQUIRTLE
+	loadtrainer BLUE2, BLUE1_1_SQUIRTLE
 	startbattle
 	reloadmapafterbattle
 	opentext
@@ -116,7 +116,7 @@ RivalHasSquirtleBattle1:
 	
 RivalHasBulbasaurBattle1:
 	winlosstext Route22Rival1DefeatedText, Route22AmIGreatOrWhatText
-	loadtrainer BLUE2, BLUE2_BULBASAUR
+	loadtrainer BLUE2, BLUE1_1_BULBASAUR
 	startbattle
 	reloadmapafterbattle
 	opentext

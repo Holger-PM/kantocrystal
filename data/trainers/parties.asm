@@ -287,8 +287,8 @@ ChampionGroup: ; TODO
 BrockGroup:
 	; BROCK (1)
 	db "BROCK@", TRAINERTYPE_MOVES
-	db 12, GEODUDE,    DEFENSE_CURL, TACKLE, ROCK_THROW, NO_MOVE
-	db 14, ONIX,       BIDE, SCREECH, CONSTRICT, BIND
+	db 10, GEODUDE,    DEFENSE_CURL, TACKLE, ROCK_THROW, NO_MOVE
+	db 12, ONIX,       BIDE, SCREECH, CONSTRICT, BIND
 	db -1 ; end
 
 MistyGroup:
@@ -832,10 +832,10 @@ LassGroup:
 	db 32, AMPHAROS,   TACKLE, THUNDERPUNCH, THUNDER_WAVE, COTTON_SPORE
 	db -1 ; end
 
-	; LASS (17)
-	db "DANA@", TRAINERTYPE_MOVES
-	db 36, AMPHAROS,   SWIFT, THUNDERPUNCH, THUNDER_WAVE, COTTON_SPORE
-	db 36, GOLDUCK,    DISABLE, SURF, PSYCHIC_M, SCREECH
+	; LASS (17) - Viridian Forest
+	db "DANA@", TRAINERTYPE_NORMAL
+	db  6, NIDORAN_F
+	db  6, NIDORAN_M
 	db -1 ; end
 	
 	; LASS (18) - Route3TrainerLass1
@@ -1744,28 +1744,30 @@ BugCatcherGroup:
 	db 40, VENOMOTH,   GUST, SUPERSONIC, PSYCHIC_M, TOXIC
 	db -1 ; end
 
-	; BUG_CATCHER (19)
+	; BUG_CATCHER (19) - ViridianForestYoungster3
 	db "WAYNE@", TRAINERTYPE_NORMAL
-	db  8, LEDYBA
-	db 10, PARAS
-	db -1 ; end
-	
-	; BUG_CATCHER (20)
-	db "CALEB@", TRAINERTYPE_NORMAL
+	db  6, CATERPIE	
 	db  6, WEEDLE
 	db  6, CATERPIE
 	db -1 ; end
 	
-	; BUG_CATCHER (21)
-	db "DYLAN@", TRAINERTYPE_NORMAL
-	db  7, WEEDLE
+	; BUG_CATCHER (20) - ViridianForestYoungster4
+	db "CALEB@", TRAINERTYPE_NORMAL
+	db  7, METAPOD
+	db  6, CATERPIE
 	db  7, KAKUNA
-	db  7, WEEDLE
 	db -1 ; end
 	
-	; BUG_CATCHER (21) - Who is it ?
+	; BUG_CATCHER (21) - ViridianForestYoungster5
+	db "DYLAN@", TRAINERTYPE_NORMAL
+	db  6, CATERPIE
+	db  6, METAPOD
+	db -1 ; end
+	
+	; BUG_CATCHER (21) - ViridianForestYoungster6
 	db "FOREST@", TRAINERTYPE_NORMAL
-	db  9, WEEDLE
+	db  8, PINSIR
+	db  9, METAPOD
 	db -1 ; end
 	
 	; BUG_CATCHER (22) - Route3TrainerBugCatcher1
@@ -3315,8 +3317,8 @@ JrtrainerfGroup:
 JrtrainermGroup:
 	; JRTRAINER_M (1)
 	db "JERRY@", TRAINERTYPE_NORMAL
-	db 11, DIGLETT
-	db 11, SANDSHREW
+	db  9, DIGLETT
+	db  9, SANDSHREW
 	db -1 ; end
 	
 	; JRTRAINER_M (2)
@@ -3702,40 +3704,40 @@ PokefanFGroup:
 	db -1 ; end
 
 Blue1Group:
-	; BLUE_OAKS_LAB_CHARMANDER (1) Oak's Lab
+	; BLUE1_1_CHARMANDER - Oak's Lab
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
 	db 5, CHARMANDER,    $45, $45, NO_ITEM
 	db -1 ; end
 
-	; BLUE_OAKS_LAB_SQUIRTLE (2) Oak's Lab
+	; BLUE1_1_SQUIRTLE - Oak's Lab
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
 	db 5, SQUIRTLE,    $45, $45, NO_ITEM
 	db -1 ; end
 	
-	; BLUE_OAKS_LAB_BULBASAUR (3) Oak's Lab
+	; BLUE1_1_BULBASAUR - Oak's Lab
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
 	db 5, BULBASAUR,    $45, $45, NO_ITEM
 	db -1 ; end
 	
-Blue2Group:
-
-	; BLUE2_CHARMANDER (1) Route 22
+	; BLUE1_2_CHARMANDER - Route 22
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
 	db 9, PIDGEY,        $33, $35, NO_ITEM
 	db 8, CHARMANDER,    $45, $46, NO_ITEM
 	db -1 ; end
 
-	; BLUE2_SQUIRTLE (2) Route 22
+	; BLUE1_2_SQUIRTLE - Route 22
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
 	db 9, PIDGEY,        $33, $35, NO_ITEM
 	db 8, SQUIRTLE,      $45, $46, NO_ITEM
 	db -1 ; end
 	
-	; BLUE2_BULBASAUR (3) Route 22
+	; BLUE1_1_BULBASAUR - Route 22
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
 	db 9, PIDGEY,        $33, $35, NO_ITEM
 	db 8, BULBASAUR,     $45, $46, NO_ITEM
 	db -1 ; end
+	
+Blue2Group:
 	
 	; BLUE3_CHARMANDER (1) Cerulean City
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
