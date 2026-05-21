@@ -66,13 +66,13 @@ TrainerClassDVs:
 	dn  6,  8,  8, 10 ; KIMONO_GIRL
 	dn  6,  8, 10,  8 ; TWINS
 	dn  6, 13,  8,  8 ; POKEFANF
-	dn  0,  0,  0,  0 ; BLUE1
-	dn  9, 13, 13, 13 ; BLUE2
-	dn  9, 13, 13, 13 ; BLUE3
+	dn 13, 13, 13, 13 ; BLUE1
+	dn 13, 13, 13, 13 ; BLUE2
+	dn 13, 13, 13, 13 ; BLUE3
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn 11,  9, 10,  8 ; TEAM ROCKET
-	dn 13,  8, 10,  8 ; GIOVANNI
+	dn  7, 12, 13, 13 ; GIOVANNI
 	
 	dn  9,  8,  8,  8 ; MYSTICALMAN
 	assert_table_length NUM_TRAINER_CLASSES - 4 ; exclude ENBY, AERODACTYLE_FOSSIL, KABUTOPS_FOSSIL, MOON_STONE_T
