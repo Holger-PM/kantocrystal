@@ -1351,7 +1351,7 @@ _SavingRecordText::
 
 _ReceiveItemText::
 	text_ram wPlayerName
-	text " received"
+	text " got"
 	line "@"
 	text_ram wStringBuffer1
 	text "!@"

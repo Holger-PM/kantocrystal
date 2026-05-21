@@ -712,6 +712,10 @@ OaksLabRivalGrampsIsntAroundText:
 	text "<RIVAL>: Yo"
 	line "<PLAYER>! Gramps"
 	cont "isn't around!"
+	
+	para "I ran here 'cos"
+	line "he said he had a"
+	cont "#MON for me."
 	done
 
 OaksLabRivalGoAheadAndChooseText:
@@ -757,13 +761,13 @@ OaksLabMonEnergeticText:
 	text "This #MON is"
 	line "really energetic!"
 	prompt
-
-OaksLabReceivedMonText:
-	text "<PLAYER> received"
-	line "a @"
-	text_ram wcd6d
-	text "!@"
-	done
+;;;;;;;;;; Holgernote: Was copied pasted ?
+;OaksLabReceivedMonText:
+;	text "<PLAYER> received"
+;	line "a @"
+;	text_ram wcd6d
+;	text "!@"
+;	done
 
 OaksLabLastMonText:
 	text "That's PROF.OAK's"
@@ -874,9 +878,9 @@ OaksLabOak1HowIsYourPokedexComingText:
 	cont "a look!"
 	prompt
 
-OaksLabOak2Text:
-	text "?"
-	done
+;OaksLabOak2Text:
+;	text "?"
+;	done
 
 OaksLabGirlText:
 	text "PROF.OAK is the"
