@@ -67,27 +67,27 @@ KantoGrassWildMons:
 	db 25, ZUBAT, 	  	  8,   9
 	db 25, ZUBAT, 	      8,   9
 	db 20, GEODUDE, 	 10,  10
-	db 15, SANDSHREW, 	 10,  12	
+	db 15, SANDSHREW, 	 10,  11	
 	db 10, ZUBAT, 	      6,   7
-	db  4, SANDSHREW, 	 10,  12
+	db  4, SANDSHREW, 	 11,  12
 	db  1, CLEFAIRY, 	 12,  12
 	; day
 	;  %, species,		min, max
 	db 25, ZUBAT, 	  	  8,   9
 	db 25, ZUBAT, 	      8,   9
 	db 20, GEODUDE, 	 10,  10
-	db 15, SANDSHREW, 	 10,  12	
+	db 15, SANDSHREW, 	 10,  11	
 	db 10, ZUBAT, 	      6,   7
-	db  4, SANDSHREW, 	 10,  12
+	db  4, SANDSHREW, 	 11,  12
 	db  1, CLEFAIRY, 	 12,  12
 	; night
 	;  %, species,		min, max
 	db 25, ZUBAT, 	  	  8,   9
 	db 25, ZUBAT, 	      8,   9
 	db 20, GEODUDE, 	 10,  10
-	db 15, SANDSHREW, 	 10,  12	
+	db 15, SANDSHREW, 	 10,  11	
 	db 10, ZUBAT, 	      6,   7
-	db  4, SANDSHREW, 	 10,  12
+	db  4, SANDSHREW, 	 11,  12
 	db  1, CLEFAIRY, 	 12,  12
 	end_grass_wildmons
 	
@@ -95,58 +95,58 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		min, max
-	db 25, ZUBAT, 	  	  8,  11
-	db 25, GEODUDE,		 10,  11
-	db 16, ZUBAT,		  8,  11
-	db 14, ZUBAT,      	  8,  11
+	db 25, ZUBAT, 	  	 10,  11
+	db 20, GEODUDE,		 10,  11
+	db 20, ZUBAT,		  8,   9
+	db 20, ZUBAT,      	  8,   9
 	db  5, PARAS, 	  	  9,  11
 	db  5, PARAS, 	  	  9,  11
-	db 10, CLEFAIRY, 	 10,  12
+	db  5, CLEFAIRY, 	 10,  12
 	; day
-	db 25, ZUBAT, 	  	  8,  11
-	db 25, GEODUDE,		 10,  11
-	db 16, ZUBAT,		  8,  11
-	db 14, ZUBAT,      	  8,  11
+	db 25, ZUBAT, 	  	 10,  11
+	db 20, GEODUDE,		 10,  11
+	db 20, ZUBAT,		  8,   9
+	db 20, ZUBAT,      	  8,   9
 	db  5, PARAS, 	  	  9,  11
 	db  5, PARAS, 	  	  9,  11
-	db 10, CLEFAIRY, 	 10,  12
+	db  5, CLEFAIRY, 	 10,  12
 	; night
-	db 25, ZUBAT, 	  	  8,  11
-	db 25, GEODUDE,		 10,  11
-	db 16, ZUBAT,		  8,  11
-	db 14, ZUBAT,      	  8,  11
+	db 25, ZUBAT, 	  	 10,  11
+	db 20, GEODUDE,		 10,  11
+	db 20, ZUBAT,		  8,   9
+	db 20, ZUBAT,      	  8,   9
 	db  5, PARAS, 	  	  9,  11
 	db  5, PARAS, 	  	  9,  11
-	db 10, CLEFAIRY, 	 10,  12
+	db  5, CLEFAIRY, 	 10,  12
 	end_grass_wildmons
 	
 	def_grass_wildmons MT_MOON_B2F
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		min, max
-	db 25, ZUBAT, 	  	 10,  13
-	db 20, ZUBAT, 	  	 10,  13
+	db 25, ZUBAT, 	  	 10,  11
+	db 20, ZUBAT, 	  	 10,  12
 	db 20, GEODUDE, 	 11,  11
-	db 10, ZUBAT, 	  	 10,  13
-	db 11, PARAS, 	  	 10,  12
-	db 10, CLEFAIRY, 	  9,  12
-	db  4, PARAS, 	  	 13,  13
+	db 10, ZUBAT, 	  	 12,  13
+	db 15, PARAS, 	  	 13,  13
+	db  5, CLEFAIRY, 	  9,  12
+	db  5, CLEFAIRY, 	 12,  15
 	; day
-	db 25, ZUBAT, 	  	 10,  13
-	db 20, ZUBAT, 	  	 10,  13
+	db 25, ZUBAT, 	  	 10,  11
+	db 20, ZUBAT, 	  	 10,  12
 	db 20, GEODUDE, 	 11,  11
-	db 10, ZUBAT, 	  	 10,  13
-	db 11, PARAS, 	  	 10,  12
-	db 10, CLEFAIRY, 	  9,  12
-	db  4, PARAS, 	  	 13,  13
+	db 10, ZUBAT, 	  	 12,  13
+	db 15, PARAS, 	  	 13,  13
+	db  5, CLEFAIRY, 	  9,  12
+	db  5, CLEFAIRY, 	 12,  15
 	; night
-	db 25, ZUBAT, 	  	 10,  13
-	db 20, ZUBAT, 	  	 10,  13
+	db 25, ZUBAT, 	  	 10,  11
+	db 20, ZUBAT, 	  	 10,  12
 	db 20, GEODUDE, 	 11,  11
-	db 10, ZUBAT, 	  	 10,  13
-	db 11, PARAS, 	  	 10,  12
-	db 10, CLEFAIRY, 	  9,  12
-	db  4, PARAS, 	  	 13,  13
+	db 10, ZUBAT, 	  	 12,  13
+	db 15, PARAS, 	  	 13,  13
+	db  5, CLEFAIRY, 	  9,  12
+	db  5, CLEFAIRY, 	 12,  15
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_1F ; TODO
@@ -410,91 +410,91 @@ KantoGrassWildMons:
 	db  5, PIDGEOTTO, 	 17,  17
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_7 ; TODO
+	def_grass_wildmons ROUTE_7
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	;  %, species,		min, max
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 20, VULPIX, 	     20,  20
+	db 20, PIDGEY, 	     22,  22
+	db 15, RATTATA, 	 20,  20
+	db 20, KOFFING, 	 22,  23
+	db 10, PIDGEOTTO, 	 24,  24
+	db 10, JIGGLYPUFF, 	 19,  30
+	db  5, ABRA, 	     26,  26
 	; day
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 20, VULPIX, 	     20,  20
+	db 20, PIDGEY, 	     22,  22
+	db 15, RATTATA, 	 20,  20
+	db 20, KOFFING, 	 22,  23
+	db 10, PIDGEOTTO, 	 24,  24
+	db 10, JIGGLYPUFF, 	 19,  30
+	db  5, ABRA, 	     26,  26
 	; nite
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 20, VULPIX, 	     20,  20
+	db 20, PIDGEY, 	     22,  22
+	db 15, RATTATA, 	 20,  20
+	db 20, KOFFING, 	 22,  23
+	db 10, PIDGEOTTO, 	 24,  24
+	db 10, JIGGLYPUFF, 	 19,  30
+	db  5, ABRA, 	     26,  26
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_8 ; TODO
+	def_grass_wildmons ROUTE_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	;  %, species,		min, max
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 20, GROWLITHE, 	 20,  20
+	db 20, PIDGEY, 	     22,  22
+	db 15, RATTATA, 	 20,  20
+	db 25, ABRA, 	     17,  19
+	db 10, PIDGEOTTO, 	 24,  24
+	db  5, JIGGLYPUFF, 	 24,  24
+	db  5, KADABRA, 	 24,  28
 	; day
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 20, GROWLITHE, 	 20,  20
+	db 20, PIDGEY, 	     22,  22
+	db 15, RATTATA, 	 20,  20
+	db 25, ABRA, 	     17,  19
+	db 10, PIDGEOTTO, 	 24,  24
+	db  5, JIGGLYPUFF, 	 24,  24
+	db  5, KADABRA, 	 24,  28
 	; nite
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 20, GROWLITHE, 	 20,  20
+	db 20, PIDGEY, 	     22,  22
+	db 15, RATTATA, 	 20,  20
+	db 25, ABRA, 	     17,  19
+	db 10, PIDGEOTTO, 	 24,  24
+	db  5, JIGGLYPUFF, 	 24,  24
+	db  5, KADABRA, 	 24,  28
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_9 ; TODO
+	def_grass_wildmons ROUTE_9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	;  %, species,		min, max
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 30, NIDORAN_F, 	 16,  16
+	db 15, LICKITUNG, 	 18,  18
+	db 15, NIDORINA, 	 18,  18
+	db 15, NIDORINO, 	 18,  18
+	db 10, FEAROW, 	     20,  20
+	db 10, PINSIR, 	     21,  23
+	db 5,  SPEAROW, 	 18,  18
 	; day
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 30, NIDORAN_F, 	 16,  16
+	db 15, LICKITUNG, 	 18,  18
+	db 15, NIDORINA, 	 18,  18
+	db 15, NIDORINO, 	 18,  18
+	db 10, FEAROW, 	     20,  20
+	db 10, PINSIR, 	     21,  23
+	db 5,  SPEAROW, 	 18,  18
 	; nite
-	db 30, RATTATA, 	  3,   6
-	db 30, RATTATA, 	  3,   6
-	db 20, RATTATA, 	  3,   6
-	db 10, RATTATA, 	  3,   6
-	db  5, RATTATA, 	  3,   6
-	db  4, RATTATA, 	  3,   6
-	db  1, RATTATA, 	  3,   6
+	db 30, NIDORAN_F, 	 16,  16
+	db 15, LICKITUNG, 	 18,  18
+	db 15, NIDORINA, 	 18,  18
+	db 15, NIDORINO, 	 18,  18
+	db 10, FEAROW, 	     20,  20
+	db 10, PINSIR, 	     21,  23
+	db 5,  SPEAROW, 	 18,  18
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_10 ; TODO
@@ -788,58 +788,58 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		  min, max
-	db 25, ODDISH, 	   	   12,  14
-	db 20, PIDGEY, 	   	   12,  15
-	db 18, WEEDLE, 	            7,   7
-	db 15, BELLSPROUT, 	   12,  14
-	db 15, METAPOD, 	    8,   8
-	db  5, ABRA, 	            8,  12
-	db  2, PIDGEOTTO, 	   15,  17
+	db 29, BELLSPROUT, 	   12,  14
+	db 20, PIDGEY, 	   	   12,  12
+	db 14, PIDGEY, 	       15,  17
+	db 15, ABRA, 	       13,  13
+	db 10, ODDISH, 	   	   14,  14
+	db 10, VENONAT, 	   13,  16
+	db  2, PIDGEOTTO, 	   17,  17
 	; day
-	db 20, ODDISH, 	   	   12,  14
-	db 15, PIDGEY, 	   	   12,  15
-	db 15, WEEDLE, 	            7,   7
-	db 15, KAKUNA, 	   	    8,   8
-	db 15, BELLSPROUT, 	   12,  14
-	db 15, METAPOD, 	    8,   8
-	db  5, ABRA, 	            8,  12
+	db 29, BELLSPROUT, 	   12,  14
+	db 20, PIDGEY, 	   	   12,  12
+	db 14, PIDGEY, 	       15,  17
+	db 15, ABRA, 	       13,  13
+	db 10, ODDISH, 	   	   14,  14
+	db 10, VENONAT, 	   13,  16
+	db  2, PIDGEOTTO, 	   17,  17
 	; night
-	db 25, ODDISH, 	   	   12,  14
-	db 20, BELLSPROUT, 	   12,  14
-	db 15, WEEDLE, 	            7,   7
-	db 15, KAKUNA, 	   	    8,   8
-	db 15, METAPOD, 	    8,   8
-	db  5, ABRA, 	            8,  12
-	db  5, ABRA, 	            8,  12
+	db 29, BELLSPROUT, 	   12,  14
+	db 20, PIDGEY, 	   	   12,  12
+	db 14, PIDGEY, 	       15,  17
+	db 15, ABRA, 	       13,  13
+	db 10, ODDISH, 	   	   14,  14
+	db 10, VENONAT, 	   13,  16
+	db  2, PIDGEOTTO, 	   17,  17
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_25 ; TODO
+	def_grass_wildmons ROUTE_25
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/night
 	; morn
 	;  %, species,		  min, max
-	db 25, ODDISH, 	   	   12,  14
-	db 20, BELLSPROUT, 	   12,  14
-	db 18, PIDGEY, 	           13,  17
-	db 15, WEEDLE, 	            8,   8
-	db 15, METAPOD, 	    8,   8
-	db  5, ABRA, 	           10,  12
-	db  2, PIDGEOTTO, 	   15,  17
+	db 29, BELLSPROUT, 	   12,  14
+	db 20, PIDGEY, 	   	   12,  12
+	db 14, PIDGEY, 	       15,  17
+	db 15, ABRA, 	       13,  13
+	db 10, ODDISH, 	   	   14,  14
+	db 10, VENONAT, 	   13,  16
+	db  2, PIDGEOTTO, 	   17,  17
 	; day
-	db 20, ODDISH, 	   	   12,  14
-	db 15, BELLSPROUT, 	   12,  14
-	db 15, CATERPIE, 	    8,   8
-	db 15, KAKUNA, 	   	    8,   8
-	db 15, BELLSPROUT, 	   12,  14
-	db 15, METAPOD, 	    8,   8
-	db  5, ABRA, 	           10,  12
+	db 29, BELLSPROUT, 	   12,  14
+	db 20, PIDGEY, 	   	   12,  12
+	db 14, PIDGEY, 	       15,  17
+	db 15, ABRA, 	       13,  13
+	db 10, ODDISH, 	   	   14,  14
+	db 10, VENONAT, 	   13,  16
+	db  2, PIDGEOTTO, 	   17,  17
 	; night
-	db 25, ODDISH, 	   	   12,  14
-	db 20, BELLSPROUT, 	   12,  14
-	db 15, WEEDLE, 	            8,   8
-	db 15, KAKUNA, 	   	    8,   8
-	db 15, METAPOD, 	    8,   8
-	db  5, ABRA, 	           10,  10
-	db  5, ABRA, 	           12,  12
+	db 29, BELLSPROUT, 	   12,  14
+	db 20, PIDGEY, 	   	   12,  12
+	db 14, PIDGEY, 	       15,  17
+	db 15, ABRA, 	       13,  13
+	db 10, ODDISH, 	   	   14,  14
+	db 10, VENONAT, 	   13,  16
+	db  2, PIDGEOTTO, 	   17,  17
 	end_grass_wildmons
 
 	db -1 ; end
