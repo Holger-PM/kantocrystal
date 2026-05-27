@@ -16,7 +16,7 @@ Here is how the game handles the generation gap:
 * **Kanto Region** restored
 * **Original storyline**
 * Trainers rosters
-* Wild encounters (I want to make this faithful as possible but I'll probably can't, due to the lack of diversity and the fact that in Gen. 1... A lot of Pokémon aren't available)
+* Wild encounters (I intend to match the established level curve of Yellow Legacy)
 * **Dialogues** are kept faithful to the original
 * CAPITALIZATION for NAMES and PLACES
 * **Town Map** remains a Bag item
@@ -24,6 +24,8 @@ Here is how the game handles the generation gap:
   
 ### ✅ **From Gen 2** 
 * **Polished Battle Engine:** Move animations and fluid interface.
+* **Learnsets:**
+* **Moves:**
 * **Held Items:** Pokémon can hold berries and items.
 * **The Special Split:** Separate Special Attack and Special Defense stats.
 * **Shinies:** Rare color variants are available.
@@ -34,7 +36,6 @@ Here is how the game handles the generation gap:
 * **Stereo** audio option
 * Sprites
 * Move Deleter/Relearner
-* Wild Encounters have a little level variation (I intend to match the established level curve of Yellow Legacy)
 
 ### ✅ **Dev Stuff** 
 * **[60 FPS](https://github.com/fellowship-of-the-roms/pokecrystal/tree/Doublespeed-60fps-Running-Shoes)**: Smooth gameplay.
@@ -43,12 +44,13 @@ Here is how the game handles the generation gap:
 * **Poké Balls:** Colored sprites to match the Ball type thrown.
   
 ### ❌ **Removed:** 
+* Dark & Steel type
 * Critical ratio is not related to stat speed
 * Karate Chop, Razor Leaf or Slash don't crit' all the time.
 * Wrap things aren't possible anymore.
+* Apicorn
 * Johto region
 * Radio system
-* No eggs
 
 ## Roadmap
 
@@ -70,7 +72,7 @@ Here is how the game handles the generation gap:
 - [ ] **Badge 8:** Until Pokémon League      
 
 ### Restoring cut Kanto maps.
-- [ ] Museum of Science
+- [x] Museum of Science
 
 - [ ] Safari Zone
       
@@ -118,10 +120,10 @@ First of all, thank you for reading this far. Below is a breakdown of the comple
 ## Battle Mechanics 
 
 ### Learnsets - TODO
-As in Gen. 1
+As in Gen. 2
 
 ### Moves - TODO
-As in Gen. 1 if there is no balance problem due toTypes... Power, accuracy, effect...
+As in Gen. 1 if there is no balance problem due to Types... Power, accuracy, effect...
 (Bite remains Normal-type, not Dark-type).
 
 ### Type Chart:** Follows the Gen 2 chart 
