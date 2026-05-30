@@ -425,46 +425,46 @@ YoungsterGroup:
 	db 37, RATICATE,   HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
 	db -1 ; end
 	
-	; YOUNGSTER (15) - Route3TrainerYoungster1
+	; YOUNGSTER_BEN - Route 3
 	db "BEN@", TRAINERTYPE_NORMAL
 	db 11, RATTATA
 	db 11, EKANS
 	db -1 ; end
 	
-	; YOUNGSTER (16) - Route3TrainerYoungster2
+	; YOUNGSTER_MIKEY - Route 3
 	db "MIKEY@", TRAINERTYPE_NORMAL
 	db 14, SPEAROW
 	db -1 ; end
 	
-	; YOUNGSTER (17) - MtMoon1FTrainerYoungster
+	; YOUNGSTER_SAMUEL - Mt Moon 1F
 	db "SAMUEL@", TRAINERTYPE_NORMAL
 	db 10, RATTATA
 	db 10, SANDSHREW
 	db 10, ZUBAT
 	db -1 ; end
 	
-	; YOUNGSTER (18)
+	; YOUNGSTER_RYAN - Route 24
 	db "RYAN@", TRAINERTYPE_NORMAL
 	db 14, RATTATA
 	db 14, EKANS
 	db 14, ZUBAT
 	db -1 ; end
 	
-	; YOUNGSTER (19)
+	; YOUNGSTER_GORDON - Route 25
 	db "GORDON@", TRAINERTYPE_NORMAL
-	db 15, RATTATA
-	db 15, SPEAROW
+	db 16, RATTATA
+	db 16, SPEAROW
 	db -1 ; end
 	
-	; YOUNGSTER (20)
+	; YOUNGSTER_WARREN - Route 25
 	db "WARREN@", TRAINERTYPE_NORMAL
 	db 17, SLOWPOKE
 	db -1 ; end
 	
-	; YOUNGSTER (21)
+	; YOUNGSTER_IAN - Route 25
 	db "IAN@", TRAINERTYPE_NORMAL
-	db 14, EKANS
-	db 14, SANDSHREW
+	db 16, EKANS
+	db 16, SANDSHREW
 	db -1 ; end
 
 SchoolboyGroup:
@@ -832,63 +832,62 @@ LassGroup:
 	db 32, AMPHAROS,   TACKLE, THUNDERPUNCH, THUNDER_WAVE, COTTON_SPORE
 	db -1 ; end
 
-	; LASS (17) - Viridian Forest
+	; LASS_DANA - Viridian Forest
 	db "DANA@", TRAINERTYPE_NORMAL
 	db  6, NIDORAN_F
 	db  6, NIDORAN_M
 	db -1 ; end
 	
-	; LASS (18) - Route3TrainerLass1
+	; LASS_ALICE - Route 3
 	db "ALICE@", TRAINERTYPE_NORMAL
 	db 9, PIDGEY
 	db 9, PIDGEY
 	db -1 ; end
 	
-	; LASS (19) - Route3TrainerLass2
+	; LASS_CARRIE - Route 3
 	db "CARRIE@", TRAINERTYPE_NORMAL
 	db 10, RATTATA
 	db 10, NIDORAN_M
 	db -1 ; end
 	
-	; LASS (20) - Route3TrainerLass3
+	; LASS_CONNIE - Route 3
 	db "CONNIE@", TRAINERTYPE_NORMAL
 	db 14, JIGGLYPUFF
 	db -1 ; end
 	
-	; LASS (21) - MtMoon1FCooltrainerF2
+	; LASS_LAURA - Mt Moon 1F
 	db "LAURA@", TRAINERTYPE_NORMAL
 	db 14, CLEFAIRY
 	db -1 ; end
 	
-	; LASS (22) - MtMoon1FCooltrainerF1
+	; LASS_SHANNON - Mt Moon 1F
 	db "SHANNON@", TRAINERTYPE_NORMAL
 	db 11, ODDISH
 	db 11, BELLSPROUT
 	db -1 ; end
 	
-	; LASS (22)
+	; LASS_AMY - Route 24
 	db "AMY@", TRAINERTYPE_NORMAL
-	db 14, PIDGEY
-	db 14, NIDORAN_F
+	db 15, JIGGLYPUFF
+	db 15, ODDISH
 	db -1 ; end
 	
-	; LASS (22)
+	; LASS_EMILY - Route 24
 	db "EMILY@", TRAINERTYPE_NORMAL
-	db 14, CLEFAIRY
-	db 14, ODDISH
+	db 16, PIDGEY
+	db 16, NIDORAN_F
 	db -1 ; end
 	
-	; LASS (23)
+	; LASS_MICHELLE - Route 25
 	db "MICHELLE@", TRAINERTYPE_NORMAL
-	db 15, NIDORAN_M
-	db 15, NIDORAN_F
+	db 16, WIGGLYTUFF
 	db -1 ; end
 	
-	; LASS (23)
+	; LASS_DANA	- Route 25
 	db "DANA@", TRAINERTYPE_NORMAL
-	db 13, ODDISH
-	db 13, PIDGEY
-	db 13, ODDISH
+	db 16, ODDISH
+	db 16, PIDGEY
+	db 16, ODDISH
 	db -1 ; end
 
 JanineGroup:
@@ -1032,7 +1031,7 @@ CooltrainerMGroup:
 	db -1 ; end
 
 CooltrainerFGroup:
-	; COOLTRAINERF (1) - Route 4
+	; COOLTRAINERF_GWEN - Route 4
 	db "GWEN@", TRAINERTYPE_NORMAL
 	db 30, PARASECT
 	db 30, GLOOM
@@ -1541,24 +1540,25 @@ GruntMGroup:
 	db 12, EKANS
 	db -1 ; end
 	
-	; ROCKET (34) - MtMoonB2FTrainerRocket3
-	db "@", TRAINERTYPE_NORMAL
-	db 16, RATICATE
-	db -1 ; end
-	
-	; ROCKET (35) - MtMoonB2FTrainerRocket4
+	; ROCKET (34) - Mt Moon B2F
 	db "@", TRAINERTYPE_NORMAL
 	db 13, RATTATA
 	db 13, ZUBAT
 	db -1 ; end
 	
-	; ROCKET (36)
+	; ROCKET (35) - Mt Moon B2F
+	db "@", TRAINERTYPE_NORMAL
+	db 13, RATTATA
+	db 13, ZUBAT
+	db -1 ; end
+	
+	; ROCKET (36) - Route 24
 	db "@", TRAINERTYPE_NORMAL
 	db 15, EKANS
 	db 15, ZUBAT
 	db -1 ; end
 	
-	;ROCKET (37 Cerulean City)
+	;ROCKET (37) - Cerulean City
 	db "@", TRAINERTYPE_NORMAL
 	db 17, MACHOP
 	db 17, DROWZEE
@@ -1744,40 +1744,40 @@ BugCatcherGroup:
 	db 40, VENOMOTH,   GUST, SUPERSONIC, PSYCHIC_M, TOXIC
 	db -1 ; end
 
-	; BUG_CATCHER (19) - ViridianForestYoungster3
+	; BUG_CATCHER_WAYNE - Viridian Forest
 	db "WAYNE@", TRAINERTYPE_NORMAL
 	db  6, CATERPIE	
 	db  6, WEEDLE
 	db  6, CATERPIE
 	db -1 ; end
 	
-	; BUG_CATCHER (20) - ViridianForestYoungster4
+	; BUG_CATCHER_CALEB - Viridian Forest
 	db "CALEB@", TRAINERTYPE_MOVES
 	db  7, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db  6, CATERPIE,  TACKLE, STRING_SHOT, NO_MOVE, NO_MOVE
 	db  7, KAKUNA,    POISON_STING, HARDEN, NO_MOVE, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER (21) - ViridianForestYoungster5
+	; BUG_CATCHER_DYLAN - Viridian Forest
 	db "DYLAN@", TRAINERTYPE_MOVES
 	db  6, CATERPIE,  TACKLE, STRING_SHOT, NO_MOVE, NO_MOVE
 	db  6, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER (21) - ViridianForestYoungster6
+	; BUG_CATCHER_FOREST - Viridian Forest
 	db "FOREST@", TRAINERTYPE_MOVES
 	db  8, PINSIR,    VICEGRIP, FOCUS_ENERGY, NO_MOVE, NO_MOVE
 	db  9, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER (22) - Route3TrainerBugCatcher1
+	; BUG_CATCHER_FOREST - Route 3
 	db "FOREST@", TRAINERTYPE_MOVES
 	db   8, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db   8, KAKUNA,    POISON_STING, HARDEN, NO_MOVE, NO_MOVE
 	db  10, BUTTERFREE, CONFUSION, HARDEN, NO_MOVE, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER (23) - Route3TrainerBugCatcher2
+	; BUG_CATCHER_JOSH - Route 3
 	db "JOSH@", TRAINERTYPE_MOVES
 	db  9, WEEDLE,    TACKLE, STRING_SHOT, NO_MOVE, NO_MOVE
 	db  9, KAKUNA,    POISON_STING, HARDEN, NO_MOVE, NO_MOVE
@@ -1785,29 +1785,29 @@ BugCatcherGroup:
 	db  9, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER (24) - Route3TrainerBugCatcher3
+	; BUG_CATCHER_WADE - Route 3
 	db "WADE@", TRAINERTYPE_MOVES
 	db   9, METAPOD,  TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db   9, PARAS,    SCRATCH, STUN_SPORE, NO_MOVE, NO_MOVE
 	db   9, METAPOD,  TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER (25) - MtMoon1FTrainerBugCatcher1
+	; BUG_CATCHER_KEN - Mt Moon 1F
 	db "KEN@", TRAINERTYPE_NORMAL
 	db  10, WEEDLE
 	db  10, BEEDRILL
 	db -1 ; end
 	
-	; BUG_CATCHER (26) - MtMoon1FTrainerBugCatcher2
+	; BUG_CATCHER_BENNY - Mt Moon 1F
 	db "BENNY@", TRAINERTYPE_NORMAL
 	db  10, CATERPIE
 	db  10, BUTTERFREE
 	db -1 ; end
 	
-	; BUG_CATCHER (26)
+	; BUG_CATCHER_JAKE - Route 24
 	db "JAKE@", TRAINERTYPE_NORMAL
-	db  14, CATERPIE
-	db  14, WEEDLE
+	db  13, BUTTERFREE
+	db  13, BEEDRILL
 	db -1 ; end
 
 FisherGroup:
@@ -2114,7 +2114,7 @@ SwimmerMGroup:
 	db 35, SEADRA
 	db -1 ; end
 	
-	; SWIMMERM (22) - CeruleanGymTrainerSwimmermJames
+	; SWIMMERM_JAMES - Cerulean Gym
 	db "JAMES@", TRAINERTYPE_NORMAL
 	db 16, HORSEA
 	db 16, SHELLDER
@@ -2340,7 +2340,7 @@ SuperNerdGroup:
 	db 11, GRIMER
 	db -1 ; end
 
-	; SUPER_NERD (3) - MtMoon1FTrainerSuperNerd
+	; SUPER_NERD_DAVE - Mt Moon 1F
 	db "DAVE@", TRAINERTYPE_NORMAL
 	db 11, MAGNEMITE
 	db 11, VOLTORB
@@ -2412,7 +2412,7 @@ SuperNerdGroup:
 	db 19, SLOWPOKE,   CURSE, WATER_GUN, GROWL, STRENGTH
 	db -1 ; end
 	
-	; SUPER_NERD (15) - MtMoonB2FSuperNerdScript1
+	; SUPER_NERD_MIGUEL - Mt Moon B2F
 	db "MIGUEL@", TRAINERTYPE_MOVES
 	db 12, GRIMER,   POISON_GAS, POUND, DISABLE, MUD_SLAP
 	db 12, VOLTORB,   ROLLOUT, TACKLE, THUNDERSHOCK, SCREECH
@@ -2645,30 +2645,30 @@ HikerGroup:
 	db 9, MACHOP,    LEER, KARATE_CHOP, FOCUS_ENERGY, NO_MOVE
 	db -1 ; end
 	
-	; HIKER (24)
+	; HIKER_RUSSELL - Mt Moon 1F
 	db "RUSSELL@", TRAINERTYPE_NORMAL
 	db 10, GEODUDE
 	db 10, GEODUDE
 	db 10, ONIX
 	db -1 ; end
 	
-	; HIKER (25)
+	; HIKER_BENJAMIN - Route 25
 	db "BENJAMIN@", TRAINERTYPE_NORMAL
+	db 16, MACHOP
+	db 16, GEODUDE
+	db -1 ; end
+	
+	; HIKER_ERIK - Route 25
+	db "ERIK@", TRAINERTYPE_NORMAL
+	db 18, ONIX
+	db -1 ; end
+	
+	; HIKER_ANTHONY - Route 25
+	db "ANTHONY@", TRAINERTYPE_NORMAL
+	db 15, GEODUDE
+	db 15, ZUBAT
 	db 15, MACHOP
 	db 15, GEODUDE
-	db -1 ; end
-	
-	; HIKER (26)
-	db "ERIK@", TRAINERTYPE_NORMAL
-	db 17, ONIX
-	db -1 ; end
-	
-	; HIKER (27)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 13, GEODUDE
-	db 13, GEODUDE
-	db 13, MACHOP
-	db 13, GEODUDE
 	db -1 ; end
 
 BikerGroup:
@@ -3309,7 +3309,7 @@ CamperGroup:
 	db -1 ; end
 	
 JrtrainerfGroup:
-	; JRTRAINER_F (1) - CeruleanGymTrainerJrtrainerfSharon
+	; JRTRAINER_F_SHARON - Cerulean Gym
 	db "SHARON@", TRAINERTYPE_NORMAL
 	db 19, SEEL
 	db -1 ; end
@@ -3321,21 +3321,21 @@ JrtrainermGroup:
 	db  9, SANDSHREW
 	db -1 ; end
 	
-	; JRTRAINER_M (2)
+	; JRTRAINER_M_SEAN - Route 24
 	db "SEAN@", TRAINERTYPE_NORMAL
 	db 18, MANKEY
 	db -1 ; end
 	
-	; JRTRAINER_M (3)
+	; JRTRAINER_M_ALEX - Route 24
 	db "ALEX@", TRAINERTYPE_NORMAL
-	db 14, RATTATA
-	db 14, EKANS
+	db 15, DIGLETT
+	db 15, PSYDUCK
 	db -1 ; end
 	
-	; JRTRAINER_M (4)
+	; JRTRAINER_M_JEFFREY - Route 25
 	db "JEFFREY@", TRAINERTYPE_NORMAL
-	db 14, RATTATA
-	db 14, EKANS
+	db 15, DIGLETT
+	db 15, PSYDUCK
 	db -1 ; end
 
 ExecutiveFGroup:

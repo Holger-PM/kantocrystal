@@ -15,261 +15,261 @@ Route25_MapScripts:
 
 	def_callbacks
 
-Route25TrainerHikerBenjamin:
-	trainer HIKER, BENJAMIN2, EVENT_BEAT_ROUTE_25_HIKER_BENJAMIN, Route25Hiker1BattleText, Route25Hiker1EndBattleText, 0, .Script
+TrainerHikerBenjamin: ; HIKER_BENJAMIN
+	trainer HIKER, BENJAMIN2, EVENT_BEAT_ROUTE_25_HIKER_BENJAMIN, HikerBenjaminBattleText, HikerBenjaminEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Hiker1AfterBattleText
+	writetext HikerBenjaminAfterBattleText
 	waitbutton
 	closetext
 	end
 
-Route25TrainerHikerErik:
-	trainer HIKER, ERIK2, EVENT_BEAT_ROUTE_25_HIKER_ERIK, Route25Hiker2BattleText, Route25Hiker2EndBattleText, 0, .Script
+TrainerHikerErik: ; HIKER_ERIK
+	trainer HIKER, ERIK2, EVENT_BEAT_ROUTE_25_HIKER_ERIK, HikerErikBattleText, HikerErikEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Hiker2AfterBattleText
+	writetext HikerErikAfterBattleText
 	waitbutton
 	closetext
 	end
 
-Route25TrainerYoungsterGordon:
-	trainer YOUNGSTER, GORDON2, EVENT_BEAT_ROUTE_25_YOUNGSTER_GORDON, Route25Youngster1BattleText, Route25Youngster1EndBattleText, 0, .Script
+TrainerYoungsterGordon: ; YOUNGSTER_GORDON
+	trainer YOUNGSTER, GORDON2, EVENT_BEAT_ROUTE_25_YOUNGSTER_GORDON, YoungsterGordonBattleText, YoungsterGordonEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Youngster1AfterBattleText
+	writetext YoungsterGordonAfterBattleText
 	waitbutton
 	closetext
 	end
 
-Route25TrainerYoungsterWarren:
-	trainer YOUNGSTER, WARREN2, EVENT_BEAT_ROUTE_25_YOUNGSTER_WARREN, Route25Youngster2BattleText, Route25Youngster2EndBattleText, 0, .Script
+TrainerYoungsterWarren: ; YOUNGSTER_WARREN
+	trainer YOUNGSTER, WARREN2, EVENT_BEAT_ROUTE_25_YOUNGSTER_WARREN, YoungsterWarrenBattleText, Youngster2EndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Youngster2AfterBattleText
+	writetext YoungsterWarrenAfterBattleText
 	waitbutton
 	closetext
 	end
 
-Route25TrainerLassMichelle:
-	trainer LASS, MICHELLE2, EVENT_BEAT_ROUTE_25_LASS_MICHELLE, Route25Lass1BattleText, Route25Lass1EndBattleText, 0, .Script
+TrainerLassMichelle: ; LASS_MICHELLE
+	trainer LASS, MICHELLE2, EVENT_BEAT_ROUTE_25_LASS_MICHELLE, LassMichelleBattleText, LassMichelleEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Lass1AfterBattleText
+	writetext LassMichelleAfterBattleText
 	waitbutton
 	closetext
 	end
 
-Route25TrainerHikerAnthony:
-	trainer HIKER, ANTHONY6, EVENT_BEAT_ROUTE_25_HIKER_ANTHONY, Route25Hiker3BattleText, Route25Hiker3EndBattleText, 0, .Script
+TrainerHikerAnthony: ; HIKER_ANTHONY
+	trainer HIKER, ANTHONY6, EVENT_BEAT_ROUTE_25_HIKER_ANTHONY, HikerAnthonyBattleText, HikerAnthonyEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Hiker3AfterBattleText
+	writetext HikerAnthonyAfterBattleText
 	waitbutton
 	closetext
 	end
 
-Route25TrainerJrTrainerMJeffrey:
-	trainer JRTRAINER_M, JEFFREY2, EVENT_BEAT_ROUTE_25_JRTRAINER_M_JEFFREY, Route25JrTrainerMBattleText, Route25JrTrainerMEndBattleText, 0, .Script
+TrainerJrTrainerMJeffrey: ; JRTRAINER_M_JEFFREY
+	trainer JRTRAINER_M, JEFFREY2, EVENT_BEAT_ROUTE_25_JRTRAINER_M_JEFFREY, JrTrainerMBattleText, JrTrainerMEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25JrTrainerMAfterBattleText
-	waitbutton
-	closetext
-	end
-	
-Route25TrainerYoungsterIan:
-	trainer YOUNGSTER, IAN2, EVENT_BEAT_ROUTE_25_YOUNGSTER_IAN, Route25Youngster3BattleText, Route25Youngster3EndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext Route25Youngster3AfterBattleText
+	writetext JrTrainerMAfterBattleText
 	waitbutton
 	closetext
 	end
 	
-Route25TrainerLassDana:
-	trainer LASS, DANA6, EVENT_BEAT_ROUTE_25_LASS_DANA, Route25Lass2BattleText, Route25Lass2EndBattleText, 0, .Script
+TrainerYoungsterIan: ; YOUNGSTER_IAN
+	trainer YOUNGSTER, IAN2, EVENT_BEAT_ROUTE_25_YOUNGSTER_IAN, Youngster3BattleText, Youngster3EndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Route25Lass2AfterBattleText
+	writetext Youngster3AfterBattleText
+	waitbutton
+	closetext
+	end
+	
+TrainerLassDana: ; LASS_DANA
+	trainer LASS, DANA6, EVENT_BEAT_ROUTE_25_LASS_DANA, Lass2BattleText, Lass2EndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext Lass2AfterBattleText
 	waitbutton
 	closetext
 	end
 
 BillsHouseSign:
-	jumptext Route25BillSignText
+	jumptext BillSignText
 
-Route25SeismicToss:
+SeismicToss:
 	itemball PROTEIN
 
-Route25HiddenFastBall:
+HiddenFastBall:
 	hiddenitem FAST_BALL, EVENT_ROUTE_25_HIDDEN_FAST_BALL
 
-Route25Youngster1BattleText:
+YoungsterGordonBattleText:
 	text "Local trainers"
 	line "come here to"
 	cont "practice!"
 	done
 
-Route25Youngster1EndBattleText:
+YoungsterGordonEndBattleText:
 	text "You're decent."
 	prompt
 
-Route25Youngster1AfterBattleText:
+YoungsterGordonAfterBattleText:
 	text "All #MON have"
 	line "weaknesses. It's"
 	cont "best to raise"
 	cont "different kinds."
 	done
 
-Route25Youngster2BattleText:
+YoungsterWarrenBattleText:
 	text "Dad took me to a"
 	line "great party on"
 	cont "S.S.ANNE at"
 	cont "VERMILION CITY!"
 	done
 
-Route25Youngster2EndBattleText:
+YoungsterWarrenEndBattleText:
 	text "I'm not mad!"
 	prompt
 
-Route25Youngster2AfterBattleText:
+YoungsterWarrenAfterBattleText:
 	text "On S.S.ANNE, I"
 	line "saw trainers from"
 	cont "around the world."
 	done
 
-Route25JrTrainerMBattleText:
+JrTrainerMBattleText:
 	text "I'm a cool guy."
 	line "I've got a girl"
 	cont "friend!"
 	done
 
-Route25JrTrainerMEndBattleText:
+JrTrainerMEndBattleText:
 	text "Aww, darn..."
 	prompt
 
-Route25JrTrainerMAfterBattleText:
+JrTrainerMAfterBattleText:
 	text "Oh well. My girl"
 	line "will cheer me up."
 	done
 
-Route25Lass1BattleText:
+LassMichelleBattleText:
 	text "Hi! My boy"
 	line "friend is cool!"
 	done
 
-Route25Lass1EndBattleText:
+LassMichelleEndBattleText:
 	text "I was in"
 	line "bad condition!"
 	prompt
 
-Route25Lass1AfterBattleText:
+LassMichelleAfterBattleText:
 	text "I wish my guy was"
 	line "as good as you!"
 	done
 
-Route25Youngster3BattleText:
+Youngster3BattleText:
 	text "I knew I had to"
 	line "fight you!"
 	done
 
-Route25Youngster3EndBattleText:
+Youngster3EndBattleText:
 	text "I knew I'd"
 	line "lose too!"
 	prompt
 
-Route25Youngster3AfterBattleText:
+Youngster3AfterBattleText:
 	text "If your #MON"
 	line "gets confused or"
 	cont "falls asleep,"
 	cont "switch it!"
 	done
 
-Route25Lass2BattleText:
+Lass2BattleText:
 	text "My friend has a"
 	line "cute #MON."
 	cont "I'm so jealous!"
 	done
 
-Route25Lass2EndBattleText:
+Lass2EndBattleText:
 	text "I'm not"
 	line "so jealous!"
 	prompt
 
-Route25Lass2AfterBattleText:
+Lass2AfterBattleText:
 	text "You came from MT."
 	line "MOON? May I have"
 	cont "a CLEFAIRY?"
 	done
 
-Route25Hiker1BattleText:
+HikerBenjaminBattleText:
 	text "I just got down"
 	line "from MT.MOON,"
 	cont "but I'm ready!"
 	done
 
-Route25Hiker1EndBattleText:
+HikerBenjaminEndBattleText:
 	text "You worked hard!"
 	prompt
 
-Route25Hiker1AfterBattleText:
+HikerBenjaminAfterBattleText:
 	text "Drat!"
 	line "A ZUBAT bit me"
 	cont "back in there."
 	done
 
-Route25Hiker2BattleText:
+HikerErikBattleText:
 	text "I'm off to see a"
 	line "#MON collector"
 	cont "at the cape!"
 	done
 
-Route25Hiker2EndBattleText:
+HikerErikEndBattleText:
 	text "You got me."
 	prompt
 
-Route25Hiker2AfterBattleText:
+HikerErikAfterBattleText:
 	text "The collector has"
 	line "many rare kinds"
 	cont "of #MON."
 	done
 
-Route25Hiker3BattleText:
+HikerAnthonyBattleText:
 	text "You're going to"
 	line "see BILL? First,"
 	cont "let's fight!"
 	done
 
-Route25Hiker3EndBattleText:
+HikerAnthonyEndBattleText:
 	text "You're something."
 	prompt
 
-Route25Hiker3AfterBattleText:
+HikerAnthonyAfterBattleText:
 	text "The trail below"
 	line "is a shortcut to"
 	cont "CERULEAN CITY."
 	done
 
-Route25BillSignText:
+BillSignText:
 	text "SEA COTTAGE"
 	line "BILL lives here!"
 	done
@@ -298,13 +298,13 @@ Route25_MapEvents:
 	bg_event 10,  1, BGEVENT_ITEM, Route25HiddenFastBall
 
 	def_object_events
-	object_event  8,  4, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, Route25TrainerHikerBenjamin, -1
-	object_event 13,  7, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, Route25TrainerHikerErik, -1
-	object_event 14,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, Route25TrainerYoungsterGordon, -1
-	object_event 18,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, Route25TrainerYoungsterWarren, -1
-	object_event 18,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, Route25TrainerLassMichelle, -1
-	object_event 23,  9, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, Route25TrainerHikerAnthony, -1
-	object_event 24,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, Route25TrainerJrTrainerMJeffrey, -1
-	object_event 32,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, Route25TrainerYoungsterIan, -1
-	object_event 37,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, Route25TrainerLassDana, -1
-	object_event 22,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25SeismicToss, EVENT_ROUTE_25_TM_SEISMIC_TOSS ; TODO make this Seismic Toss TM
+	object_event  8,  4, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerHikerBenjamin, -1						; HIKER_BENJAMIN
+	object_event 13,  7, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerHikerErik, -1							; HIKER_ERIK
+	object_event 14,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerYoungsterGordon, -1		; YOUNGSTER_GORDON
+	object_event 18,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterWarren, -1		; YOUNGSTER_WARREN
+	object_event 18,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassMichelle, -1	; LASS_MICHELLE
+	object_event 23,  9, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerHikerAnthony, -1							; HIKER_ANTHONY
+	object_event 24,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0， -1， -1， PAL_NPC_RED， OBJECTTYPE_TRAINER， 3， TrainerJrTrainerMJeffrey， -1	; JRTRAINER_M_JEFFREY
+	object_event 32,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerYoungsterIan, -1		; YOUNGSTER_IAN
+	object_event 37,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassDana, -1			; LASS_DANA	
+	object_event 22,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeismicToss, EVENT_ROUTE_25_TM_SEISMIC_TOSS ; TODO make this Seismic Toss TM

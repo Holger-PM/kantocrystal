@@ -5,11 +5,11 @@
 	const MT_MOON_B2F_HELIX_FOSSIL
 	const MT_MOON_B2F_ITEM_BALL_HP_UP
 	const MT_MOON_B2F_ITEM_BALL_TM_DYNAMIC_PUNCH
-	const MT_MOON_B2F_SUPER_NERD
-	const MT_MOON_B2F_ROCKET_1
-	const MT_MOON_B2F_ROCKET_2
-	const MT_MOON_B2F_ROCKET_3
-	const MT_MOON_B2F_ROCKET_4
+	const MT_MOON_B2F_SUPER_NERD	 ; SUPER_NERD_MIGUEL
+	const MT_MOON_B2F_ROCKET_1		 ; ROCKET (31)
+	const MT_MOON_B2F_ROCKET_2		 ; ROCKET (32)
+	const MT_MOON_B2F_ROCKET_3		 ; ROCKET (33)
+	const MT_MOON_B2F_ROCKET_4		 ; ROCKET (34)
 
 MtMoonB2F_MapScripts:
 	def_scene_scripts
@@ -28,7 +28,250 @@ MtMoonB2FTeamRocketScene:
 MtMoonB2FNoopScene:
 	end
 	
-MtMoonB2FTeamRocketScript:
+MtMoonB2FTrainerRocket1: ; ROCKET 1
+	trainer GRUNTM, ROCKET_1, EVENT_BEAT_MT_MOON_B2F_ROCKET_1, MtMoonB2FRocket1BattleText, MtMoonB2FRocket1EndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MtMoonB2FRocket1AfterBattleText
+	waitbutton
+	closetext
+	end
+
+MtMoonB2FRocket1BattleText: ; ROCKET 1
+	text "We, TEAM ROCKET,"
+	line "are #MON"
+	cont "gangsters!"
+	done
+
+MtMoonB2FRocket1EndBattleText: ; ROCKET 1
+	text "I blew it!"
+	done
+
+MtMoonB2FRocket1AfterBattleText: ; ROCKET 1
+	text "Darn it all! My"
+	line "associates won't"
+	cont "stand for this!"
+	done
+	
+MtMoonB2FTrainerRocket2: ; ROCKET 2
+	trainer GRUNTM, ROCKET_2, EVENT_BEAT_MT_MOON_B2F_ROCKET_2, MtMoonB2FRocket2BattleText, MtMoonB2FRocket2EndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MtMoonB2FRocket2AfterBattleText
+	waitbutton
+	closetext
+	end
+	
+MtMoonB2FRocket2BattleText: ; ROCKET 2
+	text "We're pulling a"
+	line "big job here!"
+	cont "Get lost, kid!"
+	done
+
+MtMoonB2FRocket2EndBattleText: ; ROCKET 2
+	text "So, you are good."
+	done
+
+MtMoonB2FRocket2AfterBattleText: ; ROCKET 2
+	text "If you find a"
+	line "fossil, give it"
+	cont "to me and scram!"
+	done
+
+
+MtMoonB2FTrainerRocket3: ; ROCKET 3
+	trainer GRUNTM, ROCKET_3, EVENT_BEAT_MT_MOON_B2F_ROCKET_3, MtMoonB2FRocket3BattleText, MtMoonB2FRocket3EndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MtMoonB2FRocket3AfterBattleText
+	waitbutton
+	closetext
+	end
+
+MtMoonB2FRocket3BattleText:
+	text "Little kids"
+	line "should leave"
+	cont "grown-ups alone!"
+	done
+
+MtMoonB2FRocket3EndBattleText:
+	text "I'm steamed!"
+	prompt
+
+MtMoonB2FRocket3AfterBattleText:
+	text "#MON lived"
+	line "here long before"
+	cont "people came."
+	done
+
+MtMoonB2FTrainerRocket4: ; ROCKET 4
+	trainer GRUNTM, ROCKET_4, EVENT_BEAT_MT_MOON_B2F_ROCKET_4, MtMoonB2FRocket4BattleText, MtMoonB2FRocket4EndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MtMoonB2FRocket4AfterBattleText
+	waitbutton
+	closetext
+	end
+
+MtMoonB2FSuperNerdScript1: ; SUPER_NERD_MIGUEL
+	checkevent EVENT_BEAT_MT_MOON_B2F_SUPER_NERD_MIGUEL
+	iffalse MtMoonB2FSuperNerdScript2
+	faceplayer
+	opentext
+	writetext MtMoonB2FSuperNerdTheresAPokemonLabText
+	waitbutton
+	closetext
+	end
+	
+MtMoonB2FSuperNerdTheresAPokemonLabText: ; SUPER_NERD_MIGUEL
+	text "Far away, on"
+	line "CINNABAR ISLAND,"
+	cont "there's a #MON"
+	cont "LAB."
+
+	para "They do research"
+	line "on regenerating"
+	cont "fossils."
+	done
+
+MtMoonB2FSuperNerdScript2: ; SUPER_NERD_MIGUEL
+	faceplayer
+	opentext
+	writetext MtMoonB2FSuperNerdTheyreBothMineText
+	playmusic MUSIC_MEET_MALE_TRAINER
+	waitbutton
+	closetext
+	winlosstext MtMoonB2FSuperNerdOkIllShareText, 0
+	loadtrainer SUPER_NERD, MIGUEL
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_MT_MOON_B2F_SUPER_NERD_MIGUEL
+	pause 10
+	opentext
+	writetext MtMoonB2fSuperNerdEachTakeOneText
+	waitbutton
+	closetext
+	setscene SCENE_MT_MOON_B2F_TEAM_ROCKET
+	end
+
+MtMoonB2FSuperNerdTheyreBothMineText: ; SUPER_NERD_MIGUEL
+	text "Hey, stop!"
+
+	para "I found these"
+	line "fossils! They're"
+	cont "both mine!"
+	done
+
+MtMoonB2FSuperNerdOkIllShareText: ; SUPER_NERD_MIGUEL
+	text "OK! I'll share!"
+	done
+
+MtMoonB2fSuperNerdEachTakeOneText: ; SUPER_NERD_MIGUEL
+	text "We'll each take"
+	line "one!"
+	cont "No being greedy!"
+	done
+
+MtMoonB2FDomeFossilScript: ; DOME_FOSSIL
+	opentext
+	writetext MtMoonB2FDomeFossilYouWantText
+	yesorno
+	iffalse .DidNotChooseFossil
+	giveitem DOME_FOSSIL
+	getitemname STRING_BUFFER_3, DOME_FOSSIL
+	writetext MtMoonB2FReceivedFossilText
+	playsound SFX_GET_KEY_ITEM_1
+	waitsfx
+	disappear MT_MOON_B2F_DOME_FOSSIL
+	itemnotify
+	closetext
+	setevent EVENT_GOT_DOME_FOSSIL
+	applymovement MT_MOON_B2F_SUPER_NERD, MtMoonB2F_Super_Nerd_Takes_Helix_Fossil_Movement
+	opentext
+	writetext MtMoonB2FSuperNerdThenThisIsMineText
+	disappear MT_MOON_B2F_HELIX_FOSSIL
+	playsound SFX_GET_KEY_ITEM_1
+	waitsfx
+	closetext
+	end
+	
+.DidNotChooseFossil
+	closetext
+	end
+
+MtMoonB2FDomeFossilYouWantText: ; DOME_FOSSIL
+	text "You want the"
+	line "DOME FOSSIL?"
+	done
+
+MtMoonB2F_Super_Nerd_Takes_Helix_Fossil_Movement: ; DOME_FOSSIL
+	slow_step RIGHT
+	slow_step UP
+	step_end
+	
+MtMoonB2FHelixFossilScript: ; HELIX_FOSSIL
+	opentext
+	writetext MtMoonB2FHelixFossilYouWantText
+	yesorno
+	iffalse .DidNotChooseFossil
+	giveitem HELIX_FOSSIL
+	getitemname STRING_BUFFER_3, HELIX_FOSSIL
+	writetext MtMoonB2FReceivedFossilText
+	playsound SFX_GET_KEY_ITEM_1
+	waitsfx
+	disappear MT_MOON_B2F_HELIX_FOSSIL
+	itemnotify
+	closetext
+	setevent EVENT_GOT_HELIX_FOSSIL
+	applymovement MT_MOON_B2F_SUPER_NERD, MtMoonB2F_Super_Nerd_Takes_Dome_Fossil_Movement
+	opentext
+	writetext MtMoonB2FSuperNerdThenThisIsMineText
+	disappear MT_MOON_B2F_DOME_FOSSIL
+	playsound SFX_GET_KEY_ITEM_1
+	waitsfx
+	closetext
+	end
+	
+.DidNotChooseFossil
+	closetext
+	end
+	
+MtMoonB2FHelixFossilYouWantText: ; HELIX_FOSSIL
+	text "You want the"
+	line "HELIX FOSSIL?"
+	done
+	
+MtMoonB2F_Super_Nerd_Takes_Dome_Fossil_Movement: ; HELIX_FOSSIL
+	slow_step UP
+	step_end
+
+
+MtMoonB2FReceivedFossilText:
+	text "<PLAYER> got the"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+
+MtMoonB2FYouHaveNoRoomText:
+	text "Look, you've got"
+	line "no room for this."
+	done
+
+MtMoonB2FSuperNerdThenThisIsMineText: ; SUPER_NERD_MIGUEL
+	text "All right. Then"
+	line "this is mine!"
+	done
+
+MtMoonB2FTeamRocketScript: ; JESSIE_JAMES
 	playmusic MUSIC_MEET_JESSIE_JAMES
 	opentext
 	writetext MtMoonJessieJamesText1
@@ -65,182 +308,12 @@ MtMoonB2FTeamRocketScript:
 	setevent EVENT_TEAM_ROCKET_APPEARED_MT_MOON
 	setscene SCENE_MT_MOON_B2F_NOOP
 	end
-	
-MtMoonB2F_Player_Steps_Up_Movement:
-	step UP
-	step_end
-	
-MtMoonB2F_Jessie_Movement:
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step_end
-	
-MtMoonB2F_James_Movement:
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step_end
-	
-MtMoonB2FDomeFossilScript:
-	opentext
-	writetext MtMoonB2FDomeFossilYouWantText
-	yesorno
-	iffalse .DidNotChooseFossil
-	giveitem DOME_FOSSIL
-	getitemname STRING_BUFFER_3, DOME_FOSSIL
-	writetext MtMoonB2FReceivedFossilText
-	playsound SFX_GET_KEY_ITEM_1
-	waitsfx
-	disappear MT_MOON_B2F_DOME_FOSSIL
-	itemnotify
-	closetext
-	setevent EVENT_GOT_DOME_FOSSIL
-	applymovement MT_MOON_B2F_SUPER_NERD, MtMoonB2F_Super_Nerd_Takes_Helix_Fossil_Movement
-	opentext
-	writetext MtMoonB2FSuperNerdThenThisIsMineText
-	disappear MT_MOON_B2F_HELIX_FOSSIL
-	playsound SFX_GET_KEY_ITEM_1
-	waitsfx
-	closetext
-	end
-	
-.DidNotChooseFossil
-	closetext
-	end
-	
-MtMoonB2FHelixFossilScript:
-	opentext
-	writetext MtMoonB2FHelixFossilYouWantText
-	yesorno
-	iffalse .DidNotChooseFossil
-	giveitem HELIX_FOSSIL
-	getitemname STRING_BUFFER_3, HELIX_FOSSIL
-	writetext MtMoonB2FReceivedFossilText
-	playsound SFX_GET_KEY_ITEM_1
-	waitsfx
-	disappear MT_MOON_B2F_HELIX_FOSSIL
-	itemnotify
-	closetext
-	setevent EVENT_GOT_HELIX_FOSSIL
-	applymovement MT_MOON_B2F_SUPER_NERD, MtMoonB2F_Super_Nerd_Takes_Dome_Fossil_Movement
-	opentext
-	writetext MtMoonB2FSuperNerdThenThisIsMineText
-	disappear MT_MOON_B2F_DOME_FOSSIL
-	playsound SFX_GET_KEY_ITEM_1
-	waitsfx
-	closetext
-	end
-	
-.DidNotChooseFossil
-	closetext
-	end
-	
-MtMoonB2F_Super_Nerd_Takes_Helix_Fossil_Movement:
-	slow_step RIGHT
-	slow_step UP
-	step_end
-	
-MtMoonB2F_Super_Nerd_Takes_Dome_Fossil_Movement:
-	slow_step UP
-	step_end
-	
-MtMoonB2FHPUP:
-	itemball HP_UP
-	
-MtMoonB2FDynamicPunch:
-	itemball TM_DYNAMICPUNCH
-	
-MtMoonB2FSuperNerdScript1:
-	checkevent EVENT_BEAT_MT_MOON_B2F_SUPER_NERD_MIGUEL
-	iffalse MtMoonB2FSuperNerdScript2
-	faceplayer
-	opentext
-	writetext MtMoonB2FSuperNerdTheresAPokemonLabText
-	waitbutton
-	closetext
-	end
-	
-MtMoonB2FSuperNerdScript2:
-	faceplayer
-	opentext
-	writetext MtMoonB2FSuperNerdTheyreBothMineText
-	playmusic MUSIC_MEET_MALE_TRAINER
-	waitbutton
-	closetext
-	winlosstext MtMoonB2FSuperNerdOkIllShareText, 0
-	loadtrainer SUPER_NERD, MIGUEL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_MT_MOON_B2F_SUPER_NERD_MIGUEL
-	pause 10
-	opentext
-	writetext MtMoonB2fSuperNerdEachTakeOneText
-	waitbutton
-	closetext
-	setscene SCENE_MT_MOON_B2F_TEAM_ROCKET
-	end
-	
-MtMoonB2FTrainerRocket1:
-	trainer GRUNTM, ROCKET_1, EVENT_BEAT_MT_MOON_B2F_ROCKET_1, MtMoonB2FRocket1BattleText, MtMoonB2FRocket1EndBattleText, 0, .Script
 
-.Script:
-	endifjustbattled
-	opentext
-	writetext MtMoonB2FRocket1AfterBattleText
-	waitbutton
-	closetext
-	end
-	
-MtMoonB2FTrainerRocket2:
-	trainer GRUNTM, ROCKET_2, EVENT_BEAT_MT_MOON_B2F_ROCKET_2, MtMoonB2FRocket2BattleText, MtMoonB2FRocket2EndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext MtMoonB2FRocket2AfterBattleText
-	waitbutton
-	closetext
-	end
-	
-MtMoonB2FTrainerRocket3:
-	trainer GRUNTM, ROCKET_3, EVENT_BEAT_MT_MOON_B2F_ROCKET_3, MtMoonB2FRocket3BattleText, MtMoonB2FRocket3EndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext MtMoonB2FRocket3AfterBattleText
-	waitbutton
-	closetext
-	end
-	
-MtMoonB2FTrainerRocket4:
-	trainer GRUNTM, ROCKET_4, EVENT_BEAT_MT_MOON_B2F_ROCKET_4, MtMoonB2FRocket4BattleText, MtMoonB2FRocket4EndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext MtMoonB2FRocket4AfterBattleText
-	waitbutton
-	closetext
-	end
-	
-MtMoonB2FHiddenEther:
-	hiddenitem ETHER, EVENT_HIDDEN_ETHER_MT_MOON_B2F
-	
-MtMoonB2FHiddenMoonStone:
-	hiddenitem MOON_STONE, EVENT_HIDDEN_MOONSTONE_MT_MOON_B2F
-	
-MtMoonJessieJamesText1:
+MtMoonJessieJamesText1: ; JESSIE_JAMES
 	text "Stop right there!"
 	done
 
-MtMoonJessieJamesText2:
+MtMoonJessieJamesText2: ; JESSIE_JAMES
 	text "That fossil is"
 	line "TEAM ROCKET's!"
 
@@ -248,120 +321,49 @@ MtMoonJessieJamesText2:
 	line "prepare to fight!"
 	done
 
-MtMoonJessieJamesText3:
+MtMoonJessieJamesText3: ; JESSIE_JAMES
 	text "A brat beat us?"
 	done
 
-MtMoonJessieJamesText4:
+MtMoonJessieJamesText4: ; JESSIE_JAMES
 	text "TEAM ROCKET, blast"
 	line "off at the speed"
 	cont "of light!"
 	done
-
-MtMoonB2FDomeFossilYouWantText:
-	text "You want the"
-	line "DOME FOSSIL?"
-	done
-
-MtMoonB2FHelixFossilYouWantText:
-	text "You want the"
-	line "HELIX FOSSIL?"
-	done
-
-MtMoonB2FReceivedFossilText:
-	text "<PLAYER> got the"
-	line "@"
-	text_ram wStringBuffer3
-	text "!"
-	done
-
-MtMoonB2FYouHaveNoRoomText:
-	text "Look, you've got"
-	line "no room for this."
-	done
-
-MtMoonB2FSuperNerdTheyreBothMineText:
-	text "Hey, stop!"
-
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
-	done
-
-MtMoonB2FSuperNerdOkIllShareText:
-	text "OK! I'll share!"
-	done
-
-MtMoonB2fSuperNerdEachTakeOneText:
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
-	done
-
-MtMoonB2FSuperNerdTheresAPokemonLabText:
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
-
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
-	done
-
-MtMoonB2FSuperNerdThenThisIsMineText:
-	text "All right. Then"
-	line "this is mine!"
-	done
-
-MtMoonB2FRocket1BattleText:
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
-	done
-
-MtMoonB2FRocket1EndBattleText:
-	text "I blew it!"
-	done
-
-MtMoonB2FRocket1AfterBattleText:
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
-	done
-
-MtMoonB2FRocket2BattleText:
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
-	done
-
-MtMoonB2FRocket2EndBattleText:
-	text "So, you are good."
-	done
-
-MtMoonB2FRocket2AfterBattleText:
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
-	done
-
-MtMoonB2FRocket3BattleText:
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
-	done
-
-MtMoonB2FRocket3EndBattleText:
-	text "I'm steamed!"
-	prompt
-
-MtMoonB2FRocket3AfterBattleText:
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
-	done
 	
+MtMoonB2F_Player_Steps_Up_Movement: ; JESSIE_JAMES
+	step UP
+	step_end
+	
+MtMoonB2F_Jessie_Movement: ; JESSIE_JAMES
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+MtMoonB2F_James_Movement: ; JESSIE_JAMES
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+
+MtMoonB2FHPUP:
+	itemball HP_UP
+	
+MtMoonB2FDynamicPunch:
+	itemball TM_DYNAMICPUNCH
+	
+MtMoonB2FHiddenEther:
+	hiddenitem ETHER, EVENT_HIDDEN_ETHER_MT_MOON_B2F
+	
+MtMoonB2FHiddenMoonStone:
+	hiddenitem MOON_STONE, EVENT_HIDDEN_MOONSTONE_MT_MOON_B2F
+
 MtMoonB2FRocket4BattleText:
 	text "TEAM ROCKET will"
 	line "find the fossils,"
@@ -404,7 +406,7 @@ MtMoonB2F_MapEvents:
 	object_event 13,  6, SPRITE_FOSSIL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MtMoonB2FHelixFossilScript, EVENT_GOT_HELIX_FOSSIL
 	object_event 25, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MtMoonB2FHPUP, EVENT_MT_MOON_B2F_HP_UP
 	object_event 29,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MtMoonB2FDynamicPunch, EVENT_MT_MOON_B2F_TM_DYNAMIC_PUNCH
-	object_event 12,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MtMoonB2FSuperNerdScript1, -1	; MIGUEL	
+	object_event 12,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MtMoonB2FSuperNerdScript1, -1 ; SUPER_NERD_MIGUEL
 	object_event 15, 22, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, MtMoonB2FTrainerRocket1, -1					
 	object_event 29, 11, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, MtMoonB2FTrainerRocket2, -1			
 	object_event 29, 17, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, MtMoonB2FTrainerRocket3, -1		; ROCKET (34)

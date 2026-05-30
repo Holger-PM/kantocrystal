@@ -1,16 +1,16 @@
 	object_const_def
-	const CERULEANGYM_MISTY
-	const CERULEANGYM_LASS_SHARON
+	const CERULEANGYM_MISTY				; MISTY
+	const CERULEANGYM_LASS_SHARON 		; JR_TRAINER_F_SHARON
 ;	const CERULEANGYM_SWIMMERF_LISA
-	const CERULEANGYM_SWIMMERM_JAMES
-	const CERULEANGYM_GYM_GUIDE
+	const CERULEANGYM_SWIMMERM_JAMES 	; SWIMMER_M_JAMES
+	const CERULEANGYM_GYM_GUIDE			; GYM_GUIDE
 
 CeruleanGym_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-CeruleanGymMistyScript:
+CeruleanGymMistyScript: ; MISTY
 	faceplayer
 	opentext
 	checkflag ENGINE_CASCADEBADGE
@@ -37,64 +37,7 @@ CeruleanGymMistyScript:
 	closetext
 	end ; Holger note : Add the TM_BUBBLEBEAM
 
-CeruleanGymTrainerJrtrainerfSharon:
-	trainer SWIMMERF, SHARON2, EVENT_BEAT_CERULEAN_GYM_TRAINER_SHARON, CeruleanGymBattleText1, CeruleanGymEndBattleText1, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CeruleanGymAfterBattleText1
-	waitbutton
-	closetext
-	end
-	
-;CeruleanGymTrainerSwimmerfLisa:
-;	trainer SWIMMERF, LISA2, EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA, SwimmerfLisaSeenText, SwimmerfLisaBeatenText, 0, .Script
-
-;.Script:
-;	endifjustbattled
-;	opentext
-;	writetext SwimmerfLisaAfterBattleText
-;	waitbutton
-;	closetext
-;	end
-
-CeruleanGymTrainerSwimmermJames:
-	trainer SWIMMERM, JAMES2, EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES, CeruleanGymBattleText2, CeruleanGymEndBattleText2, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CeruleanGymAfterBattleText2
-	waitbutton
-	closetext
-	end
-
-CeruleanGymGuideScript:
-	faceplayer
-	opentext
-	checkevent EVENT_BEAT_MISTY
-	iftrue .CeruleanGymGuideWinScript
-	writetext CeruleanGymGuideText
-	waitbutton
-	closetext
-	end
-
-.CeruleanGymGuideWinScript:
-	writetext CeruleanGymGuideWinText
-	waitbutton
-	closetext
-	end
-
-CeruleanGymStatue:
-	checkflag ENGINE_CASCADEBADGE
-	iftrue .Beaten
-	jumpstd GymStatue2Script
-.Beaten:
-	gettrainername STRING_BUFFER_4, MISTY, MISTY1
-	jumpstd GymStatue3Script
-
-MistyIntroText:
+MistyIntroText: ; MISTY
 	text "MISTY: I was ex-"
 	line "pecting you, you"
 	cont "pest!"
@@ -110,7 +53,7 @@ MistyIntroText:
 	line "#MON are tough!"
 	done
 
-MistyWinLossText:
+MistyWinLossText: ; MISTY
 	text "MISTY: You really"
 	line "are good…"
 
@@ -121,12 +64,12 @@ MistyWinLossText:
 	line "CASCADEBADGE."
 	done
 
-ReceivedCascadeBadgeText:
+ReceivedCascadeBadgeText: ; MISTY
 	text "<PLAYER> received"
 	line "CASCADEBADGE."
 	done
 	
-CeruleanGymMistyPreBattleText:
+CeruleanGymMistyPreBattleText: ; MISTY
 	text "Hi, you're a new"
 	line "face!"
 
@@ -145,7 +88,7 @@ CeruleanGymMistyPreBattleText:
 	cont "#MON!"
 	done
 
-CeruleanGymMistyTM11ExplanationText:
+CeruleanGymMistyTM11ExplanationText: ; MISTY
 	text "TM11 teaches"
 	line "BUBBLEBEAM!"
 
@@ -153,7 +96,7 @@ CeruleanGymMistyTM11ExplanationText:
 	line "aquatic #MON!"
 	done
 
-CeruleanGymMistyCascadeBadgeInfoText:
+CeruleanGymMistyCascadeBadgeInfoText: ; MISTY
 	text "The CASCADEBADGE"
 	line "makes all #MON"
 	cont "up to L30 obey!"
@@ -173,17 +116,17 @@ CeruleanGymMistyCascadeBadgeInfoText:
 	line "my favorite TM!"
 	done
 
-CeruleanGymMistyReceivedTM11Text:
+CeruleanGymMistyReceivedTM11Text: ; MISTY
 	text "<PLAYER> received"
 	line "TM11!"
 	done
 
-CeruleanGymMistyTM11NoRoomText:
+CeruleanGymMistyTM11NoRoomText: ; MISTY
 	text "You better make"
 	line "room for this!"
 	done
 
-CeruleanGymMistyReceivedCascadeBadgeText:
+CeruleanGymMistyReceivedCascadeBadgeText: ; MISTY
 	text "Wow!"
 	line "You're too much!"
 
@@ -194,25 +137,47 @@ CeruleanGymMistyReceivedCascadeBadgeText:
 	cont "show you beat me!"
 	done
 
-CeruleanGymBattleText1:
+TrainerJrTrainerFSharon: ; JR_TRAINER_F_SHARON
+	trainer SWIMMERF, SHARON2, EVENT_BEAT_CERULEAN_GYM_TRAINER_SHARON, JrTrainerFSharonBattleText, JrTrainerFSharonEndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext JrTrainerFSharonAfterBattleText
+	waitbutton
+	closetext
+	end
+
+JrTrainerFSharonBattleText: ; JR_TRAINER_F_SHARON
 	text "I'm more than good"
 	line "enough for you!"
 
 	para "MISTY can wait!"
 	done
 
-CeruleanGymEndBattleText1:
+JrTrainerFSharonEndBattleText: ; JR_TRAINER_F_SHARON
 	text "You"
 	line "overwhelmed me!"
 	prompt
 
-CeruleanGymAfterBattleText1:
+JrTrainerFSharonAfterBattleText: ; JR_TRAINER_F_SHARON
 	text "You have to face"
 	line "other trainers to"
 	cont "find out how good"
 	cont "you really are."
 	done
 	
+;CeruleanGymTrainerSwimmerfLisa:
+;	trainer SWIMMERF, LISA2, EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA, SwimmerfLisaSeenText, SwimmerfLisaBeatenText, 0, .Script
+
+;.Script:
+;	endifjustbattled
+;	opentext
+;	writetext SwimmerfLisaAfterBattleText
+;	waitbutton
+;	closetext
+;	end
+
 ;SwimmerfLisaSeenText:
 ;	text "Glub…"
 
@@ -229,18 +194,29 @@ CeruleanGymAfterBattleText1:
 ;	line "about beating me."
 ;	done
 
-CeruleanGymBattleText2:
+TrainerSwimmerMJames: ; SWIMMER_M_JAMES
+	trainer SWIMMERM, JAMES2, EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES, SwimmerMJamesBattleText, SwimmerMJamesEndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SwimmerMJamesAfterBattleText
+	waitbutton
+	closetext
+	end
+
+SwimmerMJamesBattleText: ; SWIMMER_M_JAMES
 	text "Splash!"
 
 	para "I'm first up!"
 	line "Let's do it!"
 	done
 
-CeruleanGymEndBattleText2:
+SwimmerMJamesEndBattleText: ; SWIMMER_M_JAMES
 	text "That can't be!"
 	prompt
 
-CeruleanGymAfterBattleText2:
+SwimmerMJamesAfterBattleText: ; SWIMMER_M_JAMES
 	text "MISTY is going to"
 	line "keep improving!"
 
@@ -248,7 +224,23 @@ CeruleanGymAfterBattleText2:
 	line "someone like you!"
 	done
 
-CeruleanGymGuideText:
+CeruleanGymGuideScript: ; GYM_GUIDE
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_MISTY
+	iftrue .CeruleanGymGuideWinScript
+	writetext CeruleanGymGuideText
+	waitbutton
+	closetext
+	end
+
+.CeruleanGymGuideWinScript:
+	writetext CeruleanGymGuideWinText
+	waitbutton
+	closetext
+	end
+
+CeruleanGymGuideText: ; GYM_GUIDE
 	text "Yo! Champ in"
 	line "making!"
 
@@ -266,7 +258,7 @@ CeruleanGymGuideText:
 	line "electricity!"
 	done
 
-CeruleanGymGuideWinText:
+CeruleanGymGuideWinText: ; GYM_GUIDE
 	text "You beat MISTY!"
 	line "What'd I tell ya?"
 
@@ -274,6 +266,14 @@ CeruleanGymGuideWinText:
 	line "we make a pretty"
 	cont "darn good team!"
 	done
+
+CeruleanGymStatue: ; STATUE
+	checkflag ENGINE_CASCADEBADGE
+	iftrue .Beaten
+	jumpstd GymStatue2Script
+.Beaten:
+	gettrainername STRING_BUFFER_4, MISTY, MISTY1
+	jumpstd GymStatue3Script
 
 CeruleanGym_MapEvents:
 	db 0, 0 ; filler
@@ -289,8 +289,8 @@ CeruleanGym_MapEvents:
 	bg_event  6, 11, BGEVENT_READ, CeruleanGymStatue
 
 	def_object_events
-	object_event  4,  2, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanGymMistyScript, -1
-	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, CeruleanGymTrainerJrtrainerfSharon, -1		; SHARON
+	object_event  4,  2, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanGymMistyScript, -1					; MISTY
+	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerJrTrainerFSharon, -1					; JR_TRAINER_F_SHARON
 ;	object_event  3,  7, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, CeruleanGymTrainerSwimmerfLisa, -1
-	object_event  8,  8, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, CeruleanGymTrainerSwimmermJames, -1
+	object_event  8,  8, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmermJames, -1				; SWIMMER_M_JAMES
 	object_event  7, 10, SPRITE_GYM_GUIDE_KANTO, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanGymGuideScript, -1

@@ -1,11 +1,11 @@
 	object_const_def
 	const VIRIDIAN_FOREST_YOUNGSTER1
 	const VIRIDIAN_FOREST_YOUNGSTER2
-	const VIRIDIAN_FOREST_YOUNGSTER3 ; Trainer 1
-	const VIRIDIAN_FOREST_YOUNGSTER4 ; Trainer 2
-	const VIRIDIAN_FOREST_YOUNGSTER5 ; Trainer 3
-	const VIRIDIAN_FOREST_YOUNGSTER6 ; Trainer 4
-	const VIRIDIAN_FOREST_COOLTRAINER_F ; Trainer 5
+	const VIRIDIAN_FOREST_YOUNGSTER3 	; BUG_CATCHER_WAYNE
+	const VIRIDIAN_FOREST_YOUNGSTER4 	; BUG_CATCHER_CALEB
+	const VIRIDIAN_FOREST_YOUNGSTER5 	; BUG_CATCHER_DYLAN
+	const VIRIDIAN_FOREST_YOUNGSTER6 	; BUG_CATCHER_FOREST
+	const VIRIDIAN_FOREST_COOLTRAINER_F ; LASS_DANA
 	const VIRIDIAN_FOREST_ITEM_POKEBALL
 	const VIRIDIAN_FOREST_ITEM_POTION
 	const VIRIDIAN_FOREST_ITEM_ANTIDOTE
@@ -32,8 +32,8 @@ ViridianForestYoungster2Script:
 	closetext
 	end
 	
-ViridianForestYoungster3:
-	trainer BUG_CATCHER, WAYNE, EVENT_BEAT_VIRIDIAN_FOREST_BUG_CATCHER_WAYNE, ViridianForestYoungster3SeenText, ViridianForestYoungster3BeatenText, 0, .Script
+ViridianForestYoungster3Script: ; BUG_CATCHER_WAYNE
+	trainer BUG_CATCHER, WAYNE, EVENT_BEAT_VIRIDIAN_FOREST_BUG_CATCHER_WAYNE, SeenText, ViridianForestYoungster3BeatenText, 0, .ScripViridianForestYoungster3t
 	
 .Script:
 	endifjustbattled
@@ -43,7 +43,7 @@ ViridianForestYoungster3:
 	closetext
 	end
 
-ViridianForestYoungster4:
+ViridianForestYoungster4Script: ; BUG_CATCHER_CALEB
 	trainer BUG_CATCHER, CALEB, EVENT_BEAT_VIRIDIAN_FOREST_BUG_CATCHER_CALEB, ViridianForestYoungster4SeenText, ViridianForestYoungster4BeatenText, 0, .Script
 	
 .Script:
@@ -54,7 +54,7 @@ ViridianForestYoungster4:
 	closetext
 	end
 	
-ViridianForestYoungster5:
+ViridianForestYoungster5Script: ; BUG_CATCHER_DYLAN
 	trainer BUG_CATCHER, DYLAN, EVENT_BEAT_VIRIDIAN_FOREST_BUG_CATCHER_DYLAN, ViridianForestYoungster5SeenText, ViridianForestYoungster5BeatenText, 0, .Script
 	
 .Script:
@@ -65,7 +65,7 @@ ViridianForestYoungster5:
 	closetext
 	end
 	
-ViridianForestYoungster6:
+ViridianForestYoungster6Script: ; BUG_CATCHER_FOREST
 	trainer BUG_CATCHER, FOREST_T, EVENT_BEAT_VIRIDIAN_FOREST_BUG_CATCHER_FOREST, ViridianForestYoungster6SeenText, ViridianForestYoungster6BeatenText, 0, .Script
 	
 .Script:
@@ -76,7 +76,7 @@ ViridianForestYoungster6:
 	closetext
 	end
 	
-ViridianForestLass:
+ViridianForestLassScript: ; LASS_DANA
 	trainer LASS, DANA, EVENT_BEAT_VIRIDIAN_FOREST_LASS_DANA, ViridianForestLassSeenText, ViridianForestLassBeatenText, 0, .Script
 	
 .Script:
@@ -137,50 +137,50 @@ ViridianForestYoungster2Text:
 	line "extras!"
 	done
 
-ViridianForestYoungster3SeenText: ; Trainer 1
+ViridianForestYoungster3SeenText: ; BUG_CATCHER_WAYNE
 	text "Hey! You have"
 	line "#MON! Come on!"
 	cont "Let's battle'em!"
 	done
 
-ViridianForestYoungster3BeatenText: ; Trainer 1
+ViridianForestYoungster3BeatenText: ; BUG_CATCHER_WAYNE
 	text "No! CATERPIE"
 	line "can't cut it!"
 	done
 
-ViridianForestYoungster3AfterBattleText: ; Trainer 1
+ViridianForestYoungster3AfterBattleText: ; BUG_CATCHER_WAYNE
 	text "Ssh! You'll scare"
 	line "the bugs away!"
 	done
 
-ViridianForestYoungster4SeenText: ; Trainer 2
+ViridianForestYoungster4SeenText: ; BUG_CATCHER_CALEB
 	text "Yo! You can't jam"
 	line "out if you're a"
 	cont "#MON trainer!"
 	done
 
-ViridianForestYoungster4BeatenText: ; Trainer 2
+ViridianForestYoungster4BeatenText: ; BUG_CATCHER_CALEB
 	text "Huh? I ran out"
 	line "of #MON!"
 	done
 
-ViridianForestYoungster4AfterBattleText: ; Trainer 2
+ViridianForestYoungster4AfterBattleText: ; BUG_CATCHER_CALEB
 	text "Darn! I'm going"
 	line "to catch some"
 	cont "stronger ones!"
 	done
 
-ViridianForestYoungster5SeenText: ; Trainer 4
+ViridianForestYoungster5SeenText: ; BUG_CATCHER_DYLAN
 	text "Hey, wait up!"
 	line "What's the hurry?"
 	done
 
-ViridianForestYoungster5BeatenText: ; Trainer 4
+ViridianForestYoungster5BeatenText: ; BUG_CATCHER_DYLAN
 	text "I give! You're"
 	line "good at this!"
 	prompt
 
-ViridianForestYoungster5AfterBattleText: ; Trainer 4
+ViridianForestYoungster5AfterBattleText: ; BUG_CATCHER_DYLAN
 	text "Sometimes, you"
 	line "can find stuff on"
 	cont "the ground!"
@@ -190,35 +190,35 @@ ViridianForestYoungster5AfterBattleText: ; Trainer 4
 	cont "dropped!"
 	done
 
-ViridianForestYoungster6SeenText: ; Trainer 3
+ViridianForestYoungster6SeenText: ; BUG_CATCHER_FOREST
 	text "I'm gonna be the"
 	line "best. You just"
 	cont "can't beat me!"
 	done
 
-ViridianForestYoungster6BeatenText: ; Trainer 3
+ViridianForestYoungster6BeatenText: ; BUG_CATCHER_FOREST
 	text "After"
 	line "all I did..."
 	prompt
 
-ViridianForestYoungster6AfterBattleText: ; Trainer 3
+ViridianForestYoungster6AfterBattleText: ; BUG_CATCHER_FOREST
 	text "A METAPOD is cool"
 	line "because its"
 	cont "attack is its"
 	cont "defense!"
 	done
 
-ViridianForestLassSeenText: ; Trainer 5
+ViridianForestLassSeenText: ; LASS_DANA
 	text "Hi, do you have a"
 	line "PIKACHU?"
 	done
 
-ViridianForestLassBeatenText: ; Trainer 5
+ViridianForestLassBeatenText: ; LASS_DANA
 	text "Oh no,"
 	line "really?"
 	prompt
 
-ViridianForestLassAfterBattleText: ; Trainer 5
+ViridianForestLassAfterBattleText: ; LASS_DANA
 	text "I looked forever,"
 	line "but I never found"
 	cont "a PIKACHU here!"
@@ -304,13 +304,13 @@ ViridianForest_MapEvents:
 	bg_event  16, 42, BGEVENT_ITEM, ViridianForestHiddenAntidote
 
 	def_object_events
-	object_event 16, 43, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster1Script, -1
-	object_event 27, 40, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster2Script, -1
-	object_event 30, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, ViridianForestYoungster3, -1
-	object_event 30, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, ViridianForestYoungster4, -1
-	object_event  2, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, ViridianForestYoungster5, -1
-	object_event 14, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, ViridianForestYoungster6, -1
-	object_event  2, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, ViridianForestLass, -1
+	object_event 16, 43, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster1Script, -1 	
+	object_event 27, 40, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster2Script, -1			
+	object_event 30, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, ViridianForestYoungster3Script, -1	 ; BUG_CATCHER_WAYNE
+	object_event 30, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, ViridianForestYoungster4Script, -1	 ; BUG_CATCHER_CALEB
+	object_event 14, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, ViridianForestYoungster5Script, -1	 ; BUG_CATCHER_DYLAN
+	object_event  2, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, ViridianForestYoungster6Script, -1 ; BUG_CATCHER_FOREST
+	object_event  2, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, ViridianForestLassScript, -1			 ; LASS_DANA	
 	object_event  1, 31, SPRITE_POKE_BALL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianForestPokeBall, EVENT_VIRIDIAN_FOREST_POKE_BALL
 	object_event 12, 29, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianForestPotion, EVENT_VIRIDIAN_FOREST_POTION
 	object_event 25, 11, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianForestAntidote, EVENT_VIRIDIAN_FOREST_ANTIDOTE
