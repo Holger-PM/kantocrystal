@@ -845,21 +845,24 @@ KantoGrassWildMons:
 	db 20, MANKEY,         4,  4 
 	db 15, SPEAROW,        5,  6
 	db  5, MANKEY,         5,  5
-	db  5, RATTATA,        5,  5
+	db  4, RATTATA,        5,  5
+	db  1, RATTATA,        5,  5
 	; day
 	db 30, NIDORAN_M, 	   3,  4
 	db 25, NIDORAN_F, 	   3,  4
 	db 20, MANKEY,         4,  4 
 	db 15, SPEAROW,        5,  6
 	db  5, MANKEY,         5,  5
-	db  5, RATTATA,        5,  5
+	db  4, RATTATA,        5,  5
+	db  1, RATTATA,        5,  5
 	; night
 	db 30, NIDORAN_M, 	   3,  4
 	db 25, NIDORAN_F, 	   3,  4
 	db 20, MANKEY,         4,  4 
 	db 15, SPEAROW,        5,  6
 	db  5, MANKEY,         5,  5
-	db  5, RATTATA,        5,  5
+	db  4, RATTATA,        5,  5
+	db  1, RATTATA,        5,  5
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_24
