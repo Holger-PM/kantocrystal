@@ -191,98 +191,60 @@ ItemNames::
 	li "MIRAGE MAIL"
 	li "TERU-SAMA"
 	assert_list_length NUM_ITEMS ; Holger note: TODO Specify moves
-	li "TM01" 		; MEGA_PUNCH
-	li "TM02" 		; RAZOR_WIND
-	li "TM03" 		; SWORDS_DANCE
-	li "TM04" 		; FLAMETHROWER
+	li "TM01" 		; DYNAMICPUNCH
+	li "TM02" 		; HEADBUTT
+	li "TM03" 		; CURSE
+	li "TM04" 		; ROLLOUT
 	li "TERU-SAMA" 	; ITEM_C3
-	li "TM05" 		; MEGA_KICK
+	li "TM05" 		; ROAR
 	li "TM06" 		; TOXIC
-	li "TM07" 		; HORN_DRILL
-	li "TM08"		; BODY_SLAM
-	li "TM09"		; TAKE_DOWN
-	li "TM10"		; DOUBLE_EDGE
-	li "TM11"		; BUBBLEBEAM
-	li "TM12"		; WATER_GUN
-	li "TM13"		; ICE_BEAM
-	li "TM14"		; BLIZZARD
+	li "TM07" 		; ZAP_CANNON
+	li "TM08"		; ROCK_SMASH
+	li "TM09"		; PSYCH_UP
+	li "TM10"		; HIDDEN_POWER
+	li "TM11"		; SUNNY_DAY
+	li "TM12"		; WATER_GUN    ; added and switched with Sweet Scent
+	li "TM13"		; SNORE  
+	li "TM14"		; BLIZZARD 
 	li "TM15"		; HYPER_BEAM
-	li "TM16"		; PAY_DAY
-	li "TM17"		; SUBMISSION
-	li "TM18"		; COUNTER
-	li "TM19"		; SEISMIC_TOSS
-	li "TM20"		; RAGE
-	li "TM21"		; MEGA_DRAIN
-	li "TM22"		; SOLARBEAM
-	li "TM23"		; DRAGON_RAGE
-	li "TM24"		; THUNDERBOLT
+	li "TM16"		; ICY_WIND 
+	li "TM17"		; PROTECT 
+	li "TM18"		; RAIN_DANCE
+	li "TM19"		; GIGA_DRAIN
+	li "TM20"		; ENDURE 
+	li "TM21"		; FRUSTRATION
+	li "TM22"		; SOLARBEAM 
+	li "TM23"		; IRON_TAIL
+	li "TM24"		; DRAGONBREATH
 	li "TM25"		; THUNDER
 	li "TM26"		; EARTHQUAKE
-	li "TM27"		; FISSURE
+	li "TM27"		; RETURN
 	li "TM28"		; DIG
-	li "TERU-SAMA"	; ITEM_DC
+	li "TERU-SAMA"	; ITEM_DC 
 	li "TM29"		; PSYCHIC_M
-	li "TM30"		; TELEPORT
-	li "TM31"		; MIMIC
+	li "TM30"		; SHADOW_BALL
+	li "TM31"		; MUD_SLAP 
 	li "TM32"		; DOUBLE_TEAM
-	li "TM33"		; REFLECT
-	li "TM34"		; BIDE
-	li "TM35"		; METRONOME
-	li "TM36"		; SELFDESTRUCT
-	li "TM37"		; EGG_BOMB
-	li "TM38"		; FIRE_BLAST
-	li "TM39"		; SWIFT
-	li "TM40"		; SKULL_BASH
-	li "TM41"		; SOFTBOILED
-	li "TM42"		; DREAM_EATER
-	li "TM43"		; SKY_ATTACK
-	li "TM44"		; REST
-	li "TM45"		; THUNDER_WAVE
-	li "TM46"		; PSYWAVE
-	li "TM47"		; EXPLOSION
-	li "TM48"		; ROCK_SLIDE
-	li "TM49"		; TRI_ATTACK
-	li "TM50"		; SUBSTITUTE
-	li "TM51" 		; DYNAMICPUNCH
-	li "TM52" 		; HEADBUTT
-	li "TM53" 		; CURSE
-	li "TM54" 		; ROLLOUT
-	li "TERU-SAMA" 	; ITEM_C3
-	li "TM55" 		; ROAR
-	li "TM56" 		; ZAP_CANNON
-	li "TM57"		; ROCK_SMASH
-	li "TM58"		; PSYCH_UP
-	li "TM59"		; HIDDEN_POWER
-	li "TM60"		; SUNNY_DAY
-	li "TM61"		; SWEET_SCENT
-	li "TM62"		; SNORE
-	li "TM63"		; BLIZZARD
-	li "TM64"		; ICY_WIND
-	li "TM65"		; PROTECT
-	li "TM66"		; RAIN_DANCE
-	li "TM67"		; GIGA_DRAIN
-	li "TM68"		; ENDURE
-	li "TM69"		; FRUSTRATION
-	li "TM70"		; IRON_TAIL
-	li "TM71"		; DRAGONBREATH
-	li "TM72"		; RETURN
-	li "TERU-SAMA"	; ITEM_DC
-	li "TM73"		; SHADOW_BALL
-	li "TM74"		; MUD_SLAP
-	li "TM75"		; ICE_PUNCH
-	li "TM76"		; SWAGGER
-	li "TM77"		; SLEEP_TALK
-	li "TM78"		; SLUDGE_BOMB
-	li "TM79"		; SANDSTORM
-	li "TM80"		; DEFENSE_CURL
-	li "TM81"		; THUNDERPUNCH
-	li "TM82"		; DETECT
-	li "TM83"		; ATTRACT
-	li "TM84"		; THIEF
-	li "TM85"		; STEEL_WING
-	li "TM86"		; FIRE_PUNCH
-	li "TM87"		; FURY_CUTTER
-	li "TM88"		; NIGHTMARE
+	li "TM33"		; ICE_PUNCH
+	li "TM34"		; BIDE         ; added and switched with Swagger
+	li "TM35"		; SLEEP_TALK
+	li "TM36"		; SLUDGE_BOMB
+	li "TM37"		; SANDSTORM
+	li "TM38"		; FIRE_BLAST	
+	li "TM39"		; SWIFT 
+	li "TM40"		; DEFENSE_CURL
+	li "TM41"		; THUNDERPUNCH
+	li "TM42"		; DREAM_EATER 
+	li "TM43"		; DETECT  
+	li "TM44"		; REST 
+	li "TM45"		; ATTRACT
+	li "TM46"		; THIEF
+	li "TM47"		; STEEL_WING
+	li "TM48"		; FIRE_PUNCH
+	li "TM49"		; FURY_CUTTER
+	li "TM50"		; NIGHTMARE
+	li "TM51"		; SWAGGER
+	li "TM52"		; SWEET_SCENT
 	assert_list_length NUM_ITEMS + NUM_TMS + 2 ; count ITEM_C3 and ITEM_DC
 	li "HM01"		; CUT	
 	li "HM02"		; FLY 
