@@ -641,7 +641,7 @@ KantoGrassWildMons:
 	db 22, BELLSPROUT, 	 25,  25
 	db 12, PIDGEOTTO, 	 28,  28
 	db 11, GLOOM, 	     27,  27
-	db 11, SCHYTHER,     27,  27
+	db 11, SCYTHER,     27,  27
 	db 11, WEEPINBELL, 	 29,  29
 	db  6, FARFETCH_D, 	 26,  30
 	; day
@@ -649,7 +649,7 @@ KantoGrassWildMons:
 	db 22, BELLSPROUT, 	 25,  25
 	db 12, PIDGEOTTO, 	 28,  28
 	db 11, GLOOM, 	     27,  27
-	db 11, SCHYTHER,     27,  27
+	db 11, SCYTHER,     27,  27
 	db 11, WEEPINBELL, 	 29,  29
 	db  6, FARFETCH_D, 	 26,  30
 	; nite
@@ -657,7 +657,7 @@ KantoGrassWildMons:
 	db 22, BELLSPROUT, 	 25,  25
 	db 12, PIDGEOTTO, 	 28,  28
 	db 11, GLOOM, 	     27,  27
-	db 11, SCHYTHER,     27,  27
+	db 11, SCYTHER,     27,  27
 	db 11, WEEPINBELL, 	 29,  29
 	db  6, FARFETCH_D, 	 26,  30
 	end_grass_wildmons
@@ -671,7 +671,7 @@ KantoGrassWildMons:
 	db 15, WEEPINBELL, 	 24,  24
 	db 15, GLOOM, 	     28,  28
 	db 10, PIDGEOTTO, 	 30,  30
-	db 10, SCHYTHER,     28,  28
+	db 10, SCYTHER,     28,  28
 	db 10, VENONAT, 	 27,  28
 	; day
 	db 20, ODDISH, 	     26,  26
@@ -679,7 +679,7 @@ KantoGrassWildMons:
 	db 15, WEEPINBELL, 	 24,  24
 	db 15, GLOOM, 	     28,  28
 	db 10, PIDGEOTTO, 	 30,  30
-	db 10, SCHYTHER,     28,  28
+	db 10, SCYTHER,     28,  28
 	db 10, VENONAT, 	 27,  28
 	; nite
 	db 20, ODDISH, 	     26,  26
@@ -687,7 +687,7 @@ KantoGrassWildMons:
 	db 15, WEEPINBELL, 	 24,  24
 	db 15, GLOOM, 	     28,  28
 	db 15, VENONAT, 	 27,  28 ; +5% night
-	db 10, SCHYTHER,     28,  28
+	db 10, SCYTHER,     28,  28
 	db  5, VENOMOTH, 	 34,  34 ; exclusive to night
 	end_grass_wildmons
 
@@ -814,7 +814,7 @@ KantoGrassWildMons:
 	db 25, PIDGEY,   	 21,  23
 	db 20, PIDGEY,   	 25,  25
 	db 30, RATTATA, 	 23,  25
-	db 10, MR_MIME, 	 27,  27
+	db 10, MR__MIME, 	 27,  27
 	db 10, PIDGEOTTO, 	 27,  29
 	db  5, RATICATE, 	 25,  25
 	db  1, PIDGEOT, 	 30,  30
@@ -822,7 +822,7 @@ KantoGrassWildMons:
 	db 25, PIDGEY,   	 21,  23
 	db 20, PIDGEY,   	 25,  25
 	db 30, RATTATA, 	 23,  25
-	db 10, MR_MIME, 	 27,  27
+	db 10, MR__MIME, 	 27,  27
 	db 10, PIDGEOTTO, 	 27,  29
 	db  5, RATICATE, 	 25,  25
 	db  1, PIDGEOT, 	 30,  30
@@ -830,7 +830,7 @@ KantoGrassWildMons:
 	db 25, PIDGEY,   	 21,  23
 	db 20, PIDGEY,   	 25,  25
 	db 30, RATTATA, 	 23,  25
-	db 10, MR_MIME, 	 27,  27
+	db 10, MR__MIME, 	 27,  27
 	db 10, PIDGEOTTO, 	 27,  29
 	db  5, RATICATE, 	 25,  25
 	db  1, PIDGEOT, 	 30,  30
