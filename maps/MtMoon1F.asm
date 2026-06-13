@@ -1,7 +1,7 @@
 	object_const_def
 	const MT_MOON_1F_ITEM_BALL_WATER_GUN
 	const MT_MOON_1F_ITEM_BALL_POTION1
-	const MT_MOON_1F_TRAINER_YOUNGSTER1		; YOUNGSTER_SAMUEL
+	const MT_MOON_1F_TRAINER_YOUNGSTER1		; YOUNGSTER_TOBY
 	const MT_MOON_1F_TRAINER_COOLTRAINERF1	; LASS_SHANNON
 	const MT_MOON_1F_ITEM_BALL_POTION2		
 	const MT_MOON_1F_TRAINER_SUPERNERD		; SUPER_NERD_DAVE
@@ -9,8 +9,8 @@
 	const MT_MOON_1F_ITEM_BALL_RARE_CANDY
 	const MT_MOON_1F_ITEM_BALL_ESCAPE_ROPE
 	const MT_MOON_1F_TRAINER_COOLTRAINERF2	; LASS_LAURA
-	const MT_MOON_1F_TRAINER_YOUNGSTER3		; BUG_CATCHER_BENNY
-	const MT_MOON_1F_TRAINER_HIKER			; HIKER_RUSSELL
+	const MT_MOON_1F_TRAINER_YOUNGSTER3		; BUG_CATCHER_NED
+	const MT_MOON_1F_TRAINER_HIKER			; HIKER_FLINT
 	const MT_MOON_1F_ITEM_BALL_MOON_STONE
 
 MtMoon1F_MapScripts:
@@ -56,7 +56,7 @@ TrainerLassLaura: ; LASS_LAURA
 	closetext
 	end
 
-.LassLauraBattleText: ; LASS_LAURA
+LassLauraBattleText: ; LASS_LAURA
 	text "What? I'm waiting"
 	line "for my friends to"
 	cont "find me here."
@@ -98,28 +98,28 @@ SuperNerdDaveAfterBattleText: ; SUPER_NERD_DAVE
 	line "stronger #MON."
 	done
 
-TrainerBugCatcherBenny: ; BUG_CATCHER_BENNY
-	trainer BUG_CATCHER, BENNY2, EVENT_BEAT_MT_MOON_1F_BUG_CATCHER_BENNY, BugCatcherBennyyBattleText, BugCatcherBennyEndBattleText, 0, .Script
+TrainerBugCatcherNed: ; BUG_CATCHER_NED
+	trainer BUG_CATCHER, NED, EVENT_BEAT_MT_MOON_1F_BUG_CATCHER_NED, BugCatcherNedBattleText, BugCatcherNedEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherBennyAfterBattleText
+	writetext BugCatcherNedAfterBattleText
 	waitbutton
 	closetext
 	end
 
-BugCatcherBennyBattleText: ; BUG_CATCHER_BENNY
+BugCatcherNedBattleText: ; BUG_CATCHER_NED
 	text "Go through this"
 	line "cave to get to"
 	cont "CERULEAN CITY!"
 	done
 
-BugCatcherBennyEndBattleText: ; BUG_CATCHER_BENNY
+BugCatcherNedEndBattleText: ; BUG_CATCHER_NED
 	text "I lost."
 	done
 
-BugCatcherBennyAfterBattleText: ; BUG_CATCHER_BENNY
+BugCatcherNedAfterBattleText: ; BUG_CATCHER_NED
 	text "ZUBAT is tough!"
 	line "But, it can be"
 	cont "useful if you"
@@ -137,7 +137,7 @@ TrainerLassShannon: ; LASS_SHANNON
 	closetext
 	end
 
-.LassShannonBattleText: ; LASS_SHANNON
+LassShannonBattleText: ; LASS_SHANNON
 	text "Wow! It's way"
 	line "bigger in here"
 	cont "than I thought!"
@@ -154,55 +154,55 @@ LassShannonAfterBattleText: ; LASS_SHANNON
 	done
 
 
-TrainerYoungsterSamuel: ; YOUNGSTER_SAMUEL
-	trainer YOUNGSTER, SAMUEL2, EVENT_BEAT_MT_MOON_1F_YOUNGSTER_SAMUEL, YoungsterSamuelBattleText, YoungsterSamuelEndBattleText, 0, .Script
+TrainerYoungsterToby: ; YOUNGSTER_TOBY
+	trainer YOUNGSTER, TOBY, EVENT_BEAT_MT_MOON_1F_YOUNGSTER_TOBY, YoungsterTobyBattleText, YoungsterTobyEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterSamuelAfterBattleText
+	writetext YoungsterTobyAfterBattleText
 	waitbutton
 	closetext
 	end
 
-YoungsterSamuelBattleText: ; YOUNGSTER_SAMUEL
+YoungsterTobyBattleText: ; YOUNGSTER_TOBY
 	text "Did you come to"
 	line "explore too?"
 	done
 
-YoungsterSamuelEndBattleText: ; YOUNGSTER_SAMUEL
+YoungsterTobyEndBattleText: ; YOUNGSTER_TOBY
 	text "Losing stinks!"
 	done
 
-YoungsterSamuelAfterBattleText: ; YOUNGSTER_SAMUEL
+YoungsterTobyAfterBattleText: ; YOUNGSTER_TOBY
 	text "I came down here"
 	line "to show off to"
 	cont "girls."
 	done	
 	
-TrainerHikerRussell: ; HIKER_RUSSELL
-	trainer HIKER, RUSSELL2, EVENT_BEAT_MT_MOON_1F_HIKER_RUSSELL, HikerRussellBattleText, HikerRussellEndBattleText, 0, .Script
+TrainerHikerFlint: ; HIKER_FLINT
+	trainer HIKER, FLINT, EVENT_BEAT_MT_MOON_1F_HIKER_FLINT, HikerFlintBattleText, HikerFlintEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HikerRussellAfterBattleText
+	writetext HikerFlintAfterBattleText
 	waitbutton
 	closetext
 	end
 
-HikerRussellBattleText: ; HIKER_RUSSELL
+HikerFlintBattleText: ; HIKER_FLINT
 	text "WHOA! You shocked"
 	line "me! Oh, you're"
 	cont "just a kid!"
 	done
 
-HikerRussellEndBattleText: ; HIKER_RUSSELL
+HikerFlintEndBattleText: ; HIKER_FLINT
 	text "Wow!"
 	line "Shocked again!"
 	prompt
 
-HikerRussellAfterBattleText: ; HIKER_RUSSELL
+HikerFlintAfterBattleText: ; HIKER_FLINT
 	text "Kids like you"
 	line "shouldn't be"
 	cont "here!"
@@ -256,10 +256,10 @@ MtMoon1F_MapEvents:
 	object_event 16, 23, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassLaura, -1		; LASS_LAURA
 	object_event 20, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MtMoon1FPotion2, EVENT_MT_MOON_1F_POTION2				
 	object_event 24, 31, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSuperNerdDave, -1		; SUPER_NERD_DAVE	
-	object_event 30, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherBenny, -1	; BUG_CATCHER_BENNY
+	object_event 30, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherNed, -1	; BUG_CATCHER_NED
 	object_event 35, 31, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MtMoon1FRareCandy, EVENT_MT_MOON_1F_RARE_CANDY
 	object_event 36, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MtMoon1FEscapeRope, EVENT_MT_MOON_1F_ESCAPE_ROPE
 	object_event 30,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassShannon, -1		; LASS_SHANNON
-	object_event 12, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterSamuel, -1		; YOUNGSTER_SAMUEL
-	object_event  5,  6, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerHikerRussell, -1			; HIKER_RUSSELL
+	object_event 12, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterToby, -1		; YOUNGSTER_TOBY
+	object_event  5,  6, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerHikerFlint, -1			; HIKER_FLINT
 	object_event  2,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MtMoon1FMoonStone, EVENT_MT_MOON_1F_MOON_STONE

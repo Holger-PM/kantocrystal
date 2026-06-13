@@ -1,6 +1,6 @@
 	object_const_def
 	const PEWTERGYM_BROCK
-	const PEWTERGYM_COOLTRAINER_M ; JR_TRAINER_JERRY
+	const PEWTERGYM_COOLTRAINER_M ; CAMPER_JERRY
 	const PEWTERGYM_GYM_GUIDE
 
 PewterGym_MapScripts:
@@ -149,18 +149,18 @@ BrockFightDoneText: ; BROCK
 	cont "your abilities!"
 	done
 
-TrainerJrTrainerMJerry: ; JR_TRAINER_JERRY
-	trainer JRTRAINER_M, JERRY, EVENT_BEAT_PEWTER_GYM_TRAINER_JERRY, JrTrainerMJerrySeenText, JrTrainerMJerryBeatenText, 0, .Script
+TrainerCamperJerry: ; CAMPER_JERRY
+	trainer CAMPER, JERRY, EVENT_BEAT_PEWTER_GYM_TRAINER_JERRY, CamperJerrySeenText, CamperJerryBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext JrTrainerMJerryAfterBattleText
+	writetext CamperJerryAfterBattleText
 	waitbutton
 	closetext
 	end
 
-JrTrainerMJerrySeenText: ; JR_TRAINER_JERRY
+CamperJerrySeenText:
 	text "Stop right there,"
 	line "kid!"
 
@@ -169,7 +169,7 @@ JrTrainerMJerrySeenText: ; JR_TRAINER_JERRY
 	cont "BROCK!"
 	done
 
-JrTrainerMJerryBeatenText: ; JR_TRAINER_JERRY
+CamperJerryBeatenText:
 	text "Darn!"
 
 	para "Light years isn't"
@@ -177,7 +177,7 @@ JrTrainerMJerryBeatenText: ; JR_TRAINER_JERRY
 	cont "distance!"
 	prompt
 
-JrTrainerMJerryAfterBattleText: ; JR_TRAINER_JERRY
+CamperJerryAfterBattleText:
 	text "You're pretty hot,"
 	line "but not as hot"
 	cont "as BROCK!"
@@ -309,5 +309,5 @@ PewterGym_MapEvents:
 
 	def_object_events
 	object_event  5,  1, SPRITE_BROCK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, PewterGymBrockScript, -1	  ; BROCK
-	object_event  2,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerJrtrainermJerry, -1 ; JR_TRAINER_JERRY 
+	object_event  2,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerCamperJerry, -1 ; CAMPER_JERRY 
 	object_event  6, 11, SPRITE_GYM_GUIDE_KANTO, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 1, PewterGymGuideScript, -1

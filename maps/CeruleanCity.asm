@@ -80,7 +80,7 @@ Rival2ScriptCont:
 	
 RivalHasCharmanderBattle2:
 	winlosstext CeruleanCityRivalDefeatedText, CeruleanCityRivalVictoryText
-	loadtrainer BLUE2, BLUE3_CHARMANDER
+	loadtrainer BLUE2, BLUE_CERULEAN_CITY_CHARMANDER
 	startbattle
 	reloadmapafterbattle
 	opentext
@@ -95,7 +95,7 @@ RivalHasCharmanderBattle2:
 	
 RivalHasSquirtleBattle2:
 	winlosstext CeruleanCityRivalDefeatedText, CeruleanCityRivalVictoryText
-	loadtrainer BLUE2, BLUE3_SQUIRTLE
+	loadtrainer BLUE2, BLUE_CERULEAN_CITY_SQUIRTLE
 	startbattle
 	reloadmapafterbattle
 	opentext
@@ -110,7 +110,7 @@ RivalHasSquirtleBattle2:
 	
 RivalHasBulbasaurBattle2:
 	winlosstext CeruleanCityRivalDefeatedText, CeruleanCityRivalVictoryText
-	loadtrainer BLUE2, BLUE3_BULBASAUR
+	loadtrainer BLUE2, BLUE_CERULEAN_CITY_BULBASAUR
 	startbattle
 	reloadmapafterbattle
 	opentext

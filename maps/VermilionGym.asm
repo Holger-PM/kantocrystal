@@ -10,7 +10,7 @@ VermilionGym_MapScripts:
 
 	def_callbacks
 
-VermilionGymSurgeScript:
+VermilionGymSurgeScript: ; SURGE
 	faceplayer
 	opentext
 	checkflag ENGINE_THUNDERBADGE
@@ -50,7 +50,7 @@ VermilionGymSurgeScript:
 	closetext
 	end
 
-TrainerGentlemanGregory:
+TrainerGentlemanGregory: ; GENTLEMAN_GREGORY
 	trainer GENTLEMAN, GREGORY, EVENT_BEAT_GENTLEMAN_GREGORY, GentlemanGregorySeenText, GentlemanGregoryBeatenText, 0, .Script
 
 .Script:
@@ -61,7 +61,7 @@ TrainerGentlemanGregory:
 	closetext
 	end
 
-TrainerSailorVincent:
+TrainerSailorVincent: ; SAILOR_VINCENT
 	trainer SAILOR, VINCENT, EVENT_BEAT_SAILOR_VINCENT, SailorVincentSeenText, SailorVincentBeatenText, 0, .Script
 
 .Script:
@@ -72,7 +72,7 @@ TrainerSailorVincent:
 	closetext
 	end
 
-TrainerJugglerHorton:
+TrainerJugglerHorton: ; JUGGLER_HORTON
 	trainer JUGGLER, HORTON, EVENT_BEAT_JUGGLER_HORTON, JugglerHortonSeenText, JugglerHortonBeatenText, 0, .Script
 
 .Script:
@@ -83,7 +83,7 @@ TrainerJugglerHorton:
 	closetext
 	end
 
-VermilionGymGuideScript:
+VermilionGymGuideScript: ; GYM_GUIDE
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_LT_SURGE

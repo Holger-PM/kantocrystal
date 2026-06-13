@@ -431,13 +431,13 @@ YoungsterGroup:
 	db 11, EKANS
 	db -1 ; end
 	
-	; YOUNGSTER_MIKEY - Route 3
-	db "MIKEY@", TRAINERTYPE_NORMAL
+	; YOUNGSTER_GAVIN- Route 3
+	db "GAVIN@", TRAINERTYPE_NORMAL
 	db 14, SPEAROW
 	db -1 ; end
 	
-	; YOUNGSTER_SAMUEL - Mt Moon 1F
-	db "SAMUEL@", TRAINERTYPE_NORMAL
+	; YOUNGSTER_TOBY - Mt Moon 1F
+	db "TOBY@", TRAINERTYPE_NORMAL
 	db 10, RATTATA
 	db 10, SANDSHREW
 	db 10, ZUBAT
@@ -450,8 +450,8 @@ YoungsterGroup:
 	db 14, ZUBAT
 	db -1 ; end
 	
-	; YOUNGSTER_GORDON - Route 25
-	db "GORDON@", TRAINERTYPE_NORMAL
+	; YOUNGSTER_AIDEN - Route 25
+	db "AIDEN@", TRAINERTYPE_NORMAL
 	db 16, RATTATA
 	db 16, SPEAROW
 	db -1 ; end
@@ -461,10 +461,34 @@ YoungsterGroup:
 	db 17, SLOWPOKE
 	db -1 ; end
 	
-	; YOUNGSTER_IAN - Route 25
-	db "IAN@", TRAINERTYPE_NORMAL
+	; YOUNGSTER_DEVIN - Route 25
+	db "DEVIN@", TRAINERTYPE_NORMAL
 	db 16, EKANS
 	db 16, SANDSHREW
+	db -1 ; end
+
+	; YOUNGSTER_JESSE - Route 11
+	db "JESSE@", TRAINERTYPE_NORMAL
+	db 21, EKANS
+	db -1 ; end
+	
+	; YOUNGSTER_MASON - Route 11
+	db "MASON@", TRAINERTYPE_NORMAL
+	db 19, SANDSHREW
+	db 19, ZUBAT
+	db -1 ; end
+	
+	; YOUNGSTER_CURTIS - Route 11
+	db "CURTIS@", TRAINERTYPE_NORMAL
+	db 17, RATTATA
+	db 17, RATTATA
+	db 20, RATICATE
+	db -1 ; end
+
+	; YOUNGSTER_CHASE - Route 11
+	db "CHASE@", TRAINERTYPE_NORMAL
+	db 18, NIDORAN_M
+	db 18, NIDORINO
 	db -1 ; end
 
 SchoolboyGroup:
@@ -832,8 +856,8 @@ LassGroup:
 	db 32, AMPHAROS,   TACKLE, THUNDERPUNCH, THUNDER_WAVE, COTTON_SPORE
 	db -1 ; end
 
-	; LASS_DANA - Viridian Forest
-	db "DANA@", TRAINERTYPE_NORMAL
+	; LASS_RACHEL - Viridian Forest
+	db "RACHEL@", TRAINERTYPE_NORMAL
 	db  6, NIDORAN_F
 	db  6, NIDORAN_M
 	db -1 ; end
@@ -844,14 +868,14 @@ LassGroup:
 	db 9, PIDGEY
 	db -1 ; end
 	
-	; LASS_CARRIE - Route 3
-	db "CARRIE@", TRAINERTYPE_NORMAL
+	; LASS_AUDREY - Route 3
+	db "AUDREY@", TRAINERTYPE_NORMAL
 	db 10, RATTATA
 	db 10, NIDORAN_M
 	db -1 ; end
 	
-	; LASS_CONNIE - Route 3
-	db "CONNIE@", TRAINERTYPE_NORMAL
+	; LASS_PAIGE - Route 3
+	db "PAIGE@", TRAINERTYPE_NORMAL
 	db 14, JIGGLYPUFF
 	db -1 ; end
 	
@@ -878,13 +902,13 @@ LassGroup:
 	db 16, NIDORAN_F
 	db -1 ; end
 	
-	; LASS_MICHELLE - Route 25
-	db "MICHELLE@", TRAINERTYPE_NORMAL
+	; LASS_APRIL - Route 25
+	db "APRIL@", TRAINERTYPE_NORMAL
 	db 16, WIGGLYTUFF
 	db -1 ; end
 	
-	; LASS_DANA	- Route 25
-	db "DANA@", TRAINERTYPE_NORMAL
+	; LASS_IRIS	- Route 25
+	db "IRIS@", TRAINERTYPE_NORMAL
 	db 16, ODDISH
 	db 16, PIDGEY
 	db 16, ODDISH
@@ -978,18 +1002,16 @@ CooltrainerMGroup:
 	db 35, SANDSLASH,  SAND_ATTACK, POISON_STING, SLASH, SWIFT
 	db -1 ; end
 
-	; COOLTRAINERM (13)
-	db "ERICK@", TRAINERTYPE_NORMAL
-	db 10, BULBASAUR
-	db 10, CHARMANDER
-	db 10, SQUIRTLE
+	; COOLTRAINERM_BRODY - Route 6
+	db "BRODY@", TRAINERTYPE_NORMAL
+	db 16, HORSEA
+	db 16, BELLSPROUT
 	db -1 ; end
 
-	; COOLTRAINERM (14)
-	db "ANDY@", TRAINERTYPE_NORMAL
-	db 10, BULBASAUR
-	db 10, CHARMANDER
-	db 10, SQUIRTLE
+	; COOLTRAINERM_TRAVIS - Route 6
+	db "TRAVIS@", TRAINERTYPE_NORMAL
+	db 17, MANKEY
+	db 17, RATICATE
 	db -1 ; end
 
 	; COOLTRAINERM (15)
@@ -1158,6 +1180,18 @@ CooltrainerFGroup:
 	db 33, HORSEA,     SMOKESCREEN, LEER, WHIRLPOOL, TWISTER
 	db 33, HORSEA,     SMOKESCREEN, LEER, WHIRLPOOL, TWISTER
 	db 35, SEADRA,     SWIFT, LEER, WATERFALL, TWISTER
+	db -1 ; end
+
+	; COOLTRAINERF_FELICIA - Route 6
+	db "FELICIA@", TRAINERTYPE_NORMAL
+	db 19, CUBONE,
+	db -1 ; end
+
+	; COOLTRAINERF_HOLLY - Route 6
+	db "HOLLY@", TRAINERTYPE_NORMAL
+	db 16, PIDGEY,
+	db 16, SPEAROW,
+	db 16, PIDGEY,
 	db -1 ; end
 
 BeautyGroup:
@@ -1770,15 +1804,15 @@ BugCatcherGroup:
 	db  9, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER_FOREST - Route 3
-	db "FOREST@", TRAINERTYPE_MOVES
+	; BUG_CATCHER_FREDDY - Route 3
+	db "FREDDY@", TRAINERTYPE_MOVES
 	db   8, METAPOD,   TACKLE, HARDEN, STRING_SHOT, NO_MOVE
 	db   8, KAKUNA,    POISON_STING, HARDEN, NO_MOVE, NO_MOVE
 	db  10, BUTTERFREE, CONFUSION, HARDEN, NO_MOVE, NO_MOVE
 	db -1 ; end
 	
-	; BUG_CATCHER_JOSH - Route 3
-	db "JOSH@", TRAINERTYPE_MOVES
+	; BUG_CATCHER_ERICK - Route 3
+	db "ERICK@", TRAINERTYPE_MOVES
 	db  9, WEEDLE,    TACKLE, STRING_SHOT, NO_MOVE, NO_MOVE
 	db  9, KAKUNA,    POISON_STING, HARDEN, NO_MOVE, NO_MOVE
 	db  9, CATERPIE,  TACKLE, STRING_SHOT, NO_MOVE, NO_MOVE
@@ -1798,8 +1832,8 @@ BugCatcherGroup:
 	db  10, BEEDRILL
 	db -1 ; end
 	
-	; BUG_CATCHER_BENNY - Mt Moon 1F
-	db "BENNY@", TRAINERTYPE_NORMAL
+	; BUG_CATCHER_KIP - Mt Moon 1F
+	db "KIP@", TRAINERTYPE_NORMAL
 	db  10, CATERPIE
 	db  10, BUTTERFREE
 	db -1 ; end
@@ -1808,6 +1842,18 @@ BugCatcherGroup:
 	db "JAKE@", TRAINERTYPE_NORMAL
 	db  13, BUTTERFREE
 	db  13, BEEDRILL
+	db -1 ; end
+
+	; BUG_CATCHER_DAMON - Route 6
+	db "DAMON@", TRAINERTYPE_NORMAL
+	db  18, BUTTERFREE
+	db  18, BEEDRILL
+	db -1 ; end
+	
+	; BUG_CATCHER_MARCUS - Route 6
+	db "MARCUS@", TRAINERTYPE_NORMAL
+	db  18, VENONAT
+	db  18, SCYTHER
 	db -1 ; end
 
 FisherGroup:
@@ -2346,10 +2392,11 @@ SuperNerdGroup:
 	db 11, VOLTORB
 	db -1 ; end
 
-	; SUPER_NERD (4)
-	db "JAY@", TRAINERTYPE_NORMAL
-	db 22, KOFFING
-	db 22, KOFFING
+	; SUPER_NERD_CONRAD - Route 11
+	db "CONRAD@", TRAINERTYPE_NORMAL
+	db 18, MAGNEMITE
+	db 18, MACHOP
+	db 18, MAGNEMITE
 	db -1 ; end
 
 	; SUPER_NERD (5)
@@ -2390,11 +2437,9 @@ SuperNerdGroup:
 	db  9, MAGNEMITE
 	db -1 ; end
 
-	; SUPER_NERD (11)
-	db "RUSS@", TRAINERTYPE_NORMAL
-	db 27, MAGNEMITE
-	db 27, MAGNEMITE
-	db 27, MAGNEMITE
+	; SUPER_NERD_CEDRIC - Route 11
+	db "CEDRIC@", TRAINERTYPE_NORMAL
+	db 21, MAGNEMITE
 	db -1 ; end
 
 	; SUPER_NERD (12)
@@ -2486,13 +2531,19 @@ GuitaristGroup:
 	db 34, ELECTABUZZ
 	db -1 ; end
 
-;	; GUITARIST (2) - Vermillon Gym
-;	db "VINCENT@", TRAINERTYPE_NORMAL
-;	db 27, MAGNEMITE
-;	db 33, VOLTORB
-;	db 32, MAGNEMITE
-;	db 32, MAGNEMITE
-;	db -1 ; end
+	; GUITARIST (2) - Vermillon Gym
+	db "VINCENT@", TRAINERTYPE_NORMAL
+	db 27, MAGNEMITE
+	db 33, VOLTORB
+	db 32, MAGNEMITE
+	db 32, MAGNEMITE
+	db -1 ; end
+
+	; GUITARIST_ZAKK - Route 11
+	db "VINCENT@", TRAINERTYPE_NORMAL
+	db 19, MAGNEMITE
+	db 19, VOLTORB
+	db -1 ; end
 
 HikerGroup:
 	; HIKER (1)
@@ -2645,21 +2696,21 @@ HikerGroup:
 	db 9, MACHOP,    LEER, KARATE_CHOP, FOCUS_ENERGY, NO_MOVE
 	db -1 ; end
 	
-	; HIKER_RUSSELL - Mt Moon 1F
-	db "RUSSELL@", TRAINERTYPE_NORMAL
+	; HIKER_FLINT - Mt Moon 1F
+	db "FLINT@", TRAINERTYPE_NORMAL
 	db 10, GEODUDE
 	db 10, GEODUDE
 	db 10, ONIX
 	db -1 ; end
 	
-	; HIKER_BENJAMIN - Route 25
-	db "BENJAMIN@", TRAINERTYPE_NORMAL
+	; HIKER_CLIFF - Route 25
+	db "CLIFF@", TRAINERTYPE_NORMAL
 	db 16, MACHOP
 	db 16, GEODUDE
 	db -1 ; end
 	
-	; HIKER_ERIK - Route 25
-	db "ERIK@", TRAINERTYPE_NORMAL
+	; HIKER_RIDGE - Route 25
+	db "RIDGE@", TRAINERTYPE_NORMAL
 	db 18, ONIX
 	db -1 ; end
 	
@@ -2836,28 +2887,22 @@ JugglerGroup:
 	db 33, ELECTRODE
 	db -1 ; end
 
-	; JUGGLER (4)
-	db "IRWIN@", TRAINERTYPE_NORMAL
-	db  6, VOLTORB
-	db 10, VOLTORB
-	db 14, VOLTORB
-	db 18, VOLTORB
+	; JUGGLER_CHESTER - Route 11
+	db "CHESTER@", TRAINERTYPE_NORMAL
+	db 19, POLIWAG
+	db 19, HORSEA
 	db -1 ; end
 
-	; JUGGLER (5)
-	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 18, VOLTORB
-	db 22, VOLTORB
-	db 26, VOLTORB
-	db 30, ELECTRODE
+	; JUGGLER_STANLEY - Route 11
+	db "STANLEY@", TRAINERTYPE_NORMAL
+	db 19, BELLSPROUT
+	db 19, ODDISH
 	db -1 ; end
 
-	; JUGGLER (6)
-	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 18, VOLTORB
-	db 22, VOLTORB
-	db 26, VOLTORB
-	db 30, ELECTRODE
+	; JUGGLER_IRVING - Route 11
+	db "IRVING@", TRAINERTYPE_NORMAL
+	db 19, DROWZEE
+	db 19, KADABRA
 	db -1 ; end
 
 BlackbeltGroup:
@@ -3170,6 +3215,11 @@ PicnickerGroup:
 	db 43, CLEFAIRY,   METRONOME, ENCORE, MOONLIGHT, MINIMIZE
 	db -1 ; end
 
+	; PICNICKER_HOPE - Cerulean Gym
+	db "HOPE@", TRAINERTYPE_NORMAL
+	db 19, SEEL
+	db -1 ; end
+
 CamperGroup:
 	; CAMPER (1)
 	db "ROLAND@", TRAINERTYPE_NORMAL
@@ -3217,13 +3267,13 @@ CamperGroup:
 	db 29, POLIWRATH
 	db -1 ; end
 
-	; CAMPER (9)
-	db "HARVEY@", TRAINERTYPE_NORMAL
+	; CAMPER_JEFFREY - Route 25
+	db "JEFFREY@", TRAINERTYPE_NORMAL
 	db 15, NIDORINO
 	db -1 ; end
 
-	; CAMPER (10)
-	db "DALE@", TRAINERTYPE_NORMAL
+	; CAMPER_ALEX - Route 24
+	db "ALEX@", TRAINERTYPE_NORMAL
 	db 15, NIDORINO
 	db -1 ; end
 
@@ -3246,20 +3296,18 @@ CamperGroup:
 	db 26, PSYDUCK
 	db -1 ; end
 
-	; CAMPER (14)
-	db "THOMAS@", TRAINERTYPE_NORMAL
+	; CAMPER_SEAN - Route 24
+	db "SEAN@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
 	db 40, GOLBAT
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (15)
-	db "LEROY@", TRAINERTYPE_NORMAL
-	db 33, GRAVELER
-	db 36, GRAVELER
-	db 40, GOLBAT
-	db 42, GOLDUCK
+	; CAMPER_JERRY - Pewter Gym
+	db "JERRY@", TRAINERTYPE_NORMAL
+	db  9, DIGLETT
+	db  9, SANDSHREW
 	db -1 ; end
 
 	; CAMPER (16)
@@ -3308,35 +3356,35 @@ CamperGroup:
 	db 30, TAUROS
 	db -1 ; end
 	
-JrtrainerfGroup:
-	; JRTRAINER_F_SHARON - Cerulean Gym
-	db "SHARON@", TRAINERTYPE_NORMAL
-	db 19, SEEL
-	db -1 ; end
+;JrtrainerfGroup:
+;	; JRTRAINER_F_SHARON - Cerulean Gym
+;	db "SHARON@", TRAINERTYPE_NORMAL
+;	db 19, SEEL
+;	db -1 ; end
 	
-JrtrainermGroup:
-	; JRTRAINER_M (1)
-	db "JERRY@", TRAINERTYPE_NORMAL
-	db  9, DIGLETT
-	db  9, SANDSHREW
-	db -1 ; end
+;JrtrainermGroup:
+;	; JRTRAINER_M (1)
+;	db "JERRY@", TRAINERTYPE_NORMAL
+;	db  9, DIGLETT
+;	db  9, SANDSHREW
+;	db -1 ; end
 	
 	; JRTRAINER_M_SEAN - Route 24
-	db "SEAN@", TRAINERTYPE_NORMAL
-	db 18, MANKEY
-	db -1 ; end
+;	db "SEAN@", TRAINERTYPE_NORMAL
+;	db 18, MANKEY
+;	db -1 ; end
 	
 	; JRTRAINER_M_ALEX - Route 24
-	db "ALEX@", TRAINERTYPE_NORMAL
-	db 15, DIGLETT
-	db 15, PSYDUCK
-	db -1 ; end
+;	db "ALEX@", TRAINERTYPE_NORMAL
+;	db 15, DIGLETT
+;	db 15, PSYDUCK
+;	db -1 ; end
 	
 	; JRTRAINER_M_JEFFREY - Route 25
-	db "JEFFREY@", TRAINERTYPE_NORMAL
-	db 15, DIGLETT
-	db 15, PSYDUCK
-	db -1 ; end
+;	db "JEFFREY@", TRAINERTYPE_NORMAL
+;	db 15, DIGLETT
+;	db 15, PSYDUCK
+;	db -1 ; end
 
 ExecutiveFGroup:
 	; EXECUTIVEF (1)
@@ -3564,15 +3612,15 @@ PokefanMGroup:
 	db 29, SEAKING,    ORAN_BERRY
 	db -1 ; end
 
-	; POKEFANM (13)
-	db "REX@", TRAINERTYPE_ITEM
-	db 35, PHANPY,     ORAN_BERRY
-	db -1 ; end
+	; POKEFANM - Removed from Route 6
+;	db "REX@", TRAINERTYPE_ITEM
+;	db 35, PHANPY,     ORAN_BERRY
+;	db -1 ; end
 
-	; POKEFANM (14)
-	db "ALLAN@", TRAINERTYPE_ITEM
-	db 35, TEDDIURSA,  ORAN_BERRY
-	db -1 ; end
+	; POKEFANM - Removed from Route 6
+;	db "ALLAN@", TRAINERTYPE_ITEM
+;	db 35, TEDDIURSA,  ORAN_BERRY
+;	db -1 ; end
 
 KimonoGirlGroup:
 	; KIMONO_GIRL (1)

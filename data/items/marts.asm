@@ -385,7 +385,7 @@ MartIndigoPlateau: ; TODO: Add TMs to match Yellow Legacy
 	db HYPER_POTION
 ;	db MAX_POTION
 	db FULL_RESTORE
-	db ELIXIR
+	db ELIXER
 	db REVIVE
 ;	db MAX_REPEL
 	db FULL_HEAL

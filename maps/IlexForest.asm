@@ -385,16 +385,16 @@ IlexForestHeadbuttGuyScript:
 	closetext
 	end
 
-TrainerBugCatcherWayne:
-	trainer BUG_CATCHER, WAYNE, EVENT_BEAT_BUG_CATCHER_WAYNE, BugCatcherWayneSeenText, BugCatcherWayneBeatenText, 0, .Script
+;TrainerBugCatcherWayne:
+;	trainer BUG_CATCHER, WAYNE, EVENT_BEAT_BUG_CATCHER_WAYNE, BugCatcherWayneSeenText, BugCatcherWayneBeatenText, 0, .Script
 
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherWayneAfterBattleText
-	waitbutton
-	closetext
-	end
+;.Script:
+;	endifjustbattled
+;	opentext
+;	writetext BugCatcherWayneAfterBattleText
+;	waitbutton
+;	closetext
+;	end
 
 IlexForestLassScript:
 	jumptextfaceplayer Text_IlexForestLass
@@ -908,31 +908,31 @@ Text_KurtCaughtCelebi:
 	para "I'm going!"
 	done
 
-BugCatcherWayneSeenText:
-	text "Don't sneak up on"
-	line "me like that!"
+;BugCatcherWayneSeenText:
+;	text "Don't sneak up on"
+;	line "me like that!"
 
-	para "You frightened a"
-	line "#MON away!"
-	done
+;	para "You frightened a"
+;	line "#MON away!"
+;	done
 
-BugCatcherWayneBeatenText:
-	text "I hadn't seen that"
-	line "#MON before…"
-	done
+;BugCatcherWayneBeatenText:
+;	text "I hadn't seen that"
+;	line "#MON before…"
+;	done
 
-BugCatcherWayneAfterBattleText:
-	text "A #MON I've"
-	line "never seen before"
+;BugCatcherWayneAfterBattleText:
+;	text "A #MON I've"
+;	line "never seen before"
 
-	para "fell out of the"
-	line "tree when I used"
-	cont "HEADBUTT."
+;	para "fell out of the"
+;	line "tree when I used"
+;	cont "HEADBUTT."
 
-	para "I ought to use"
-	line "HEADBUTT in other"
-	cont "places too."
-	done
+;	para "I ought to use"
+;	line "HEADBUTT in other"
+;	cont "places too."
+;	done
 
 IlexForest_MapEvents:
 	db 0, 0 ; filler
@@ -959,7 +959,7 @@ IlexForest_MapEvents:
 	object_event 20, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestRevive, EVENT_ILEX_FOREST_REVIVE
 	object_event  8, 29, SPRITE_KURT, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ILEX_FOREST_KURT
 	object_event  3, 24, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IlexForestLassScript, EVENT_ILEX_FOREST_LASS
-	object_event 12,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerBugCatcherWayne, -1
+;	object_event 12,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerBugCatcherWayne, -1
 	object_event  9, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestXAttack, EVENT_ILEX_FOREST_X_ATTACK
 	object_event 17,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestAntidote, EVENT_ILEX_FOREST_ANTIDOTE
 	object_event 27,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IlexForestEther, EVENT_ILEX_FOREST_ETHER

@@ -488,7 +488,7 @@ RivalWalkFromCharmanderScript:
 	applymovement OAKSLAB_BLUE, RivalWalksFromCharmanderLeftMovement
 	winlosstext OaksLabRivalIPickedTheWrongPokemonText, OaksLabRivalAmIGreatOrWhatText
 	setlasttalked OAKSLAB_BLUE
-	loadtrainer BLUE1, BLUE1_CHARMANDER
+	loadtrainer BLUE1, BLUE_OAKS_LAB_CHARMANDER
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap
@@ -506,7 +506,7 @@ RivalWalkFromCharmanderScript:
 	turnobject OAKSLAB_BLUE, DOWN
 	winlosstext OaksLabRivalIPickedTheWrongPokemonText, OaksLabRivalAmIGreatOrWhatText
 	setlasttalked OAKSLAB_BLUE
-	loadtrainer BLUE1, BLUE1_CHARMANDER
+	loadtrainer BLUE1, BLUE_OAKS_LAB_CHARMANDER
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap
@@ -540,7 +540,7 @@ RivalWalkFromSquirtleScript:
 	applymovement OAKSLAB_BLUE, RivalWalksFromSquirtleLeftMovement
 	winlosstext OaksLabRivalIPickedTheWrongPokemonText, OaksLabRivalAmIGreatOrWhatText
 	setlasttalked OAKSLAB_BLUE
-	loadtrainer BLUE1, BLUE1_SQUIRTLE
+	loadtrainer BLUE1, BLUE_OAKS_LAB_SQUIRTLE
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap
@@ -558,7 +558,7 @@ RivalWalkFromSquirtleScript:
 	turnobject OAKSLAB_BLUE, DOWN
 	winlosstext OaksLabRivalIPickedTheWrongPokemonText, OaksLabRivalAmIGreatOrWhatText
 	setlasttalked OAKSLAB_BLUE
-	loadtrainer BLUE1, BLUE1_SQUIRTLE
+	loadtrainer BLUE1, BLUE_OAKS_LAB_SQUIRTLE
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap
@@ -594,7 +594,7 @@ RivalWalkFromBulbasaurScript:
 	applymovement OAKSLAB_BLUE, RivalWalksFromBulbasaurLeftMovement
 	winlosstext OaksLabRivalIPickedTheWrongPokemonText, OaksLabRivalAmIGreatOrWhatText
 	setlasttalked OAKSLAB_BLUE
-	loadtrainer BLUE1, BLUE1_BULBASAUR
+	loadtrainer BLUE1, BLUE_OAKS_LAB_BULBASAUR
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap
@@ -611,7 +611,7 @@ RivalWalkFromBulbasaurScript:
 	applymovement OAKSLAB_BLUE, RivalWalksFromBulbasaurRightMovement
 	winlosstext OaksLabRivalIPickedTheWrongPokemonText, OaksLabRivalAmIGreatOrWhatText
 	setlasttalked OAKSLAB_BLUE
-	loadtrainer BLUE1, BLUE1_BULBASAUR
+	loadtrainer BLUE1, BLUE_OAKS_LAB_BULBASAUR
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap

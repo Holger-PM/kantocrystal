@@ -19,7 +19,7 @@ UndergroundPath_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  3,  9, BGEVENT_ITEM, UndergroundPathHiddenFullRestore
-	bg_event  1, 19, BGEVENT_ITEM, UndergroundPathHiddenXSpecial
+	bg_event  2,  2, BGEVENT_ITEM, UndergroundPathHiddenFullRestore
+	bg_event  3, 19, BGEVENT_ITEM, UndergroundPathHiddenXSpecial
 
 	def_object_events

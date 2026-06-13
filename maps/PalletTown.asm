@@ -100,6 +100,7 @@ PalletTownOakWalkToYouMovementLeft:
 	slow_step RIGHT
 	slow_step UP
 	slow_step UP
+	slow_step UP
 	step_end
 
 PalletTownOakWalkToYouMovementRight:
@@ -109,12 +110,14 @@ PalletTownOakWalkToYouMovementRight:
 	slow_step UP
 	slow_step RIGHT
 	slow_step UP
+	slow_step UP
 	step_end
 
 PalletTownOakWalkToLabLeft:
 	step DOWN
 	step LEFT
 	step DOWN
+	step DOWN	
 	step DOWN
 	step DOWN
 	step DOWN
@@ -133,6 +136,7 @@ PalletTownOakWalkToLabRight:
 	step DOWN
 	step LEFT
 	step LEFT
+	step DOWN
 	step DOWN
 	step DOWN
 	step DOWN
@@ -211,7 +215,7 @@ PalletTown_MapEvents:
 
 	def_warp_events
 	warp_event  5,  5, REDS_HOUSE_1F, 1
-	warp_event 13,  5, BLUES_HOUSE, 1
+	warp_event 13,  5, DIGLETTS_CAVE_ROUTE_11, 1
 	warp_event 12, 11, OAKS_LAB, 1
 
 	def_coord_events

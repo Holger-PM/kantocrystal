@@ -1,6 +1,6 @@
 	object_const_def
 	const CERULEANGYM_MISTY				; MISTY
-	const CERULEANGYM_LASS_SHARON 		; JR_TRAINER_F_SHARON
+	const CERULEANGYM_LASS_HOPE 		; JR_PICNICKER_HOPE
 ;	const CERULEANGYM_SWIMMERF_LISA
 	const CERULEANGYM_SWIMMERM_JAMES 	; SWIMMER_M_JAMES
 	const CERULEANGYM_GYM_GUIDE			; GYM_GUIDE
@@ -25,7 +25,7 @@ CeruleanGymMistyScript: ; MISTY
 	setevent EVENT_BEAT_MISTY
 	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES
 ;	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_LISA
-	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_SHARON
+	setevent EVENT_BEAT_CERULEAN_GYM_TRAINER_HOPE
 	opentext
 	writetext ReceivedCascadeBadgeText
 	playsound SFX_GET_KEY_ITEM_1
@@ -137,30 +137,30 @@ CeruleanGymMistyReceivedCascadeBadgeText: ; MISTY
 	cont "show you beat me!"
 	done
 
-TrainerJrTrainerFSharon: ; JR_TRAINER_F_SHARON
-	trainer SWIMMERF, SHARON2, EVENT_BEAT_CERULEAN_GYM_TRAINER_SHARON, JrTrainerFSharonBattleText, JrTrainerFSharonEndBattleText, 0, .Script
+TrainerPicnickerHope: ; PICNICKER_HOPE
+	trainer SWIMMERF, HOPE, EVENT_BEAT_CERULEAN_GYM_TRAINER_HOPE, PicnickerHopeBattleText, PicnickerHopeEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext JrTrainerFSharonAfterBattleText
+	writetext PicnickerHopeAfterBattleText
 	waitbutton
 	closetext
 	end
 
-JrTrainerFSharonBattleText: ; JR_TRAINER_F_SHARON
+PicnickerHopeBattleText:
 	text "I'm more than good"
 	line "enough for you!"
 
 	para "MISTY can wait!"
 	done
 
-JrTrainerFSharonEndBattleText: ; JR_TRAINER_F_SHARON
+PicnickerHopeEndBattleText:
 	text "You"
 	line "overwhelmed me!"
 	prompt
 
-JrTrainerFSharonAfterBattleText: ; JR_TRAINER_F_SHARON
+PicnickerHopeAfterBattleText:
 	text "You have to face"
 	line "other trainers to"
 	cont "find out how good"
@@ -205,18 +205,18 @@ TrainerSwimmerMJames: ; SWIMMER_M_JAMES
 	closetext
 	end
 
-SwimmerMJamesBattleText: ; SWIMMER_M_JAMES
+SwimmerMJamesBattleText:
 	text "Splash!"
 
 	para "I'm first up!"
 	line "Let's do it!"
 	done
 
-SwimmerMJamesEndBattleText: ; SWIMMER_M_JAMES
+SwimmerMJamesEndBattleText:
 	text "That can't be!"
 	prompt
 
-SwimmerMJamesAfterBattleText: ; SWIMMER_M_JAMES
+SwimmerMJamesAfterBattleText:
 	text "MISTY is going to"
 	line "keep improving!"
 
@@ -240,7 +240,7 @@ CeruleanGymGuideScript: ; GYM_GUIDE
 	closetext
 	end
 
-CeruleanGymGuideText: ; GYM_GUIDE
+CeruleanGymGuideText:
 	text "Yo! Champ in"
 	line "making!"
 
@@ -258,7 +258,7 @@ CeruleanGymGuideText: ; GYM_GUIDE
 	line "electricity!"
 	done
 
-CeruleanGymGuideWinText: ; GYM_GUIDE
+CeruleanGymGuideWinText:
 	text "You beat MISTY!"
 	line "What'd I tell ya?"
 
@@ -290,7 +290,7 @@ CeruleanGym_MapEvents:
 
 	def_object_events
 	object_event  4,  2, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanGymMistyScript, -1					; MISTY
-	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerJrTrainerFSharon, -1					; JR_TRAINER_F_SHARON
+	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPicnickerHope, -1					; PICNICKER_HOPE
 ;	object_event  3,  7, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, CeruleanGymTrainerSwimmerfLisa, -1
-	object_event  8,  8, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmermJames, -1				; SWIMMER_M_JAMES
+	object_event  8,  8, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerMJames, -1				; SWIMMER_M_JAMES
 	object_event  7, 10, SPRITE_GYM_GUIDE_KANTO, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanGymGuideScript, -1

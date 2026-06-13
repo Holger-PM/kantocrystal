@@ -34,8 +34,8 @@ TrainerSailorHarry:
 	closetext
 	end
 
-TrainerLassDana1:
-	trainer LASS, DANA1, EVENT_BEAT_LASS_DANA, LassDana1SeenText, LassDana1BeatenText, 0, .Script
+TrainerLassDana:
+	trainer LASS, DANA1, EVENT_BEAT_LASS_DANA, LassDanaSeenText, LassDanaBeatenText, 0, .Script
 
 .Script
 	loadvar VAR_CALLERID, PAGER_LASS_DANA
@@ -67,7 +67,7 @@ TrainerLassDana1:
 
 .DanaRematch:
 	scall .Rematch
-	winlosstext LassDana1BeatenText, 0
+	winlosstext LassDanaBeatenText, 0
 	readmem wDanaFightCount
 	ifequal 4, .Fight4
 	ifequal 3, .Fight3
@@ -359,7 +359,7 @@ SchoolboyChadSoManyTestsText:
 	cont "concentrate."
 	done
 
-LassDana1SeenText:
+LassDanaSeenText:
 	text "You seem to be"
 	line "good at #MON."
 
@@ -368,7 +368,7 @@ LassDana1SeenText:
 	cont "some advice?"
 	done
 
-LassDana1BeatenText:
+LassDanaBeatenText:
 	text "I see. So you can"
 	line "battle that way."
 	done
@@ -482,7 +482,7 @@ Route38_MapEvents:
 
 	def_object_events
 	object_event  4,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyChad1, -1
-	object_event 15,  3, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassDana1, -1
+	object_event 15,  3, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassDana, -1
 	object_event 12, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperToby, -1
 	object_event 19,  9, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBeautyValerie, -1
 	object_event 24,  5, SPRITE_SAILOR, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSailorHarry, -1

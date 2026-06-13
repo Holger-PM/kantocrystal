@@ -1,8 +1,8 @@
 	object_const_def
 	const ROUTE24_TRAINER_ROCKET		; ROCKET (36)
-	const ROUTE24_TRAINER_JRTRAINER_M1	; JRTRAINER_M_SEAN
+	const ROUTE24_TRAINER_CAMPER1		; CAMPER_SEAN
 	const ROUTE24_TRAINER_LASS1			; LASS_EMILY
-	const ROUTE24_TRAINER_JRTRAINER_M2	; JRTRAINER_M_ALEX
+	const ROUTE24_TRAINER_CAMPER2		; CAMPER_ALEX
 	const ROUTE24_TRAINER_YOUNGSTER		; YOUNGSTER_RYAN
 	const ROUTE24_TRAINER_LASS2			; LASS_AMY
 	const ROUTE24_TRAINER_BUG_CATCHER	; BUG_CATCHER_JAKE
@@ -125,8 +125,8 @@ Route24ReceivedNuggetText: ; ROCKET (36)
 	text "!"
 	done
 
-TrainerJrTrainerMSean: ; JRTRAINER_M_SEAN
-	trainer JRTRAINER_M, SEAN2, EVENT_BEAT_ROUTE_24_JRTRAINER_M_SEAN, JrTrainerMSeanBattleText, JrTrainerMSeanEndBattleText, 0, .Script
+TrainerCamperSean: ; CAMPER_SEAN
+	trainer CAMPER, SEAN2, EVENT_BEAT_ROUTE_24_CAMPER_SEAN, CamperSeanSeenText, CamperSeanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -136,18 +136,18 @@ TrainerJrTrainerMSean: ; JRTRAINER_M_SEAN
 	closetext
 	end
 
-JrTrainerMSeanBattleText: ; JRTRAINER_M_SEAN
+CamperSeanSeenText:
 	text "OK! I'm No. 5!"
 	line "I'll stomp you!"
 	done
 
-JrTrainerMSeanEndBattleText: ; JRTRAINER_M_SEAN
+CamperSeanBeatenText:
 	text "Whoa!"
 	line "Too much!"
 	prompt
 	
 TrainerLassEmily: ; LASS_EMILY
-	trainer LASS, EMILY, EVENT_BEAT_ROUTE_24_LASS_EMILY, LassEmilyBattleText, LassEmilyEndBattleText, 0, .Script
+	trainer LASS, EMILY, EVENT_BEAT_ROUTE_24_LASS_EMILY, LassEmilySeenText, LassEmilyBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -157,43 +157,43 @@ TrainerLassEmily: ; LASS_EMILY
 	closetext
 	end
 
-LassEmilyBattleText: ; LASS_EMILY
+LassEmilySeenText:
 	text "I'm No. 4!"
 	line "Getting tired?"
 	done
 
-LassEmilyEndBattleText: ; LASS_EMILY
+LassEmilyBeatenText:
 	text "I lost too!"
 	prompt
 	
-TrainerJrTrainerMAlex: ; JRTRAINER_M_ALEX
-	trainer JRTRAINER_M, ALEX2, EVENT_BEAT_ROUTE_24_JRTRAINER_M_ALEX, JrTrainerMAlexBattleText, JrTrainerMAlexEndBattleText, 0, .Script
+TrainerCamperAlex: ; CAMPER_ALEX
+	trainer CAMPER, ALEX2, EVENT_BEAT_ROUTE_24_CAMPER_ALEX, CamperAlexSeenText, CamperAlexBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext JrTrainerMAlexAfterBattleText
+	writetext CamperAlexAfterBattleText
 	waitbutton
 	closetext
 	end
 
-JrTrainerMAlexBattleText: ; JRTRAINER_M_ALEX
+CamperAlexSeenText:
 	text "I saw your feat"
 	line "from the grass!"
 	done
 	
-JrTrainerMAlexEndBattleText: ; JRTRAINER_M_ALEX
+CamperAlexBeatenText:
 	text "I thought not!"
 	prompt
 
-JrTrainerMAlexAfterBattleText: ; JRTRAINER_M_ALEX
+CamperAlexAfterBattleText:
 	text "I hid because the"
 	line "people on the"
 	cont "bridge scared me!"
 	done
 	
 TrainerYoungsterRyan: ; YOUNGSTER_RYAN
-	trainer YOUNGSTER, RYAN2, EVENT_BEAT_ROUTE_24_YOUNGSTER_RYAN, YoungsterRyanBattleText, YoungsterRyanEndBattleText, 0, .Script
+	trainer YOUNGSTER, RYAN2, EVENT_BEAT_ROUTE_24_YOUNGSTER_RYAN, YoungsterRyanSeenText, YoungsterRyanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -203,18 +203,18 @@ TrainerYoungsterRyan: ; YOUNGSTER_RYAN
 	closetext
 	end
 
-YoungsterRyanBattleText: ; YOUNGSTER_RYAN
+YoungsterRyanSeenText: ; YOUNGSTER_RYAN
 	text "Here's No. 3!"
 	line "I won't be easy!"
 	done
 
-YoungsterRyanEndBattleText: ; YOUNGSTER_RYAN
+YoungsterRyanBeatenText: ; YOUNGSTER_RYAN
 	text "Ow!"
 	line "Stomped flat!"
 	prompt
 
 TrainerLassAmy: ; LASS_AMY
-	trainer LASS, AMY, EVENT_BEAT_ROUTE_24_LASS_AMY, LassAmyBattleText, LassAmyEndBattleText, 0, .Script
+	trainer LASS, AMY, EVENT_BEAT_ROUTE_24_LASS_AMY, LassAmySeenText, LassAmyBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -224,17 +224,17 @@ TrainerLassAmy: ; LASS_AMY
 	closetext
 	end
 
-LassAmyBattleText: ; LASS_AMY
+LassAmySeenText:
 	text "I'm second!"
 	line "Now it's serious!"
 	done
 
-LassAmyEndBattleText: ; LASS_AMY
+LassAmyBeatenText:
 	text "How could I lose?"
 	prompt
 	
 TrainerBugCatcherJake: ; BUG_CATCHER_JAKE
-	trainer BUG_CATCHER, JAKE2, EVENT_BEAT_ROUTE_24_BUG_CATCHER_JAKE, BugCatcherJakeBattleText, BugCatcherJakeEndBattleText, 0, .Script
+	trainer BUG_CATCHER, JAKE2, EVENT_BEAT_ROUTE_24_BUG_CATCHER_JAKE, BugCatcherJakeSeenText, BugCatcherJakeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -244,7 +244,7 @@ TrainerBugCatcherJake: ; BUG_CATCHER_JAKE
 	closetext
 	end
 
-BugCatcherJakeBattleText: ; BUG_CATCHER_JAKE
+BugCatcherJakeSeenText:
 	text "This is NUGGET"
 	line "BRIDGE! Beat us 5"
 	cont "trainers and win"
@@ -254,7 +254,7 @@ BugCatcherJakeBattleText: ; BUG_CATCHER_JAKE
 	line "what it takes?"
 	done
 
-BugCatcherJakeEndBattleText: ; BUG_CATCHER_JAKE
+BugCatcherJakeBeatenText: 
 	text "Whoo!"
 	line "Good stuff!"
 	prompt
@@ -276,9 +276,9 @@ Route24_MapEvents:
 
 	def_object_events
 	object_event 11, 15, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route24RocketScript, -1							; ROCKET (36)
-	object_event 11, 19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerJrTrainerMSean, -1  	; JRTRAINER_M_SEAN
+	object_event 11, 19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerCamperSean, -1  		; CAMPER_SEAN
 	object_event 10, 22, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerLassEmily, -1			; LASS_EMILY
-	object_event  5, 20, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerJrTrainerMAlex, -1		; JRTRAINER_M_ALEX
+	object_event  5, 20, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerCamperAlex, -1			; CAMPER_ALEX
 	object_event 11, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterRyan, -1			; YOUNGSTER_RYAN
 	object_event 10, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassAmy, -1				; LASS_AMY
 	object_event 11, 31, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerBugCatcherJake, -1			; BUG_CATCHER_JAKE	

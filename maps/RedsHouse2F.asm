@@ -1,7 +1,20 @@
+	object_const_def
+	const DEBUG_POKE_BALL2
+
 RedsHouse2F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+
+SquirtlePokeBallDebug:
+	disappear DEBUG_POKE_BALL2
+	setevent EVENT_GOT_A_SQUIRTLE_FROM_OAK
+	getmonname STRING_BUFFER_3, SQUIRTLE
+	writetext OaksLabReceivedStarterText
+	playsound SFX_CAUGHT_MON_RBY
+	waitsfx
+	givepoke SQUIRTLE, 25
+	closetext
 
 RedsHouse2FSNESScript:
 	jumptext RedsHouse2FSNESText
@@ -36,3 +49,4 @@ RedsHouse2F_MapEvents:
 	bg_event  0,  1, BGEVENT_UP, RedsHouse2FPCText
 
 	def_object_events
+	object_event  7,  3, SPRITE_POKE_BALL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SquirtlePokeBallDebug, EVENT_SQUIRTLE_POKEBALL_IN_OAKS_LAB

@@ -126,12 +126,16 @@ DEF GREEN EQU __trainer_class__
 	const JOEY4
 	const JOEY5
 	const BEN2
-	const MIKEY2
+	const GAVIN ; was MIKEY2
 	const SAMUEL2
 	const RYAN2
-	const GORDON2
-	const IAN2
+	const AIDEN ; was GORDON2
+	const DEVIN ; was DEVIN
 	const WARREN2
+	const JESSE
+	const MASON
+	const CURTIS
+	const CHASE
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
@@ -191,21 +195,21 @@ DEF GREEN EQU __trainer_class__
 	const MICHELLE
 	const DANA1
 	const ELLEN
-	const CONNIE2 ; unused
+	const RACHEL ; was unused
 	const CONNIE3 ; unused
 	const DANA2
 	const DANA3
 	const DANA4
 	const DANA5
-	const ALICE2
-	const CARRIE2
-	const CONNIE4
+	const MARISSA
+	const AUDREY ; was CARRIE2
+	const PAIGE ; was CONNIE4
 	const LAURA2
 	const SHANNON2
 	const AMY
 	const EMILY
-	const MICHELLE2
-	const DANA6
+	const APRIL ; was MICHELLE2
+	const IRIS ; was DANA6
 
 	trainerclass JANINE ; 1a
 	const JANINE1
@@ -223,8 +227,8 @@ DEF GREEN EQU __trainer_class__
 	const GAVEN3
 	const BLAKE
 	const BRIAN
-	const ERICK ; unused
-	const ANDY ; unused
+	const BRODY ; was TIMMY (unused)
+	const TRAVIS ; was ANDY (unused)
 	const TYLER ; unused
 	const SEAN
 	const KEVIN
@@ -254,6 +258,8 @@ DEF GREEN EQU __trainer_class__
 	const REENA2
 	const REENA3
 	const CARA
+	const FELICIA	; Route 6
+	const HOLLY		; Route 6
 
 	trainerclass BEAUTY ; 1d
 	const VICTORIA
@@ -372,12 +378,14 @@ DEF GREEN EQU __trainer_class__
 	const CALEB
 	const DYLAN
 	const FOREST_T
-	const FOREST_T2
-	const JOSH2
+	const FREDDY ; FOREST_T2
+	const ERICK ; was JOSH2
 	const WADE6
 	const KEN2
-	const BENNY2
+	const KIP ; was BENNY2
 	const JAKE2
+	const DAMON			; Route 6
+	const MARCUS		; Route 6 
 
 	trainerclass FISHER ; 25
 	const JUSTIN
@@ -471,15 +479,15 @@ DEF GREEN EQU __trainer_class__
 	trainerclass SUPER_NERD ; 29
 	const STAN
 	const ERIC
-	const DAVE ; unused
-	const JAY ; unused
+	const DAVE
+	const CONRAD ; was JAY (unused)
 	const GREGG ; unused
 	const SAM
 	const TOM
 	const PAT
 	const SHAWN
 	const TERU
-	const RUSS ; unused
+	const CEDRIC ; was RUSS (unused)
 	const NORTON ; unused
 	const HUGH
 	const MARKUS
@@ -496,6 +504,7 @@ DEF GREEN EQU __trainer_class__
 	trainerclass GUITARIST ; 2b
 	const CLYDE
 	const VINCENT
+	const ZAKK 
 
 	trainerclass HIKER ; 2c
 	const ANTHONY1
@@ -521,10 +530,10 @@ DEF GREEN EQU __trainer_class__
 	const ANTHONY4
 	const ANTHONY5
 	const TONY
-	const RUSSELL2
-	const BENJAMIN2
-	const ERIK2
-	const ANTHONY6
+	const FLINT ; was RUSSELL2
+	const CLIFF ; was BENJAMIN2
+	const RIDGE	; was ERIK2
+	const HANK 	; was ANTHONY6
 
 	trainerclass BIKER ; 2d
 	const BIKER_BENNY ; unused
@@ -559,9 +568,9 @@ DEF GREEN EQU __trainer_class__
 	const IRWIN1
 	const FRITZ
 	const HORTON
-	const IRWIN2 ; unused
-	const IRWIN3 ; unused
-	const IRWIN4 ; unused
+	const CHESTER ; was IRWIN2 (unused)
+	const STANLEY ; was IRWIN3 (unused)
+	const IRVING ; was IRWIN4 (unused)
 
 	trainerclass BLACKBELT_T ; 32
 	const KENJI1 ; unused
@@ -620,6 +629,7 @@ DEF GREEN EQU __trainer_class__
 	const GINA4
 	const GINA5
 	const TIFFANY4
+	const HOPE
 
 	trainerclass CAMPER ; 36
 	const ROLAND
@@ -630,13 +640,13 @@ DEF GREEN EQU __trainer_class__
 	const LLOYD
 	const DEAN
 	const SID
-	const HARVEY ; unused
-	const DALE ; unused
+	const JEFFREY2 ; was HARVEY (unused)
+	const ALEX2	; was DALE (unused)
 	const TED
 	const TODD2
 	const TODD3
-	const THOMAS ; unused
-	const LEROY ; unused
+	const SEAN2 ; was THOMAS (unused)
+	const JERRY ; was LEROY (unused)
 	const DAVID ; unused
 	const JOHN ; unused
 	const SPENCER
@@ -644,14 +654,14 @@ DEF GREEN EQU __trainer_class__
 	const TODD5
 	const QUENTIN
 	
-	trainerclass JRTRAINER_F ; added
-	const SHARON2
+;	trainerclass JRTRAINER_F ; added
+;	const SHARON2
 	
-	trainerclass JRTRAINER_M ; added
-	const JERRY
-	const SEAN2
-	const ALEX2
-	const JEFFREY2
+;	trainerclass JRTRAINER_M ; added
+;	const JERRY
+;	const SEAN2
+;	const ALEX2
+;	const JEFFREY2
 
 	trainerclass EXECUTIVEF ; 37
 	const EXECUTIVEF_1
@@ -698,8 +708,8 @@ DEF GREEN EQU __trainer_class__
 	const DEREK2 ; unused
 	const DEREK3 ; unused
 	const ALEX
-	const REX
-	const ALLAN
+;	const REX - Removed from Route 6 
+;	const ALLAN - Removed from Route 6 
 
 	trainerclass KIMONO_GIRL ; 3c
 	const NAOKO_UNUSED ; unused
@@ -730,18 +740,17 @@ DEF GREEN EQU __trainer_class__
 	const JAIME
 
 	trainerclass BLUE1 ; 40
-	const BLUE1_CHARMANDER
-	const BLUE1_SQUIRTLE
-	const BLUE1_BULBASAUR
-	
+	const BLUE_OAKS_LAB_CHARMANDER
+	const BLUE_OAKS_LAB_SQUIRTLE
+	const BLUE_OAKS_LAB_BULBASAUR
+	const BLUE_ROUTE22_CHARMANDER
+	const BLUE_ROUTE22_SQUIRTLE
+	const BLUE_ROUTE22_BULBASAUR
+
 	trainerclass BLUE2 ; added
-	const BLUE2_CHARMANDER
-	const BLUE2_SQUIRTLE
-	const BLUE2_BULBASAUR
-	
-	const BLUE3_CHARMANDER
-	const BLUE3_SQUIRTLE
-	const BLUE3_BULBASAUR
+	const BLUE_CERULEAN_CITY_CHARMANDER
+	const BLUE_CERULEAN_CITY_SQUIRTLE
+	const BLUE_CERULEAN_CITY_BULBASAUR
 	
 	trainerclass BLUE3 ; added
 
