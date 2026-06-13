@@ -274,17 +274,19 @@ GetBaseData::
 	ld hl, wBasePicSize
 	ld [hl], b
 
+;;;;;;;;;; Holgernote: Unused's stuffs
 ; Beta front and back sprites
 ; (see pokegold-spaceworld's data/pokemon/base_stats/*)
-	ld hl, wBaseUnusedFrontpic
-	ld [hl], e
-	inc hl
-	ld [hl], d
-	inc hl
-	ld [hl], e
-	inc hl
-	ld [hl], d
-	jr .end ; useless
+;	ld hl, wBaseUnusedFrontpic
+;	ld [hl], e
+;	inc hl
+;	ld [hl], d
+;	inc hl
+;	ld [hl], e
+;	inc hl
+;	ld [hl], d
+;	jr .end ; useless
+;;;;;;;;;;
 
 .end
 ; Replace Pokedex # with species
