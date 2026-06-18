@@ -828,9 +828,10 @@ LassGroup:
 	db 34, GRANBULL
 	db -1 ; end
 
-	; LASS (12)
-	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	; LASS_RACHEL - Viridian Forest
+	db "RACHEL@", TRAINERTYPE_NORMAL
+	db  6, NIDORAN_F
+	db  6, NIDORAN_M
 	db -1 ; end
 
 	; LASS (13)
@@ -856,8 +857,8 @@ LassGroup:
 	db 32, AMPHAROS,   TACKLE, THUNDERPUNCH, THUNDER_WAVE, COTTON_SPORE
 	db -1 ; end
 
-	; LASS_RACHEL - Viridian Forest
-	db "RACHEL@", TRAINERTYPE_NORMAL
+	; LASS_DANA 
+	db "DANA@", TRAINERTYPE_NORMAL
 	db  6, NIDORAN_F
 	db  6, NIDORAN_M
 	db -1 ; end
