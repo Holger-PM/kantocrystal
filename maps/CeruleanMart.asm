@@ -1,24 +1,21 @@
 	object_const_def
-	const CERULEANMART_CLERK
-	const CERULEANMART_COOLTRAINER_M
-	const CERULEANMART_COOLTRAINER_F
+	const CERULEANMART_CLERK			; CLERK
+	const CERULEANMART_COOLTRAINER_M	; COOLTRAINER_M
+	const CERULEANMART_COOLTRAINER_F	; COOLTRAINER_F
 
 CeruleanMart_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-CeruleanMartClerkScript:
+CeruleanMartClerkScript: ; CLERK
 	opentext
 	pokemart MARTTYPE_STANDARD, MART_CERULEAN
 	closetext
 	end
 
-CeruleanMartCooltrainerMScript:
+CeruleanMartCooltrainerMScript: ; COOLTRAINER_M
 	jumptextfaceplayer CeruleanMartCooltrainerMText
-
-CeruleanMartCooltrainerFScript:
-	jumptextfaceplayer CeruleanMartCooltrainerFText
 
 CeruleanMartCooltrainerMText:
 	text "Use REPEL to keep"
@@ -31,6 +28,8 @@ CeruleanMartCooltrainerMText:
 	cont "for best results!"
 	done
 
+CeruleanMartCooltrainerFScript:
+	jumptextfaceplayer CeruleanMartCooltrainerFText
 
 CeruleanMartCooltrainerFText:
 	text "Have you seen any"
@@ -53,6 +52,6 @@ CeruleanMart_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  0,  5, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeruleanMartClerkScript, -1
-	object_event  3,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeruleanMartCooltrainerMScript, -1
-	object_event  6,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanMartCooltrainerFScript, -1
+	object_event  0,  5, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeruleanMartClerkScript, -1							; CLERK
+	object_event  3,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeruleanMartCooltrainerMScript, -1	; COOLTRAINER_M
+	object_event  6,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanMartCooltrainerFScript, -1  ; COOLTRAINER_F

@@ -1,6 +1,6 @@
-	object_const_def
+object_const_def
 	const ROUTE4_COOLTRAINER_F1
-	const ROUTE4_COOLTRAINER_F2 ; COOLTRAINERF_GWEN
+	const ROUTE4_COOLTRAINER_GWEN
 	const ROUTE4_POKE_BALL
 
 Route4_MapScripts:
@@ -8,35 +8,7 @@ Route4_MapScripts:
 
 	def_callbacks
 
-TrainerCoolTrainerFGwen: ; COOLTRAINERF_GWEN
-	trainer COOLTRAINERF, GWEN, EVENT_BEAT_ROUTE_4_COOLTRAINER_F2_GWEN, CoolTrainerFGwenBattleText, CoolTrainerFGwenEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CoolTrainerFGwenAfterBattleText
-	waitbutton
-	closetext
-	end
-
-CoolTrainerFGwenBattleText: ; COOLTRAINERF_GWEN
-	text "I came to get my"
-	line "mushroom #MON!"
-	done
-
-CoolTrainerFGwenEndBattleText: ; COOLTRAINERF_GWEN
-	text "Oh! My cute"
-	line "mushroom #MON!"
-	prompt
-
-CoolTrainerFGwenAfterBattleText: ; COOLTRAINERF_GWEN
-	text "There might not"
-	line "be any more"
-	cont "mushrooms here."
-
-	para "I think I got"
-	line "them all."
-	done	
+; ------------------------------------------------------------------------------
 
 CoolTrainerF1Script:
 	faceplayer
@@ -51,9 +23,45 @@ CooltrainerF1Text:
 	line "over a rocky"
 	cont "#MON, GEODUDE!"
 	done
+
+; ------------------------------------------------------------------------------
+
+TrainerCoolTrainerFGwen:
+	trainer COOLTRAINERF, GWEN, EVENT_BEAT_ROUTE_4_COOLTRAINER_F2_GWEN, CoolTrainerFGwenBattleText, CoolTrainerFGwenEndBattleText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CoolTrainerFGwenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+CoolTrainerFGwenBattleText:
+	text "I came to get my"
+	line "mushroom #MON!"
+	done
+
+CoolTrainerFGwenEndBattleText:
+	text "Oh! My cute"
+	line "mushroom #MON!"
+	done
+
+CoolTrainerFGwenAfterBattleText:
+	text "There might not"
+	line "be any more"
+	cont "mushrooms here."
+
+	para "I think I got"
+	line "them all."
+	done	
 	
+; ------------------------------------------------------------------------------
+
 Route4PokecenterSign:
 	jumpstd PokecenterSignScript
+
+; ------------------------------------------------------------------------------
 
 MtMoonSign:
 	jumptext Route4MtMoonSignText
@@ -63,6 +71,8 @@ Route4MtMoonSignText:
 	line "Tunnel Entrance"
 	done
 	
+; ------------------------------------------------------------------------------
+
 Route4MtMoonExitSign:
 	jumptext Route4SignText
 
@@ -72,8 +82,12 @@ Route4SignText:
 	cont "CERULEAN CITY"
 	done
 
-Route4RolloutTM:
+; ------------------------------------------------------------------------------
+
+Route4RolloutTM: ; Change to Whirlwind
 	itemball TM_ROLLOUT
+
+; ------------------------------------------------------------------------------
 
 Route4_MapEvents:
 	db 0, 0 ; filler
@@ -92,5 +106,5 @@ Route4_MapEvents:
 
 	def_object_events
 	object_event  9,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CoolTrainerF1Script, -1
-	object_event 63,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerCoolTrainerFGwen, -1 ; COOLTRAINERF_GWEN
-	object_event 57,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4RolloutTM, EVENT_ROUTE_4_TM_ROLLOUT
+	object_event 63,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerCoolTrainerFGwen, -1 	; COOLTRAINERF_GWEN
+	object_event 57,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4RolloutTM, EVENT_ROUTE_4_TM_ROLLOUT				; ITEM_ROLLOUT

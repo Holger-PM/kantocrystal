@@ -1,16 +1,15 @@
-	object_const_def
+object_const_def
 ;	const ROUTE5_POKEFAN_M
 
 Route5_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	
+; ------------------------------------------------------------------------------
 
 ;Route5PokefanMScript:
 ;	jumptextfaceplayer Route5PokefanMText
-
-Route5UndergroundPathSign:
-	jumptext Route5UndergroundPathSignText
 
 ;Route5PokefanMText:
 ;	text "The road is closed"
@@ -20,12 +19,19 @@ Route5UndergroundPathSign:
 ;	line "is solved."
 ;	done
 
+; ------------------------------------------------------------------------------
+
+Route5UndergroundPathSign:
+	jumptext Route5UndergroundPathSignText
+
 Route5UndergroundPathSignText:
 	text "UNDERGROUND PATH"
 
 	para "CERULEAN CITY -"
 	line "VERMILION CITY"
 	done
+
+; ------------------------------------------------------------------------------
 
 Route5_MapEvents:
 	db 0, 0 ; filler

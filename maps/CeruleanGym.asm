@@ -138,7 +138,7 @@ CeruleanGymMistyReceivedCascadeBadgeText: ; MISTY
 	done
 
 TrainerPicnickerHope: ; PICNICKER_HOPE
-	trainer SWIMMERF, HOPE, EVENT_BEAT_CERULEAN_GYM_TRAINER_HOPE, PicnickerHopeBattleText, PicnickerHopeEndBattleText, 0, .Script
+	trainer SWIMMERF, HOPE, EVENT_BEAT_CERULEAN_GYM_TRAINER_HOPE, PicnickerHopeSeenText, PicnickerHopeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -148,14 +148,14 @@ TrainerPicnickerHope: ; PICNICKER_HOPE
 	closetext
 	end
 
-PicnickerHopeBattleText:
+PicnickerHopeSeenText:
 	text "I'm more than good"
 	line "enough for you!"
 
 	para "MISTY can wait!"
 	done
 
-PicnickerHopeEndBattleText:
+PicnickerHopeBeatenText:
 	text "You"
 	line "overwhelmed me!"
 	prompt
@@ -195,7 +195,7 @@ PicnickerHopeAfterBattleText:
 ;	done
 
 TrainerSwimmerMJames: ; SWIMMER_M_JAMES
-	trainer SWIMMERM, JAMES2, EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES, SwimmerMJamesBattleText, SwimmerMJamesEndBattleText, 0, .Script
+	trainer SWIMMERM, JAMES2, EVENT_BEAT_CERULEAN_GYM_TRAINER_JAMES, SwimmerMJamesSeenText, SwimmerMJamesBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -205,14 +205,14 @@ TrainerSwimmerMJames: ; SWIMMER_M_JAMES
 	closetext
 	end
 
-SwimmerMJamesBattleText:
+SwimmerMJamesSeenText:
 	text "Splash!"
 
 	para "I'm first up!"
 	line "Let's do it!"
 	done
 
-SwimmerMJamesEndBattleText:
+SwimmerMJamesBeatenText:
 	text "That can't be!"
 	prompt
 

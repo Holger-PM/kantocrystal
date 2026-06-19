@@ -301,7 +301,7 @@ ViridianCityFisherYouCanHaveThisText:
 	para "This is spooky!"
 	line "Here, you can"
 	cont "have this TM."
-	prompt
+	done
 
 ViridianCityFisherReceivedTM42Text:
 	text "<PLAYER> received"

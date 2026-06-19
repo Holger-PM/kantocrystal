@@ -1,12 +1,11 @@
 	object_const_def
-	const ROUTE24_TRAINER_ROCKET		; ROCKET (36)
-	const ROUTE24_TRAINER_CAMPER1		; CAMPER_SEAN
-	const ROUTE24_TRAINER_LASS1			; LASS_EMILY
-	const ROUTE24_TRAINER_CAMPER2		; CAMPER_ALEX
-	const ROUTE24_TRAINER_YOUNGSTER		; YOUNGSTER_RYAN
-	const ROUTE24_TRAINER_LASS2			; LASS_AMY
-	const ROUTE24_TRAINER_BUG_CATCHER	; BUG_CATCHER_JAKE
-	
+	const ROUTE24_ROCKET
+	const ROUTE24_CAMPER_SEAN
+	const ROUTE24_LASS_EMILY
+	const ROUTE24_CAMPER_ALEX
+	const ROUTE24_YOUNGSTER_RYAN
+	const ROUTE24_LASS_AMY
+	const ROUTE24_BUG_CATCHER_JAKE
 
 Route24_MapScripts:
 	def_scene_scripts
@@ -20,15 +19,17 @@ Route24NoopScene:
 	
 Route24AfterNuggetScene:
 	end
+	
+; ------------------------------------------------------------------------------
 
 Route24RocketScript: ; ROCKET (36)
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_NUGGET
 	iftrue .WithYourAbility
-	writetext Route24CooltrainerM1YouBeatOurContestText
+	writetext RocketContestText
 	waitbutton
-	writetext Route24CooltrainerM1YouJustEarnedAPrizeText
+	writetext RocketPrizeText
 	getitemname STRING_BUFFER_3, NUGGET
 	giveitem NUGGET
 	iffalse .NotEnoughSpace
@@ -36,51 +37,51 @@ Route24RocketScript: ; ROCKET (36)
 	writetext Route24ReceivedNuggetText
 	playsound SFX_GET_ITEM1_1
 	waitsfx
-	writetext Route24CooltrainerM1JoinTeamRocketText
+	writetext RocketRecruitText
 	playmusic MUSIC_MEET_EVIL_TRAINER
 	waitbutton
 	closetext
 	setevent EVENT_GOT_NUGGET
-	winlosstext Route24CooltrainerM1DefeatedText, 0
+	winlosstext RocketDefeatedText, 0
 	loadtrainer GRUNTM, ROCKET_5
 	startbattle
 	reloadmapafterbattle
 	opentext
-	writetext Route24CooltrainerM1YouCouldBecomeATopLeaderText
+	writetext RocketLeaderText
 	waitbutton
 	closetext
 	setscene SCENE_ROUTE_24_AFTER_NUGGET
 	end
 	
 .WithYourAbility
-	writetext Route24CooltrainerM1YouCouldBecomeATopLeaderText
+	writetext RocketLeaderText
 	waitbutton
 	closetext
 	end
 	
 .NotEnoughSpace
-	writetext Route24CooltrainerM1NoRoomText
+	writetext Route24RocketNoRoomText
 	waitbutton
 	closetext
 	end
 	
-Route24CooltrainerM1YouBeatOurContestText: ; ROCKET (36)
+RocketContestText:
 	text "Congratulations!"
 	line "You beat our 5"
 	cont "contest trainers!"
 	done
 
-Route24CooltrainerM1YouJustEarnedAPrizeText: ; ROCKET (36)
+RocketPrizeText:
 	text "You just earned a"
 	line "fabulous prize!"
-	prompt
+	done
 
-Route24CooltrainerM1NoRoomText: ; ROCKET (36)
+RocketNoRoomText:
 	text "You don't have"
 	line "any room!"
 	done
 
-Route24CooltrainerM1JoinTeamRocketText: ; ROCKET (36)
+RocketRecruitText:
 	text "By the way, would"
 	line "you like to join"
 	cont "TEAM ROCKET?"
@@ -106,26 +107,28 @@ Route24CooltrainerM1JoinTeamRocketText: ; ROCKET (36)
 	cont "refuse!"
 	done
 
-Route24CooltrainerM1DefeatedText: ; ROCKET (36)
+RocketDefeatedText:
 	text "Arrgh!"
 	line "You are good!"
-	prompt
+	done
 
-Route24CooltrainerM1YouCouldBecomeATopLeaderText: ; ROCKET (36)
+RocketLeaderText:
 	text "With your ability,"
 	line "you could become"
 	cont "a top leader in"
 	cont "TEAM ROCKET!"
 	done
 	
-Route24ReceivedNuggetText: ; ROCKET (36)
+Route24ReceivedNuggetText:
 	text "<PLAYER> received"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
 	done
 
-TrainerCamperSean: ; CAMPER_SEAN
+; ------------------------------------------------------------------------------
+
+TrainerCamperSean:
 	trainer CAMPER, SEAN2, EVENT_BEAT_ROUTE_24_CAMPER_SEAN, CamperSeanSeenText, CamperSeanBeatenText, 0, .Script
 
 .Script:
@@ -144,9 +147,11 @@ CamperSeanSeenText:
 CamperSeanBeatenText:
 	text "Whoa!"
 	line "Too much!"
-	prompt
+	done
 	
-TrainerLassEmily: ; LASS_EMILY
+; ------------------------------------------------------------------------------
+
+TrainerLassEmily:
 	trainer LASS, EMILY, EVENT_BEAT_ROUTE_24_LASS_EMILY, LassEmilySeenText, LassEmilyBeatenText, 0, .Script
 
 .Script:
@@ -164,9 +169,11 @@ LassEmilySeenText:
 
 LassEmilyBeatenText:
 	text "I lost too!"
-	prompt
+	done
 	
-TrainerCamperAlex: ; CAMPER_ALEX
+; ------------------------------------------------------------------------------
+
+TrainerCamperAlex:
 	trainer CAMPER, ALEX2, EVENT_BEAT_ROUTE_24_CAMPER_ALEX, CamperAlexSeenText, CamperAlexBeatenText, 0, .Script
 
 .Script:
@@ -184,7 +191,7 @@ CamperAlexSeenText:
 	
 CamperAlexBeatenText:
 	text "I thought not!"
-	prompt
+	done
 
 CamperAlexAfterBattleText:
 	text "I hid because the"
@@ -192,7 +199,9 @@ CamperAlexAfterBattleText:
 	cont "bridge scared me!"
 	done
 	
-TrainerYoungsterRyan: ; YOUNGSTER_RYAN
+; ------------------------------------------------------------------------------
+
+TrainerYoungsterRyan:
 	trainer YOUNGSTER, RYAN2, EVENT_BEAT_ROUTE_24_YOUNGSTER_RYAN, YoungsterRyanSeenText, YoungsterRyanBeatenText, 0, .Script
 
 .Script:
@@ -203,17 +212,19 @@ TrainerYoungsterRyan: ; YOUNGSTER_RYAN
 	closetext
 	end
 
-YoungsterRyanSeenText: ; YOUNGSTER_RYAN
+YoungsterRyanSeenText:
 	text "Here's No. 3!"
 	line "I won't be easy!"
 	done
 
-YoungsterRyanBeatenText: ; YOUNGSTER_RYAN
+YoungsterRyanBeatenText:
 	text "Ow!"
 	line "Stomped flat!"
-	prompt
+	done
 
-TrainerLassAmy: ; LASS_AMY
+; ------------------------------------------------------------------------------
+
+TrainerLassAmy:
 	trainer LASS, AMY, EVENT_BEAT_ROUTE_24_LASS_AMY, LassAmySeenText, LassAmyBeatenText, 0, .Script
 
 .Script:
@@ -231,9 +242,11 @@ LassAmySeenText:
 
 LassAmyBeatenText:
 	text "How could I lose?"
-	prompt
+	done
 	
-TrainerBugCatcherJake: ; BUG_CATCHER_JAKE
+; ------------------------------------------------------------------------------
+
+TrainerBugCatcherJake:
 	trainer BUG_CATCHER, JAKE2, EVENT_BEAT_ROUTE_24_BUG_CATCHER_JAKE, BugCatcherJakeSeenText, BugCatcherJakeBeatenText, 0, .Script
 
 .Script:
@@ -257,12 +270,14 @@ BugCatcherJakeSeenText:
 BugCatcherJakeBeatenText: 
 	text "Whoo!"
 	line "Good stuff!"
-	prompt
+	done
 
 Route24AfterBattleText:
 	text "I did my best, I"
 	line "have no regrets!"
 	done
+
+; ------------------------------------------------------------------------------
 
 Route24_MapEvents:
 	db 0, 0 ; filler
@@ -282,4 +297,4 @@ Route24_MapEvents:
 	object_event 11, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterRyan, -1			; YOUNGSTER_RYAN
 	object_event 10, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassAmy, -1				; LASS_AMY
 	object_event 11, 31, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerBugCatcherJake, -1			; BUG_CATCHER_JAKE	
-	; TODO add Thunderwave TM
+	

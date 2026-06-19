@@ -3,11 +3,8 @@ Route7_MapScripts:
 
 	def_callbacks
 
-Route7UndergroundPathSign:
+Route7UndergroundPathSign: ; SIGN
 	jumptext Route7UndergroundPathSignText
-
-Route7LockedDoor:
-	jumptext Route7LockedDoorText
 
 Route7UndergroundPathSignText:
 	text "What's this flyer?"
@@ -27,6 +24,9 @@ Route7UndergroundPathSignText:
 
 	para "CELADON POLICE"
 	done
+
+Route7LockedDoor: ; To remove
+	jumptext Route7LockedDoorText
 
 Route7LockedDoorText:
 	text "It's locked…"

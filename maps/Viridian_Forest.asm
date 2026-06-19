@@ -123,7 +123,7 @@ BugCatcherDylanSeenText:
 BugCatcherDylanBeatenText:
 	text "I give! You're"
 	line "good at this!"
-	prompt
+	done
 
 BugCatcherDylanAfterBattleText:
 	text "Sometimes, you"
@@ -155,7 +155,7 @@ BugCatcherForestSeenText:
 BugCatcherForestBeatenText:
 	text "After all I"
 	line "did..."
-	prompt
+	done
 
 BugCatcherForestAfterBattleText:
 	text "A METAPOD is cool"
@@ -183,7 +183,7 @@ LassRachelSeenText:
 LassRachelBeatenText:
 	text "Oh no,"
 	line "really?"
-	prompt
+	done
 
 LassRachelAfterBattleText:
 	text "I looked forever,"

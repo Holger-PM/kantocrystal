@@ -51,7 +51,7 @@ InitGender:
 	db 3 ; items
 	db "Boy@"
 	db "Girl@"
-	db "Enby@"
+	db "Other@"
 
 AreYouABoyOrAreYouAGirlText:
 	text_far _AreYouABoyOrAreYouAGirlText

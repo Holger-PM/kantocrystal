@@ -1,32 +1,39 @@
 	object_const_def
-	const CERULEANPOKECENTER_NURSE
-	const CERULEANPOKECENTER_GENTLEMAN
-	const CERULEANPOKECENTER_SUPER_NERD
-	const CERULEANPOKECENTER_BENCH_GUY
-	const CERULEANPOKECENTER_LINK_RECEPTIONIST
+	const CERULEANPOKECENTER_NURSE				; NURSE
+	const CERULEANPOKECENTER_LINK_RECEPTIONIST	; LINK_RECEPTIONIST
+	const CERULEANPOKECENTER_GENTLEMAN			; GENTLEMAN
+	const CERULEANPOKECENTER_SUPER_NERD			; SUPER_NERD
+	const CERULEANPOKECENTER_BENCH_GUY			; BENCH_GUY
 
 CeruleanPokecenter1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 	
-PokeCenterPCScriptCerulean:
+PokeCenterPCScriptCerulean: ; PC
 	opentext
 	special PokemonCenterPC
 	closetext
 	end
 
-CeruleanPokecenter1FNurseScript:
+CeruleanPokecenter1FNurseScript: ; NURSE
 	jumpstd PokecenterNurseScript
 	
-CeruleanPokecenterLinkScript:
+CeruleanPokecenterLinkScript: ; LINK_RECEPTIONIST
 	opentext
 	writetext CeruleanPokecenterLinkText
 	waitbutton
 	closetext
 	end
+
+CeruleanPokecenterLinkText:
+	text "This area is"
+	line "reserved for 2"
+	cont "friends who are"
+	cont "linked by cable."
+	done
 	
-CeruleanPokecenterGentlemanScript:
+CeruleanPokecenterGentlemanScript: ; GENTLEMAN
 	faceplayer
 	opentext
 	writetext CeruleanPokecenterGentlemanText
@@ -34,40 +41,6 @@ CeruleanPokecenterGentlemanScript:
 	closetext
 	turnobject CERULEANPOKECENTER_GENTLEMAN, DOWN
 	end
-	
-CeruleanPokecenterSuperNerdScript:
-	faceplayer
-	opentext
-	writetext CeruleanPokecenterSuperNerdText
-	waitbutton
-	closetext
-	end
-	
-CeruleanPokecenterBenchGuyScript:
-	faceplayer
-	opentext
-	writetext CeruleanPokecenterBenchGuyText
-	waitbutton
-	closetext
-	turnobject CERULEANPOKECENTER_BENCH_GUY, RIGHT
-	end
-	
-CeruleanPokecenterBenchGuyText:
-	text "BILL has lots of"
-	line "#MON!"
-
-	para "He collects rare"
-	line "ones too!"
-	done
-
-CeruleanPokecenterSuperNerdText:
-	text "That BILL!"
-
-	para "I heard that"
-	line "he'll do whatever"
-	cont "it takes to get"
-	cont "rare #MON!"
-	done
 
 CeruleanPokecenterGentlemanText:
 	text "Have you heard"
@@ -85,11 +58,38 @@ CeruleanPokecenterGentlemanText:
 	cont "their #MON?"
 	done
 	
-CeruleanPokecenterLinkText:
-	text "This area is"
-	line "reserved for 2"
-	cont "friends who are"
-	cont "linked by cable."
+CeruleanPokecenterSuperNerdScript: ; SUPER_NERD
+	faceplayer
+	opentext
+	writetext CeruleanPokecenterSuperNerdText
+	waitbutton
+	closetext
+	end
+	
+CeruleanPokecenterSuperNerdText:
+	text "That BILL!"
+
+	para "I heard that"
+	line "he'll do whatever"
+	cont "it takes to get"
+	cont "rare #MON!"
+	done
+
+CeruleanPokecenterBenchGuyScript: ; BENCH_GUY
+	faceplayer
+	opentext
+	writetext CeruleanPokecenterBenchGuyText
+	waitbutton
+	closetext
+	turnobject CERULEANPOKECENTER_BENCH_GUY, RIGHT
+	end
+	
+CeruleanPokecenterBenchGuyText:
+	text "BILL has lots of"
+	line "#MON!"
+
+	para "He collects rare"
+	line "ones too!"
 	done
 
 CeruleanPokecenter1F_MapEvents:

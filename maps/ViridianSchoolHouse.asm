@@ -7,6 +7,8 @@ ViridianSchoolHouse_MapScripts:
 
 	def_callbacks
 
+; ------------------------------------------------------------------------------
+
 ViridianTrainerHouseBrunetteGirlScript:
 	faceplayer
 	opentext
@@ -16,6 +18,14 @@ ViridianTrainerHouseBrunetteGirlScript:
 	turnobject VIRIDIANSCHOOLHOUSE_BRUNETTE_GIRL, UP
 	end
 
+ViridianTrainerHouseBrunetteGirlText:
+	text "Whew! I'm trying"
+	line "to memorize all"
+	cont "my notes."
+	done
+
+; ------------------------------------------------------------------------------
+
 ViridianTrainerHouseCooltrainerFScript:
 	faceplayer
 	opentext
@@ -24,6 +34,16 @@ ViridianTrainerHouseCooltrainerFScript:
 	closetext
 	turnobject VIRIDIANSCHOOLHOUSE_COOLTRAINER_F, DOWN
 	end
+
+ViridianTrainerHouseCooltrainerFText:
+	text "Okay!"
+
+	para "Be sure to read"
+	line "the blackboard"
+	cont "carefully!"
+	done
+
+; ------------------------------------------------------------------------------
 
 ViridianSchoolHouseBlackboardScript:
 	opentext
@@ -86,6 +106,84 @@ ViridianSchoolHouseBlackboardScript:
 	db "BRN@"
 	db "FRZ@"
 	db "QUIT@"
+
+	
+ViridianSchoolBlackboardText1:
+	text "The blackboard"
+	line "describes #MON"
+	cont "STATUS changes"
+	cont "during battles."
+	done
+
+ViridianSchoolBlackboardText2:
+	text "Which heading do"
+	line "you want to read?"
+	done
+
+ViridianBlackboardSleepText:
+	text "A #MON can't"
+	line "attack if it's"
+	cont "asleep!"
+
+	para "#MON will stay"
+	line "asleep even after"
+	cont "battles."
+
+	para "Use AWAKENING to"
+	line "wake them up!"
+	done
+
+ViridianBlackboardPoisonText:
+	text "When poisoned, a"
+	line "#MON's health"
+	cont "steadily drops."
+
+	para "Poison lingers"
+	line "after battles."
+
+	para "Use an ANTIDOTE"
+	line "to cure poison!"
+	done
+
+ViridianBlackboardPrlzText:
+	text "Paralysis could"
+	line "make #MON"
+	cont "moves misfire!"
+
+	para "Paralysis remains"
+	line "after battles."
+
+	para "Use PARLYZ HEAL"
+	line "for treatment!"
+	done
+
+ViridianBlackboardBurnText:
+	text "A burn reduces"
+	line "power and speed."
+	cont "It also causes"
+	cont "ongoing damage."
+
+	para "Burns remain"
+	line "after battles."
+
+	para "Use BURN HEAL to"
+	line "cure a burn!"
+	done
+
+ViridianBlackboardFrozenText:
+	text "If frozen, a"
+	line "#MON becomes"
+	cont "totally immobile!"
+
+	para "It stays frozen"
+	line "even after the"
+	cont "battle ends."
+
+	para "Use ICE HEAL to"
+	line "thaw out #MON!"
+	done
+
+; ------------------------------------------------------------------------------
 	
 ViridianSchoolHouseNotebookScript:
 	opentext
@@ -114,110 +212,6 @@ KeepReadingText:
 	text "Keep reading?"
 	done
 
-ViridianTrainerHouseBrunetteGirlText:
-	text "Whew! I'm trying"
-	line "to memorize all"
-	cont "my notes."
-	done
-
-ViridianTrainerHouseCooltrainerFText:
-	text "Okay!"
-
-	para "Be sure to read"
-	line "the blackboard"
-	cont "carefully!"
-	done
-	
-ViridianSchoolBlackboardText1:
-	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
-	cont "during battles."
-	prompt
-
-ViridianSchoolBlackboardText2:
-	text "Which heading do"
-	line "you want to read?"
-	done
-	
-StatusAilmentText1:
-	db   " SLP"
-	next " PSN"
-	next " PAR@"
-
-StatusAilmentText2:
-	db   " BRN"
-	next " FRZ"
-	next " QUIT@"
-
-ViridianBlackboardSleepText:
-	text "A #MON can't"
-	line "attack if it's"
-	cont "asleep!"
-
-	para "#MON will stay"
-	line "asleep even after"
-	cont "battles."
-
-	para "Use AWAKENING to"
-	line "wake them up!"
-	prompt
-
-ViridianBlackboardPoisonText:
-	text "When poisoned, a"
-	line "#MON's health"
-	cont "steadily drops."
-
-	para "Poison lingers"
-	line "after battles."
-
-	para "Use an ANTIDOTE"
-	line "to cure poison!"
-	prompt
-
-ViridianBlackboardPrlzText:
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
-
-	para "Paralysis remains"
-	line "after battles."
-
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
-	prompt
-
-ViridianBlackboardBurnText:
-	text "A burn reduces"
-	line "power and speed."
-	cont "It also causes"
-	cont "ongoing damage."
-
-	para "Burns remain"
-	line "after battles."
-
-	para "Use BURN HEAL to"
-	line "cure a burn!"
-	prompt
-
-ViridianBlackboardFrozenText:
-	text "If frozen, a"
-	line "#MON becomes"
-	cont "totally immobile!"
-
-	para "It stays frozen"
-	line "even after the"
-	cont "battle ends."
-
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
-	prompt
-	
-ViridianSchoolNotebookText5:
-	text "GIRL: Hey! Don't"
-	line "look at my notes!"
-	done
-
 ViridianSchoolNotebookText1:
 	text "Looked at the"
 	line "notebook!"
@@ -235,7 +229,7 @@ ViridianSchoolNotebookText1:
 	line "and make #MON"
 	cont "fight are called"
 	cont "#MON trainers."
-	prompt
+	done
 
 ViridianSchoolNotebookText2:
 	text "Second page..."
@@ -248,7 +242,7 @@ ViridianSchoolNotebookText2:
 	para "Poison, burns and"
 	line "other damage are"
 	cont "effective!"
-	prompt
+	done
 
 ViridianSchoolNotebookText3:
 	text "Third page..."
@@ -261,7 +255,7 @@ ViridianSchoolNotebookText3:
 	para "Battles are"
 	line "constantly fought"
 	cont "at #MON GYMs."
-	prompt
+	done
 
 ViridianSchoolNotebookText4:
 	text "Fourth page..."
@@ -277,7 +271,14 @@ ViridianSchoolNotebookText4:
 
 	para "The ELITE FOUR of"
 	line "#MON LEAGUE!"
-	prompt
+	done
+
+ViridianSchoolNotebookText5:
+	text "GIRL: Hey! Don't"
+	line "look at my notes!"
+	done
+
+; ------------------------------------------------------------------------------
 
 ViridianSchoolHouse_MapEvents:
 	db 0, 0 ; filler

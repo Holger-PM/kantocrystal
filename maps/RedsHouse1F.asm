@@ -131,7 +131,7 @@ RedsHouse1FMomYouShouldRestText:
 	text "MOM: <PLAYER>!"
 	line "You should take a"
 	cont "quick rest."
-	prompt
+	done
 
 RedsHouse1FMomLookingGreatText:
 	text "MOM: Oh good!"

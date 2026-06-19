@@ -99,9 +99,9 @@ RivalHasCharmanderBattle1:
         ifequal 4, RivalLeavesFromTop
         ifequal 5, RivalLeavesFromBottom
 	
-RivalHasSquirtleBattle1:
+RivalHasSquirtleBattle1: 
 	winlosstext Route22Rival1DefeatedText, Route22AmIGreatOrWhatText
-	loadtrainer BLUE1, BLUE_CERULEAN_CITY_SQUIRTLE
+	loadtrainer BLUE1, BLUE_ROUTE22_SQUIRTLE
 	startbattle
 	reloadmapafterbattle
 	opentext
@@ -116,7 +116,7 @@ RivalHasSquirtleBattle1:
 	
 RivalHasBulbasaurBattle1:
 	winlosstext Route22Rival1DefeatedText, Route22AmIGreatOrWhatText
-	loadtrainer BLUE1, BLUE_CERULEAN_CITY_BULBASAUR
+	loadtrainer BLUE1, BLUE_ROUTE22_BULBASAUR
 	startbattle
 	reloadmapafterbattle
 	opentext

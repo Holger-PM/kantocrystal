@@ -6,7 +6,7 @@ Route2NuggetHouse_MapScripts:
 
 	def_callbacks
 
-Route2NuggetHouseFisherScript:
+Route2NuggetHouseFisherScript: ; FISHER
 	faceplayer
 	opentext
 	writetext Route2NuggetHouseFisherText
@@ -15,9 +15,6 @@ Route2NuggetHouseFisherScript:
 	writetext Route2NuggetHouseFisherText_GotNugget
 	closetext
 	end
-
-Route2NuggetHouseBookshelf: ; unreferenced
-	jumpstd DifficultBookshelfScript
 
 Route2NuggetHouseFisherText:
 	text "Hi! Wow, I'm glad"
@@ -41,6 +38,9 @@ Route2NuggetHouseFisherText_GotNugget:
 	para "wisdom, so that'll"
 	line "have to do!"
 	done
+
+;Route2NuggetHouseBookshelf: ; unused ?
+;	jumpstd DifficultBookshelfScript
 
 Route2NuggetHouse_MapEvents:
 	db 0, 0 ; filler

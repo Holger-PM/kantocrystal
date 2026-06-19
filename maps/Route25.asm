@@ -15,264 +15,7 @@ Route25_MapScripts:
 
 	def_callbacks
 
-TrainerHikerCliff: ; HIKER_CLIFF
-	trainer HIKER, CLIFF, EVENT_BEAT_ROUTE_25_HIKER_CLIFF, HikerCliffBattleText, HikerCliffEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext HikerCliffAfterBattleText
-	waitbutton
-	closetext
-	end
-
-HikerCliffBattleText:
-	text "I just got down"
-	line "from MT.MOON,"
-	cont "but I'm ready!"
-	done
-
-HikerCliffEndBattleText:
-	text "You worked hard!"
-	prompt
-
-HikerCliffAfterBattleText:
-	text "Drat!"
-	line "A ZUBAT bit me"
-	cont "back in there."
-	done
-
-TrainerHikerRidge: ; HIKER_RIDGE
-	trainer HIKER, RIDGE, EVENT_BEAT_ROUTE_25_HIKER_RIDGE, HikerRidgeBattleText, HikerRidgeEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext HikerRidgeAfterBattleText
-	waitbutton
-	closetext
-	end
-
-HikerRidgeBattleText:
-	text "I'm off to see a"
-	line "#MON collector"
-	cont "at the cape!"
-	done
-
-HikerRidgeEndBattleText:
-	text "You got me."
-	prompt
-
-HikerRidgeAfterBattleText:
-	text "The collector has"
-	line "many rare kinds"
-	cont "of #MON."
-	done
-
-TrainerYoungsterAiden: ; YOUNGSTER_AIDEN
-	trainer YOUNGSTER, AIDEN, EVENT_BEAT_ROUTE_25_YOUNGSTER_AIDEN, YoungsterAidenBattleText, YoungsterAidenEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext YoungsterAidenAfterBattleText
-	waitbutton
-	closetext
-	end
-
-YoungsterAidenBattleText:
-	text "Local trainers"
-	line "come here to"
-	cont "practice!"
-	done
-
-YoungsterAidenEndBattleText:
-	text "You're decent."
-	prompt
-
-YoungsterAidenAfterBattleText:
-	text "All #MON have"
-	line "weaknesses. It's"
-	cont "best to raise"
-	cont "different kinds."
-	done
-
-TrainerYoungsterWarren: ; YOUNGSTER_WARREN
-	trainer YOUNGSTER, WARREN2, EVENT_BEAT_ROUTE_25_YOUNGSTER_WARREN, YoungsterWarrenBattleText, YoungsterWarrenEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext YoungsterWarrenAfterBattleText
-	waitbutton
-	closetext
-	end
-
-YoungsterWarrenBattleText:
-	text "Dad took me to a"
-	line "great party on"
-	cont "S.S.ANNE at"
-	cont "VERMILION CITY!"
-	done
-
-YoungsterWarrenEndBattleText:
-	text "I'm not mad!"
-	prompt
-
-YoungsterWarrenAfterBattleText:
-	text "On S.S.ANNE, I"
-	line "saw trainers from"
-	cont "around the world."
-	done
-
-TrainerLassApril: ; LASS_APRIL
-	trainer LASS, APRIL, EVENT_BEAT_ROUTE_25_LASS_APRIL, LassAprilBattleText, LassAprilEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassAprilAfterBattleText
-	waitbutton
-	closetext
-	end
-
-LassAprilBattleText:
-	text "Hi! My boy"
-	line "friend is cool!"
-	done
-
-LassAprilEndBattleText:
-	text "I was in"
-	line "bad condition!"
-	prompt
-
-LassAprilAfterBattleText:
-	text "I wish my guy was"
-	line "as good as you!"
-	done
-
-TrainerHikerHank: ; HIKER_HANK
-	trainer HANK, HANK, EVENT_BEAT_ROUTE_25_HIKER_HANK, HikerHankBattleText, HikerHankEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext HikerHankAfterBattleText
-	waitbutton
-	closetext
-	end
-
-HikerHankBattleText:
-	text "You're going to"
-	line "see BILL? First,"
-	cont "let's fight!"
-	done
-
-HikerHankEndBattleText:
-	text "You're something."
-	prompt
-
-HikerHankAfterBattleText:
-	text "The trail below"
-	line "is a shortcut to"
-	cont "CERULEAN CITY."
-	done
-
-TrainerCamperJeffrey: ; CAMPER_JEFFREY
-	trainer CAMPER, JEFFREY2, EVENT_BEAT_ROUTE_25_CAMPER_JEFFREY, CamperJeffreyBattleText, CamperJeffreyEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CamperJeffreyAfterBattleText
-	waitbutton
-	closetext
-	end
-
-CamperJeffreyBattleText:
-	text "I'm a cool guy."
-	line "I've got a girl"
-	cont "friend!"
-	done
-
-CamperJeffreyEndBattleText:
-	text "Aww, darn..."
-	prompt
-
-CamperJeffreyAfterBattleText:
-	text "Oh well. My girl"
-	line "will cheer me up."
-	done
-	
-TrainerYoungsterDevin: ; YOUNGSTER_DEVIN
-	trainer YOUNGSTER, DEVIN, EVENT_BEAT_ROUTE_25_YOUNGSTER_DEVIN, YoungsterDevinBattleText, YoungsterDevinEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext YoungsterDevinAfterBattleText
-	waitbutton
-	closetext
-	end
-
-YoungsterDevinBattleText:
-	text "I knew I had to"
-	line "fight you!"
-	done
-
-YoungsterDevinEndBattleText:
-	text "I knew I'd"
-	line "lose too!"
-	prompt
-
-YoungsterDevinAfterBattleText:
-	text "If your #MON"
-	line "gets confused or"
-	cont "falls asleep,"
-	cont "switch it!"
-	done
-	
-TrainerLassIris: ; LASS_IRIS
-	trainer LASS, IRIS, EVENT_BEAT_ROUTE_25_LASS_IRIS, LassIrisBattleText, LassIrisEndBattleText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassIrisAfterBattleText
-	waitbutton
-	closetext
-	end
-
-LassIrisBattleText:
-	text "My friend has a"
-	line "cute #MON."
-	cont "I'm so jealous!"
-	done
-
-LassIrisEndBattleText:
-	text "I'm not"
-	line "so jealous!"
-	prompt
-
-LassIrisAfterBattleText:
-	text "You came from MT."
-	line "MOON? May I have"
-	cont "a CLEFAIRY?"
-	done
-
-BillsHouseSign: ; SIGN
-	jumptext BillSignText
-
-BillSignText:
-	text "SEA COTTAGE"
-	line "BILL lives here!"
-	done
-
-SeismicToss:
-	itemball PROTEIN
-
-;Route25HiddenFastBall:
-;	hiddenitem FAST_BALL, EVENT_ROUTE_25_HIDDEN_FAST_BALL
+; ------------------------------------------------------------------------------
 
 Route25HandleBill:
 	checkevent EVENT_GOT_SS_TICKET
@@ -282,6 +25,289 @@ Route25HandleBill:
 	setevent EVENT_LEFT_BILLS_HOUSE_AFTER_HELPING
 	setmapscene BILLS_HOUSE, SCENE_BILLS_HOUSE_NOOP
 	end
+
+; ------------------------------------------------------------------------------
+
+TrainerHikerCliff:
+	trainer HIKER, CLIFF, EVENT_BEAT_ROUTE_25_HIKER_CLIFF, HikerCliffSeenText, HikerCliffBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HikerCliffAfterBattleText
+	waitbutton
+	closetext
+	end
+
+HikerCliffSeenText:
+	text "I just got down"
+	line "from MT.MOON,"
+	cont "but I'm ready!"
+	done
+
+HikerCliffBeatenText:
+	text "You worked hard!"
+	done
+
+HikerCliffAfterBattleText:
+	text "Drat!"
+	line "A ZUBAT bit me"
+	cont "back in there."
+	done
+
+; ------------------------------------------------------------------------------
+
+TrainerHikerRidge:
+	trainer HIKER, RIDGE, EVENT_BEAT_ROUTE_25_HIKER_RIDGE, HikerRidgeSeenText, HikerRidgeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HikerRidgeAfterBattleText
+	waitbutton
+	closetext
+	end
+
+HikerRidgeSeenText:
+	text "I'm off to see a"
+	line "#MON collector"
+	cont "at the cape!"
+	done
+
+HikerRidgeBeatenText:
+	text "You got me."
+	done
+
+HikerRidgeAfterBattleText:
+	text "The collector has"
+	line "many rare kinds"
+	cont "of #MON."
+	done
+
+; ------------------------------------------------------------------------------
+
+TrainerYoungsterAiden:
+	trainer YOUNGSTER, AIDEN, EVENT_BEAT_ROUTE_25_YOUNGSTER_AIDEN, YoungsterAidenSeenText, YoungsterAidenBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterAidenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+YoungsterAidenSeenText:
+	text "Local trainers"
+	line "come here to"
+	cont "practice!"
+	done
+
+YoungsterAidenBeatenText:
+	text "You're decent."
+	done
+
+YoungsterAidenAfterBattleText:
+	text "All #MON have"
+	line "weaknesses. It's"
+	cont "best to raise"
+	cont "different kinds."
+	done
+
+; ------------------------------------------------------------------------------
+
+TrainerYoungsterWarren:
+	trainer YOUNGSTER, WARREN2, EVENT_BEAT_ROUTE_25_YOUNGSTER_WARREN, YoungsterWarrenSeenText, YoungsterWarrenBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterWarrenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+YoungsterWarrenSeenText:
+	text "Dad took me to a"
+	line "great party on"
+	cont "S.S.ANNE at"
+	cont "VERMILION CITY!"
+	done
+
+YoungsterWarrenBeatenText:
+	text "I'm not mad!"
+	done
+
+YoungsterWarrenAfterBattleText:
+	text "On S.S.ANNE, I"
+	line "saw trainers from"
+	cont "around the world."
+	done
+
+; ------------------------------------------------------------------------------
+
+TrainerLassApril:
+	trainer LASS, APRIL, EVENT_BEAT_ROUTE_25_LASS_APRIL, LassAprilSeenText, LassAprilBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassAprilAfterBattleText
+	waitbutton
+	closetext
+	end
+
+LassAprilSeenText:
+	text "Hi! My boy"
+	line "friend is cool!"
+	done
+
+LassAprilBeatenText:
+	text "I was in"
+	line "bad condition!"
+	done
+
+LassAprilAfterBattleText:
+	text "I wish my guy was"
+	line "as good as you!"
+	done
+
+; ------------------------------------------------------------------------------
+
+TrainerHikerHank:
+	trainer HANK, HANK, EVENT_BEAT_ROUTE_25_HIKER_HANK, HikerHankSeenText, HikerHankBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HikerHankAfterBattleText
+	waitbutton
+	closetext
+	end
+
+HikerHankSeenText:
+	text "You're going to"
+	line "see BILL? First,"
+	cont "let's fight!"
+	done
+
+HikerHankBeatenText:
+	text "You're something."
+	done
+
+HikerHankAfterBattleText:
+	text "The trail below"
+	line "is a shortcut to"
+	cont "CERULEAN CITY."
+	done
+
+; ------------------------------------------------------------------------------
+
+TrainerCamperJeffrey:
+	trainer CAMPER, JEFFREY2, EVENT_BEAT_ROUTE_25_CAMPER_JEFFREY, CamperJeffreySeenText, CamperJeffreyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CamperJeffreyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+CamperJeffreySeenText:
+	text "I'm a cool guy."
+	line "I've got a girl"
+	cont "friend!"
+	done
+
+CamperJeffreyBeatenText:
+	text "Aww, darn..."
+	done
+
+CamperJeffreyAfterBattleText:
+	text "Oh well. My girl"
+	line "will cheer me up."
+	done
+	
+; ------------------------------------------------------------------------------
+
+TrainerYoungsterDevin:
+	trainer YOUNGSTER, DEVIN, EVENT_BEAT_ROUTE_25_YOUNGSTER_DEVIN, YoungsterDevinSeenText, YoungsterDevinBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterDevinAfterBattleText
+	waitbutton
+	closetext
+	end
+
+YoungsterDevinSeenText:
+	text "I knew I had to"
+	line "fight you!"
+	done
+
+YoungsterDevinBeatenText:
+	text "I knew I'd"
+	line "lose too!"
+	done
+
+YoungsterDevinAfterBattleText:
+	text "If your #MON"
+	line "gets confused or"
+	cont "falls asleep,"
+	cont "switch it!"
+	done
+	
+; ------------------------------------------------------------------------------
+
+TrainerLassIris:
+	trainer LASS, IRIS, EVENT_BEAT_ROUTE_25_LASS_IRIS, LassIrisSeenText, LassIrisBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassIrisAfterBattleText
+	waitbutton
+	closetext
+	end
+
+LassIrisSeenText:
+	text "My friend has a"
+	line "cute #MON."
+	cont "I'm so jealous!"
+	done
+
+LassIrisBeatenText:
+	text "I'm not"
+	line "so jealous!"
+	done
+
+LassIrisAfterBattleText:
+	text "You came from MT."
+	line "MOON? May I have"
+	cont "a CLEFAIRY?"
+	done
+
+; ------------------------------------------------------------------------------
+
+BillsHouseSign:
+	jumptext BillSignText
+
+BillSignText:
+	text "SEA COTTAGE"
+	line "BILL lives here!"
+	done
+
+; ------------------------------------------------------------------------------
+
+SeismicToss:
+	itemball PROTEIN
+
+;Route25HiddenFastBall:
+;	hiddenitem FAST_BALL, EVENT_ROUTE_25_HIDDEN_FAST_BALL
+
+; ------------------------------------------------------------------------------
 
 Route25_MapEvents:
 	db 0, 0 ; filler

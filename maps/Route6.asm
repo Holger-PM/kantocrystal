@@ -197,7 +197,7 @@ Route6_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event 19, 15, BGEVENT_READ, Route6UndergroundPathSign
+	bg_event 19, 15, BGEVENT_READ, Route6UndergroundPathSign ; SIGN
 
 	def_object_events
 	object_event 10, 21, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerCooltrainermBrody, -1		; COOLTRAINER_M_BRODY

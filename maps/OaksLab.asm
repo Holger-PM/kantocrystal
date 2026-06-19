@@ -760,7 +760,7 @@ OaksLabYouWantBulbasaurText:
 OaksLabMonEnergeticText:
 	text "This #MON is"
 	line "really energetic!"
-	prompt
+	done
 ;;;;;;;;;; Holgernote: Was copied pasted ?
 ;OaksLabReceivedMonText:
 ;	text "<PLAYER> received"
@@ -876,7 +876,7 @@ OaksLabOak1HowIsYourPokedexComingText:
 	cont "#DEX coming? "
 	cont "Here, let me take"
 	cont "a look!"
-	prompt
+	done
 
 ;OaksLabOak2Text:
 ;	text "?"
@@ -970,12 +970,12 @@ OaksLabRivalIPickedTheWrongPokemonText:
 	line "Unbelievable!"
 	cont "I picked the"
 	cont "wrong #MON!"
-	prompt
+	done
 
 OaksLabRivalAmIGreatOrWhatText:
 	text "<RIVAL>: Yeah! Am"
 	line "I great or what?"
-	prompt
+	done
 
 OaksLabRivalSmellYouLaterText:
 	text "<RIVAL>: Okay!"

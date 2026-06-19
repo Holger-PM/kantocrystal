@@ -8,7 +8,9 @@ PewterGym_MapScripts:
 
 	def_callbacks
 
-PewterGymBrockScript: ; BROCK
+; ------------------------------------------------------------------------------
+
+PewterGymBrockScript: 
 	faceplayer
 	opentext
 	checkflag ENGINE_BOULDERBADGE
@@ -42,13 +44,13 @@ PewterGymBrockScript: ; BROCK
 	closetext
 	end
 	
-.AllKindsOfTrainers: ; BROCK
+.AllKindsOfTrainers: 
 	writetext BrockFightDoneText
 	waitbutton
 	closetext
 	end
 
-BrockIntroText: ; BROCK
+BrockIntroText:
 	text "I'm BROCK!"
 	line "I'm PEWTER's GYM"
 	cont "LEADER!"
@@ -67,19 +69,19 @@ BrockIntroText: ; BROCK
 	cont "me your best!"
 	done
 	
-PewterGymBrockWaitTakeThisText: ; BROCK
+PewterGymBrockWaitTakeThisText: 
 	text "Wait! Take this"
 	line "with you!"
 	done
 
-PewterGymReceivedTM34Text: ; BROCK
+PewterGymReceivedTM34Text: 
 	text "<PLAYER> received"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
 	done
 
-TM34ExplanationText: ; BROCK
+TM34ExplanationText: 
 	text "A TM contains a"
 	line "technique that"
 	cont "can be taught to"
@@ -101,12 +103,12 @@ TM34ExplanationText: ; BROCK
 	cont "it back double!"
 	done
 
-PewterGymTM34NoRoomText: ; BROCK
+PewterGymTM34NoRoomText:
 	text "You don't have"
 	line "room for this!"
 	done
 
-BrockWinLossText: ; BROCK
+BrockWinLossText:
 	text "I took you for"
 	line "granted."
 
@@ -115,12 +117,12 @@ BrockWinLossText: ; BROCK
 	cont "the BOULDERBADGE!"
 	done
 
-ReceivedBoulderBadgeText: ; BROCK
+ReceivedBoulderBadgeText: 
 	text "<PLAYER> received"
 	line "the BOULDERBADGE!"
 	done
 
-BrockBoulderBadgeText: ; BROCK
+BrockBoulderBadgeText:
 	text "That's an official"
 	line "#MON LEAGUE"
 	cont "BADGE!"
@@ -132,10 +134,9 @@ BrockBoulderBadgeText: ; BROCK
 	para "The technique"
 	line "FLASH can now be"
 	cont "used any time!"
-	prompt
 	done
 
-BrockFightDoneText: ; BROCK
+BrockFightDoneText:
 	text "There are all"
 	line "kinds of trainers"
 	cont "in the world!"
@@ -148,6 +149,8 @@ BrockFightDoneText: ; BROCK
 	line "CERULEAN and test"
 	cont "your abilities!"
 	done
+
+; ------------------------------------------------------------------------------
 
 TrainerCamperJerry: ; CAMPER_JERRY
 	trainer CAMPER, JERRY, EVENT_BEAT_PEWTER_GYM_TRAINER_JERRY, CamperJerrySeenText, CamperJerryBeatenText, 0, .Script
@@ -175,13 +178,15 @@ CamperJerryBeatenText:
 	para "Light years isn't"
 	line "time! It measures"
 	cont "distance!"
-	prompt
+	done
 
 CamperJerryAfterBattleText:
 	text "You're pretty hot,"
 	line "but not as hot"
 	cont "as BROCK!"
 	done
+
+; ------------------------------------------------------------------------------
 
 ;TrainerPewterGymTrainer1:
 ;	trainer HIKER, TONY, EVENT_BEAT_PEWTER_GYM_TRAINER_TONY, PewterGymTrainer1SeenText, PewterGymTrainer1BeatenText, 0, .Script
@@ -194,7 +199,9 @@ CamperJerryAfterBattleText:
 ;	closetext
 ;	end
 
-PewterGymGuideScript: ; GYM_GUIDE
+; ------------------------------------------------------------------------------
+
+PewterGymGuideScript:
 	faceplayer
 	opentext
 	checkevent EVENT_BEAT_BROCK
@@ -226,7 +233,7 @@ PewterGymGuideTextContinued:
 	closetext
 	end
 
-PewterGymGuideText: ; GYM_GUIDE
+PewterGymGuideText:
 	text "Hiya! I can tell"
 	line "you have what it"
 	cont "takes to become a"
@@ -240,18 +247,18 @@ PewterGymGuideText: ; GYM_GUIDE
 	line "to the top!"
 	done
 
-PewterGymGuideWinText: ; GYM_GUIDE
+PewterGymGuideWinText:
 	text "Just as I thought!"
 	line "You're #MON"
 	cont "champ material!"
 	done
 	
-PewterGymGuideBeginAdviceText: ; GYM_GUIDE
+PewterGymGuideBeginAdviceText:
 	text "All right! Let's"
 	line "get happening!"
-	prompt
+	done
 
-PewterGymGuideAdviceText: ; GYM_GUIDE
+PewterGymGuideAdviceText:
 	text "The 1st #MON"
 	line "out in a match is"
 	cont "at the top of the"
@@ -263,11 +270,13 @@ PewterGymGuideAdviceText: ; GYM_GUIDE
 	cont "made easier!"
 	done
 
-PewterGymGuideFreeServiceText: ; GYM_GUIDE
+PewterGymGuideFreeServiceText:
 	text "It's a free"
 	line "service! Let's"
 	cont "get happening!"
-	prompt
+	done
+
+; ------------------------------------------------------------------------------
 
 PewterGymStatue: ; STATUE
 	checkflag ENGINE_BOULDERBADGE
@@ -287,12 +296,14 @@ PewterGymStatue: ; STATUE
 	
 ;	para "You're ready for"
 ;	line "BROCK!"
-;	prompt
+;	done
 	
 ;PewterGymTrainer1AfterBattleText:
 ;	text "I should've caught"
 ;	line "more #MON."
 ;	done
+
+; ------------------------------------------------------------------------------
 
 PewterGym_MapEvents:
 	db 0, 0 ; filler

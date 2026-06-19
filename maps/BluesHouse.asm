@@ -99,7 +99,7 @@ BluesHouseDaisyOfferMapText:
 	line "to run an errand?"
 	cont "Here, this will"
 	cont "help you!"
-	prompt
+	done
 
 GotMapText:
 	text "<PLAYER> got a"

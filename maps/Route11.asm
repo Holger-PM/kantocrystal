@@ -9,7 +9,7 @@
 	const ROUTE11_YOUNGSTER3	; YOUNGSTER_CURTIS
 	const ROUTE11_SUPER_NERD2	; SUPER_NERD_CONRAD
 	const ROUTE11_YOUNGSTER4	; YOUNGSTER_CHASE
-	const ROUTE11_FRUIT_TREE
+;	const ROUTE11_FRUIT_TREE
 
 Route11_MapScripts:
 	def_scene_scripts
@@ -283,13 +283,6 @@ YoungsterChaseAfterBattleText:
 	text "I better go find"
 	line "stronger ones!"
 	done
-
-;Route11Sign:
-;	jumptext Route11SignText
-
-;Route11SignText:
-;	text "ROUTE 11"
-;	done
 	
 DiglettsCaveSign: ; SIGN_1
 	jumptext VermilionCityDiglettsCaveSignText
@@ -298,10 +291,17 @@ VermilionCityDiglettsCaveSignText:
 	text "DIGLETT's CAVE"
 	done
 
-Route11FruitTree:
-	fruittree FRUITTREE_ROUTE_11
+;Route11Sign:
+;	jumptext Route11SignText
 
-Route11HiddenRevive:
+;Route11SignText:
+;	text "ROUTE 11"
+;	done
+
+; Route11FruitTree:
+;	fruittree FRUITTREE_ROUTE_11
+
+Route11HiddenRevive: ; ITEM_REVIVE
 	hiddenitem REVIVE, EVENT_ROUTE_11_HIDDEN_REVIVE
 
 Route11_MapEvents:
@@ -318,8 +318,8 @@ Route11_MapEvents:
 
 	def_bg_events
 ;	bg_event  3,  7, BGEVENT_READ, Route11Sign
-	bg_event 48,  5, BGEVENT_ITEM, Route11HiddenRevive
-	bg_event  1,  5, BGEVENT_READ, DiglettsCaveSign
+	bg_event 48,  5, BGEVENT_ITEM, Route11HiddenRevive  ; ITEM_REVIVE
+	bg_event  1,  5, BGEVENT_READ, DiglettsCaveSign		; SIGN_1
 
 	def_object_events
 	object_event 10, 14, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerJugglerChester, -1		; JUGGLER_CHESTER
