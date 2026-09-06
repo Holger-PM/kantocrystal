@@ -2085,6 +2085,7 @@
 	const EVENT_BEAT_JUGGLER_IRVING			; Route 11
 	const EVENT_BEAT_SUPER_NERD_CEDRIC		; Route 11
 	const EVENT_BEAT_GUITARIST_ZAKK			; Route 11
+	const EVENT_GOT_NUGGET_FROM_ROUTE_2_FISHER ; Route 2 Nugget House
 	
 	const_next 2336 ; - New in "New to Kanto Crystal" section ???
 DEF NUM_EVENTS EQU const_value ; 1099 with Kanto events

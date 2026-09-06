@@ -7,7 +7,36 @@ VermilionFishingSpeechHouse_MapScripts:
 	def_callbacks
 
 FishingDude:
-	jumptextfaceplayer FishingDudeText
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_GOOD_ROD
+	iftrue .AlreadyGotOldRod
+	writetext FishingDudeDoYouLikeToFishText
+	yesorno
+	iffalse .Refused
+	verbosegiveitem GOOD_ROD
+	iffalse .NoRoom
+	setevent EVENT_GOT_GOOD_ROD
+	writetext FishingDudeTakeThisText
+	promptbutton
+	writetext FishingDudeFishingIsAWayOfLifeText
+	closetext
+	end
+
+.Refused:
+	writetext FishingDudeThatsSoDisappointingText
+	closetext
+	end
+
+.NoRoom:
+	writetext FishingDudeNoRoomText
+	closetext
+	end
+
+.AlreadyGotOldRod:
+	writetext FishingDudeHowAreTheFishBitingText
+	closetext
+	end
 
 FishingDudesHousePhoto:
 	jumptext FishingDudesHousePhotoText
@@ -15,28 +44,53 @@ FishingDudesHousePhoto:
 FishingDudesHouseBookshelf: ; unreferenced
 	jumpstd PictureBookshelfScript
 
-FishingDudeText:
-	text "I am the FISHING"
-	line "DUDE, the elder of"
-	cont "the FISHING BROS."
+FishingDudeDoYouLikeToFishText:
+	text "I'm the FISHING"
+	line "GURU!"
 
-	para "Have you met the"
-	line "FISHING GURU at"
-	cont "LAKE OF RAGE?"
+	para "I simply Looove"
+	line "fishing!"
 
-	para "He dreams about"
-	line "seeing the world's"
-	cont "greatest MAGIKARP."
+	para "Do you like to"
+	line "fish?"
+	done
 
-	para "If you don't mind,"
-	line "could you show him"
+FishingDudeTakeThisText:
+	text "Grand! I like"
+	line "your style!"
 
-	para "any MAGIKARP you"
-	line "catch?"
+	para "Take this and"
+	line "fish, young one!"
+	done
 
-	para "Who knows, you may"
-	line "catch the MAGIKARP"
-	cont "of his dreams."
+FishingDudeFishingIsAWayOfLifeText:
+	text "Fishing is a way"
+	line "of life!"
+
+	para "From the seas to"
+	line "rivers, go out"
+	cont "and land the big"
+	cont "one, young one!"
+	done
+
+FishingDudeThatsSoDisappointingText:
+	text "Oh... That's so"
+	line "disappointing..."
+	done
+
+FishingDudeHowAreTheFishBitingText:
+	text "Hello there,"
+	line "<PLAYER>!"
+
+	para "How are the fish"
+	line "biting?"
+	done
+
+FishingDudeNoRoomText:
+	text "Oh no!"
+
+	para "You have no room"
+	line "for my gift!"
 	done
 
 FishingDudesHousePhotoText:
@@ -60,4 +114,4 @@ VermilionFishingSpeechHouse_MapEvents:
 	bg_event  3,  0, BGEVENT_READ, FishingDudesHousePhoto
 
 	def_object_events
-	object_event  2,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FishingDude, -1
+	object_event  2,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FishingDude, -1

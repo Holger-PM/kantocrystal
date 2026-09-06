@@ -99,7 +99,7 @@ SuperNerdDaveAfterBattleText: ; SUPER_NERD_DAVE
 	done
 
 TrainerBugCatcherNed: ; BUG_CATCHER_NED
-	trainer BUG_CATCHER, NED, EVENT_BEAT_MT_MOON_1F_BUG_CATCHER_NED, BugCatcherNedBattleText, BugCatcherNedEndBattleText, 0, .Script
+	trainer BUG_CATCHER, NED2, EVENT_BEAT_MT_MOON_1F_BUG_CATCHER_NED, BugCatcherNedBattleText, BugCatcherNedEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -155,7 +155,7 @@ LassShannonAfterBattleText: ; LASS_SHANNON
 
 
 TrainerYoungsterToby: ; YOUNGSTER_TOBY
-	trainer YOUNGSTER, TOBY, EVENT_BEAT_MT_MOON_1F_YOUNGSTER_TOBY, YoungsterTobyBattleText, YoungsterTobyEndBattleText, 0, .Script
+	trainer YOUNGSTER, TOBY2, EVENT_BEAT_MT_MOON_1F_YOUNGSTER_TOBY, YoungsterTobyBattleText, YoungsterTobyEndBattleText, 0, .Script
 
 .Script:
 	endifjustbattled

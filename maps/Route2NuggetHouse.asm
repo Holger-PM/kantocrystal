@@ -9,10 +9,23 @@ Route2NuggetHouse_MapScripts:
 Route2NuggetHouseFisherScript: ; FISHER
 	faceplayer
 	opentext
+	checkevent EVENT_GOT_NUGGET_FROM_ROUTE_2_FISHER
+	iftrue .AlreadyGotNugget
 	writetext Route2NuggetHouseFisherText
 	promptbutton
 	verbosegiveitem NUGGET
+	iffalse .NoRoom
+	setevent EVENT_GOT_NUGGET_FROM_ROUTE_2_FISHER
 	writetext Route2NuggetHouseFisherText_GotNugget
+	closetext
+	end
+
+.NoRoom:
+	closetext
+	end
+
+.AlreadyGotNugget:
+	writetext Route2NuggetHouseFisherText_AlreadyGiven
 	closetext
 	end
 
@@ -37,6 +50,12 @@ Route2NuggetHouseFisherText_GotNugget:
 
 	para "wisdom, so that'll"
 	line "have to do!"
+	done
+
+Route2NuggetHouseFisherText_AlreadyGiven:
+	text "Enjoy that NUGGET!"
+	line "I don't have any"
+	cont "more, sadly."
 	done
 
 ;Route2NuggetHouseBookshelf: ; unused ?

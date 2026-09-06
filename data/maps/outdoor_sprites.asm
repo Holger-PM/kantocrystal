@@ -91,7 +91,7 @@ SaffronGroupSprites:
 
 VermilionGroupSprites:
 ; Route6, Route11, VermilionCity
-	; db SPRITE_BEAUTY
+	db SPRITE_BEAUTY
 	db SPRITE_SUPER_NERD
 	db SPRITE_YOUNGSTER
 	db SPRITE_GAMBLER
@@ -99,7 +99,7 @@ VermilionGroupSprites:
 	db SPRITE_SAILOR
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_COOLTRAINER_M
-	; 5 of max 9 walking sprites
+	; 8 of max 9 walking sprites
 	db SPRITE_BIG_SNORLAX
 	db SPRITE_MACHOP
 	db SPRITE_POKE_BALL

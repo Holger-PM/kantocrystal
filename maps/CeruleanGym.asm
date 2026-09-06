@@ -138,7 +138,7 @@ CeruleanGymMistyReceivedCascadeBadgeText: ; MISTY
 	done
 
 TrainerPicnickerHope: ; PICNICKER_HOPE
-	trainer SWIMMERF, HOPE, EVENT_BEAT_CERULEAN_GYM_TRAINER_HOPE, PicnickerHopeSeenText, PicnickerHopeBeatenText, 0, .Script
+	trainer PICNICKER, HOPE, EVENT_BEAT_CERULEAN_GYM_TRAINER_HOPE, PicnickerHopeSeenText, PicnickerHopeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

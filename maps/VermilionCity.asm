@@ -1,7 +1,10 @@
 	object_const_def
-	const VERMILIONCITY_TEACHER
-	const VERMILIONCITY_GRAMPS
+	const VERMILIONCITY_BEAUTY
+	const VERMILIONCITY_GAMBLER1
 	const VERMILIONCITY_MACHOP
+	const VERMILIONCITY_SAILOR
+	const VERMILIONCITY_SAILOR2
+	const VERMILIONCITY_GAMBLER2
 ;	const VERMILIONCITY_SUPER_NERD
 ;	const VERMILIONCITY_BIG_SNORLAX
 ;	const VERMILIONCITY_POKEFAN_M
@@ -16,11 +19,33 @@ VermilionCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_VERMILION
 	endcallback
 
-VermilionCityTeacherScript:
-	jumptextfaceplayer VermilionCityTeacherText
+VermilionCityBeautyScript:
+	jumptextfaceplayer VermilionCityBeautyText
 
-VermilionMachopOwner:
-	jumptextfaceplayer VermilionMachopOwnerText
+VermilionCityGambler1Script:
+	jumptextfaceplayer VermilionCityGambler1Text
+
+VermilionCityGambler2Script:
+	jumptextfaceplayer VermilionCityGambler2Text
+
+VermilionCitySailor2Script:
+	jumptextfaceplayer VermilionCitySailor2Text
+
+VermilionDockSailorScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_SS_TICKET
+	iftrue .HasTicket
+	writetext VermilionDockSailorDoYouHaveATicketText
+	promptbutton
+	writetext VermilionDockSailorYouNeedATicketText
+	closetext
+	end
+
+.HasTicket:
+	writetext VermilionDockSailorFlashedTicketText
+	closetext
+	end
 
 VermilionMachop:
 	opentext
@@ -117,7 +142,7 @@ VermilionCityPokecenterSign:
 VermilionCityMartSign:
 	jumpstd MartSignScript
 
-VermilionCityTeacherText:
+VermilionCityBeautyText:
 	text "We're careful"
 	line "about pollution!"
 	
@@ -126,13 +151,55 @@ VermilionCityTeacherText:
 	line "toxic sludge!"
 	done
 
-VermilionMachopOwnerText:
+VermilionCityGambler1Text:
+	text "Did you see S.S."
+	line "ANNE moored in"
+	cont "the harbor?"
+	done
+
+VermilionCityGambler2Text:
 	text "I'm putting up a"
 	line "building on this"
 	cont "plot of land."
 
 	para "My #MON is"
 	line "tamping the land."
+	done
+
+VermilionCitySailor2Text:
+	text "S.S.ANNE is a"
+	line "famous luxury"
+	cont "cruise ship."
+
+	para "We visit VERMILION"
+	line "once a year."
+	done
+
+VermilionDockSailorDoYouHaveATicketText:
+	text "Welcome to S.S."
+	line "ANNE!"
+
+	para "Excuse me, do you"
+	line "have a ticket?"
+	prompt
+
+VermilionDockSailorFlashedTicketText:
+	text "<PLAYER> flashed"
+	line "the S.S.TICKET!"
+
+	para "Great! Welcome to"
+	line "S.S.ANNE!"
+	done
+
+VermilionDockSailorYouNeedATicketText:
+	text "<PLAYER> doesn't"
+	line "have the needed"
+	cont "S.S.TICKET."
+
+	para "Sorry!"
+
+	para "You need a ticket"
+	line "to get aboard."
 	done
 
 VermilionMachopText1:
@@ -279,9 +346,12 @@ VermilionCity_MapEvents:
 	bg_event 24, 13, BGEVENT_READ, VermilionCityMartSign
 
 	def_object_events
-	object_event 18,  7, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionCityTeacherScript, -1
-	object_event 14,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionMachopOwner, -1
-	object_event 28,  7, SPRITE_MACHOP, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VermilionMachop, -1
+	object_event 19,  7, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionCityBeautyScript, -1
+	object_event 14,  6, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionCityGambler1Script, -1
+	object_event 29,  9, SPRITE_MACHOP, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VermilionMachop, -1
+	object_event 19, 30, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionDockSailorScript, -1
+	object_event 18, 30, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionDockSailorScript, -1
+	object_event 25, 27, SPRITE_SAILOR, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionCitySailor2Script, -1
+	object_event 30,  7, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionCityGambler2Script, -1
 ;	object_event 14, 16, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VermilionCitySuperNerdScript, -1
 ;	object_event 31,  7, SPRITE_BIG_SNORLAX, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionSnorlax, EVENT_VERMILION_CITY_SNORLAX ; Holger note - Make it at Route 12
-;	object_event 30,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VermilionGymBadgeGuy, -1

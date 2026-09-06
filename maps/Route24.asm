@@ -76,7 +76,7 @@ RocketPrizeText:
 	line "fabulous prize!"
 	done
 
-RocketNoRoomText:
+Route24RocketNoRoomText:
 	text "You don't have"
 	line "any room!"
 	done

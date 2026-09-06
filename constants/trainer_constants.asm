@@ -127,7 +127,7 @@ DEF GREEN EQU __trainer_class__
 	const JOEY5
 	const BEN2
 	const GAVIN ; was MIKEY2
-	const SAMUEL2
+	const TOBY2 ; was unused SAMUEL2 slot; this is the real Mt Moon 1F Youngster Toby
 	const RYAN2
 	const AIDEN ; was GORDON2
 	const DEVIN ; was DEVIN
@@ -385,7 +385,10 @@ DEF GREEN EQU __trainer_class__
 	const KIP ; was BENNY2
 	const JAKE2
 	const DAMON			; Route 6
-	const MARCUS		; Route 6 
+	const MARCUS
+	const BUG_CATCHER_UNUSED1 ; auto-added Kanto route trainer, no name needed
+	const BUG_CATCHER_UNUSED2 ; auto-added Kanto route trainer, no name needed
+	const NED2 ; Mt Moon 1F Bug Catcher Ned		; Route 6 
 
 	trainerclass FISHER ; 25
 	const JUSTIN
@@ -475,6 +478,7 @@ DEF GREEN EQU __trainer_class__
 	const HUEY2
 	const HUEY3
 	const HUEY4
+	const VINCENT
 
 	trainerclass SUPER_NERD ; 29
 	const STAN
@@ -503,7 +507,7 @@ DEF GREEN EQU __trainer_class__
 
 	trainerclass GUITARIST ; 2b
 	const CLYDE
-	const VINCENT
+	const GUITARIST_UNUSED2 ; was VINCENT, unused here - moved to SAILOR (real data match)
 	const ZAKK 
 
 	trainerclass HIKER ; 2c
