@@ -137,6 +137,9 @@ DEF GREEN EQU __trainer_class__
 	const CURTIS
 	const CHASE
 
+	const LOGAN ; Route 9, not yet placed on map
+	const BARTON ; SS Anne 1F Rooms
+
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
 	const KIPP
@@ -210,6 +213,9 @@ DEF GREEN EQU __trainer_class__
 	const EMILY
 	const APRIL ; was MICHELLE2
 	const IRIS ; was DANA6
+	const ALICIA_LASS ; Route 4, not yet placed on map
+	const BROOKE2 ; SS Anne 1F Rooms
+	const CANDACE2 ; SS Anne 2F Rooms
 
 	trainerclass JANINE ; 1a
 	const JANINE1
@@ -235,6 +241,8 @@ DEF GREEN EQU __trainer_class__
 	const STEVE ; unused
 	const ALLEN
 	const DARIN
+	const DEREK ; Route 9
+	const HOWARD ; Route 9
 
 	trainerclass COOLTRAINERF ; 1c
 	const GWEN
@@ -260,6 +268,8 @@ DEF GREEN EQU __trainer_class__
 	const CARA
 	const FELICIA	; Route 6
 	const HOLLY		; Route 6
+	const WANDA ; Route 9
+	const PHOEBE ; Route 9
 
 	trainerclass BEAUTY ; 1d
 	const VICTORIA
@@ -342,6 +352,10 @@ DEF GREEN EQU __trainer_class__
 	const GREGORY
 	const VIRGIL ; unused
 	const ALFRED
+	const CLIFFORD ; SS Anne 1F Rooms
+	const WESLEY ; SS Anne 1F Rooms
+	const REGINALD ; SS Anne 2F Rooms
+	const STANFORD ; SS Anne 2F Rooms
 
 	trainerclass SKIER ; 21
 	const ROXANNE
@@ -416,6 +430,8 @@ DEF GREEN EQU __trainer_class__
 	const RALPH4
 	const RALPH5
 	const TULLY4
+	const DALTON ; SS Anne 2F Rooms (fisher)
+	const GRANT ; SS Anne B1F Rooms (fisher)
 
 	trainerclass SWIMMERM ; 26
 	const HAROLD
@@ -479,6 +495,13 @@ DEF GREEN EQU __trainer_class__
 	const HUEY3
 	const HUEY4
 	const VINCENT
+	const FELIX ; SS Anne Bow (sailor)
+	const NEIL ; SS Anne Bow (sailor)
+	const GUS ; SS Anne B1F Rooms (sailor)
+	const HOLLIS ; SS Anne B1F Rooms (sailor)
+	const REID ; SS Anne B1F Rooms (sailor)
+	const QUINCY ; SS Anne B1F Rooms (sailor)
+	const TODD ; SS Anne B1F Rooms (sailor)
 
 	trainerclass SUPER_NERD ; 29
 	const STAN
@@ -534,6 +557,14 @@ DEF GREEN EQU __trainer_class__
 	const ANTHONY4
 	const ANTHONY5
 	const TONY
+
+	const OSCAR ; Route 9
+	const PABLO ; Route 9
+	const QUINN2 ; Route 10, not yet placed
+	const LOWELL ; Route 10, not yet placed
+	const STUART ; Rock Tunnel B1F, not yet placed
+	const DUSTIN ; Rock Tunnel B1F, not yet placed
+	const VICTOR ; Route 9
 	const FLINT ; was RUSSELL2
 	const CLIFF ; was BENJAMIN2
 	const RIDGE	; was ERIK2
@@ -755,6 +786,9 @@ DEF GREEN EQU __trainer_class__
 	const BLUE_CERULEAN_CITY_CHARMANDER
 	const BLUE_CERULEAN_CITY_SQUIRTLE
 	const BLUE_CERULEAN_CITY_BULBASAUR
+	const BLUE_SS_ANNE_CHARMANDER
+	const BLUE_SS_ANNE_SQUIRTLE
+	const BLUE_SS_ANNE_BULBASAUR
 	
 	trainerclass BLUE3 ; added
 

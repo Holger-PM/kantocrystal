@@ -1,78 +1,115 @@
 	object_const_def
+	const ROUTE9_COOLTRAINERF1
+	const ROUTE9_COOLTRAINERM1
+	const ROUTE9_COOLTRAINERM2
+	const ROUTE9_COOLTRAINERF2
+	const ROUTE9_HIKER1
+	const ROUTE9_HIKER2
 	const ROUTE9_YOUNGSTER1
-	const ROUTE9_LASS1
+	const ROUTE9_HIKER3
 	const ROUTE9_YOUNGSTER2
-	const ROUTE9_LASS2
-	const ROUTE9_POKEFAN_M1
-	const ROUTE9_POKEFAN_M2
+	const ROUTE9_POKE_BALL
 
 Route9_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-TrainerCamperDean:
-	trainer CAMPER, DEAN, EVENT_BEAT_CAMPER_DEAN, CamperDeanSeenText, CamperDeanBeatenText, 0, .Script
+TrainerCooltrainerfWanda:
+	trainer COOLTRAINERF, WANDA, EVENT_BEAT_COOLTRAINERF_WANDA, CooltrainerfWandaSeenText, CooltrainerfWandaBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperDeanAfterBattleText
+	writetext CooltrainerfWandaAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerPicnickerHeidi:
-	trainer PICNICKER, HEIDI, EVENT_BEAT_PICNICKER_HEIDI, PicnickerHeidiSeenText, PicnickerHeidiBeatenText, 0, .Script
+TrainerCooltrainermDerek:
+	trainer COOLTRAINERM, DEREK, EVENT_BEAT_COOLTRAINERM_DEREK, CooltrainermDerekSeenText, CooltrainermDerekBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerHeidiAfterBattleText
+	writetext CooltrainermDerekAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerCamperSid:
-	trainer CAMPER, SID, EVENT_BEAT_CAMPER_SID, CamperSidSeenText, CamperSidBeatenText, 0, .Script
+TrainerCooltrainermHoward:
+	trainer COOLTRAINERM, HOWARD, EVENT_BEAT_COOLTRAINERM_HOWARD, CooltrainermHowardSeenText, CooltrainermHowardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperSidAfterBattleText
+	writetext CooltrainermHowardAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerPicnickerEdna:
-	trainer PICNICKER, EDNA, EVENT_BEAT_PICNICKER_EDNA, PicnickerEdnaSeenText, PicnickerEdnaBeatenText, 0, .Script
+TrainerCooltrainerfPhoebe:
+	trainer COOLTRAINERF, PHOEBE, EVENT_BEAT_COOLTRAINERF_PHOEBE, CooltrainerfPhoebeSeenText, CooltrainerfPhoebeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerEdnaAfterBattleText
+	writetext CooltrainerfPhoebeAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerHikerTim:
-	trainer HIKER, TIM, EVENT_BEAT_HIKER_TIM, HikerTimSeenText, HikerTimBeatenText, 0, .Script
+TrainerHikerOscar:
+	trainer HIKER, OSCAR, EVENT_BEAT_HIKER_OSCAR, HikerOscarSeenText, HikerOscarBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HikerTimAfterBattleText
+	writetext HikerOscarAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerHikerSidney:
-	trainer HIKER, SIDNEY, EVENT_BEAT_HIKER_SIDNEY, HikerSidneySeenText, HikerSidneyBeatenText, 0, .Script
+TrainerHikerPablo:
+	trainer HIKER, PABLO, EVENT_BEAT_HIKER_PABLO, HikerPabloSeenText, HikerPabloBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HikerSidneyAfterBattleText
+	writetext HikerPabloAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBugCatcherColin:
+	trainer BUG_CATCHER, BUG_CATCHER_UNUSED1, EVENT_BEAT_BUG_CATCHER_UNUSED1, BugCatcherColinSeenText, BugCatcherColinBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugCatcherColinAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerHikerVictor:
+	trainer HIKER, VICTOR, EVENT_BEAT_HIKER_VICTOR, HikerVictorSeenText, HikerVictorBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HikerVictorAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBugCatcherGrant:
+	trainer BUG_CATCHER, BUG_CATCHER_UNUSED2, EVENT_BEAT_BUG_CATCHER_UNUSED2, BugCatcherGrantSeenText, BugCatcherGrantBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugCatcherGrantAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -80,127 +117,165 @@ TrainerHikerSidney:
 Route9Sign:
 	jumptext Route9SignText
 
-Route9HiddenEther:
-	hiddenitem ETHER, EVENT_ROUTE_9_HIDDEN_ETHER
+Route9TMDig:
+	itemball TM_DIG
 
-CamperDeanSeenText:
-	text "I came to explore"
-	line "ROCK TUNNEL."
+CooltrainerfWandaSeenText:
+	text "You have #MON"
+	line "with you!"
+	cont "You're mine!"
 	done
 
-CamperDeanBeatenText:
-	text "Whoa! Danger, man."
+CooltrainerfWandaBeatenText:
+	text "You"
+	line "deceived me!"
 	done
 
-CamperDeanAfterBattleText:
-	text "My #MON were"
-	line "hurt before even"
-
-	para "entering ROCK"
-	line "TUNNEL."
-
-	para "I'd better take"
-	line "them to a #MON"
-	cont "CENTER right away."
+CooltrainerfWandaAfterBattleText:
+	text "You need light to"
+	line "get through that"
+	cont "dark tunnel ahead."
 	done
 
-PicnickerHeidiSeenText:
-	text "Have you ever been"
-	line "to a picnic?"
-
-	para "They're so much"
-	line "fun!"
+CooltrainermDerekSeenText:
+	text "Who's that walking"
+	line "with those good"
+	cont "looking #MON?"
 	done
 
-PicnickerHeidiBeatenText:
-	text "Ohhhh!"
+CooltrainermDerekBeatenText:
+	text "Out"
+	line "like a light!"
 	done
 
-PicnickerHeidiAfterBattleText:
-	text "We bake lots of"
-	line "goodies and share"
-
-	para "them all around."
-	line "They're delicious!"
+CooltrainermDerekAfterBattleText:
+	text "Keep walking!"
 	done
 
-CamperSidSeenText:
-	text "Hey, you!"
-	line "Don't litter!"
+CooltrainermHowardSeenText:
+	text "I'm taking ROCK"
+	line "TUNNEL to go to"
+	cont "LAVENDER..."
 	done
 
-CamperSidBeatenText:
-	text "I was just point-"
-	line "ing out…"
+CooltrainermHowardBeatenText:
+	text "Can't"
+	line "measure up!"
 	done
 
-CamperSidAfterBattleText:
-	text "Sorry. You weren't"
-	line "littering. It was"
-	cont "my mistake."
+CooltrainermHowardAfterBattleText:
+	text "Are you off to"
+	line "ROCK TUNNEL too?"
 	done
 
-PicnickerEdnaSeenText:
-	text "People shouldn't"
-	line "leave any litter"
-	cont "behind."
+CooltrainerfPhoebeSeenText:
+	text "Don't you dare"
+	line "condescend me!"
 	done
 
-PicnickerEdnaBeatenText:
-	text "Ohh… I lost…"
+CooltrainerfPhoebeBeatenText:
+	text "No!"
+	line "You're too much!"
 	done
 
-PicnickerEdnaAfterBattleText:
-	text "Conserving energy"
-	line "is important, but"
-
-	para "the environment is"
-	line "even more vital."
+CooltrainerfPhoebeAfterBattleText:
+	text "You're obviously"
+	line "talented! Good"
+	cont "luck to you!"
 	done
 
-HikerTimSeenText:
-	text "She'll be coming"
-	line "'round MT.SILVER"
-	cont "when she comes…"
-
-	para "MT.SILVER is in"
-	line "JOHTO, right?"
+HikerOscarSeenText:
+	text "Bwahaha!"
+	line "Great! I was"
+	cont "bored, eh!"
 	done
 
-HikerTimBeatenText:
-	text "I was too busy"
-	line "singing…"
+HikerOscarBeatenText:
+	text "Keep it"
+	line "coming, eh!"
+
+	para "Oh wait. I'm out"
+	line "of #MON!"
 	done
 
-HikerTimAfterBattleText:
-	text "Battles are about"
-	line "concentration."
+HikerOscarAfterBattleText:
+	text "You sure had guts"
+	line "standing up to me"
+	cont "there, eh?"
 	done
 
-HikerSidneySeenText:
-	text "I'll tell you a"
-	line "secret."
-
-	para "But first, we"
-	line "battle!"
+HikerPabloSeenText:
+	text "Hahaha!"
+	line "Aren't you a"
+	cont "little toughie!"
 	done
 
-HikerSidneyBeatenText:
-	text "Oh, dang!"
-	line "I lost that…"
+HikerPabloBeatenText:
+	text "What's"
+	line "that?"
 	done
 
-HikerSidneyAfterBattleText:
-	text "The POWER PLANT is"
-	line "across a small"
-	cont "river."
+HikerPabloAfterBattleText:
+	text "Hahaha! Kids"
+	line "should be tough!"
+	done
+
+BugCatcherColinSeenText:
+	text "I got up early"
+	line "every day to"
+	cont "raise my #MON"
+	cont "from cocoons!"
+	done
+
+BugCatcherColinBeatenText:
+	text "WHAT?"
+
+	para "What a total"
+	line "waste of time!"
+	done
+
+BugCatcherColinAfterBattleText:
+	text "I have to collect"
+	line "more than bugs to"
+	cont "get stronger..."
+	done
+
+HikerVictorSeenText:
+	text "Hahahaha!"
+	line "Come on, dude!"
+	done
+
+HikerVictorBeatenText:
+	text "Hahahaha!"
+	line "You beat me fair!"
+	done
+
+HikerVictorAfterBattleText:
+	text "Hahahaha!"
+	line "Us hearty guys"
+	cont "always laugh!"
+	done
+
+BugCatcherGrantSeenText:
+	text "Go, my super bug"
+	line "#MON!"
+	done
+
+BugCatcherGrantBeatenText:
+	text "My"
+	line "bugs..."
+	done
+
+BugCatcherGrantAfterBattleText:
+	text "If you don't like"
+	line "bug #MON, you"
+	cont "bug me!"
 	done
 
 Route9SignText:
 	text "ROUTE 9"
-
-	para "CERULEAN CITY -"
-	line "ROCK TUNNEL"
+	line "CERULEAN CITY-"
+	cont "ROCK TUNNEL"
 	done
 
 Route9_MapEvents:
@@ -213,12 +288,15 @@ Route9_MapEvents:
 
 	def_bg_events
 	bg_event 25,  7, BGEVENT_READ, Route9Sign
-	bg_event 41, 15, BGEVENT_ITEM, Route9HiddenEther
 
 	def_object_events
-	object_event 23, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperDean, -1
-	object_event 39,  7, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerHeidi, -1
-	object_event 11,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerCamperSid, -1
-	object_event 12, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerPicnickerEdna, -1
-	object_event 31,  2, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerHikerTim, -1
-	object_event 36, 15, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerHikerSidney, -1
+	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfWanda, -1
+	object_event 24,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerCooltrainermDerek, -1
+	object_event 31,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerCooltrainermHoward, -1
+	object_event 48,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfPhoebe, -1
+	object_event 16, 15, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerHikerOscar, -1
+	object_event 43,  3, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerHikerPablo, -1
+	object_event 22,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherColin, -1
+	object_event 45, 15, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerHikerVictor, -1
+	object_event 40,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherGrant, -1
+	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route9TMDig, EVENT_ROUTE_9_TM_TELEPORT

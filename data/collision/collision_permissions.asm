@@ -19,7 +19,7 @@ CollisionPermissionTable::
 	db WALL_TILE         ; 0f
 	db LAND_TILE         ; COLL_TALL_GRASS_10
 	db LAND_TILE         ; 11
-	db WALL_TILE | TALK  ; COLL_CUT_TREE
+	db LAND_TILE         ; COLL_CUT_TREE (TEMP: was "WALL_TILE | TALK" - disabled for testing, restore later)
 	db LAND_TILE         ; 13
 	db LAND_TILE         ; COLL_LONG_GRASS
 	db WALL_TILE | TALK  ; COLL_HEADBUTT_TREE
@@ -27,7 +27,7 @@ CollisionPermissionTable::
 	db LAND_TILE         ; 17
 	db LAND_TILE         ; COLL_TALL_GRASS
 	db LAND_TILE         ; 19
-	db WALL_TILE | TALK  ; COLL_CUT_TREE_1A
+	db LAND_TILE         ; COLL_CUT_TREE_1A (TEMP: was "WALL_TILE | TALK" - disabled for testing, restore later)
 	db LAND_TILE         ; 1b
 	db LAND_TILE         ; COLL_LONG_GRASS_1C
 	db WALL_TILE | TALK  ; COLL_HEADBUTT_TREE_1D

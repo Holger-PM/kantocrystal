@@ -598,6 +598,11 @@ YoungsterGroup:
 	db 28, SANDSHREW
 	db -1 ; end
 
+	; YOUNGSTER_BARTON - SS Anne 1F Rooms
+	db "BARTON@", TRAINERTYPE_NORMAL
+	db 21, NIDORINO
+	db -1 ; end
+
 SchoolboyGroup:
 	; SCHOOLBOY (1)
 	db "JACK@", TRAINERTYPE_NORMAL
@@ -1317,6 +1322,20 @@ CooltrainerMGroup:
 	db 37, DRAGONAIR,  WRAP, SURF, DRAGON_RAGE, SLAM
 	db -1 ; end
 
+	; COOLTRAINERM_DEREK - Route 9
+	db "DEREK@", TRAINERTYPE_NORMAL
+	db 21, GROWLITHE
+	db 21, CHARMANDER
+	db -1 ; end
+
+	; COOLTRAINERM_HOWARD - Route 9
+	db "HOWARD@", TRAINERTYPE_NORMAL
+	db 21, RATICATE
+	db 21, DIGLETT
+	db 21, BELLSPROUT
+	db 21, SANDSHREW
+	db -1 ; end
+
 
 
 	; COOLTRAINERM_ZACK - Viridian Gym
@@ -1478,6 +1497,19 @@ CooltrainerFGroup:
 	db 16, PIDGEY,
 	db 16, SPEAROW,
 	db 16, PIDGEY,
+	db -1 ; end
+
+	; COOLTRAINERF_WANDA - Route 9
+	db "WANDA@", TRAINERTYPE_NORMAL
+	db 21, ODDISH
+	db 21, BELLSPROUT
+	db 21, TANGELA
+	db 21, PIDGEOTTO
+	db -1 ; end
+
+	; COOLTRAINERF_PHOEBE - Route 9
+	db "PHOEBE@", TRAINERTYPE_NORMAL
+	db 24, MEOWTH
 	db -1 ; end
 
 
@@ -2137,6 +2169,30 @@ GentlemanGroup:
 	; GENTLEMAN (5)
 	db "ALFRED@", TRAINERTYPE_NORMAL
 	db 20, NOCTOWL
+	db -1 ; end
+
+	; GENTLEMAN_CLIFFORD - SS Anne 1F Rooms
+	db "CLIFFORD@", TRAINERTYPE_NORMAL
+	db 18, GROWLITHE
+	db 18, GROWLITHE
+	db -1 ; end
+
+	; GENTLEMAN_WESLEY - SS Anne 1F Rooms
+	db "WESLEY@", TRAINERTYPE_NORMAL
+	db 19, NIDORAN_M
+	db 19, NIDORAN_F
+	db -1 ; end
+
+	; GENTLEMAN_REGINALD - SS Anne 2F Rooms
+	db "REGINALD@", TRAINERTYPE_NORMAL
+	db 22, VOLTORB
+	db 22, MAGNEMITE
+	db -1 ; end
+
+	; GENTLEMAN_STANFORD - SS Anne 2F Rooms
+	db "STANFORD@", TRAINERTYPE_NORMAL
+	db 18, GROWLITHE
+	db 18, PONYTA
 	db -1 ; end
 
 
@@ -4652,12 +4708,9 @@ CamperGroup:
 	db 26, PSYDUCK
 	db -1 ; end
 
-	; CAMPER_SEAN - Route 24
+	; CAMPER_SEAN - Route 24 (Nugget Bridge, trainer 5) - was leftover Crystal data, fixed to match Yellow Legacy's JR_TRAINER_M #3 (Route 24)
 	db "SEAN@", TRAINERTYPE_NORMAL
-	db 33, GRAVELER
-	db 36, GRAVELER
-	db 40, GOLBAT
-	db 42, GOLDUCK
+	db 18, MANKEY
 	db -1 ; end
 
 	; CAMPER_JERRY - Pewter Gym
@@ -5317,23 +5370,29 @@ Blue2Group:
 	db -1 ; end
 	
 ;;;;;;;;;; Holger note: TODO	
-	; BLUE2  - SS Anne 2F
-;	db 22, PIDGEOTTO,    $34, $46, NO_ITEM
-;	db 20, RATICATE      $56, $56, NO_ITEM
-;	db 21, KADABRA,      $56, $56, NO_ITEM
-;	db 24, CHARMELEON,   $56, $56, NO_ITEM
+	; BLUE_SS_ANNE_CHARMANDER - SS Anne 2F
+	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
+	db 20, RATICATE,     $34, $46, NO_ITEM
+	db 22, WEEPINBELL,   $56, $56, NO_ITEM
+	db 21, SANDSHREW,    $56, $56, NO_ITEM
+	db 24, CHARMELEON,   $56, $56, NO_ITEM
+	db -1 ; end
 
-	; BLUE2  - SS Anne 2F
-;	db 22, PIDGEOTTO,    $34, $46, NO_ITEM
-;	db 20, RATICATE      $56, $56, NO_ITEM
-;	db 21, KADABRA,      $56, $56, NO_ITEM
-;	db 24, WARTORTLE,    $56, $56, NO_ITEM
+	; BLUE_SS_ANNE_SQUIRTLE - SS Anne 2F
+	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
+	db 20, RATICATE,     $34, $46, NO_ITEM
+	db 22, WEEPINBELL,   $56, $56, NO_ITEM
+	db 21, SANDSHREW,    $56, $56, NO_ITEM
+	db 24, WARTORTLE,    $56, $56, NO_ITEM
+	db -1 ; end
 
-	; BLUE2  - SS Anne 2F
-;	db 22, PIDGEOTTO,    $34, $46, NO_ITEM
-;	db 20, RATICATE      $56, $56, NO_ITEM
-;	db 21, KADABRA,      $56, $56, NO_ITEM
-;	db 24, IVYSAUR,    $56, $56, NO_ITEM
+	; BLUE_SS_ANNE_BULBASAUR - SS Anne 2F
+	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
+	db 20, RATICATE,     $34, $46, NO_ITEM
+	db 22, WEEPINBELL,   $56, $56, NO_ITEM
+	db 21, SANDSHREW,    $56, $56, NO_ITEM
+	db 24, IVYSAUR,      $56, $56, NO_ITEM
+	db -1 ; end
 
 ;	; BLUE2 - Pokémon Tower 2F
 

@@ -2086,6 +2086,45 @@
 	const EVENT_BEAT_SUPER_NERD_CEDRIC		; Route 11
 	const EVENT_BEAT_GUITARIST_ZAKK			; Route 11
 	const EVENT_GOT_NUGGET_FROM_ROUTE_2_FISHER ; Route 2 Nugget House
-	
-	const_next 2336 ; - New in "New to Kanto Crystal" section ???
+	const EVENT_SS_ANNE_1F_ROOMS_TM_BODY_SLAM	; S.S. Anne 1F Rooms
+	const EVENT_SS_ANNE_2F_ROOMS_MAX_ETHER		; S.S. Anne 2F Rooms
+	const EVENT_SS_ANNE_2F_ROOMS_RARE_CANDY	; S.S. Anne 2F Rooms
+	const EVENT_SS_ANNE_B1F_ROOMS_ETHER		; S.S. Anne B1F Rooms
+	const EVENT_SS_ANNE_B1F_ROOMS_TM_REST		; S.S. Anne B1F Rooms
+	const EVENT_SS_ANNE_B1F_ROOMS_MAX_POTION	; S.S. Anne B1F Rooms
+	const EVENT_BEAT_LASS_BROOKE		; S.S. Anne 1F Rooms
+	const EVENT_BEAT_LASS_CANDACE		; S.S. Anne 2F Rooms
+	const EVENT_BEAT_FISHER_COLIN		; S.S. Anne 2F Rooms
+	const EVENT_BEAT_FISHER_GRANT		; S.S. Anne B1F Rooms
+	const EVENT_BEAT_SAILOR_MARCUS		; S.S. Anne Bow
+	const EVENT_BEAT_SAILOR_NEIL		; S.S. Anne Bow
+	const EVENT_BEAT_SAILOR_OWEN		; S.S. Anne B1F Rooms
+	const EVENT_BEAT_SAILOR_PERRY		; S.S. Anne B1F Rooms
+	const EVENT_BEAT_SAILOR_REID		; S.S. Anne B1F Rooms
+	const EVENT_BEAT_SAILOR_SHANE		; S.S. Anne B1F Rooms
+	const EVENT_BEAT_SAILOR_TODD		; S.S. Anne B1F Rooms
+	const EVENT_BEAT_GENTLEMAN_CLIFFORD	; S.S. Anne 1F Rooms
+	const EVENT_BEAT_GENTLEMAN_WESLEY	; S.S. Anne 1F Rooms
+	const EVENT_BEAT_GENTLEMAN_REGINALD	; S.S. Anne 2F Rooms
+	const EVENT_BEAT_GENTLEMAN_STANFORD	; S.S. Anne 2F Rooms
+	const EVENT_BEAT_YOUNGSTER_BARTON	; S.S. Anne 1F Rooms
+	const EVENT_BEAT_RIVAL_SS_ANNE		; S.S. Anne 2F
+	const EVENT_ROUTE_9_TM_TELEPORT
+	const EVENT_BEAT_COOLTRAINERF_WANDA	; Route 9
+	const EVENT_BEAT_COOLTRAINERF_PHOEBE	; Route 9
+	const EVENT_BEAT_COOLTRAINERM_DEREK	; Route 9
+	const EVENT_BEAT_COOLTRAINERM_HOWARD	; Route 9
+	const EVENT_BEAT_HIKER_OSCAR		; Route 9
+	const EVENT_BEAT_HIKER_PABLO		; Route 9
+	const EVENT_BEAT_HIKER_VICTOR		; Route 9
+	const EVENT_BEAT_BUG_CATCHER_UNUSED1	; Route 9
+	const EVENT_BEAT_BUG_CATCHER_UNUSED2	; Route 9
+ 	const EVENT_BEAT_POKEMANIAC_MAURICE     ; Route 10
+     	const EVENT_BEAT_POKEMANIAC_TYSON       ; Route 10
+     	const EVENT_BEAT_HIKER_QUINN2           ; Route 10
+     	const EVENT_BEAT_HIKER_LOWELL           ; Route 10
+     	const EVENT_BEAT_COOLTRAINERF_DELPHINE  ; Route 10
+     	const EVENT_BEAT_COOLTRAINERF_ROSALIE   ; Route 10
+
+	const_next 2360 ; - New in "New to Kanto Crystal" section ??? (bumped from 2336: SS Anne + Route 9 additions needed the extra room)
 DEF NUM_EVENTS EQU const_value ; 1099 with Kanto events

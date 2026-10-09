@@ -215,8 +215,8 @@ PalletTown_MapEvents:
 
 	def_warp_events
 	warp_event  5,  5, REDS_HOUSE_1F, 1
-	warp_event 13,  5, DIGLETTS_CAVE_ROUTE_11, 1
-	warp_event 12, 11, OAKS_LAB, 1
+	warp_event 13,  5, CERULEAN_POKECENTER_1F, 1
+	warp_event 12, 11, OAKS_LAB, 1 
 
 	def_coord_events
 	coord_event 10,  0, SCENE_PALLET_TOWN_OAK_STOPS_YOU, OakStopsYouLeft

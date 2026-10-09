@@ -4,7 +4,7 @@ SSAnneB1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	
+
 SSAnneB1F_MapEvents:
 	db 0, 0 ; filler
 

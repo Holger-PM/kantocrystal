@@ -66,6 +66,7 @@ NewGame:
 	call PlayerProfileSetup
 	call OakSpeech
 	call InitializeWorld
+	call GiveStartingBoxCharizard
 
 	ld a, LANDMARK_PALLET_TOWN
 	ld [wPrevLandmark], a
@@ -76,6 +77,35 @@ NewGame:
 	ld a, MAPSETUP_WARP
 	ldh [hMapEntryMethod], a
 	jp FinishContinueFunction
+
+; Places a level 50 CHARIZARD knowing FLY into the player's PC box on a new save.
+GiveStartingBoxCharizard:
+	ld a, CHARIZARD
+	ld [wCurPartySpecies], a
+	ld [wTempEnemyMonSpecies], a
+	ld a, 50
+	ld [wCurPartyLevel], a
+	farcall LoadEnemyMon
+	ld hl, wEnemyMonMoves
+	ld a, FLY
+	ld [hli], a
+	ld a, FLAMETHROWER
+	ld [hli], a
+	ld a, SLASH
+	ld [hli], a
+	ld a, EARTHQUAKE
+	ld [hl], a
+	ld hl, wEnemyMonPP
+	ld a, 15
+	ld [hli], a
+	ld a, 15
+	ld [hli], a
+	ld a, 20
+	ld [hli], a
+	ld a, 10
+	ld [hl], a
+	farcall SendMonIntoBox
+	ret
 
 PlayerProfileSetup:
 	farcall CheckMobileAdapterStatus
