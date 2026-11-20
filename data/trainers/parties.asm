@@ -311,7 +311,7 @@ MistyGroup:
 LtSurgeGroup:
 	; LT_SURGE (1)
 	db "LT.SURGE@", TRAINERTYPE_MOVES
-	db 30, RAICHU,     THUNDER_WAVE, BODY_SLAM, THUNDERBOLT, SURF
+	db 29, RAICHU,     THUNDER_WAVE, BODY_SLAM, THUNDERBOLT, SURF
 	db -1 ; end
 
 ScientistGroup:
@@ -2157,8 +2157,8 @@ GentlemanGroup:
 
 	; GENTLEMAN (3)
 	db "GREGORY@", TRAINERTYPE_NORMAL
-	db 37, PIKACHU
-	db 33, FLAAFFY
+	db 22, VOLTORB
+	db 22, MAGNEMITE
 	db -1 ; end
 
 	; GENTLEMAN (4)
@@ -2480,8 +2480,8 @@ BugCatcherGroup:
 
 	; BUGCATCHER_NED - Mt Moon 1F
 	db "NED@", TRAINERTYPE_NORMAL
-	db 10, WEEDLE
 	db 10, CATERPIE
+	db 10, BUTTERFREE
 	db -1 ; end
 
 FisherGroup:
@@ -3157,10 +3157,9 @@ SailorGroup:
 	db 38, POLIWRATH,  SURF, STRENGTH, ICE_PUNCH, SUBMISSION
 	db -1 ; end
 	
-	; SAILOR (14) - Vermillon Gym
-	db "VINCENT@", TRAINERTYPE_MOVES
-	db 38, POLITOED,   WHIRLPOOL, RAIN_DANCE, BODY_SLAM, PERISH_SONG
-	db 38, POLIWRATH,  SURF, STRENGTH, ICE_PUNCH, SUBMISSION
+	; SAILOR (14) - Vermilion Gym
+	db "VINCENT@", TRAINERTYPE_NORMAL
+	db 24, MAGNEMITE
 	db -1 ; end	
 
 
@@ -3299,7 +3298,7 @@ SuperNerdGroup:
 	db "MIGUEL@", TRAINERTYPE_MOVES
 	db 12, GRIMER,   POISON_GAS, POUND, DISABLE, MUD_SLAP
 	db 12, VOLTORB,   ROLLOUT, TACKLE, THUNDERSHOCK, SCREECH
-	db 12, KOFFING,   POISON_GAS, SMOKESCREEN, TACKLE, SMOG
+	db 12, MAGNEMITE, TACKLE, SONICBOOM, THUNDERSHOCK, SUPERSONIC
 	db -1 ; end
 
 
@@ -3432,9 +3431,9 @@ GuitaristGroup:
 	db -1 ; end
 
 	; GUITARIST_ZAKK - Route 11
-	db "VINCENT@", TRAINERTYPE_NORMAL
-	db 19, MAGNEMITE
-	db 19, VOLTORB
+	db "ZAKK@", TRAINERTYPE_NORMAL
+	db 19, GROWLITHE
+	db 19, VULPIX
 	db -1 ; end
 
 
@@ -3631,10 +3630,10 @@ HikerGroup:
 
 
 
-	; HIKER_OSCAR - Route 9
+	; HIKER_OSCAR - Route 9/Rock Tunnel B1F
 	db "OSCAR@", TRAINERTYPE_NORMAL
-	db 24, GEODUDE
-	db 24, ONIX
+	db 23, MACHOP
+	db 23, ONIX
 	db -1 ; end
 
 	; HIKER_PABLO - Route 9
@@ -3669,10 +3668,10 @@ HikerGroup:
 	db 26, GRAVELER
 	db -1 ; end
 
-	; HIKER_VICTOR - Route 9/Rock Tunnel B1F
+	; HIKER_VICTOR - Route 9
 	db "VICTOR@", TRAINERTYPE_NORMAL
-	db 23, MACHOP
-	db 23, ONIX
+	db 24, GEODUDE
+	db 24, ONIX
 	db -1 ; end
 
 	; HIKER_WESLEY - Rock Tunnel 1F
@@ -3985,10 +3984,9 @@ JugglerGroup:
 
 	; JUGGLER (3)
 	db "HORTON@", TRAINERTYPE_NORMAL
-	db 33, ELECTRODE
-	db 33, ELECTRODE
-	db 33, ELECTRODE
-	db 33, ELECTRODE
+	db 21, VOLTORB
+	db 21, VOLTORB
+	db 21, VOLTORB
 	db -1 ; end
 
 	; JUGGLER_CHESTER - Route 11
@@ -4681,12 +4679,14 @@ CamperGroup:
 
 	; CAMPER_JEFFREY - Route 25
 	db "JEFFREY@", TRAINERTYPE_NORMAL
-	db 15, NIDORINO
+	db 15, DIGLETT
+	db 15, PSYDUCK
 	db -1 ; end
 
 	; CAMPER_ALEX - Route 24
 	db "ALEX@", TRAINERTYPE_NORMAL
-	db 15, NIDORINO
+	db 15, DIGLETT
+	db 15, PSYDUCK
 	db -1 ; end
 
 	; CAMPER (11)
@@ -5327,19 +5327,19 @@ Blue1Group:
 	
 	; BLUE1_2_CHARMANDER - Route 22
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
-	db 9, PIDGEY,        $33, $35, NO_ITEM
+	db 9, SPEAROW,       $33, $35, NO_ITEM
 	db 8, CHARMANDER,    $45, $46, NO_ITEM
 	db -1 ; end
 
 	; BLUE1_2_SQUIRTLE - Route 22
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
-	db 9, PIDGEY,        $33, $35, NO_ITEM
+	db 9, SPEAROW,       $33, $35, NO_ITEM
 	db 8, SQUIRTLE,      $45, $46, NO_ITEM
 	db -1 ; end
 	
 	; BLUE1_1_BULBASAUR - Route 22
 	db "?@", TRAINERTYPE_DVS | TRAINERTYPE_ITEM
-	db 9, PIDGEY,        $33, $35, NO_ITEM
+	db 9, SPEAROW,       $33, $35, NO_ITEM
 	db 8, BULBASAUR,     $45, $46, NO_ITEM
 	db -1 ; end
 	
@@ -5573,8 +5573,8 @@ GruntFGroup:
 TeamRocketGroup:
 	; TEAM_ROCKET (1) - Mt. Moon B2F - TODO movepool
 	db "@", TRAINERTYPE_MOVES
-	db 16, MEOWTH,     SCRATCH, GROWL, BITE, PAY_DAY
 	db 15, EKANS,      WRAP, LEER, POISON_STING, BITE
+	db 16, MEOWTH,     SCRATCH, GROWL, BITE, PAY_DAY
 	db 15, KOFFING,    POISON_GAS, TACKLE, SMOG, SMOKESCREEN
 	db -1 ; end
 	

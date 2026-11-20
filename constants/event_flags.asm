@@ -2112,19 +2112,21 @@
 	const EVENT_ROUTE_9_TM_TELEPORT
 	const EVENT_BEAT_COOLTRAINERF_WANDA	; Route 9
 	const EVENT_BEAT_COOLTRAINERF_PHOEBE	; Route 9
-	const EVENT_BEAT_COOLTRAINERM_DEREK	; Route 9
+	const EVENT_BEAT_YOUNGSTER_LOGAN	; Route 9 (was Derek)
 	const EVENT_BEAT_COOLTRAINERM_HOWARD	; Route 9
 	const EVENT_BEAT_HIKER_OSCAR		; Route 9
 	const EVENT_BEAT_HIKER_PABLO		; Route 9
 	const EVENT_BEAT_HIKER_VICTOR		; Route 9
 	const EVENT_BEAT_BUG_CATCHER_UNUSED1	; Route 9
 	const EVENT_BEAT_BUG_CATCHER_UNUSED2	; Route 9
- 	const EVENT_BEAT_POKEMANIAC_MAURICE     ; Route 10
-     	const EVENT_BEAT_POKEMANIAC_TYSON       ; Route 10
-     	const EVENT_BEAT_HIKER_QUINN2           ; Route 10
-     	const EVENT_BEAT_HIKER_LOWELL           ; Route 10
-     	const EVENT_BEAT_COOLTRAINERF_DELPHINE  ; Route 10
-     	const EVENT_BEAT_COOLTRAINERF_ROSALIE   ; Route 10
+ 	const EVENT_BEAT_POKEMANIAC_ARNOLD      ; Route 10
+     	const EVENT_BEAT_POKEMANIAC_BRUCE       ; Route 10
+     	const EVENT_BEAT_HIKER_QUINN            ; Route 10
+     	const EVENT_BEAT_HIKER_ROLAND           ; Route 10
+     	const EVENT_BEAT_PICNICKER_MIRA          ; Route 10
+     	const EVENT_BEAT_PICNICKER_NOELLE        ; Route 10
+	const EVENT_ROUTE_10_HIDDEN_SUPER_POTION
+	const EVENT_ROUTE_10_HIDDEN_MAX_ETHER
 
 	const_next 2360 ; - New in "New to Kanto Crystal" section ??? (bumped from 2336: SS Anne + Route 9 additions needed the extra room)
 DEF NUM_EVENTS EQU const_value ; 1099 with Kanto events

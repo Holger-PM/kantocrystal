@@ -130,8 +130,8 @@ DEF GREEN EQU __trainer_class__
 	const TOBY2 ; was unused SAMUEL2 slot; this is the real Mt Moon 1F Youngster Toby
 	const RYAN2
 	const AIDEN ; was GORDON2
-	const DEVIN ; was DEVIN
 	const WARREN2
+	const DEVIN ; order must match YoungsterGroup (WARREN, DEVIN)
 	const JESSE
 	const MASON
 	const CURTIS
@@ -306,6 +306,8 @@ DEF GREEN EQU __trainer_class__
 	const ZACH
 	const BRENT4
 	const MILLER
+	const POKEMANIAC_ARNOLD ; Route 10
+	const POKEMANIAC_BRUCE ; Route 10
 
 	trainerclass GRUNTM ; 1f
 	const GRUNTM_1
@@ -558,17 +560,18 @@ DEF GREEN EQU __trainer_class__
 	const ANTHONY5
 	const TONY
 
+	; NOTE: order must match HikerGroup in data/trainers/parties.asm
+	const FLINT ; Mt Moon 1F (was RUSSELL2)
+	const CLIFF ; Route 25 (was BENJAMIN2)
+	const RIDGE ; Route 25 (was ERIK2)
+	const HANK ; Route 25 (was ANTHONY6)
 	const OSCAR ; Route 9
 	const PABLO ; Route 9
-	const QUINN2 ; Route 10, not yet placed
-	const LOWELL ; Route 10, not yet placed
+	const HIKER_QUINN ; Route 10
+	const HIKER_ROLAND ; Route 10
 	const STUART ; Rock Tunnel B1F, not yet placed
-	const DUSTIN ; Rock Tunnel B1F, not yet placed
+	const HIKER_TREVOR ; Rock Tunnel B1F, not yet placed
 	const VICTOR ; Route 9
-	const FLINT ; was RUSSELL2
-	const CLIFF ; was BENJAMIN2
-	const RIDGE	; was ERIK2
-	const HANK 	; was ANTHONY6
 
 	trainerclass BIKER ; 2d
 	const BIKER_BENNY ; unused
@@ -665,6 +668,11 @@ DEF GREEN EQU __trainer_class__
 	const GINA5
 	const TIFFANY4
 	const HOPE
+	const PICNICKER_JULIA ; Route 6
+	const PICNICKER_KAREN ; unused duplicate of Wanda
+	const PICNICKER_LYDIA ; unused duplicate of Phoebe
+	const PICNICKER_MIRA ; Route 10
+	const PICNICKER_NOELLE ; Route 10
 
 	trainerclass CAMPER ; 36
 	const ROLAND
