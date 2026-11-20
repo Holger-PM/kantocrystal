@@ -35,6 +35,7 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
+	dw MartCinnabar
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -241,7 +242,6 @@ MartPewter:
 	db ESCAPE_ROPE
 	db REPEL
 	db ANTIDOTE
-	db BURN_HEAL
 	db PARLYZ_HEAL
 	db AWAKENING
 	db -1 ; end
@@ -250,12 +250,12 @@ MartCerulean:
 	db 8 ; # items
 	db POKE_BALL
 	db POTION
-	db ESCAPE_ROPE
 	db REPEL
+	db ESCAPE_ROPE
 	db ANTIDOTE
-	db BURN_HEAL
 	db PARLYZ_HEAL
 	db AWAKENING
+	db BURN_HEAL
 	db -1 ; end
 
 MartLavender:
@@ -265,9 +265,9 @@ MartLavender:
 	db POTION
 	db SUPER_POTION
 	db REVIVE
-	db SUPER_REPEL
-	db ESCAPE_ROPE
 	db FULL_HEAL
+	db ESCAPE_ROPE
+	db SUPER_REPEL
 	db -1 ; end
 
 MartVermilion:
@@ -284,7 +284,7 @@ MartVermilion:
 	db BURN_HEAL
 	db -1 ; end
 
-MartCeladon2F1: ; Classic mart
+MartCeladon2F1: ; TM_WATER_GUN, TM_THUNDER_WAVE, TM_SWIFT, TM_REST, TM_SEISMIC_TOSS, TM_REST, TM_BIDE, TM_TELEPORT, TM_PAY_DAY
 	db 7 ; # items
 	db POTION
 	db SUPER_POTION
@@ -295,7 +295,7 @@ MartCeladon2F1: ; Classic mart
 	db MAX_REPEL
 	db -1 ; end
 
-MartCeladon2F2: ; TM marts
+MartCeladon2F2: ; TM_DOUBLE_TEAM, TM_REFLECT, TM_RAZOR_WIND, TM_SKULL_BASH, TM_EGG_BOMB, TM_MEGA_PUNCH, TM_MEGA_KICK, TM_TAKE_DOWN, TM_RAGE
 	db 10 ; # items
 	db POKE_BALL
 	db GREAT_BALL
@@ -318,14 +318,14 @@ MartCeladon3F: ; Inexistant mart
 	db TM_SANDSTORM
 	db -1 ; end
 
-MartCeladon4F: ; Stones mart
+MartCeladon4F: ; POKE_BALL, GREAT_BALL, POTION, SUPER_POTION, REVIVE, SUPER_REPEL, FULL_HEAL, ANTIDOTE, PARLYZ_HEAL, AWAKENING, BURN_HEAL, ICE_HEAL
 	db 3 ; # items
 	db POKE_DOLL
 	db LOVELY_MAIL
 	db SURF_MAIL
 	db -1 ; end
 
-MartCeladon5F1: ; same
+MartCeladon5F1: ; POKE_DOLL, FIRE_STONE, THUNDER_STONE, WATER_STONE, LEAF_STONE
 	db 5 ; # items
 	db HP_UP
 	db PROTEIN
@@ -334,7 +334,7 @@ MartCeladon5F1: ; same
 	db CALCIUM
 	db -1 ; end
 
-MartCeladon5F2: ; same
+MartCeladon5F2: ; HP_UP, PROTEIN, IRON, CARBOS, CALCIUM
 	db 7 ; # items
 	db X_ACCURACY
 	db GUARD_SPEC
@@ -352,8 +352,8 @@ MartFuchsia:
 	db SUPER_POTION
 	db HYPER_POTION
 	db REVIVE
-	db SUPER_REPEL
 	db FULL_HEAL
+	db SUPER_REPEL
 	db -1 ; end
 
 MartSaffron:
@@ -364,8 +364,8 @@ MartSaffron:
 	db HYPER_POTION
 	db ETHER
 	db REVIVE
-	db SUPER_REPEL
 	db FULL_HEAL
+	db SUPER_REPEL
 	db ESCAPE_ROPE
 	db -1 ; end
 
@@ -379,16 +379,16 @@ MartMtMoon:
 	db PORTRAITMAIL
 	db -1 ; end
 
-MartIndigoPlateau: ; TODO: Add TMs to match Yellow Legacy
-	db 7 ; # items
+MartIndigoPlateau: ; TODO: Add TMs to match Yellow Legacy : TM_ICE_BEAM, TM_THUNDERBOLT, TM_FLAMETHROWER, TM_MEGA_DRAIN, TM_SOLARBEAM, TM_SUBMISSION, TM_ROCK_SLIDE, TM_DREAM_EATER
+	db 6 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
 ;	db MAX_POTION
 	db FULL_RESTORE
-	db ELIXER
 	db REVIVE
-;	db MAX_REPEL
 	db FULL_HEAL
+	db ELIXER
+;	db MAX_REPEL
 	db -1 ; end
 
 MartUnderground:
@@ -397,6 +397,16 @@ MartUnderground:
 	db ENERGY_ROOT
 	db HEAL_POWDER
 	db REVIVAL_HERB
+	db -1 ; end
+
+MartCinnabar: ; TODO: Add TMs to match Yellow Legacy : TM_BUBBLEBEAM, TM_DIG, TM_TRI_ATTACK, TM_MIMIC, TM_SELFDESTRUCT, TM_PSYWAVE, TM_METRONOME, TM_SKULL_BASH
+	db 6 ; # items
+	db ULTRA_BALL
+	db HYPER_POTION
+	db MAX_REPEL
+	db ESCAPE_ROPE
+	db FULL_HEAL
+	db REVIVE
 	db -1 ; end
 
 DefaultMart:

@@ -297,6 +297,13 @@ TilesetGymKantoAnim:
 TilesetGymPewterAnim:
 TilesetClubKantoAnim:
 TilesetInteriorAnim:
+TilesetCemeteryAnim:
+TilesetForestKantoAnim:
+TilesetFacilityKantoAnim:
+TilesetLabKantoAnim:
+TilesetUndergroundKantoAnim:
+TilesetLobbyKantoAnim:
+TilesetGymRedAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

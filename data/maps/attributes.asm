@@ -371,7 +371,8 @@ ENDM
 	connection south, LavenderTown, LAVENDER_TOWN, 0
 	connection west, Route9, ROUTE_9, 0
 	
-	map_attributes Route23, ROUTE_23, $0f, 0
+	map_attributes Route23, ROUTE_23, $0f, NORTH
+	connection north, IndigoPlateau, INDIGO_PLATEAU, 0
 	map_attributes SproutTower1F, SPROUT_TOWER_1F, $00, 0
 	map_attributes SproutTower2F, SPROUT_TOWER_2F, $00, 0
 	map_attributes SproutTower3F, SPROUT_TOWER_3F, $00, 0
@@ -614,7 +615,7 @@ ENDM
 	map_attributes LavenderNameRater, LAVENDER_NAME_RATER, $00, 0
 	map_attributes LavenderMart, LAVENDER_MART, $25, 0
 	map_attributes SoulHouse, SOUL_HOUSE, $00, 0
-	map_attributes PokemonTower1F, LAV_POKEMON_TOWER_1F, $00, 0
+	map_attributes PokemonTower1F, LAV_POKEMON_TOWER_1F, $01, 0
 	map_attributes Route8SaffronGate, ROUTE_8_SAFFRON_GATE, $00, 0
 	map_attributes Route12SuperRodHouse, ROUTE_12_SUPER_ROD_HOUSE, $00, 0
 	map_attributes SilverCavePokecenter1F, SILVER_CAVE_POKECENTER_1F, $00, 0
@@ -702,3 +703,76 @@ ENDM
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
+	map_attributes PokemonTower2F, LAV_POKEMON_TOWER_2F, $01, 0
+	map_attributes PokemonTower3F, LAV_POKEMON_TOWER_3F, $01, 0
+	map_attributes PokemonTower4F, LAV_POKEMON_TOWER_4F, $01, 0
+	map_attributes PokemonTower5F, LAV_POKEMON_TOWER_5F, $01, 0
+	map_attributes PokemonTower6F, LAV_POKEMON_TOWER_6F, $01, 0
+	map_attributes PokemonTower7F, LAV_POKEMON_TOWER_7F, $01, 0
+	map_attributes IndigoPlateau, INDIGO_PLATEAU, $0f, SOUTH
+	connection south, Route23, ROUTE_23, 0
+	map_attributes PokemonMansionB1F, POKEMON_MANSION_B1F, $01, 0
+	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $7d, 0
+	map_attributes SummerBeachHouse, SUMMER_BEACH_HOUSE, $00, 0
+	map_attributes CeladonHotel, CELADON_HOTEL, $00, 0
+	map_attributes CinnabarLabFossilRoom, CINNABAR_LAB_FOSSIL_ROOM, $17, 0
+	map_attributes SafariZoneCenter, SAFARI_ZONE_CENTER, $00, 0
+	map_attributes CinnabarLabTradeRoom, CINNABAR_LAB_TRADE_ROOM, $17, 0
+	map_attributes RocketHideoutB3F, ROCKET_HIDEOUT_B3F, $2e, 0
+	map_attributes PokemonMansion3F, POKEMON_MANSION_3F, $01, 0
+	map_attributes AgathasRoom, AGATHAS_ROOM, $00, 0
+	map_attributes SaffronPidgeyHouse, SAFFRON_PIDGEY_HOUSE, $00, 0
+	map_attributes SilphCo10F, SILPH_CO_10F, $2e, 0
+	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $7d, 0
+	map_attributes CinnabarLabMetronomeRoom, CINNABAR_LAB_METRONOME_ROOM, $17, 0
+	map_attributes PokemonMansion1F, POKEMON_MANSION_1F, $2e, 0
+	map_attributes SilphCo7F, SILPH_CO_7F, $2e, 0
+	map_attributes VictoryRoad3F, VICTORY_ROAD_3F, $7d, 0
+	map_attributes Route15Gate2F, ROUTE_15_GATE_2F, $00, 0
+	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $7d, 0
+	map_attributes RocketHideoutB2F, ROCKET_HIDEOUT_B2F, $2e, 0
+	map_attributes RocketHideoutB4F, ROCKET_HIDEOUT_B4F, $2e, 0
+	map_attributes UndergroundPathRoute8, UNDERGROUND_PATH_ROUTE_8, $00, 0
+	map_attributes Route12Gate1F, ROUTE_12_GATE_1F, $00, 0
+	map_attributes SafariZoneNorthRestHouse, SAFARI_ZONE_NORTH_REST_HOUSE, $00, 0
+	map_attributes VictoryRoad1F, VICTORY_ROAD_1F, $7d, 0
+	map_attributes SafariZoneWestRestHouse, SAFARI_ZONE_WEST_REST_HOUSE, $00, 0
+	map_attributes SilphCo2F, SILPH_CO_2F, $2e, 0
+	map_attributes FuchsiaGoodRodHouse, FUCHSIA_GOOD_ROD_HOUSE, $0c, 0
+	map_attributes SafariZoneEastRestHouse, SAFARI_ZONE_EAST_REST_HOUSE, $00, 0
+	map_attributes SafariZoneNorth, SAFARI_ZONE_NORTH, $00, 0
+	map_attributes SilphCo11F, SILPH_CO_11F, $00, 0
+	map_attributes SilphCo9F, SILPH_CO_9F, $2e, 0
+	map_attributes RocketHideoutElevator, ROCKET_HIDEOUT_ELEVATOR, $0f, 0
+	map_attributes VictoryRoad2F, VICTORY_ROAD_2F, $7d, 0
+	map_attributes Route12Gate2F, ROUTE_12_GATE_2F, $00, 0
+	map_attributes Route18Gate2F, ROUTE_18_GATE_2F, $00, 0
+	map_attributes UndergroundPathRoute7Copy, UNDERGROUND_PATH_ROUTE_7, $00, 0
+	map_attributes SafariZoneEast, SAFARI_ZONE_EAST, $00, 0
+	map_attributes CinnabarGym, CINNABAR_GYM, $2e, 0
+	map_attributes SilphCo8F, SILPH_CO_8F, $2e, 0
+	map_attributes SafariZoneCenterRestHouse, SAFARI_ZONE_CENTER_REST_HOUSE, $00, 0
+	map_attributes SilphCo4F, SILPH_CO_4F, $2e, 0
+	map_attributes ChampionsRoom, CHAMPIONS_ROOM, $03, 0
+	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $7d, 0
+	map_attributes Route18Gate1F, ROUTE_18_GATE_1F, $00, 0
+	map_attributes PokemonMansion2F, POKEMON_MANSION_2F, $01, 0
+	map_attributes CinnabarLab, CINNABAR_LAB, $17, 0
+	map_attributes SilphCo3F, SILPH_CO_3F, $2e, 0
+	map_attributes SeafoamIslands1F, SEAFOAM_ISLANDS_1F, $7d, 0
+	map_attributes SafariZoneSecretHouse, SAFARI_ZONE_SECRET_HOUSE, $17, 0
+	map_attributes SeafoamIslandsB1F, SEAFOAM_ISLANDS_B1F, $7d, 0
+	map_attributes Route16Gate2F, ROUTE_16_GATE_2F, $00, 0
+	map_attributes LoreleisRoom, LORELEIS_ROOM, $03, 0
+	map_attributes SilphCoElevator, SILPH_CO_ELEVATOR, $0f, 0
+	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $7d, 0
+	map_attributes CinnabarMart, CINNABAR_MART, $00, 0
+	map_attributes UndergroundPathWestEast, UNDERGROUND_PATH_WEST_EAST, $01, 0
+	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $7d, 0
+	map_attributes SilphCo5F, SILPH_CO_5F, $2e, 0
+	map_attributes SilphCo6F, SILPH_CO_6F, $2e, 0
+	map_attributes SafariZoneWest, SAFARI_ZONE_WEST, $00, 0
+	map_attributes RocketHideoutB1F, ROCKET_HIDEOUT_B1F, $2e, 0
+	map_attributes RedPowerPlant, RED_POWER_PLANT, $2e, 0
+	map_attributes RedLancesRoom, RED_LANCES_ROOM, $03, 0
+	map_attributes RedViridianGym, RED_VIRIDIAN_GYM, $03, 0

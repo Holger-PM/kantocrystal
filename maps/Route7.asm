@@ -25,24 +25,17 @@ Route7UndergroundPathSignText:
 	para "CELADON POLICE"
 	done
 
-Route7LockedDoor: ; To remove
-	jumptext Route7LockedDoorText
-
-Route7LockedDoorText:
-	text "It's locked…"
-	done
-
 Route7_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 15,  6, ROUTE_7_SAFFRON_GATE, 1
-	warp_event 15,  7, ROUTE_7_SAFFRON_GATE, 2
+	warp_event 14,  9, ROUTE_7_SAFFRON_GATE, 1
+	warp_event 13, 10, ROUTE_7_SAFFRON_GATE, 2
+	warp_event  5, 13, UNDERGROUND_PATH_ROUTE_7, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  5, 11, BGEVENT_READ, Route7UndergroundPathSign
-	bg_event  6,  9, BGEVENT_READ, Route7LockedDoor
+	bg_event  3, 13, BGEVENT_READ, Route7UndergroundPathSign
 
 	def_object_events

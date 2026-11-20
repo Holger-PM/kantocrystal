@@ -175,7 +175,7 @@ LassAprilAfterBattleText:
 ; ------------------------------------------------------------------------------
 
 TrainerHikerHank:
-	trainer HANK, HANK, EVENT_BEAT_ROUTE_25_HIKER_HANK, HikerHankSeenText, HikerHankBeatenText, 0, .Script
+	trainer HIKER, HANK, EVENT_BEAT_ROUTE_25_HIKER_HANK, HikerHankSeenText, HikerHankBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

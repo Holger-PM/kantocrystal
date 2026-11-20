@@ -561,6 +561,7 @@ CeruleanCity_MapEvents:
 	warp_event  9,  9, CERULEAN_GYM_BADGE_SPEECH_HOUSE, 3
 	warp_event 15,  9, CERULEAN_BERRY_SPEECH_HOUSE, 3
 	warp_event 27, 9, CERULEAN_TRASHED_HOUSE, 3
+	warp_event  4, 11, CERULEAN_CAVE_1F, 1
 
 	def_coord_events
 	coord_event  20,  6, SCENE_CERULEAN_CITY_RIVAL, CeruleanCityRivalBattle2Script

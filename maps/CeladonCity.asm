@@ -246,14 +246,15 @@ CeladonCity_MapEvents:
 
 	def_warp_events
 	warp_event 10, 13, CELADON_DEPT_STORE_1F, 1
-	warp_event 16,  9, CELADON_MANSION_1F, 1
-	warp_event 16,  3, CELADON_MANSION_1F, 3
-	warp_event 17,  3, CELADON_MANSION_1F, 3
+	warp_event 24,  9, CELADON_MANSION_1F, 1
+	warp_event 24,  3, CELADON_MANSION_1F, 3
+	warp_event 25,  3, CELADON_MANSION_1F, 3
 	warp_event 41,  9, CELADON_POKECENTER_1F, 1
 	warp_event 28, 19, CELADON_GAME_CORNER, 1
 	warp_event 33, 19, CELADON_GAME_CORNER_PRIZE_ROOM, 1
 	warp_event 12, 27, CELADON_GYM, 1
 	warp_event 31, 27, CELADON_CAFE, 1
+	warp_event 43, 27, CELADON_HOTEL, 1
 
 	def_coord_events
 

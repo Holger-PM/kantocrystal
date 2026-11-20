@@ -26,13 +26,13 @@ TrainerCooltrainerfWanda:
 	closetext
 	end
 
-TrainerCooltrainermDerek:
-	trainer COOLTRAINERM, DEREK, EVENT_BEAT_COOLTRAINERM_DEREK, CooltrainermDerekSeenText, CooltrainermDerekBeatenText, 0, .Script
+TrainerYoungsterLogan:
+	trainer YOUNGSTER, LOGAN, EVENT_BEAT_YOUNGSTER_LOGAN, YoungsterLoganSeenText, YoungsterLoganBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainermDerekAfterBattleText
+	writetext YoungsterLoganAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -82,12 +82,12 @@ TrainerHikerPablo:
 	end
 
 TrainerBugCatcherColin:
-	trainer BUG_CATCHER, BUG_CATCHER_UNUSED1, EVENT_BEAT_BUG_CATCHER_UNUSED1, BugCatcherColinSeenText, BugCatcherColinBeatenText, 0, .Script
+	trainer BUG_CATCHER, BUG_CATCHER_UNUSED1, EVENT_BEAT_BUG_CATCHER_UNUSED1, BugCatcherGrantSeenText, BugCatcherGrantBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherColinAfterBattleText
+	writetext BugCatcherGrantAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -104,12 +104,12 @@ TrainerHikerVictor:
 	end
 
 TrainerBugCatcherGrant:
-	trainer BUG_CATCHER, BUG_CATCHER_UNUSED2, EVENT_BEAT_BUG_CATCHER_UNUSED2, BugCatcherGrantSeenText, BugCatcherGrantBeatenText, 0, .Script
+	trainer BUG_CATCHER, BUG_CATCHER_UNUSED2, EVENT_BEAT_BUG_CATCHER_UNUSED2, BugCatcherColinSeenText, BugCatcherColinBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherGrantAfterBattleText
+	writetext BugCatcherColinAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -119,6 +119,9 @@ Route9Sign:
 
 Route9TMDig:
 	itemball TM_DIG
+
+Route9HiddenEther:
+	hiddenitem ETHER, EVENT_ROUTE_9_HIDDEN_ETHER
 
 CooltrainerfWandaSeenText:
 	text "You have #MON"
@@ -137,19 +140,20 @@ CooltrainerfWandaAfterBattleText:
 	cont "dark tunnel ahead."
 	done
 
-CooltrainermDerekSeenText:
-	text "Who's that walking"
-	line "with those good"
-	cont "looking #MON?"
+YoungsterLoganSeenText:
+	text "I aim to be the"
+	line "ultimate trainer!"
 	done
 
-CooltrainermDerekBeatenText:
-	text "Out"
-	line "like a light!"
+YoungsterLoganBeatenText:
+	text "My"
+	line "SANDSHREW lost?"
 	done
 
-CooltrainermDerekAfterBattleText:
-	text "Keep walking!"
+YoungsterLoganAfterBattleText:
+	text "I'll restart my"
+	line "100-win streak"
+	cont "with SANDSHREW."
 	done
 
 CooltrainermHowardSeenText:
@@ -288,10 +292,11 @@ Route9_MapEvents:
 
 	def_bg_events
 	bg_event 25,  7, BGEVENT_READ, Route9Sign
+	bg_event 14,  7, BGEVENT_ITEM, Route9HiddenEther
 
 	def_object_events
 	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfWanda, -1
-	object_event 24,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerCooltrainermDerek, -1
+	object_event 24,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerYoungsterLogan, -1
 	object_event 31,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerCooltrainermHoward, -1
 	object_event 48,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfPhoebe, -1
 	object_event 16, 15, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerHikerOscar, -1

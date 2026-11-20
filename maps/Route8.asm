@@ -66,9 +66,6 @@ TrainerSupernerdTom:
 	closetext
 	end
 
-Route8LockedDoor:
-	jumptext Route8LockedDoorText
-
 Route8UndergroundPathSign:
 	jumptext Route8UndergroundPathSignText
 
@@ -159,10 +156,6 @@ SupernerdTomAfterBattleText:
 	cont "battles."
 	done
 
-Route8LockedDoorText:
-	text "It's locked…"
-	done
-
 Route8UndergroundPathSignText:
 	text "The flyer's torn."
 
@@ -174,19 +167,19 @@ Route8_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  1, 10, ROUTE_8_SAFFRON_GATE, 3
-	warp_event  8, 10, ROUTE_8_SAFFRON_GATE, 4
+	warp_event  2, 12, ROUTE_8_SAFFRON_GATE, 3
+	warp_event  4, 12, ROUTE_8_SAFFRON_GATE, 4
+	warp_event  7,  5, UNDERGROUND_PATH_ROUTE_8, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 17,  3, BGEVENT_READ, Route8UndergroundPathSign
-	bg_event 10,  5, BGEVENT_READ, Route8LockedDoor
+	bg_event 11,  5, BGEVENT_READ, Route8UndergroundPathSign
 
 	def_object_events
-	object_event 26,  4, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerBikerDwayne, -1
-	object_event 26,  5, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerBikerHarris, -1
-	object_event 26,  6, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerBikerZeke, -1
-	object_event 26,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSupernerdSam, -1
-	object_event 42,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerSupernerdTom, -1
-	object_event 52,  6, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route8FruitTree, -1
+	object_event 18,  6, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerBikerDwayne, -1
+	object_event 18,  7, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerBikerHarris, -1
+	object_event 18,  8, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerBikerZeke, -1
+	object_event 18,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSupernerdSam, -1
+	object_event 36,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerSupernerdTom, -1
+	object_event 45,  8, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route8FruitTree, -1

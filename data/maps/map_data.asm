@@ -1,6 +1,9 @@
 SECTION "Maps", ROMX
 
 INCLUDE "data/maps/maps.asm"
+
+SECTION "Map Attributes", ROMX
+
 INCLUDE "data/maps/attributes.asm"
 
 

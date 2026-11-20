@@ -50,6 +50,13 @@
 	const TILESET_GYM_CERULEAN         ; 36
 	const TILESET_CLUB_KANTO           ; 37
 	const TILESET_INTERIOR             ; 38
+	const TILESET_CEMETERY             ; 39
+	const TILESET_FOREST_KANTO         ; 40
+	const TILESET_FACILITY_KANTO        ; 29
+	const TILESET_LAB_KANTO             ; 2a
+	const TILESET_UNDERGROUND_KANTO     ; 2b
+	const TILESET_LOBBY_KANTO           ; 2c
+	const TILESET_GYM_RED               ; 46
 DEF NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

@@ -502,3 +502,95 @@ INCLUDE "maps/MahoganyPokecenter1F.asm"
 INCLUDE "maps/Route42EcruteakGate.asm"
 
 ENDSECTION
+
+SECTION "Map Scripts Red", ROMX
+INCLUDE "maps/PokemonTower2F.asm"
+INCLUDE "maps/PokemonTower3F.asm"
+INCLUDE "maps/PokemonTower4F.asm"
+INCLUDE "maps/PokemonTower5F.asm"
+INCLUDE "maps/PokemonTower6F.asm"
+INCLUDE "maps/PokemonTower7F.asm"
+
+SECTION "Map Scripts Red 2", ROMX
+INCLUDE "maps/IndigoPlateau.asm"
+INCLUDE "maps/PokemonMansionB1F.asm"
+INCLUDE "maps/CeruleanCave1F.asm"
+INCLUDE "maps/SummerBeachHouse.asm"
+INCLUDE "maps/CeladonHotel.asm"
+INCLUDE "maps/CinnabarLabFossilRoom.asm"
+INCLUDE "maps/SafariZoneCenter.asm"
+INCLUDE "maps/CinnabarLabTradeRoom.asm"
+INCLUDE "maps/RocketHideoutB3F.asm"
+INCLUDE "maps/PokemonMansion3F.asm"
+INCLUDE "maps/AgathasRoom.asm"
+INCLUDE "maps/SaffronPidgeyHouse.asm"
+
+SECTION "Map Scripts Red 3", ROMX
+INCLUDE "maps/SilphCo10F.asm"
+INCLUDE "maps/CeruleanCaveB1F.asm"
+INCLUDE "maps/CinnabarLabMetronomeRoom.asm"
+INCLUDE "maps/PokemonMansion1F.asm"
+INCLUDE "maps/SilphCo7F.asm"
+INCLUDE "maps/VictoryRoad3F.asm"
+INCLUDE "maps/Route15Gate2F.asm"
+INCLUDE "maps/SeafoamIslandsB3F.asm"
+INCLUDE "maps/RocketHideoutB2F.asm"
+INCLUDE "maps/RocketHideoutB4F.asm"
+INCLUDE "maps/UndergroundPathRoute8.asm"
+INCLUDE "maps/Route12Gate1F.asm"
+
+SECTION "Map Scripts Red 4", ROMX
+INCLUDE "maps/SafariZoneNorthRestHouse.asm"
+INCLUDE "maps/VictoryRoad1F.asm"
+INCLUDE "maps/SafariZoneWestRestHouse.asm"
+INCLUDE "maps/SilphCo2F.asm"
+INCLUDE "maps/FuchsiaGoodRodHouse.asm"
+INCLUDE "maps/SafariZoneEastRestHouse.asm"
+INCLUDE "maps/SafariZoneNorth.asm"
+INCLUDE "maps/SilphCo11F.asm"
+INCLUDE "maps/SilphCo9F.asm"
+INCLUDE "maps/RocketHideoutElevator.asm"
+INCLUDE "maps/VictoryRoad2F.asm"
+INCLUDE "maps/Route12Gate2F.asm"
+
+SECTION "Map Scripts Red 5", ROMX
+INCLUDE "maps/Route18Gate2F.asm"
+INCLUDE "maps/UndergroundPathRoute7Copy.asm"
+INCLUDE "maps/SafariZoneEast.asm"
+INCLUDE "maps/CinnabarGym.asm"
+INCLUDE "maps/SilphCo8F.asm"
+INCLUDE "maps/SafariZoneCenterRestHouse.asm"
+INCLUDE "maps/SilphCo4F.asm"
+INCLUDE "maps/ChampionsRoom.asm"
+INCLUDE "maps/CeruleanCave2F.asm"
+INCLUDE "maps/Route18Gate1F.asm"
+INCLUDE "maps/PokemonMansion2F.asm"
+INCLUDE "maps/CinnabarLab.asm"
+
+SECTION "Map Scripts Red 6", ROMX
+INCLUDE "maps/SilphCo3F.asm"
+INCLUDE "maps/SeafoamIslands1F.asm"
+INCLUDE "maps/SafariZoneSecretHouse.asm"
+INCLUDE "maps/SeafoamIslandsB1F.asm"
+INCLUDE "maps/Route16Gate2F.asm"
+INCLUDE "maps/LoreleisRoom.asm"
+INCLUDE "maps/SilphCoElevator.asm"
+INCLUDE "maps/SeafoamIslandsB2F.asm"
+INCLUDE "maps/CinnabarMart.asm"
+INCLUDE "maps/UndergroundPathWestEast.asm"
+INCLUDE "maps/SeafoamIslandsB4F.asm"
+INCLUDE "maps/SilphCo5F.asm"
+
+SECTION "Map Scripts Red 7", ROMX
+INCLUDE "maps/SilphCo6F.asm"
+INCLUDE "maps/SafariZoneWest.asm"
+INCLUDE "maps/RocketHideoutB1F.asm"
+
+SECTION "Map Scripts Red Power Plant", ROMX
+INCLUDE "maps/RedPowerPlant.asm"
+
+SECTION "Map Scripts Red Lance", ROMX
+INCLUDE "maps/RedLancesRoom.asm"
+
+SECTION "Map Scripts Red Viridian", ROMX
+INCLUDE "maps/RedViridianGym.asm"

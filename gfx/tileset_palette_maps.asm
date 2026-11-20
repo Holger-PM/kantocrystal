@@ -138,6 +138,27 @@ INCLUDE "gfx/tilesets/club_kanto_palette_map.asm"
 TilesetInteriorPalMap:
 INCLUDE "gfx/tilesets/interior_palette_map.asm"
 
+TilesetCemeteryPalMap:
+INCLUDE "gfx/tilesets/cemetery_palette_map.asm"
+
+TilesetForestKantoPalMap:
+INCLUDE "gfx/tilesets/forest_kanto_palette_map.asm"
+
+TilesetFacilityKantoPalMap:
+INCLUDE "gfx/tilesets/facility_kanto_palette_map.asm"
+
+TilesetLabKantoPalMap:
+INCLUDE "gfx/tilesets/lab_kanto_palette_map.asm"
+
+TilesetUndergroundKantoPalMap:
+INCLUDE "gfx/tilesets/underground_kanto_palette_map.asm"
+
+TilesetLobbyKantoPalMap:
+INCLUDE "gfx/tilesets/lobby_kanto_palette_map.asm"
+
+TilesetGymRedPalMap:
+INCLUDE "gfx/tilesets/gym_red_palette_map.asm"
+
 TilesetPokeComCenterPalMap:
 INCLUDE "gfx/tilesets/pokecom_center_palette_map.asm"
 

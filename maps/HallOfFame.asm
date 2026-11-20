@@ -110,12 +110,12 @@ HallOfFame_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4, 13, LANCES_ROOM, 3
-	warp_event  5, 13, LANCES_ROOM, 4
+	warp_event  4,  7, LANCES_ROOM, 3
+	warp_event  5,  7, LANCES_ROOM, 4
 
 	def_coord_events
 
 	def_bg_events
 
 	def_object_events
-	object_event  4, 12, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4,  6, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1

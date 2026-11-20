@@ -138,7 +138,7 @@ Route2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 12,  9, DIGLETTS_CAVE_ROUTE_2, 1
+	warp_event 12,  9, DIGLETTS_CAVE_ROUTE_2, 5
 	warp_event  3, 11, VIRIDIAN_FOREST_NORTH_GATE, 2
 	warp_event 15, 19, ROUTE_2_NUGGET_HOUSE, 1
 	warp_event 16, 35, ROUTE_2_GATE, 2
@@ -148,14 +148,14 @@ Route2_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  5, 65, BGEVENT_READ, Route2Sign
+	bg_event  7, 43, BGEVENT_READ, Route2Sign
 	bg_event 11, 11, BGEVENT_READ, Route2DiglettsCaveSign
 
 	def_object_events
 ;	object_event  9, 51, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherRob, -1
 ;	object_event  2,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherEd, -1
 ;	object_event 19, 55, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherDoug, -1
-	object_event 13, 45, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2HPUP, EVENT_ROUTE_2_HP_UP
-	object_event 13, 54, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2MoonStone, EVENT_ROUTE_2_MOON_STONE
+	object_event 14, 68, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2HPUP, EVENT_ROUTE_2_HP_UP
+	object_event 14, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2MoonStone, EVENT_ROUTE_2_MOON_STONE
 ;	object_event 16, 16, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route2FruitTree, -1
 

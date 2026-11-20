@@ -462,3 +462,83 @@ INCBIN "data/tilesets/interior_metatiles.bin"
 
 TilesetInteriorColl::
 INCLUDE "data/tilesets/interior_collision.asm"
+
+SECTION "Tileset Data Cemetery", ROMX
+
+TilesetCemeteryGFX::
+INCBIN "gfx/tilesets/cemetery.2bpp.lz"
+
+TilesetCemeteryMeta::
+INCBIN "data/tilesets/cemetery_metatiles.bin"
+
+TilesetCemeteryColl::
+INCLUDE "data/tilesets/cemetery_collision.asm"
+
+SECTION "Tileset Data Forest Kanto", ROMX
+
+TilesetForestKantoGFX::
+INCBIN "gfx/tilesets/forest_kanto.2bpp.lz"
+
+TilesetForestKantoMeta::
+INCBIN "data/tilesets/forest_kanto_metatiles.bin"
+
+TilesetForestKantoColl::
+INCLUDE "data/tilesets/forest_kanto_collision.asm"
+
+SECTION "Tileset Data FacilityKanto", ROMX
+
+TilesetFacilityKantoGFX::
+INCBIN "gfx/tilesets/facility_kanto.2bpp.lz"
+
+TilesetFacilityKantoMeta::
+INCBIN "data/tilesets/facility_kanto_metatiles.bin"
+
+TilesetFacilityKantoColl::
+INCLUDE "data/tilesets/facility_kanto_collision.asm"
+
+
+SECTION "Tileset Data LabKanto", ROMX
+
+TilesetLabKantoGFX::
+INCBIN "gfx/tilesets/lab_kanto.2bpp.lz"
+
+TilesetLabKantoMeta::
+INCBIN "data/tilesets/lab_kanto_metatiles.bin"
+
+TilesetLabKantoColl::
+INCLUDE "data/tilesets/lab_kanto_collision.asm"
+
+
+SECTION "Tileset Data UndergroundKanto", ROMX
+
+TilesetUndergroundKantoGFX::
+INCBIN "gfx/tilesets/underground_kanto.2bpp.lz"
+
+TilesetUndergroundKantoMeta::
+INCBIN "data/tilesets/underground_kanto_metatiles.bin"
+
+TilesetUndergroundKantoColl::
+INCLUDE "data/tilesets/underground_kanto_collision.asm"
+
+
+SECTION "Tileset Data LobbyKanto", ROMX
+
+TilesetLobbyKantoGFX::
+INCBIN "gfx/tilesets/lobby_kanto.2bpp.lz"
+
+TilesetLobbyKantoMeta::
+INCBIN "data/tilesets/lobby_kanto_metatiles.bin"
+
+TilesetLobbyKantoColl::
+INCLUDE "data/tilesets/lobby_kanto_collision.asm"
+
+SECTION "Tileset Data GymRed", ROMX
+
+TilesetGymRedGFX::
+INCBIN "gfx/tilesets/gym_red.2bpp.lz"
+
+TilesetGymRedMeta::
+INCBIN "data/tilesets/gym_red_metatiles.bin"
+
+TilesetGymRedColl::
+INCLUDE "data/tilesets/gym_red_collision.asm"

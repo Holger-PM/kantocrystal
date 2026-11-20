@@ -64,4 +64,11 @@ Tilesets::
 	tileset TilesetGymCerulean
 	tileset TilesetClubKanto
 	tileset TilesetInterior
+	tileset TilesetCemetery
+	tileset TilesetForestKanto
+	tileset TilesetFacilityKanto
+	tileset TilesetLabKanto
+	tileset TilesetUndergroundKanto
+	tileset TilesetLobbyKanto
+	tileset TilesetGymRed
 	assert_table_length NUM_TILESETS + 1

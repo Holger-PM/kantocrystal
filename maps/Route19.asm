@@ -178,6 +178,7 @@ Route19_MapEvents:
 
 	def_warp_events
 	warp_event  7,  3, ROUTE_19_FUCHSIA_GATE, 3
+	warp_event  5,  9, SUMMER_BEACH_HOUSE, 1
 
 	def_coord_events
 

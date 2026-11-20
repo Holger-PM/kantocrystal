@@ -192,7 +192,7 @@ Route6_MapEvents:
 
 	def_warp_events
 	warp_event 17, 13, ROUTE_6_UNDERGROUND_PATH_ENTRANCE, 1
-	warp_event 10,  1, ROUTE_6_SAFFRON_GATE, 3
+	warp_event 10,  7, ROUTE_6_SAFFRON_GATE, 3
 
 	def_coord_events
 

@@ -33,9 +33,9 @@ RockTunnel1F_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  0, 12, BGEVENT_ITEM, RockTunnel1FHiddenXAccuracy
-	bg_event  0, 10, BGEVENT_ITEM, RockTunnel1FHiddenXDefend
+	bg_event  3, 33, BGEVENT_ITEM, RockTunnel1FHiddenXAccuracy
+	bg_event  2, 32, BGEVENT_ITEM, RockTunnel1FHiddenXDefend
 
 	def_object_events
-	object_event  0, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FElixer, EVENT_ROCK_TUNNEL_1F_ELIXER
-	object_event  0, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FTMSteelWing, EVENT_ROCK_TUNNEL_1F_TM_STEEL_WING
+	object_event  2, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FElixer, EVENT_ROCK_TUNNEL_1F_ELIXER
+	object_event  3, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FTMSteelWing, EVENT_ROCK_TUNNEL_1F_TM_STEEL_WING

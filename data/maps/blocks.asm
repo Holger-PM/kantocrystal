@@ -171,6 +171,7 @@ CherrygroveGymSpeechHouse_Blocks:
 GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
+SaffronPidgeyHouse_Blocks:
 	INCBIN "maps/House1.blk"
 CeruleanTrashedHouse_Blocks:
 	INCBIN "maps/CeruleanTrashedHouse.blk"
@@ -292,6 +293,7 @@ LavenderMart_Blocks:
 ViridianMart_Blocks:
 SaffronMart_Blocks:
 CherrygroveMart_Blocks:
+CinnabarMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 OlivinePokecenter1F_Blocks:
@@ -970,3 +972,221 @@ GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
 
 ENDSECTION
+
+SECTION "Map Blocks Red", ROMX
+
+PokemonTower2F_Blocks:
+	INCBIN "maps/PokemonTower2F.blk"
+
+PokemonTower3F_Blocks:
+	INCBIN "maps/PokemonTower3F.blk"
+
+PokemonTower4F_Blocks:
+	INCBIN "maps/PokemonTower4F.blk"
+
+PokemonTower5F_Blocks:
+	INCBIN "maps/PokemonTower5F.blk"
+
+PokemonTower6F_Blocks:
+	INCBIN "maps/PokemonTower6F.blk"
+
+PokemonTower7F_Blocks:
+	INCBIN "maps/PokemonTower7F.blk"
+
+IndigoPlateau_Blocks:
+	INCBIN "maps/IndigoPlateau.blk"
+
+PokemonMansionB1F_Blocks:
+	INCBIN "maps/PokemonMansionB1F.blk"
+
+CeruleanCave1F_Blocks:
+	INCBIN "maps/CeruleanCave1F.blk"
+
+SummerBeachHouse_Blocks:
+	INCBIN "maps/SummerBeachHouse.blk"
+
+CeladonHotel_Blocks:
+	INCBIN "maps/CeladonHotel.blk"
+
+CinnabarLabFossilRoom_Blocks:
+	INCBIN "maps/CinnabarLabFossilRoom.blk"
+
+SafariZoneCenter_Blocks:
+	INCBIN "maps/SafariZoneCenter.blk"
+
+CinnabarLabTradeRoom_Blocks:
+	INCBIN "maps/CinnabarLabTradeRoom.blk"
+
+RocketHideoutB3F_Blocks:
+	INCBIN "maps/RocketHideoutB3F.blk"
+
+PokemonMansion3F_Blocks:
+	INCBIN "maps/PokemonMansion3F.blk"
+
+AgathasRoom_Blocks:
+	INCBIN "maps/AgathasRoom.blk"
+
+SilphCo10F_Blocks:
+	INCBIN "maps/SilphCo10F.blk"
+
+CeruleanCaveB1F_Blocks:
+	INCBIN "maps/CeruleanCaveB1F.blk"
+
+CinnabarLabMetronomeRoom_Blocks:
+	INCBIN "maps/CinnabarLabMetronomeRoom.blk"
+
+PokemonMansion1F_Blocks:
+	INCBIN "maps/PokemonMansion1F.blk"
+
+SilphCo7F_Blocks:
+	INCBIN "maps/SilphCo7F.blk"
+
+VictoryRoad3F_Blocks:
+	INCBIN "maps/VictoryRoad3F.blk"
+
+Route15Gate2F_Blocks:
+	INCBIN "maps/Route15Gate2F.blk"
+
+SeafoamIslandsB3F_Blocks:
+	INCBIN "maps/SeafoamIslandsB3F.blk"
+
+RocketHideoutB2F_Blocks:
+	INCBIN "maps/RocketHideoutB2F.blk"
+
+RocketHideoutB4F_Blocks:
+	INCBIN "maps/RocketHideoutB4F.blk"
+
+UndergroundPathRoute8_Blocks:
+	INCBIN "maps/UndergroundPathRoute8.blk"
+
+Route12Gate1F_Blocks:
+	INCBIN "maps/Route12Gate1F.blk"
+
+SafariZoneNorthRestHouse_Blocks:
+	INCBIN "maps/SafariZoneNorthRestHouse.blk"
+
+VictoryRoad1F_Blocks:
+	INCBIN "maps/VictoryRoad1F.blk"
+
+SafariZoneWestRestHouse_Blocks:
+	INCBIN "maps/SafariZoneWestRestHouse.blk"
+
+SilphCo2F_Blocks:
+	INCBIN "maps/SilphCo2F.blk"
+
+FuchsiaGoodRodHouse_Blocks:
+	INCBIN "maps/FuchsiaGoodRodHouse.blk"
+
+SafariZoneEastRestHouse_Blocks:
+	INCBIN "maps/SafariZoneEastRestHouse.blk"
+
+SafariZoneNorth_Blocks:
+	INCBIN "maps/SafariZoneNorth.blk"
+
+SilphCo11F_Blocks:
+	INCBIN "maps/SilphCo11F.blk"
+
+SilphCo9F_Blocks:
+	INCBIN "maps/SilphCo9F.blk"
+
+RocketHideoutElevator_Blocks:
+	INCBIN "maps/RocketHideoutElevator.blk"
+
+VictoryRoad2F_Blocks:
+	INCBIN "maps/VictoryRoad2F.blk"
+
+Route12Gate2F_Blocks:
+	INCBIN "maps/Route12Gate2F.blk"
+
+Route18Gate2F_Blocks:
+	INCBIN "maps/Route18Gate2F.blk"
+
+UndergroundPathRoute7Copy_Blocks:
+	INCBIN "maps/UndergroundPathRoute7Copy.blk"
+
+SafariZoneEast_Blocks:
+	INCBIN "maps/SafariZoneEast.blk"
+
+CinnabarGym_Blocks:
+	INCBIN "maps/CinnabarGym.blk"
+
+SilphCo8F_Blocks:
+	INCBIN "maps/SilphCo8F.blk"
+
+SafariZoneCenterRestHouse_Blocks:
+	INCBIN "maps/SafariZoneCenterRestHouse.blk"
+
+SilphCo4F_Blocks:
+	INCBIN "maps/SilphCo4F.blk"
+
+ChampionsRoom_Blocks:
+	INCBIN "maps/ChampionsRoom.blk"
+
+CeruleanCave2F_Blocks:
+	INCBIN "maps/CeruleanCave2F.blk"
+
+Route18Gate1F_Blocks:
+	INCBIN "maps/Route18Gate1F.blk"
+
+PokemonMansion2F_Blocks:
+	INCBIN "maps/PokemonMansion2F.blk"
+
+CinnabarLab_Blocks:
+	INCBIN "maps/CinnabarLab.blk"
+
+SilphCo3F_Blocks:
+	INCBIN "maps/SilphCo3F.blk"
+
+SeafoamIslands1F_Blocks:
+	INCBIN "maps/SeafoamIslands1F.blk"
+
+SafariZoneSecretHouse_Blocks:
+	INCBIN "maps/SafariZoneSecretHouse.blk"
+
+SeafoamIslandsB1F_Blocks:
+	INCBIN "maps/SeafoamIslandsB1F.blk"
+
+Route16Gate2F_Blocks:
+	INCBIN "maps/Route16Gate2F.blk"
+
+LoreleisRoom_Blocks:
+	INCBIN "maps/LoreleisRoom.blk"
+
+SilphCoElevator_Blocks:
+	INCBIN "maps/SilphCoElevator.blk"
+
+SeafoamIslandsB2F_Blocks:
+	INCBIN "maps/SeafoamIslandsB2F.blk"
+
+UndergroundPathWestEast_Blocks:
+	INCBIN "maps/UndergroundPathWestEast.blk"
+
+SeafoamIslandsB4F_Blocks:
+	INCBIN "maps/SeafoamIslandsB4F.blk"
+
+SilphCo5F_Blocks:
+	INCBIN "maps/SilphCo5F.blk"
+
+SilphCo6F_Blocks:
+	INCBIN "maps/SilphCo6F.blk"
+
+SafariZoneWest_Blocks:
+	INCBIN "maps/SafariZoneWest.blk"
+
+RocketHideoutB1F_Blocks:
+	INCBIN "maps/RocketHideoutB1F.blk"
+
+SECTION "Map Blocks Red 2", ROMX
+
+RedPowerPlant_Blocks:
+	INCBIN "maps/RedPowerPlant.blk"
+
+SECTION "Map Blocks Red Lance", ROMX
+
+RedLancesRoom_Blocks:
+	INCBIN "maps/RedLancesRoom.blk"
+
+SECTION "Map Blocks Red Viridian", ROMX
+
+RedViridianGym_Blocks:
+	INCBIN "maps/RedViridianGym.blk"
