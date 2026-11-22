@@ -8,12 +8,12 @@ RedsHouse2F_MapScripts:
 
 SquirtlePokeBallDebug:
 	disappear DEBUG_POKE_BALL2
-	setevent EVENT_GOT_A_SQUIRTLE_FROM_OAK
-	getmonname STRING_BUFFER_3, SQUIRTLE
-	writetext OaksLabReceivedStarterText
+;	setevent EVENT_GOT_A_SQUIRTLE_FROM_OAK
+	getmonname STRING_BUFFER_3, PIKACHU
+;	writetext OaksLabReceivedStarterText
 	playsound SFX_CAUGHT_MON_RBY
 	waitsfx
-	givepoke SQUIRTLE, 25
+	givepoke PIKACHU, 99
 	closetext
 
 RedsHouse2FSNESScript:
@@ -41,6 +41,7 @@ RedsHouse2F_MapEvents:
 
 	def_warp_events
 	warp_event  7,  1, REDS_HOUSE_1F, 3
+	warp_event  5,  1, COLOSSEUM, 1
 
 	def_coord_events
 
@@ -49,4 +50,4 @@ RedsHouse2F_MapEvents:
 	bg_event  0,  1, BGEVENT_UP, RedsHouse2FPCText
 
 	def_object_events
-	object_event  7,  3, SPRITE_POKE_BALL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SquirtlePokeBallDebug, EVENT_SQUIRTLE_POKEBALL_IN_OAKS_LAB
+	object_event  7,  3, SPRITE_POKE_BALL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SquirtlePokeBallDebug, EVENT_GOT_HITMONCHAN

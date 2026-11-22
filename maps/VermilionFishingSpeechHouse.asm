@@ -6,47 +6,48 @@ VermilionFishingSpeechHouse_MapScripts:
 
 	def_callbacks
 
-FishingDude:
+FishingBrother:
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_GOOD_ROD
-	iftrue .AlreadyGotOldRod
-	writetext FishingDudeDoYouLikeToFishText
+	iftrue .AlreadyGotGoodRod
+	writetext FishingBrotherDoYouLikeToFishText
 	yesorno
 	iffalse .Refused
 	verbosegiveitem GOOD_ROD
 	iffalse .NoRoom
 	setevent EVENT_GOT_GOOD_ROD
-	writetext FishingDudeTakeThisText
+	writetext FishingBrotherTakeThisText
 	promptbutton
-	writetext FishingDudeFishingIsAWayOfLifeText
+	writetext FishingBrotherFishingIsAWayOfLifeText
 	closetext
 	end
 
 .Refused:
-	writetext FishingDudeThatsSoDisappointingText
+	writetext FishingBrotherThatsSoDisappointingText
 	closetext
 	end
 
 .NoRoom:
-	writetext FishingDudeNoRoomText
+	writetext FishingBrotherNoRoomText
 	closetext
 	end
 
-.AlreadyGotOldRod:
-	writetext FishingDudeHowAreTheFishBitingText
+.AlreadyGotGoodRod:
+	writetext FishingBrotherHowAreTheFishBitingText
 	closetext
 	end
 
-FishingDudesHousePhoto:
-	jumptext FishingDudesHousePhotoText
+FishingBrothersHousePhoto:
+	jumptext FishingBrothersHousePhotoText
 
-FishingDudesHouseBookshelf: ; unreferenced
+FishingBrothersHouseBookshelf: ; unreferenced
 	jumpstd PictureBookshelfScript
 
-FishingDudeDoYouLikeToFishText:
+FishingBrotherDoYouLikeToFishText:
 	text "I'm the FISHING"
-	line "GURU!"
+	line "GURU's older"
+	cont "brother!"
 
 	para "I simply Looove"
 	line "fishing!"
@@ -55,7 +56,7 @@ FishingDudeDoYouLikeToFishText:
 	line "fish?"
 	done
 
-FishingDudeTakeThisText:
+FishingBrotherTakeThisText:
 	text "Grand! I like"
 	line "your style!"
 
@@ -63,7 +64,7 @@ FishingDudeTakeThisText:
 	line "fish, young one!"
 	done
 
-FishingDudeFishingIsAWayOfLifeText:
+FishingBrotherFishingIsAWayOfLifeText:
 	text "Fishing is a way"
 	line "of life!"
 
@@ -73,12 +74,12 @@ FishingDudeFishingIsAWayOfLifeText:
 	cont "one, young one!"
 	done
 
-FishingDudeThatsSoDisappointingText:
+FishingBrotherThatsSoDisappointingText:
 	text "Oh... That's so"
 	line "disappointing..."
 	done
 
-FishingDudeHowAreTheFishBitingText:
+FishingBrotherHowAreTheFishBitingText:
 	text "Hello there,"
 	line "<PLAYER>!"
 
@@ -86,14 +87,14 @@ FishingDudeHowAreTheFishBitingText:
 	line "biting?"
 	done
 
-FishingDudeNoRoomText:
+FishingBrotherNoRoomText:
 	text "Oh no!"
 
 	para "You have no room"
 	line "for my gift!"
 	done
 
-FishingDudesHousePhotoText:
+FishingBrothersHousePhotoText:
 	text "It's a photo of"
 	line "people fishing…"
 
@@ -111,7 +112,7 @@ VermilionFishingSpeechHouse_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  3,  0, BGEVENT_READ, FishingDudesHousePhoto
+	bg_event  3,  0, BGEVENT_READ, FishingBrothersHousePhoto
 
 	def_object_events
-	object_event  2,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FishingDude, -1
+	object_event  2,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FishingBrother, -1

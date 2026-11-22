@@ -408,8 +408,8 @@ ViridianCity_MapEvents:
 	warp_event 32,  7, RED_VIRIDIAN_GYM, 1
 	warp_event 21,  9, VIRIDIAN_NICKNAME_SPEECH_HOUSE, 1
 	warp_event 21, 15, VIRIDIAN_SCHOOL_HOUSE, 1
-	warp_event 29, 19, VIRIDIAN_MART, 2
-	warp_event 23, 25, VIRIDIAN_POKECENTER_1F, 1
+	warp_event 29, 17, VIRIDIAN_MART, 2
+	warp_event 21, 23, VIRIDIAN_POKECENTER_1F, 1
 
 	def_coord_events
 	coord_event  19,  9, SCENE_VIRIDIAN_CITY_CANT_PASS, ViridianCityDrunkOldManScript1
@@ -421,8 +421,8 @@ ViridianCity_MapEvents:
 	bg_event 21, 29, BGEVENT_READ, ViridianCityTrainerTips2Sign
 	bg_event 27,  7, BGEVENT_READ, ViridianGymSign
 	bg_event 20, 15, BGEVENT_READ, SchoolHouseSign
-	bg_event 24, 25, BGEVENT_READ, ViridianCityPokecenterSign
-	bg_event 30, 19, BGEVENT_READ, ViridianCityMartSign
+	bg_event 22, 23, BGEVENT_READ, ViridianCityPokecenterSign
+	bg_event 30, 17, BGEVENT_READ, ViridianCityMartSign
 	bg_event 14,  4, BGEVENT_ITEM, ViridianCityHiddenPotion
 
 	def_object_events
@@ -432,4 +432,4 @@ ViridianCity_MapEvents:
 	object_event 17,  9, SPRITE_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianCityGirlScript, -1
 	object_event 18,  9, SPRITE_GAMBLER_ASLEEP, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianCityDrunkOldManScript2, EVENT_GAMBLER_ASLEEP
 	object_event 13, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianCityYoungsterScript, -1
-	object_event 30, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianCityYoungster2Script, -1
+	object_event 30, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianCityYoungster2Script, -1

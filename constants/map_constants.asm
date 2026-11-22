@@ -223,7 +223,7 @@ ENDM
 	map_const CERULEAN_TRADE_SPEECH_HOUSE,                  4,  4 ;  3
 	map_const CERULEAN_POKECENTER_1F,                       7,  4 ;  4
 	map_const CERULEAN_POKECENTER_2F_BETA,                  7,  4 ;  5
-	map_const CERULEAN_GYM,                                 5,  7 ;  6
+	map_const CERULEAN_GYM,                                 5,  8 ;  6
 	map_const CERULEAN_MART,                                4,  4 ;  7
 	map_const BILLS_HOUSE,                                  4,  4 ; 11
 	map_const ROUTE_4,                                     45,  9 ; 12
@@ -321,7 +321,7 @@ ENDM
 	endgroup
 
 	newgroup PALLET                                               ; 13
-	map_const ROUTE_1,                                     10, 18 ;  1
+	map_const ROUTE_1,                                     12, 18 ;  1
 	map_const PALLET_TOWN,                                 10,  9 ;  2
 	map_const REDS_HOUSE_1F,                                4,  4 ;  3
 	map_const REDS_HOUSE_2F,                                4,  4 ;  4
@@ -330,7 +330,7 @@ ENDM
 	endgroup
 
 	newgroup PEWTER                                               ; 14
-	map_const ROUTE_3,                                     35,  9 ;  1
+	map_const ROUTE_3,                                     35, 14 ;  1
 	map_const PEWTER_CITY,                                 20, 18 ;  2
 	map_const PEWTER_NIDORAN_SPEECH_HOUSE,                  4,  4 ;  3
 	map_const PEWTER_GYM,                                   5,  7 ;  4
@@ -508,7 +508,7 @@ ENDM
 	newgroup VIRIDIAN                                             ; 23
 	map_const ROUTE_2,                                     10, 36 ;  1
 	map_const ROUTE_22,                                    20,  9 ;  2
-	map_const VIRIDIAN_CITY,                               20, 18 ;  3
+	map_const VIRIDIAN_CITY,                               20, 17 ;  3
 	map_const VIRIDIAN_GYM,                                 5,  9 ;  4
 	map_const VIRIDIAN_NICKNAME_SPEECH_HOUSE,               4,  4 ;  5
 	map_const VIRIDIAN_SCHOOL_HOUSE,                        4,  4 ;  6

@@ -1,8 +1,11 @@
 	object_const_def
-	const ROUTE12_FISHER1
-	const ROUTE12_FISHER2
-	const ROUTE12_FISHER3
-	const ROUTE12_FISHER4
+	const ROUTE12_FISHER_MARCUS
+	const ROUTE12_FISHER_NEIL
+	const ROUTE12_CAMPER_YUSUF
+	const ROUTE12_GUITARIST_PABLO
+	const ROUTE12_FISHER_NOAH
+	const ROUTE12_FISHER_OWEN
+	const ROUTE12_FISHER_VINCE
 	const ROUTE12_POKE_BALL1
 	const ROUTE12_POKE_BALL2
 
@@ -11,46 +14,79 @@ Route12_MapScripts:
 
 	def_callbacks
 
-TrainerFisherKyle:
-	trainer FISHER, KYLE, EVENT_BEAT_FISHER_KYLE, FisherKyleSeenText, FisherKyleBeatenText, 0, .Script
+TrainerFisherMarcus:
+	trainer FISHER, FISHER_MARCUS, EVENT_BEAT_ROUTE_12_TRAINER_0, FisherMarcusSeenText, FisherMarcusBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherKyleAfterBattleText
+	writetext FisherMarcusAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerFisherMartin:
-	trainer FISHER, MARTIN, EVENT_BEAT_FISHER_MARTIN, FisherMartinSeenText, FisherMartinBeatenText, 0, .Script
+TrainerFisherNeil:
+	trainer FISHER, FISHER_NEIL, EVENT_BEAT_ROUTE_12_TRAINER_1, FisherNeilSeenText, FisherNeilBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherMartinAfterBattleText
+	writetext FisherNeilAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerFisherStephen:
-	trainer FISHER, STEPHEN, EVENT_BEAT_FISHER_STEPHEN, FisherStephenSeenText, FisherStephenBeatenText, 0, .Script
+TrainerCamperYusuf:
+	trainer CAMPER, CAMPER_YUSUF, EVENT_BEAT_ROUTE_12_TRAINER_2, CamperYusufSeenText, CamperYusufBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherStephenAfterBattleText
+	writetext CamperYusufAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerFisherBarney:
-	trainer FISHER, BARNEY, EVENT_BEAT_FISHER_BARNEY, FisherBarneySeenText, FisherBarneyBeatenText, 0, .Script
+TrainerGuitaristPablo:
+	trainer GUITARIST, GUITARIST_PABLO, EVENT_BEAT_ROUTE_12_TRAINER_3, GuitaristPabloSeenText, GuitaristPabloBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherBarneyAfterBattleText
+	writetext GuitaristPabloAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerFisherNoah:
+	trainer FISHER, FISHER_NOAH, EVENT_BEAT_ROUTE_12_TRAINER_4, FisherNoahSeenText, FisherNoahBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext FisherNoahAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerFisherOwen:
+	trainer FISHER, FISHER_OWEN, EVENT_BEAT_ROUTE_12_TRAINER_5, FisherOwenSeenText, FisherOwenBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext FisherOwenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerFisherVince:
+	trainer FISHER, FISHER_VINCE, EVENT_BEAT_ROUTE_12_TRAINER_6, FisherVinceSeenText, FisherVinceBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext FisherVinceAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -70,87 +106,116 @@ Route12Nugget:
 Route12HiddenElixer:
 	hiddenitem ELIXER, EVENT_ROUTE_12_HIDDEN_ELIXER
 
-FisherMartinSeenText:
-	text "Patience is the"
-	line "key to both fish-"
-	cont "ing and #MON."
+FisherMarcusSeenText:
+	text "Yeah! I got a"
+	line "bite, here!"
 	done
 
-FisherMartinBeatenText:
-	text "Gwaaah!"
+FisherMarcusBeatenText:
+	text "Tch!"
+	line "Just a small fry!"
 	done
 
-FisherMartinAfterBattleText:
-	text "I'm too impatient"
-	line "for fishing…"
+FisherMarcusAfterBattleText:
+	text "Hang on! My line's"
+	line "snagged!"
 	done
 
-FisherStephenSeenText:
-	text "I feel so content,"
-	line "fishing while lis-"
-	cont "tening to some"
-	cont "tunes on my radio."
+FisherNeilSeenText:
+	text "Be patient!"
+	line "Fishing is a"
+	cont "waiting game!"
 	done
 
-FisherStephenBeatenText:
-	text "My stupid radio"
-	line "distracted me!"
+FisherNeilBeatenText:
+	text "That"
+	line "one got away!"
 	done
 
-FisherStephenAfterBattleText:
-	text "Have you checked"
-	line "out KANTO's radio"
-
-	para "programs? We get a"
-	line "good variety here."
+FisherNeilAfterBattleText:
+	text "With a better ROD,"
+	line "I could catch"
+	cont "better #MON!"
 	done
 
-FisherBarneySeenText:
-	text "What's most impor-"
-	line "tant in our every-"
-	cont "day lives?"
+CamperYusufSeenText:
+	text "Have you found a"
+	line "MOON STONE?"
 	done
 
-FisherBarneyBeatenText:
-	text "The answer is"
-	line "coming up next!"
+CamperYusufBeatenText:
+	text "Oww!"
 	done
 
-FisherBarneyAfterBattleText:
-	text "I think electric-"
-	line "ity is the most"
-
-	para "important thing in"
-	line "our daily lives."
-
-	para "If it weren't,"
-	line "people wouldn't"
-
-	para "have made such a"
-	line "fuss when the"
-
-	para "POWER PLANT went"
-	line "out of commission."
+CamperYusufAfterBattleText:
+	text "I could have made"
+	line "my #MON evolve"
+	cont "with MOON STONE!"
 	done
 
-FisherKyleSeenText:
-	text "Do you remember?"
+GuitaristPabloSeenText:
+	text "Electricity is my"
+	line "specialty!"
 	done
 
-FisherKyleBeatenText:
-	text "You do remember?"
+GuitaristPabloBeatenText:
+	text "Unplugged!"
 	done
 
-FisherKyleAfterBattleText:
-	text "The tug you feel"
-	line "on the ROD when"
+GuitaristPabloAfterBattleText:
+	text "Water conducts"
+	line "electricity, so"
+	cont "you should zap"
+	cont "sea #MON!"
+	done
 
-	para "you hook a #-"
-	line "MON…"
+FisherNoahSeenText:
+	text "The FISHING FOOL"
+	line "vs. #MON KID!"
+	done
 
-	para "That's the best"
-	line "feeling ever for"
-	cont "an angler like me."
+FisherNoahBeatenText:
+	text "Too"
+	line "much!"
+	done
+
+FisherNoahAfterBattleText:
+	text "You beat me at"
+	line "#MON, but I'm"
+	cont "good at fishing!"
+	done
+
+FisherOwenSeenText:
+	text "I'd rather be"
+	line "working!"
+	done
+
+FisherOwenBeatenText:
+	text "It's"
+	line "not easy…"
+	done
+
+FisherOwenAfterBattleText:
+	text "It's all right."
+	line "Losing doesn't"
+	cont "bug me anymore."
+	done
+
+FisherVinceSeenText:
+	text "You never know"
+	line "what you could"
+	cont "catch!"
+	done
+
+FisherVinceBeatenText:
+	text "Lost"
+	line "it!"
+	done
+
+FisherVinceAfterBattleText:
+	text "I catch MAGIKARP"
+	line "all the time, but"
+	cont "they're so weak!"
 	done
 
 Route12SignText:
@@ -181,9 +246,12 @@ Route12_MapEvents:
 	bg_event 14, 13, BGEVENT_ITEM, Route12HiddenElixer
 
 	def_object_events
-	object_event  5, 13, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherMartin, -1
-	object_event  4, 32, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherStephen, -1
-	object_event 11, 41, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerFisherBarney, -1
-	object_event  9, 10, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerFisherKyle, -1
+	object_event 14, 31, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerFisherMarcus, -1
+	object_event  5, 39, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerFisherNeil, -1
+	object_event 11, 92, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerCamperYusuf, -1
+	object_event 14, 76, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerGuitaristPablo, -1
+	object_event 12, 40, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerFisherNoah, -1
+	object_event  9, 52, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerFisherOwen, -1
+	object_event  6, 87, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherVince, -1
 	object_event  5, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Calcium, EVENT_ROUTE_12_CALCIUM
 	object_event  5, 51, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Nugget, EVENT_ROUTE_12_NUGGET

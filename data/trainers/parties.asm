@@ -966,6 +966,12 @@ BirdKeeperGroup:
 	db 32, FEAROW
 	db -1 ; end
 
+	; BIRDKEEPER_CHAD - Route 13
+	db "CHAD@", TRAINERTYPE_NORMAL
+	db 32, FEAROW
+	db 32, PIDGEOTTO
+	db -1 ; end
+
 LassGroup:
 	; LASS (1)
 	db "CARRIE@", TRAINERTYPE_MOVES
@@ -2721,6 +2727,11 @@ FisherGroup:
 	db 32, GYARADOS
 	db -1 ; end
 
+	; FISHER_NOAH - Route 12
+	db "NOAH@", TRAINERTYPE_NORMAL
+	db 28, SEAKING
+	db -1 ; end
+
 SwimmerMGroup:
 	; SWIMMERM (1)
 	db "HAROLD@", TRAINERTYPE_NORMAL
@@ -3848,6 +3859,11 @@ BikerGroup:
 	db 32, MUK
 	db -1 ; end
 
+	; BIKER_HARVEY - Route 16
+	db "HARVEY@", TRAINERTYPE_NORMAL
+	db 30, WEEZING
+	db -1 ; end
+
 BlaineGroup:
 	; BLAINE (1)
 	db "BLAINE@", TRAINERTYPE_MOVES
@@ -4098,8 +4114,6 @@ BlackbeltGroup:
 	db 34, MACHOKE
 	db -1 ; end
 
-
-
 	; BLACKBELT_WADE - Route 16
 	db "WADE@", TRAINERTYPE_NORMAL
 	db 28, MACHOP
@@ -4199,6 +4213,11 @@ BlackbeltGroup:
 	db 51, HITMONLEE
 	db 51, HITMONCHAN
 	db 51, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT_BRAD - Route 17
+	db "BRAD@", TRAINERTYPE_NORMAL
+	db 34, MACHOKE
 	db -1 ; end
 
 ExecutiveMGroup:

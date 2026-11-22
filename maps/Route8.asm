@@ -1,9 +1,13 @@
 	object_const_def
-	const ROUTE8_BIKER1
-	const ROUTE8_BIKER2
-	const ROUTE8_BIKER3
 	const ROUTE8_SUPER_NERD1
+	const ROUTE8_GAMBLER1
 	const ROUTE8_SUPER_NERD2
+	const ROUTE8_LASS1
+	const ROUTE8_SUPER_NERD3
+	const ROUTE8_LASS2
+	const ROUTE8_LASS3
+	const ROUTE8_GAMBLER2
+	const ROUTE8_LASS4
 	const ROUTE8_FRUIT_TREE
 
 Route8_MapScripts:
@@ -11,57 +15,101 @@ Route8_MapScripts:
 
 	def_callbacks
 
-TrainerBikerDwayne:
-	trainer BIKER, DWAYNE, EVENT_BEAT_BIKER_DWAYNE, BikerDwayneSeenText, BikerDwayneBeatenText, 0, .Script
+TrainerSupernerdHughRoute8:
+	trainer SUPER_NERD, SUPER_NERD_HUGH, EVENT_BEAT_SUPER_NERD_HUGH_ROUTE8, SupernerdHughRoute8SeenText, SupernerdHughRoute8BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BikerDwayneAfterBattleText
+	writetext SupernerdHughRoute8AfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerBikerHarris:
-	trainer BIKER, HARRIS, EVENT_BEAT_BIKER_HARRIS, BikerHarrisSeenText, BikerHarrisBeatenText, 0, .Script
+TrainerGentlemanIvan:
+	trainer GENTLEMAN, GENTLEMAN_IVAN, EVENT_BEAT_GENTLEMAN_IVAN, GentlemanIvanSeenText, GentlemanIvanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BikerHarrisAfterBattleText
+	writetext GentlemanIvanAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerBikerZeke:
-	trainer BIKER, ZEKE, EVENT_BEAT_BIKER_ZEKE, BikerZekeSeenText, BikerZekeBeatenText, 0, .Script
+TrainerSupernerdIvan:
+	trainer SUPER_NERD, SUPER_NERD_IVAN, EVENT_BEAT_SUPER_NERD_IVAN, SupernerdIvanSeenText, SupernerdIvanBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BikerZekeAfterBattleText
+	writetext SupernerdIvanAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerSupernerdSam:
-	trainer SUPER_NERD, SAM, EVENT_BEAT_SUPER_NERD_SAM, SupernerdSamSeenText, SupernerdSamBeatenText, 0, .Script
+TrainerLassDeborah:
+	trainer LASS, LASS_DEBORAH, EVENT_BEAT_LASS_DEBORAH, LassDeborahSeenText, LassDeborahBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SupernerdSamAfterBattleText
+	writetext LassDeborahAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerSupernerdTom:
-	trainer SUPER_NERD, TOM, EVENT_BEAT_SUPER_NERD_TOM, SupernerdTomSeenText, SupernerdTomBeatenText, 0, .Script
+TrainerSupernerdJared:
+	trainer SUPER_NERD, SUPER_NERD_JARED, EVENT_BEAT_SUPER_NERD_JARED, SupernerdJaredSeenText, SupernerdJaredBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SupernerdTomAfterBattleText
+	writetext SupernerdJaredAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerLassErin:
+	trainer LASS, LASS_ERIN, EVENT_BEAT_LASS_ERIN, LassErinSeenText, LassErinBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassErinAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerLassFiona:
+	trainer LASS, LASS_FIONA, EVENT_BEAT_LASS_FIONA, LassFionaSeenText, LassFionaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassFionaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerGentlemanJared:
+	trainer GENTLEMAN, GENTLEMAN_JARED, EVENT_BEAT_GENTLEMAN_JARED, GentlemanJaredSeenText, GentlemanJaredBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GentlemanJaredAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerLassGabby:
+	trainer LASS, LASS_GABBY, EVENT_BEAT_LASS_GABBY, LassGabbySeenText, LassGabbyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassGabbyAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -72,88 +120,155 @@ Route8UndergroundPathSign:
 Route8FruitTree:
 	fruittree FRUITTREE_ROUTE_8
 
-BikerDwayneSeenText:
-	text "We're the KANTO"
-	line "#MON FEDERATION"
-	cont "trainer group."
-
-	para "We'll drive you"
-	line "under our wheels!"
+SupernerdHughRoute8SeenText:
+	text "You look good at"
+	line "#MON, but"
+	cont "how's your chem?"
 	done
 
-BikerDwayneBeatenText:
-	text "S-sorry!"
+SupernerdHughRoute8BeatenText:
+	text "Ow!"
+	line "Meltdown!"
 	done
 
-BikerDwayneAfterBattleText:
-	text "The KANTO #MON"
-	line "FEDERATION will"
-	cont "never fall!"
+SupernerdHughRoute8AfterBattleText:
+	text "I am better at"
+	line "school than this!"
 	done
 
-BikerHarrisSeenText:
-	text "The cops shut down"
-	line "our UNDERGROUND"
-
-	para "PATH! That really"
-	line "fries me!"
+GentlemanIvanSeenText:
+	text "All right! Let's"
+	line "roll the dice!"
 	done
 
-BikerHarrisBeatenText:
-	text "F-forgive me!"
+GentlemanIvanBeatenText:
+	text "Drat!"
+	line "Came up short!"
 	done
 
-BikerHarrisAfterBattleText:
-	text "Wiped out by some"
-	line "punk from JOHTO…"
+GentlemanIvanAfterBattleText:
+	text "Lady Luck's not"
+	line "with me today!"
 	done
 
-BikerZekeSeenText:
-	text "We're the KANTO"
-	line "#MON FEDERA-"
-	cont "TION!"
-	cont "Right on!"
+SupernerdIvanSeenText:
+	text "You need strategy"
+	line "to win at this!"
 	done
 
-BikerZekeBeatenText:
-	text "Yikes! Sorry!"
+SupernerdIvanBeatenText:
+	text "It's"
+	line "not logical!"
 	done
 
-BikerZekeAfterBattleText:
-	text "We'll try not to"
-	line "disturb anyone"
-	cont "from now on…"
+SupernerdIvanAfterBattleText:
+	text "Go with GRIMER"
+	line "first…and…"
+	cont "…and…then…"
 	done
 
-SupernerdSamSeenText:
-	text "How does the MAG-"
-	line "NET TRAIN work?"
+LassDeborahSeenText:
+	text "I like NIDORAN, so"
+	line "I collect them!"
 	done
 
-SupernerdSamBeatenText:
-	text "I just want to see"
-	line "the MAGNET TRAIN…"
+LassDeborahBeatenText:
+	text "Why? Why??"
 	done
 
-SupernerdSamAfterBattleText:
-	text "The power of mag-"
-	line "nets is awesome!"
+LassDeborahAfterBattleText:
+	text "When #MON grow"
+	line "up they get ugly!"
+	cont "They shouldn't"
+	cont "evolve!"
 	done
 
-SupernerdTomSeenText:
-	text "Hm… You've got"
-	line "many GYM BADGES."
+SupernerdJaredSeenText:
+	text "School is fun, but"
+	line "so are #MON."
 	done
 
-SupernerdTomBeatenText:
-	text "Just as I thought…"
-	line "You're tough!"
+SupernerdJaredBeatenText:
+	text "I'll"
+	line "stay with school."
 	done
 
-SupernerdTomAfterBattleText:
-	text "GYM BADGES give"
-	line "you advantages in"
-	cont "battles."
+SupernerdJaredAfterBattleText:
+	text "We're stuck here"
+	line "because of the"
+	cont "gates at SAFFRON."
+	done
+
+LassErinSeenText:
+	text "MEOWTH is so cute,"
+	line "meow, meow, meow!"
+	done
+
+LassErinBeatenText:
+	text "Meow!"
+	done
+
+LassErinAfterBattleText:
+	text "I think PIDGEY"
+	line "and RATTATA"
+	cont "are cute too!"
+	done
+
+LassFionaSeenText:
+	text "We must look"
+	line "silly standing"
+	cont "here like this!"
+	done
+
+LassFionaBeatenText:
+	text "Look what"
+	line "you did!"
+	done
+
+LassFionaAfterBattleText:
+	text "SAFFRON's gate-"
+	line "keeper won't let"
+	cont "us through."
+	cont "He's so mean!"
+	done
+
+GentlemanJaredSeenText:
+	text "I'm a rambling,"
+	line "gambling dude!"
+	done
+
+GentlemanJaredBeatenText:
+	text "Missed"
+	line "the big score!"
+	done
+
+GentlemanJaredAfterBattleText:
+	text "Gambling and"
+	line "#MON are like"
+	cont "eating peanuts!"
+	cont "Just can't stop!"
+	done
+
+LassGabbySeenText:
+	text "What's a cute,"
+	line "round and fluffy"
+	cont "#MON?"
+	done
+
+LassGabbyBeatenText:
+	text "Stop!"
+	
+	para "Don't be so mean"
+	line "to my CLEFAIRY!"
+	done
+
+LassGabbyAfterBattleText:
+	text "CLEFAIRY evolves"
+	line "when it's exposed"
+	cont "to a MOON STONE."
+	
+	para "It happened to"
+	line "mine!"
 	done
 
 Route8UndergroundPathSignText:
@@ -162,6 +277,7 @@ Route8UndergroundPathSignText:
 	para "It's impossible to"
 	line "read…"
 	done
+
 
 Route8_MapEvents:
 	db 0, 0 ; filler
@@ -177,9 +293,13 @@ Route8_MapEvents:
 	bg_event 11,  5, BGEVENT_READ, Route8UndergroundPathSign
 
 	def_object_events
-	object_event 18,  6, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerBikerDwayne, -1
-	object_event 18,  7, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerBikerHarris, -1
-	object_event 18,  8, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerBikerZeke, -1
-	object_event 18,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSupernerdSam, -1
-	object_event 36,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerSupernerdTom, -1
+	object_event  4,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerSupernerdHughRoute8, -1
+	object_event  7, 11, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerGentlemanIvan, -1
+	object_event 34,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerSupernerdIvan, -1
+	object_event 18,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassDeborah, -1
+	object_event 18,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerSupernerdJared, -1
+	object_event 18,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerLassErin, -1
+	object_event 18,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassFiona, -1
+	object_event 38, 15, SPRITE_GAMBLER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerGentlemanJared, -1
+	object_event 43, 14, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerLassGabby, -1
 	object_event 45,  8, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route8FruitTree, -1

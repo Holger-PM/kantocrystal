@@ -185,6 +185,21 @@ DEF GREEN EQU __trainer_class__
 	const JOSE3
 	const VANCE2
 	const VANCE3
+	const BIRD_KEEPER_DWIGHT ; Route 13
+	const BIRD_KEEPER_ERNEST ; Route 13
+	const BIRD_KEEPER_FELIX ; Route 14
+	const BIRD_KEEPER_GAVIN ; Route 14
+	const BIRD_KEEPER_HOMER ; Route 15
+	const BIRD_KEEPER_ISAAC ; Route 15
+	const BIRD_KEEPER_JASPER ; Route 18
+	const BIRD_KEEPER_KURT ; Route 18
+	const BIRD_KEEPER_LENNY ; Route 18
+	const_skip 1 ; MERVIN (not yet placed)
+	const BIRD_KEEPER_NOLAN ; Route 14
+	const BIRD_KEEPER_ORVILLE ; Route 14
+	const BIRD_KEEPER_PERCY ; Route 14
+	const BIRD_KEEPER_RONNY ; Route 14
+	const BIRD_KEEPER_CHAD ; Route 13
 
 	trainerclass LASS ; 19
 	const CARRIE
@@ -216,6 +231,10 @@ DEF GREEN EQU __trainer_class__
 	const ALICIA_LASS ; Route 4, not yet placed on map
 	const BROOKE2 ; SS Anne 1F Rooms
 	const CANDACE2 ; SS Anne 2F Rooms
+	const LASS_DEBORAH ; Route 8
+	const LASS_ERIN ; Route 8
+	const LASS_FIONA ; Route 8
+	const LASS_GABBY ; Route 8
 
 	trainerclass JANINE ; 1a
 	const JANINE1
@@ -289,6 +308,12 @@ DEF GREEN EQU __trainer_class__
 	const THERESA ; unused
 	const VALERIE
 	const OLIVIA
+	const_skip 3 ; (not yet placed)
+	const BEAUTY_KAYLIN ; Route 13
+	const BEAUTY_LEONA ; Route 13
+	const_skip 3 ; (not yet placed)
+	const BEAUTY_PETRA ; Route 15
+	const BEAUTY_QUEENIE ; Route 15
 	
 	trainerclass POKEMANIAC ; 1e
 	const LARRY
@@ -308,6 +333,10 @@ DEF GREEN EQU __trainer_class__
 	const MILLER
 	const POKEMANIAC_ARNOLD ; Route 10
 	const POKEMANIAC_BRUCE ; Route 10
+	const POKEMANIAC_CODY ; Rock Tunnel B1F
+	const POKEMANIAC_DEAN ; Rock Tunnel B1F
+	const POKEMANIAC_ELLIOT ; Rock Tunnel B1F
+	const POKEMANIAC_FLOYD ; Rock Tunnel 1F
 
 	trainerclass GRUNTM ; 1f
 	const GRUNTM_1
@@ -358,6 +387,9 @@ DEF GREEN EQU __trainer_class__
 	const WESLEY ; SS Anne 1F Rooms
 	const REGINALD ; SS Anne 2F Rooms
 	const STANFORD ; SS Anne 2F Rooms
+	const_skip 4 ; ELLIOT, FLOYD, GREGG, HUGH (not yet placed)
+	const GENTLEMAN_IVAN ; Route 8
+	const GENTLEMAN_JARED ; Route 8
 
 	trainerclass SKIER ; 21
 	const ROXANNE
@@ -434,6 +466,12 @@ DEF GREEN EQU __trainer_class__
 	const TULLY4
 	const DALTON ; SS Anne 2F Rooms (fisher)
 	const GRANT ; SS Anne B1F Rooms (fisher)
+	const FISHER_MARCUS ; Route 12
+	const FISHER_NEIL ; Route 12
+	const FISHER_OWEN ; Route 12
+	const_skip 4 ; PERRY, REID, SHANE, TODD (Route 21, not yet placed)
+	const FISHER_VINCE ; Route 12
+	const FISHER_NOAH ; Route 12
 
 	trainerclass SWIMMERM ; 26
 	const HAROLD
@@ -521,6 +559,10 @@ DEF GREEN EQU __trainer_class__
 	const HUGH
 	const MARKUS
 	const MIGUEL
+	const_skip 1 ; GREGG (not yet placed)
+	const SUPER_NERD_HUGH ; Route 8
+	const SUPER_NERD_IVAN ; Route 8
+	const SUPER_NERD_JARED ; Route 8
 
 	trainerclass RIVAL2 ; 2a
 	const RIVAL2_1_CHIKORITA
@@ -534,6 +576,8 @@ DEF GREEN EQU __trainer_class__
 	const CLYDE
 	const GUITARIST_UNUSED2 ; was VINCENT, unused here - moved to SAILOR (real data match)
 	const ZAKK 
+	const_skip 1 ; OSCAR (not yet placed)
+	const GUITARIST_PABLO ; Route 12
 
 	trainerclass HIKER ; 2c
 	const ANTHONY1
@@ -572,6 +616,9 @@ DEF GREEN EQU __trainer_class__
 	const STUART ; Rock Tunnel B1F, not yet placed
 	const HIKER_TREVOR ; Rock Tunnel B1F, not yet placed
 	const VICTOR ; Route 9
+	const HIKER_WESLEY ; Rock Tunnel 1F
+	const HIKER_ADAM ; Rock Tunnel 1F
+	const HIKER_BARRY ; Rock Tunnel 1F
 
 	trainerclass BIKER ; 2d
 	const BIKER_BENNY ; unused
@@ -583,6 +630,21 @@ DEF GREEN EQU __trainer_class__
 	const RILEY
 	const JOEL
 	const GLENN
+	const BIKER_CRAIG ; Route 13
+	const BIKER_DWIGHT ; Route 14
+	const BIKER_ERNEST ; Route 15
+	const BIKER_FELIX ; Route 15
+	const BIKER_GAVIN ; Route 16
+	const BIKER_HOMER ; Route 16
+	const BIKER_ISAAC ; Route 17
+	const BIKER_JASPER ; Route 17
+	const BIKER_KURT ; Route 17
+	const BIKER_LENNY ; Route 17
+	const BIKER_MERVIN ; Route 17
+	const BIKER_NOLAN ; Route 14
+	const BIKER_ORVILLE ; Route 14
+	const BIKER_PERCY ; Route 14
+	const BIKER_HARVEY ; Route 16
 
 	trainerclass BLAINE ; 2e
 	const BLAINE1
@@ -620,6 +682,15 @@ DEF GREEN EQU __trainer_class__
 	const LUNG
 	const KENJI3
 	const WAI
+	const BLACKBELT_WADE ; Route 16
+	const BLACKBELT_XAVIER ; Route 16
+	const BLACKBELT_YUSUF ; Route 16
+	const BLACKBELT_ZACK ; Route 17
+	const BLACKBELT_ARNOLD ; Route 17
+	const BLACKBELT_BRUCE ; Route 17
+	const BLACKBELT_CODY ; Route 17
+	const_skip 9 ; DEAN ... COLIN (not yet placed)
+	const BLACKBELT_BRAD ; Route 17
 
 	trainerclass EXECUTIVEM ; 33
 	const EXECUTIVEM_1
@@ -673,6 +744,21 @@ DEF GREEN EQU __trainer_class__
 	const PICNICKER_LYDIA ; unused duplicate of Phoebe
 	const PICNICKER_MIRA ; Route 10
 	const PICNICKER_NOELLE ; Route 10
+	const PICNICKER_OLIVE ; Rock Tunnel B1F
+	const PICNICKER_PAIGE ; Rock Tunnel B1F
+	const_skip 1 ; RENEE (not yet placed)
+	const PICNICKER_SELENA ; Route 13
+	const PICNICKER_TANYA ; Route 13
+	const PICNICKER_URSULA ; Route 13
+	const PICNICKER_VERA ; Route 13
+	const_skip 1 ; WILLA (not yet placed)
+	const PICNICKER_YOLANDA ; Rock Tunnel 1F
+	const PICNICKER_ZOE ; Rock Tunnel 1F
+	const PICNICKER_ABIGAIL ; Rock Tunnel 1F
+	const PICNICKER_BONNIE ; Route 15
+	const PICNICKER_CELIA ; Route 15
+	const PICNICKER_DONNA ; Route 15
+	const PICNICKER_EDITH ; Route 15
 
 	trainerclass CAMPER ; 36
 	const ROLAND
@@ -696,6 +782,9 @@ DEF GREEN EQU __trainer_class__
 	const TODD4
 	const TODD5
 	const QUENTIN
+
+	const_skip 2 ; WADE, XAVIER (not yet placed)
+	const CAMPER_YUSUF ; Route 12
 	
 ;	trainerclass JRTRAINER_F ; added
 ;	const SHARON2
@@ -732,6 +821,19 @@ DEF GREEN EQU __trainer_class__
 	const ETHEL ; unused
 	const REBECCA
 	const DORIS
+	const MEDIUM_WILMA ; Pokémon Tower
+	const MEDIUM_YVETTE ; Pokémon Tower
+	const MEDIUM_ZELDA ; Pokémon Tower
+	const MEDIUM_ALMA ; Pokémon Tower
+	const MEDIUM_ALICIA ; Pokémon Tower
+	const MEDIUM_BROOKE ; Pokémon Tower
+	const MEDIUM_CANDACE ; Pokémon Tower
+	const MEDIUM_DEBORAH ; Pokémon Tower
+	const MEDIUM_ERIN ; Pokémon Tower
+	const MEDIUM_FIONA ; Pokémon Tower
+	const MEDIUM_GABBY ; Pokémon Tower
+	const MEDIUM_HELENA ; Pokémon Tower
+	const MEDIUM_INGRID ; Pokémon Tower
 
 	trainerclass BOARDER ; 3a
 	const RONALD

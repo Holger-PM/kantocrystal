@@ -2,6 +2,7 @@
 	const VIRIDIANMART_CLERK
 	const VIRIDIANMART_COOLTRAINER_M
 	const VIRIDIANMART_YOUNGSTER
+	const VIRIDIANMART_FISHING_GURU
 
 ViridianMart_MapScripts:
 	def_scene_scripts
@@ -54,6 +55,38 @@ ViridianMartClerkMovement:
 	step LEFT
 	step_end
 	
+FishingGuru:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_OLD_ROD
+	iftrue .AlreadyGotOldRod
+	writetext FishingGuruDoYouLikeToFishText
+	yesorno
+	iffalse .Refused
+	verbosegiveitem OLD_ROD
+	iffalse .NoRoom
+	setevent EVENT_GOT_OLD_ROD
+	writetext FishingGuruTakeThisText
+	promptbutton
+	writetext FishingGuruFishingIsAWayOfLifeText
+	closetext
+	end
+
+.Refused:
+	writetext FishingGuruThatsSoDisappointingText
+	closetext
+	end
+
+.NoRoom:
+	writetext FishingGuruNoRoomText
+	closetext
+	end
+
+.AlreadyGotOldRod:
+	writetext FishingGuruHowAreTheFishBitingText
+	closetext
+	end
+
 ViridianMartYoungsterScript:
 	jumptextfaceplayer ViridianMartYoungsterText
 
@@ -77,6 +110,55 @@ ViridianMartClerkParcelQuestText:
 ViridianMartClerkSayHiToOakText:
 	text "Okay! Say hi to"
 	line "PROF.OAK for me!"
+	done
+
+FishingGuruDoYouLikeToFishText:
+	text "I'm the FISHING"
+	line "GURU!"
+
+	para "I simply Looove"
+	line "fishing!"
+
+	para "Do you like to"
+	line "fish?"
+	done
+
+FishingGuruTakeThisText:
+	text "Grand! I like"
+	line "your style!"
+
+	para "Take this and"
+	line "fish, young one!"
+	done
+
+FishingGuruFishingIsAWayOfLifeText:
+	text "Fishing is a way"
+	line "of life!"
+
+	para "From the seas to"
+	line "rivers, go out"
+	cont "and land the big"
+	cont "one, young one!"
+	done
+
+FishingGuruThatsSoDisappointingText:
+	text "Oh... That's so"
+	line "disappointing..."
+	done
+
+FishingGuruHowAreTheFishBitingText:
+	text "Hello there,"
+	line "<PLAYER>!"
+
+	para "How are the fish"
+	line "biting?"
+	done
+
+FishingGuruNoRoomText:
+	text "Oh no!"
+
+	para "You have no room"
+	line "for my gift!"
 	done
 
 ViridianMartYoungsterText:
@@ -110,3 +192,4 @@ ViridianMart_MapEvents:
 	object_event  0,  5, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ViridianMartClerkScript, -1
 	object_event  5,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianMartCooltrainerMScript, -1
 	object_event  3,  3, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ViridianMartYoungsterScript, -1
+	object_event  7,  2, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FishingGuru, -1

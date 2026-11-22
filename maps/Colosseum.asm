@@ -64,8 +64,18 @@ Colosseum_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4,  7, POKECENTER_2F, 3
-	warp_event  5,  7, POKECENTER_2F, 3
+	warp_event  4,  7, POKECENTER_2F, 3 ; original
+	warp_event  5,  7, POKECENTER_2F, 3 ; original
+	warp_event  0,  0, VIRIDIAN_POKECENTER_1F, 1
+	warp_event  1,  0, PEWTER_POKECENTER_1F, 1
+	warp_event  2,  0, CERULEAN_POKECENTER_1F, 1
+	warp_event  3,  0, VERMILION_POKECENTER_1F, 1
+	warp_event  4,  0, CELADON_POKECENTER_1F, 1
+	warp_event  5,  0, LAVENDER_POKECENTER_1F, 1
+	warp_event  6,  0, FUCHSIA_POKECENTER_1F, 1
+	warp_event  7,  0, CINNABAR_POKECENTER_1F, 1
+	warp_event  8,  0, SAFFRON_POKECENTER_1F, 1
+	warp_event  9,  0, ROCK_TUNNEL_POKECENTER, 1
 
 	def_coord_events
 

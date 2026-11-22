@@ -1,30 +1,42 @@
 	object_const_def
-	const ROUTE18_YOUNGSTER1
-	const ROUTE18_YOUNGSTER2
+	const ROUTE18_BIRD_KEEPER1
+	const ROUTE18_BIRD_KEEPER2
+	const ROUTE18_BIRD_KEEPER3
 
 Route18_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-TrainerBirdKeeperBoris:
-	trainer BIRD_KEEPER, BORIS, EVENT_BEAT_BIRD_KEEPER_BORIS, BirdKeeperBorisSeenText, BirdKeeperBorisBeatenText, 0, .Script
+TrainerBirdKeeperJasper:
+	trainer BIRD_KEEPER, BIRD_KEEPER_JASPER, EVENT_BEAT_ROUTE_18_TRAINER_0, BirdKeeperJasperSeenText, BirdKeeperJasperBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperBorisAfterBattleText
+	writetext BirdKeeperJasperAfterBattleText
 	waitbutton
 	closetext
 	end
 
-TrainerBirdKeeperBob:
-	trainer BIRD_KEEPER, BOB, EVENT_BEAT_BIRD_KEEPER_BOB, BirdKeeperBobSeenText, BirdKeeperBobBeatenText, 0, .Script
+TrainerBirdKeeperKurt:
+	trainer BIRD_KEEPER, BIRD_KEEPER_KURT, EVENT_BEAT_ROUTE_18_TRAINER_1, BirdKeeperKurtSeenText, BirdKeeperKurtBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperBobAfterBattleText
+	writetext BirdKeeperKurtAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBirdKeeperLenny:
+	trainer BIRD_KEEPER, BIRD_KEEPER_LENNY, EVENT_BEAT_ROUTE_18_TRAINER_2, BirdKeeperLennySeenText, BirdKeeperLennyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BirdKeeperLennyAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -32,40 +44,51 @@ TrainerBirdKeeperBob:
 Route18Sign:
 	jumptext Route18SignText
 
-BirdKeeperBorisSeenText:
-	text "If you're looking"
-	line "for #MON, you"
-
-	para "have to look in"
-	line "the tall grass."
+BirdKeeperJasperSeenText:
+	text "I always check"
+	line "every grassy area"
+	cont "for new #MON."
 	done
 
-BirdKeeperBorisBeatenText:
-	text "Ayieee!"
+BirdKeeperJasperBeatenText:
+	text "Tch!"
 	done
 
-BirdKeeperBorisAfterBattleText:
-	text "Since you're so"
-	line "strong, it must be"
-	cont "fun to battle."
+BirdKeeperJasperAfterBattleText:
+	text "I wish I had a"
+	line "BIKE!"
 	done
 
-BirdKeeperBobSeenText:
-	text "CYCLING ROAD is a"
-	line "quick shortcut to"
-	cont "CELADON."
+BirdKeeperKurtSeenText:
+	text "Kurukkoo!"
+	line "How do you like"
+	cont "my bird call?"
 	done
 
-BirdKeeperBobBeatenText:
-	text "…Whew!"
+BirdKeeperKurtBeatenText:
+	text "I"
+	line "had to bug you!"
 	done
 
-BirdKeeperBobAfterBattleText:
-	text "If you don't have"
-	line "a BICYCLE, you're"
+BirdKeeperKurtAfterBattleText:
+	text "I also collect sea"
+	line "#MON on"
+	cont "weekends!"
+	done
 
-	para "not allowed to use"
-	line "the shortcut."
+BirdKeeperLennySeenText:
+	text "This is my turf!"
+	line "Get out of here!"
+	done
+
+BirdKeeperLennyBeatenText:
+	text "Darn!"
+	done
+
+BirdKeeperLennyAfterBattleText:
+	text "This is my fave"
+	line "#MON hunting"
+	cont "area!"
 	done
 
 Route18SignText:
@@ -92,5 +115,6 @@ Route18_MapEvents:
 	bg_event  9,  5, BGEVENT_READ, Route18Sign
 
 	def_object_events
-	object_event  9, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperBoris, -1
-	object_event 13,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperBob, -1
+	object_event 36, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperJasper, -1
+	object_event 40, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperKurt, -1
+	object_event 42, 13, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBirdKeeperLenny, -1

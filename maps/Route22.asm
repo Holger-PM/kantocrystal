@@ -284,7 +284,7 @@ Route22_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  8,  5, VICTORY_ROAD_GATE, 1
+	warp_event 10,  3, VICTORY_ROAD_GATE, 1
 
 	def_coord_events
 	coord_event  29,  4, SCENE_ROUTE_22_RIVAL_1, Route22RivalWantsBattleScript

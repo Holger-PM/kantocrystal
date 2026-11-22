@@ -2127,6 +2127,30 @@
      	const EVENT_BEAT_PICNICKER_NOELLE        ; Route 10
 	const EVENT_ROUTE_10_HIDDEN_SUPER_POTION
 	const EVENT_ROUTE_10_HIDDEN_MAX_ETHER
+	const EVENT_BEAT_HIKER_WESLEY	; Rock Tunnel 1F
+	const EVENT_BEAT_HIKER_ADAM	; Rock Tunnel 1F
+	const EVENT_BEAT_HIKER_BARRY	; Rock Tunnel 1F
+	const EVENT_BEAT_POKEMANIAC_FLOYD	; Rock Tunnel 1F
+	const EVENT_BEAT_PICNICKER_YOLANDA	; Rock Tunnel 1F
+	const EVENT_BEAT_PICNICKER_ZOE	; Rock Tunnel 1F
+	const EVENT_BEAT_PICNICKER_ABIGAIL	; Rock Tunnel 1F
+	const EVENT_BEAT_PICNICKER_OLIVE	; Rock Tunnel B1F
+	const EVENT_BEAT_PICNICKER_PAIGE	; Rock Tunnel B1F
+	const EVENT_BEAT_HIKER_STUART	; Rock Tunnel B1F
+	const EVENT_BEAT_HIKER_TREVOR	; Rock Tunnel B1F
+	const EVENT_BEAT_HIKER_OSCAR_B1F	; Rock Tunnel B1F
+	const EVENT_BEAT_POKEMANIAC_CODY	; Rock Tunnel B1F
+	const EVENT_BEAT_POKEMANIAC_DEAN	; Rock Tunnel B1F
+	const EVENT_BEAT_POKEMANIAC_ELLIOT	; Rock Tunnel B1F
+	const EVENT_BEAT_SUPER_NERD_HUGH_ROUTE8	; Route 8
+	const EVENT_BEAT_SUPER_NERD_IVAN	; Route 8
+	const EVENT_BEAT_SUPER_NERD_JARED	; Route 8
+	const EVENT_BEAT_GENTLEMAN_IVAN	; Route 8
+	const EVENT_BEAT_GENTLEMAN_JARED	; Route 8
+	const EVENT_BEAT_LASS_DEBORAH	; Route 8
+	const EVENT_BEAT_LASS_ERIN	; Route 8
+	const EVENT_BEAT_LASS_FIONA	; Route 8
+	const EVENT_BEAT_LASS_GABBY	; Route 8
 
-	const_next 2360 ; - New in "New to Kanto Crystal" section ??? (bumped from 2336: SS Anne + Route 9 additions needed the extra room)
+	const_next 2376 ; - New in "New to Kanto Crystal" section ??? (bumped from 2336: SS Anne + Route 9 additions needed the extra room; 2360 -> 2376: Rock Tunnel trainers)
 DEF NUM_EVENTS EQU const_value ; 1099 with Kanto events
