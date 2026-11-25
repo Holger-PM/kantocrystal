@@ -14,8 +14,8 @@ VermilionDock_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 14,  0, VERMILION_CITY, 6
-	warp_event 14,  2, SS_ANNE_1F, 2
+	warp_event 15,  0, VERMILION_CITY, 6
+	warp_event 15,  2, SS_ANNE_1F, 2
 
 	def_coord_events
 

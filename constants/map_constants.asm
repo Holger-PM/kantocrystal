@@ -367,7 +367,7 @@ ENDM
 	map_const LANCES_ROOM,                                  5, 12 ;  7
 	map_const HALL_OF_FAME,                                 5,  4 ;  8
 	map_const INDIGO_PLATEAU,                                         10,  9 ; 9
-	map_const AGATHAS_ROOM,                                            5,  6 ; 10
+	map_const AGATHAS_ROOM,                                            5,  9 ; 10
 	map_const CHAMPIONS_ROOM,                                          4,  4 ; 11
 	map_const LORELEIS_ROOM,                                           5,  6 ; 12
 	map_const RED_LANCES_ROOM,                                        13, 13 ; 13

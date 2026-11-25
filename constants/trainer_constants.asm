@@ -87,18 +87,23 @@ DEF GREEN EQU __trainer_class__
 
 	trainerclass KOGA ; f
 	const KOGA1
+	const KOGA2
+	const KOGA3
 
 	trainerclass CHAMPION ; 10
 	const LANCE
 
 	trainerclass BROCK ; 11
 	const BROCK1
+	const BROCK2
 
 	trainerclass MISTY ; 12
 	const MISTY1
+	const MISTY2
 
 	trainerclass LT_SURGE ; 13
 	const LT_SURGE1
+	const LT_SURGE2
 
 	trainerclass SCIENTIST ; 14
 	const ROSS
@@ -106,9 +111,25 @@ DEF GREEN EQU __trainer_class__
 	const JED
 	const MARC
 	const RICH
+	const_skip 2 ; (not yet placed)
+	const SCIENTIST_GRANT ; Silph Co. 2F
+	const SCIENTIST_MARCUS ; Silph Co. 2F
+	const SCIENTIST_NEIL ; Silph Co. 3F
+	const SCIENTIST_OWEN ; Silph Co. 4F
+	const SCIENTIST_PERRY ; Silph Co. 5F
+	const SCIENTIST_REID ; Silph Co. 6F
+	const SCIENTIST_SHANE ; Silph Co. 7F
+	const SCIENTIST_TODD ; Silph Co. 8F
+	const SCIENTIST_VINCE ; Silph Co. 9F
+	const SCIENTIST_WADE ; Silph Co. 10F
+	const SCIENTIST_XAVIER ; Pokémon Mansion 3F
+	const SCIENTIST_YUSUF ; Pokémon Mansion B1F
 
 	trainerclass ERIKA ; 15
 	const ERIKA1
+	const ERIKA2
+	const ERIKA3
+	const ERIKA4
 
 	trainerclass YOUNGSTER ; 16
 	const JOEY1
@@ -194,7 +215,7 @@ DEF GREEN EQU __trainer_class__
 	const BIRD_KEEPER_JASPER ; Route 18
 	const BIRD_KEEPER_KURT ; Route 18
 	const BIRD_KEEPER_LENNY ; Route 18
-	const_skip 1 ; MERVIN (not yet placed)
+	const BIRD_KEEPER_MERVIN ; Route 20
 	const BIRD_KEEPER_NOLAN ; Route 14
 	const BIRD_KEEPER_ORVILLE ; Route 14
 	const BIRD_KEEPER_PERCY ; Route 14
@@ -235,9 +256,12 @@ DEF GREEN EQU __trainer_class__
 	const LASS_ERIN ; Route 8
 	const LASS_FIONA ; Route 8
 	const LASS_GABBY ; Route 8
+	const LASS_HELENA ; CeladonGym
+	const LASS_INGRID ; CeladonGym
 
 	trainerclass JANINE ; 1a
 	const JANINE1
+	const JANINE_JANINE ; FuchsiaGym
 
 	trainerclass COOLTRAINERM ; 1b
 	const NICK
@@ -262,6 +286,12 @@ DEF GREEN EQU __trainer_class__
 	const DARIN
 	const DEREK ; Route 9
 	const HOWARD ; Route 9
+	const COOLTRAINERM_ZACK ; ViridianGym
+	const COOLTRAINERM_ARNOLD ; ViridianGym
+	const COOLTRAINERM_BRUCE ; ViridianGym
+	const COOLTRAINERM_ABEL ; Victory Road 1F
+	const COOLTRAINERM_BORIS ; Victory Road 3F
+	const COOLTRAINERM_CLAUDE ; Victory Road 3F
 
 	trainerclass COOLTRAINERF ; 1c
 	const GWEN
@@ -289,6 +319,10 @@ DEF GREEN EQU __trainer_class__
 	const HOLLY		; Route 6
 	const WANDA ; Route 9
 	const PHOEBE ; Route 9
+	const COOLTRAINERF_VICKI ; CeladonGym
+	const COOLTRAINERF_ABBY ; Victory Road 1F
+	const COOLTRAINERF_CARLA ; Victory Road 3F
+	const COOLTRAINERF_DANA ; Victory Road 3F
 
 	trainerclass BEAUTY ; 1d
 	const VICTORIA
@@ -308,12 +342,21 @@ DEF GREEN EQU __trainer_class__
 	const THERESA ; unused
 	const VALERIE
 	const OLIVIA
-	const_skip 3 ; (not yet placed)
+	const BEAUTY_HOLLY ; CeladonGym
+	const BEAUTY_IRENE ; CeladonGym
+	const BEAUTY_JENNA ; CeladonGym
 	const BEAUTY_KAYLIN ; Route 13
 	const BEAUTY_LEONA ; Route 13
-	const_skip 3 ; (not yet placed)
+	const BEAUTY_MARLA ; Route 20
+	const BEAUTY_NADIA ; Route 20
+	const BEAUTY_OPAL ; Route 20
 	const BEAUTY_PETRA ; Route 15
 	const BEAUTY_QUEENIE ; Route 15
+	const BEAUTY_RAINA ; Route 19
+	const BEAUTY_SASHA ; Route 19
+	const BEAUTY_TILDA ; Route 19
+	const BEAUTY_UMA ; Route 20
+	const BEAUTY_ABBY ; Victory Road 1F
 	
 	trainerclass POKEMANIAC ; 1e
 	const LARRY
@@ -337,7 +380,9 @@ DEF GREEN EQU __trainer_class__
 	const POKEMANIAC_DEAN ; Rock Tunnel B1F
 	const POKEMANIAC_ELLIOT ; Rock Tunnel B1F
 	const POKEMANIAC_FLOYD ; Rock Tunnel 1F
+	const POKEMANIAC_ABEL ; Victory Road 2F
 
+	trainerclass GRUNTM ; 1f
 	trainerclass GRUNTM ; 1f
 	const GRUNTM_1
 	const GRUNTM_2
@@ -376,6 +421,34 @@ DEF GREEN EQU __trainer_class__
 	const ROCKET_4
 	const ROCKET_5
 	const ROCKET_CERULEAN
+	const_skip 1 ; (not yet placed)
+	const ROCKET_39 ; Rocket Hideout B1F
+	const ROCKET_40 ; Rocket Hideout B1F
+	const ROCKET_41 ; Rocket Hideout B2F
+	const ROCKET_42 ; Rocket Hideout B3F
+	const ROCKET_43 ; Silph Co. 2F
+	const ROCKET_44 ; Silph Co. 3F
+	const ROCKET_45 ; Silph Co. 4F
+	const ROCKET_46 ; Silph Co. 5F
+	const ROCKET_47 ; Silph Co. 6F
+	const ROCKET_48 ; Silph Co. 7F
+	const ROCKET_49 ; Silph Co. 8F
+	const ROCKET_50 ; Silph Co. 9F
+	const ROCKET_51 ; Silph Co. 10F
+	const ROCKET_52 ; Silph Co. 2F
+	const ROCKET_53 ; Silph Co. 4F
+	const ROCKET_54 ; Silph Co. 5F
+	const ROCKET_55 ; Silph Co. 6F
+	const ROCKET_56 ; Silph Co. 7F
+	const ROCKET_57 ; Silph Co. 7F
+	const ROCKET_58 ; Silph Co. 8F
+	const ROCKET_59 ; Silph Co. 9F
+	const ROCKET_60 ; Silph Co. 11F
+	const ROCKET_61 ; Rocket Hideout B1F
+	const ROCKET_62 ; Rocket Hideout B1F
+	const ROCKET_63 ; Rocket Hideout B1F
+	const ROCKET_64 ; Rocket Hideout B3F
+	const ROCKET_65 ; Rocket Hideout B4F
 	
 	trainerclass GENTLEMAN ; 20
 	const PRESTON
@@ -402,6 +475,8 @@ DEF GREEN EQU __trainer_class__
 
 	trainerclass SABRINA ; 23
 	const SABRINA1
+	const SABRINA2
+	const SABRINA3
 
 	trainerclass BUG_CATCHER ; 24
 	const DON
@@ -437,6 +512,7 @@ DEF GREEN EQU __trainer_class__
 	const BUG_CATCHER_UNUSED1 ; auto-added Kanto route trainer, no name needed
 	const BUG_CATCHER_UNUSED2 ; auto-added Kanto route trainer, no name needed
 	const NED2 ; Mt Moon 1F Bug Catcher Ned		; Route 6 
+	const BUG_CATCHER_ABEL ; Victory Road 1F
 
 	trainerclass FISHER ; 25
 	const JUSTIN
@@ -469,7 +545,10 @@ DEF GREEN EQU __trainer_class__
 	const FISHER_MARCUS ; Route 12
 	const FISHER_NEIL ; Route 12
 	const FISHER_OWEN ; Route 12
-	const_skip 4 ; PERRY, REID, SHANE, TODD (Route 21, not yet placed)
+	const FISHER_PERRY ; Route 21
+	const FISHER_REID ; Route 21
+	const FISHER_SHANE ; Route 21
+	const FISHER_TODD ; Route 21
 	const FISHER_VINCE ; Route 12
 	const FISHER_NOAH ; Route 12
 
@@ -496,6 +575,13 @@ DEF GREEN EQU __trainer_class__
 	const LEWIS ; unused
 	const PARKER
 	const JAMES2
+	const SWIMMERM_DEREK ; Route 19
+	const SWIMMERM_TRAVIS ; Route 19
+	const SWIMMERM_DUSTIN ; Route 19
+	const SWIMMERM_GLEN ; Route 19
+	const SWIMMERM_BRENT ; Route 20
+	const SWIMMERM_COLE ; Route 21
+	const SWIMMERM_DALE ; Route 21
 
 	trainerclass SWIMMERF ; 27
 	const ELAINE
@@ -519,6 +605,13 @@ DEF GREEN EQU __trainer_class__
 	const BRIANA
 	const JILL2
 	const LISA2
+	const SWIMMERF_HEATHER ; Route 19
+	const SWIMMERF_CARRIE ; Route 19
+	const SWIMMERF_ROBIN ; Route 19
+	const SWIMMERF_TASHA ; Route 20
+	const SWIMMERF_MELISSA ; Route 20
+	const SWIMMERF_GINA ; Route 21
+	const SWIMMERF_TRACY ; Route 21
 
 	trainerclass SAILOR ; 28
 	const EUGENE
@@ -619,6 +712,7 @@ DEF GREEN EQU __trainer_class__
 	const HIKER_WESLEY ; Rock Tunnel 1F
 	const HIKER_ADAM ; Rock Tunnel 1F
 	const HIKER_BARRY ; Rock Tunnel 1F
+	const HIKER_ABEL ; Victory Road 2F
 
 	trainerclass BIKER ; 2d
 	const BIKER_BENNY ; unused
@@ -648,11 +742,17 @@ DEF GREEN EQU __trainer_class__
 
 	trainerclass BLAINE ; 2e
 	const BLAINE1
+	const BLAINE2
 
 	trainerclass BURGLAR ; 2f
 	const DUNCAN
 	const EDDIE
 	const COREY
+	const_skip 3 ; (not yet placed)
+	const BURGLAR_ULYSSES ; Pokémon Mansion 2F
+	const BURGLAR_VERNON ; Pokémon Mansion 3F
+	const BURGLAR_WALT ; Pokémon Mansion B1F
+	const BURGLAR_ABEL ; Victory Road 1F
 
 	trainerclass FIREBREATHER ; 30
 	const OTIS
@@ -671,6 +771,13 @@ DEF GREEN EQU __trainer_class__
 	const CHESTER ; was IRWIN2 (unused)
 	const STANLEY ; was IRWIN3 (unused)
 	const IRVING ; was IRWIN4 (unused)
+	const JUGGLER_QUINN ; Silph Co. 5F
+	const JUGGLER_ROLAND ; FuchsiaGym
+	const JUGGLER_STUART ; FuchsiaGym
+	const JUGGLER_TREVOR ; FuchsiaGym
+	const_skip 1 ; (not yet placed)
+	const JUGGLER_ABEL ; Victory Road 2F
+	const JUGGLER_BORIS ; Victory Road 2F
 
 	trainerclass BLACKBELT_T ; 32
 	const KENJI1 ; unused
@@ -689,8 +796,17 @@ DEF GREEN EQU __trainer_class__
 	const BLACKBELT_ARNOLD ; Route 17
 	const BLACKBELT_BRUCE ; Route 17
 	const BLACKBELT_CODY ; Route 17
-	const_skip 9 ; DEAN ... COLIN (not yet placed)
+	const BLACKBELT_DEAN ; Route 21
+	const_skip 1 ; (not yet placed)
+	const BLACKBELT_TOBIAS ; FightingDojo
+	const BLACKBELT_ULYSSES ; FightingDojo
+	const BLACKBELT_VERNON ; FightingDojo
+	const BLACKBELT_WALT ; FightingDojo
+	const BLACKBELT_ZEKE ; ViridianGym
+	const BLACKBELT_ALVIN ; ViridianGym
+	const BLACKBELT_COLIN ; ViridianGym
 	const BLACKBELT_BRAD ; Route 17
+	const BLACKBELT_ABEL ; Victory Road 1F
 
 	trainerclass EXECUTIVEM ; 33
 	const EXECUTIVEM_1
@@ -711,6 +827,10 @@ DEF GREEN EQU __trainer_class__
 	const GILBERT
 	const JARED
 	const RODNEY
+	const PSYCHIC_KEITH ; SaffronGym
+	const PSYCHIC_LLOYD ; SaffronGym
+	const PSYCHIC_MILES ; SaffronGym
+	const PSYCHIC_NORMAN ; SaffronGym
 
 	trainerclass PICNICKER ; 35
 	const LIZ1
@@ -746,12 +866,12 @@ DEF GREEN EQU __trainer_class__
 	const PICNICKER_NOELLE ; Route 10
 	const PICNICKER_OLIVE ; Rock Tunnel B1F
 	const PICNICKER_PAIGE ; Rock Tunnel B1F
-	const_skip 1 ; RENEE (not yet placed)
+	const PICNICKER_RENEE ; CeladonGym
 	const PICNICKER_SELENA ; Route 13
 	const PICNICKER_TANYA ; Route 13
 	const PICNICKER_URSULA ; Route 13
 	const PICNICKER_VERA ; Route 13
-	const_skip 1 ; WILLA (not yet placed)
+	const PICNICKER_WILLA ; Route 20
 	const PICNICKER_YOLANDA ; Rock Tunnel 1F
 	const PICNICKER_ZOE ; Rock Tunnel 1F
 	const PICNICKER_ABIGAIL ; Rock Tunnel 1F
@@ -759,6 +879,7 @@ DEF GREEN EQU __trainer_class__
 	const PICNICKER_CELIA ; Route 15
 	const PICNICKER_DONNA ; Route 15
 	const PICNICKER_EDITH ; Route 15
+	const PICNICKER_FAYE ; Route 20
 
 	trainerclass CAMPER ; 36
 	const ROLAND
@@ -834,6 +955,9 @@ DEF GREEN EQU __trainer_class__
 	const MEDIUM_GABBY ; Pokémon Tower
 	const MEDIUM_HELENA ; Pokémon Tower
 	const MEDIUM_INGRID ; Pokémon Tower
+	const MEDIUM_JULIA ; SaffronGym
+	const MEDIUM_KAREN ; SaffronGym
+	const MEDIUM_LYDIA ; SaffronGym
 
 	trainerclass BOARDER ; 3a
 	const RONALD
@@ -855,6 +979,11 @@ DEF GREEN EQU __trainer_class__
 	const ALEX
 ;	const REX - Removed from Route 6 
 ;	const ALLAN - Removed from Route 6 
+	const POKEFANM_WESLEY ; FuchsiaGym
+	const POKEFANM_ADAM ; FuchsiaGym
+	const POKEFANM_BARRY ; ViridianGym
+	const POKEFANM_CRAIG ; ViridianGym
+	const POKEFANM_ABEL ; Victory Road 2F
 
 	trainerclass KIMONO_GIRL ; 3c
 	const NAOKO_UNUSED ; unused
@@ -922,6 +1051,7 @@ DEF GREEN EQU __trainer_class__
 	trainerclass GIOVANNI ; 44
 	const GIOVANNI1
 	const GIOVANNI2
+	const GIOVANNI3
 	
 	trainerclass KABUTOPS_FOSSIL ; 45
 

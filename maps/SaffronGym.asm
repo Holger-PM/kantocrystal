@@ -5,6 +5,13 @@
 	const SAFFRONGYM_GRANNY2
 	const SAFFRONGYM_YOUNGSTER2
 	const SAFFRONGYM_GYM_GUIDE
+	const SAFFRONGYM_MEDIUM_JULIA
+	const SAFFRONGYM_PSYCHIC_KEITH
+	const SAFFRONGYM_MEDIUM_KAREN
+	const SAFFRONGYM_PSYCHIC_LLOYD
+	const SAFFRONGYM_MEDIUM_LYDIA
+	const SAFFRONGYM_PSYCHIC_MILES
+	const SAFFRONGYM_PSYCHIC_NORMAN
 
 SaffronGym_MapScripts:
 	def_scene_scripts
@@ -20,7 +27,15 @@ SaffronGymSabrinaScript:
 	waitbutton
 	closetext
 	winlosstext SabrinaWinLossText, 0
+	readvar VAR_BADGES
+	ifgreater 4, .SabrinaVersion1
+	loadtrainer SABRINA, SABRINA2
+	sjump .SabrinaStartBattle
+
+.SabrinaVersion1:
 	loadtrainer SABRINA, SABRINA1
+
+.SabrinaStartBattle:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_SABRINA
@@ -40,50 +55,6 @@ SaffronGymSabrinaScript:
 
 .FightDone:
 	writetext SabrinaFightDoneText
-	waitbutton
-	closetext
-	end
-
-TrainerMediumRebecca:
-	trainer MEDIUM, REBECCA, EVENT_BEAT_MEDIUM_REBECCA, MediumRebeccaSeenText, MediumRebeccaBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext MediumRebeccaAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerPsychicFranklin:
-	trainer PSYCHIC_T, FRANKLIN, EVENT_BEAT_PSYCHIC_FRANKLIN, PsychicFranklinSeenText, PsychicFranklinBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PsychicFranklinAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerMediumDoris:
-	trainer MEDIUM, DORIS, EVENT_BEAT_MEDIUM_DORIS, MediumDorisSeenText, MediumDorisBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext MediumDorisAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerPsychicJared:
-	trainer PSYCHIC_T, JARED, EVENT_BEAT_PSYCHIC_JARED, PsychicJaredSeenText, PsychicJaredBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PsychicJaredAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -193,71 +164,9 @@ SabrinaFightDoneText:
 	line "power…"
 	done
 
-MediumRebeccaSeenText:
-	text "The power of all"
-	line "those you defeated"
-	cont "comes to me!"
-	done
-
-MediumRebeccaBeatenText:
-	text "Strong…"
-	line "Far too strong…"
-	done
-
-MediumRebeccaAfterBattleText:
-	text "What is the source"
-	line "of your power?"
-	done
-
-PsychicFranklinSeenText:
-	text "Psychic power is"
-	line "the power of your"
-	cont "soul."
-	done
-
-PsychicFranklinBeatenText:
-	text "Your soul has more"
-	line "power than mine!"
-	done
-
-PsychicFranklinAfterBattleText:
-	text "You made your soul"
-	line "stronger, not just"
-	cont "your abilities."
-	done
-
-MediumDorisSeenText:
-	text "Fufufufu…"
-	line "I see it clearly."
-
 	para "I can see into"
 	line "your soul!"
 	done
-
-MediumDorisBeatenText:
-	text "Though I read you,"
-	line "I still lost…"
-	done
-
-MediumDorisAfterBattleText:
-	text "Darn! I forgot"
-	line "that I predicted I"
-	cont "would lose to you."
-	done
-
-PsychicJaredSeenText:
-	text "The FIGHTING DOJO"
-	line "next door was once"
-	cont "this city's GYM."
-	done
-
-PsychicJaredBeatenText:
-	text "I was no match…"
-	done
-
-PsychicJaredAfterBattleText:
-	text "KARATE KING, the"
-	line "master of the"
 
 	para "FIGHTING DOJO, was"
 	line "just destroyed by"
@@ -287,6 +196,146 @@ SaffronGymGuideWinText:
 	text "That was another"
 	line "fantastic battle!"
 	done
+
+TrainerMediumJulia:
+	trainer MEDIUM, MEDIUM_JULIA, EVENT_BEAT_SAFFRON_GYM_TRAINER_0, MediumJuliaSeenText, MediumJuliaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MediumJuliaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPsychicKeith:
+	trainer PSYCHIC_T, PSYCHIC_KEITH, EVENT_BEAT_SAFFRON_GYM_TRAINER_1, PsychicKeithSeenText, PsychicKeithBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PsychicKeithAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerMediumKaren:
+	trainer MEDIUM, MEDIUM_KAREN, EVENT_BEAT_SAFFRON_GYM_TRAINER_2, MediumKarenSeenText, MediumKarenBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MediumKarenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPsychicLloyd:
+	trainer PSYCHIC_T, PSYCHIC_LLOYD, EVENT_BEAT_SAFFRON_GYM_TRAINER_3, PsychicLloydSeenText, PsychicLloydBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PsychicLloydAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerMediumLydia:
+	trainer MEDIUM, MEDIUM_LYDIA, EVENT_BEAT_SAFFRON_GYM_TRAINER_4, MediumLydiaSeenText, MediumLydiaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MediumLydiaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPsychicMiles:
+	trainer PSYCHIC_T, PSYCHIC_MILES, EVENT_BEAT_SAFFRON_GYM_TRAINER_5, PsychicMilesSeenText, PsychicMilesBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PsychicMilesAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPsychicNormanSaffronGym:
+	trainer PSYCHIC_T, PSYCHIC_NORMAN, EVENT_BEAT_SAFFRON_GYM_TRAINER_6, PsychicNormanSaffronGymSeenText, PsychicNormanSaffronGymBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PsychicNormanSaffronGymAfterBattleText
+	waitbutton
+	closetext
+	end
+
+MediumJuliaSeenText:
+	
+
+MediumJuliaBeatenText:
+	
+
+MediumJuliaAfterBattleText:
+	
+
+PsychicKeithSeenText:
+	
+
+PsychicKeithBeatenText:
+	
+
+PsychicKeithAfterBattleText:
+	
+
+MediumKarenSeenText:
+	
+
+MediumKarenBeatenText:
+	
+
+MediumKarenAfterBattleText:
+	
+
+PsychicLloydSeenText:
+	
+
+PsychicLloydBeatenText:
+	
+
+PsychicLloydAfterBattleText:
+	
+
+MediumLydiaSeenText:
+	
+
+MediumLydiaBeatenText:
+	
+
+MediumLydiaAfterBattleText:
+	
+
+PsychicMilesSeenText:
+	
+
+PsychicMilesBeatenText:
+	
+
+PsychicMilesAfterBattleText:
+	
+
+PsychicNormanSaffronGymSeenText:
+	
+
+PsychicNormanSaffronGymBeatenText:
+	
+
+PsychicNormanSaffronGymAfterBattleText:
+	
 
 SaffronGym_MapEvents:
 	db 0, 0 ; filler
@@ -332,8 +381,11 @@ SaffronGym_MapEvents:
 
 	def_object_events
 	object_event  9,  8, SPRITE_SABRINA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SaffronGymSabrinaScript, -1
-	object_event 17, 16, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerMediumRebecca, -1
-	object_event  3, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicFranklin, -1
-	object_event  3,  4, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerMediumDoris, -1
-	object_event 17,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicJared, -1
 	object_event  9, 14, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SaffronGymGuideScript, -1
+	object_event 10,  1, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerMediumJulia, -1
+	object_event 17,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicKeith, -1
+	object_event  3,  7, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerMediumKaren, -1
+	object_event 17,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicLloyd, -1
+	object_event  3, 13, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_TRAINER, 3, TrainerMediumLydia, -1
+	object_event 17, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicMiles, -1
+	object_event  3,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicNormanSaffronGym, -1

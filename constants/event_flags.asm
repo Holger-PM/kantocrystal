@@ -2151,6 +2151,19 @@
 	const EVENT_BEAT_LASS_ERIN	; Route 8
 	const EVENT_BEAT_LASS_FIONA	; Route 8
 	const EVENT_BEAT_LASS_GABBY	; Route 8
+	const EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI ; Viridian Gym
+	const EVENT_BEAT_VICTORY_ROAD_1_TRAINER_2
+	const EVENT_BEAT_VICTORY_ROAD_1_TRAINER_3
+	const EVENT_BEAT_VICTORY_ROAD_1_TRAINER_4
+	const EVENT_BEAT_VICTORY_ROAD_1_TRAINER_5
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6
+	const EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7
 
-	const_next 2376 ; - New in "New to Kanto Crystal" section ??? (bumped from 2336: SS Anne + Route 9 additions needed the extra room; 2360 -> 2376: Rock Tunnel trainers)
+	const_next 2400 ; - New in "New to Kanto Crystal" section ??? (bumped from 2336: SS Anne + Route 9 additions needed the extra room; 2360 -> 2376: Rock Tunnel trainers)
 DEF NUM_EVENTS EQU const_value ; 1099 with Kanto events

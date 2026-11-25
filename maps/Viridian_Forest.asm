@@ -294,23 +294,23 @@ ViridianForest_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  18, 45, BGEVENT_READ, ViridianForestTrainerTips4Sign 	; SIGN_4
+	bg_event 18, 42, BGEVENT_READ, ViridianForestTrainerTips4Sign 	; SIGN_4
 	bg_event  24, 40, BGEVENT_READ, ViridianForestTrainerTips1Sign 	; SIGN_1
 	bg_event  16, 32, BGEVENT_READ, ViridianForestUseAntidoteSign 	; SIGN_5
 	bg_event  26, 17, BGEVENT_READ, ViridianForestTrainerTips2Sign	; SIGN_2
 	bg_event   4, 24, BGEVENT_READ, ViridianForestTrainerTips3Sign 	; SIGN_3
 	bg_event   2,  1, BGEVENT_READ, ViridianForestLeavingSign 		; SIGN_6
 	bg_event   1, 18, BGEVENT_ITEM, ViridianForestHiddenPotion		; HIDDEN_ITEM_1
-	bg_event  16, 42, BGEVENT_ITEM, ViridianForestHiddenAntidote	; HIDDEN_ITEM_2
+	bg_event 16, 41, BGEVENT_ITEM, ViridianForestHiddenAntidote	; HIDDEN_ITEM_2
 
 	def_object_events
-	object_event 16, 43, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster1, -1 	; PNJ_1	
+	object_event 16, 42, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster1, -1 	; PNJ_1	
 	object_event 27, 40, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungster2, -1				; PNJ_2
 	object_event 30, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherWayne, -1	 	; BUG_CATCHER_WAYNE
 	object_event 30, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherCaleb, -1	 	; BUG_CATCHER_CALEB
 	object_event 14, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherDylan, -1	; BUG_CATCHER_DYLAN
 	object_event  2, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherForest, -1 	; BUG_CATCHER_FOREST
-	object_event  2, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerLassRachel, -1			 	; LASS_RACHEL	
+	object_event  2, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerLassRachel, -1			 	; LASS_RACHEL
 	object_event  1, 31, SPRITE_POKE_BALL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianForestPokeBall, EVENT_VIRIDIAN_FOREST_POKE_BALL
 	object_event 12, 29, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianForestPotion, EVENT_VIRIDIAN_FOREST_POTION
 	object_event 25, 11, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ViridianForestAntidote, EVENT_VIRIDIAN_FOREST_ANTIDOTE

@@ -5,6 +5,13 @@
 	const CELADONGYM_BEAUTY
 	const CELADONGYM_TWIN1
 	const CELADONGYM_TWIN2
+	const CELADONGYM_LASS_HELENA
+	const CELADONGYM_BEAUTY_HOLLY
+	const CELADONGYM_PICNICKER_RENEE
+	const CELADONGYM_BEAUTY_IRENE
+	const CELADONGYM_LASS_INGRID
+	const CELADONGYM_BEAUTY_JENNA
+	const CELADONGYM_COOLTRAINERF_VICKI
 
 CeladonGym_MapScripts:
 	def_scene_scripts
@@ -20,7 +27,20 @@ CeladonGymErikaScript:
 	waitbutton
 	closetext
 	winlosstext ErikaBeatenText, 0
+	readvar VAR_BADGES
+	ifgreater 4, .ErikaVersion3
+	ifequal 4, .ErikaVersion2
 	loadtrainer ERIKA, ERIKA1
+	sjump .ErikaStartBattle
+
+.ErikaVersion2:
+	loadtrainer ERIKA, ERIKA2
+	sjump .ErikaStartBattle
+
+.ErikaVersion3:
+	loadtrainer ERIKA, ERIKA3
+
+.ErikaStartBattle:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_ERIKA
@@ -43,61 +63,6 @@ CeladonGymErikaScript:
 	setevent EVENT_GOT_TM19_GIGA_DRAIN
 .GotGigaDrain:
 	writetext ErikaAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerLassMichelle:
-	trainer LASS, MICHELLE, EVENT_BEAT_LASS_MICHELLE, LassMichelleSeenText, LassMichelleBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassMichelleAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerPicnickerTanya:
-	trainer PICNICKER, TANYA, EVENT_BEAT_PICNICKER_TANYA, PicnickerTanyaSeenText, PicnickerTanyaBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PicnickerTanyaAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerBeautyJulia:
-	trainer BEAUTY, JULIA, EVENT_BEAT_BEAUTY_JULIA, BeautyJuliaSeenText, BeautyJuliaBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BeautyJuliaAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerTwinsJoAndZoe1:
-	trainer TWINS, JOANDZOE1, EVENT_BEAT_TWINS_JO_AND_ZOE, TwinsJoAndZoe1SeenText, TwinsJoAndZoe1BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext TwinsJoAndZoe1AfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerTwinsJoAndZoe2:
-	trainer TWINS, JOANDZOE2, EVENT_BEAT_TWINS_JO_AND_ZOE, TwinsJoAndZoe2SeenText, TwinsJoAndZoe2BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext TwinsJoAndZoe2AfterBattleText
 	waitbutton
 	closetext
 	end
@@ -187,83 +152,149 @@ ErikaAfterBattleText:
 	line "to do better…"
 	done
 
-LassMichelleSeenText:
-	text "Do you think a"
-	line "girls-only GYM"
-	cont "is rare?"
-	done
-
-LassMichelleBeatenText:
-	text "Oh, bleah!"
-	done
-
-LassMichelleAfterBattleText:
-	text "I just got care-"
-	line "less, that's all!"
-	done
-
-PicnickerTanyaSeenText:
-	text "Oh, a battle?"
-	line "That's kind of"
-	cont "scary, but OK!"
-	done
-
-PicnickerTanyaBeatenText:
-	text "Oh, that's it?"
-	done
-
-PicnickerTanyaAfterBattleText:
-	text "Oh, look at all"
-	line "your BADGES. No"
-
 	para "wonder I couldn't"
 	line "win!"
 	done
 
-BeautyJuliaSeenText:
-	text "Were you looking"
-	line "at these flowers"
-	cont "or at me?"
-	done
+TrainerLassHelena:
+	trainer LASS, LASS_HELENA, EVENT_BEAT_CELADON_GYM_TRAINER_0, LassHelenaSeenText, LassHelenaBeatenText, 0, .Script
 
-BeautyJuliaBeatenText:
-	text "How annoying!"
-	done
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassHelenaAfterBattleText
+	waitbutton
+	closetext
+	end
 
-BeautyJuliaAfterBattleText:
-	text "How do I go about"
-	line "becoming ladylike"
-	cont "like ERIKA?"
-	done
+TrainerBeautyHolly:
+	trainer BEAUTY, BEAUTY_HOLLY, EVENT_BEAT_CELADON_GYM_TRAINER_1, BeautyHollySeenText, BeautyHollyBeatenText, 0, .Script
 
-TwinsJoAndZoe1SeenText:
-	text "We'll show you"
-	line "#MON moves that"
-	cont "ERIKA taught us!"
-	done
+.Script:
+	endifjustbattled
+	opentext
+	writetext BeautyHollyAfterBattleText
+	waitbutton
+	closetext
+	end
 
-TwinsJoAndZoe1BeatenText:
-	text "Oh… We lost…"
-	done
+TrainerPicnickerRenee:
+	trainer PICNICKER, PICNICKER_RENEE, EVENT_BEAT_CELADON_GYM_TRAINER_2, PicnickerReneeSeenText, PicnickerReneeBeatenText, 0, .Script
 
-TwinsJoAndZoe1AfterBattleText:
-	text "ERIKA will get you"
-	line "back for us!"
-	done
+.Script:
+	endifjustbattled
+	opentext
+	writetext PicnickerReneeAfterBattleText
+	waitbutton
+	closetext
+	end
 
-TwinsJoAndZoe2SeenText:
-	text "We're going to"
-	line "protect ERIKA!"
-	done
+TrainerBeautyIrene:
+	trainer BEAUTY, BEAUTY_IRENE, EVENT_BEAT_CELADON_GYM_TRAINER_3, BeautyIreneSeenText, BeautyIreneBeatenText, 0, .Script
 
-TwinsJoAndZoe2BeatenText:
-	text "We couldn't win…"
-	done
+.Script:
+	endifjustbattled
+	opentext
+	writetext BeautyIreneAfterBattleText
+	waitbutton
+	closetext
+	end
 
-TwinsJoAndZoe2AfterBattleText:
-	text "ERIKA is much,"
-	line "much stronger!"
-	done
+TrainerLassIngrid:
+	trainer LASS, LASS_INGRID, EVENT_BEAT_CELADON_GYM_TRAINER_4, LassIngridSeenText, LassIngridBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassIngridAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBeautyJenna:
+	trainer BEAUTY, BEAUTY_JENNA, EVENT_BEAT_CELADON_GYM_TRAINER_5, BeautyJennaSeenText, BeautyJennaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BeautyJennaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerCooltrainerFVicki:
+	trainer COOLTRAINERF, COOLTRAINERF_VICKI, EVENT_BEAT_CELADON_GYM_TRAINER_6, CooltrainerFVickiSeenText, CooltrainerFVickiBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CooltrainerFVickiAfterBattleText
+	waitbutton
+	closetext
+	end
+
+LassHelenaSeenText:
+	
+
+LassHelenaBeatenText:
+	
+
+LassHelenaAfterBattleText:
+	
+
+BeautyHollySeenText:
+	
+
+BeautyHollyBeatenText:
+	
+
+BeautyHollyAfterBattleText:
+	
+
+PicnickerReneeSeenText:
+	
+
+PicnickerReneeBeatenText:
+	
+
+PicnickerReneeAfterBattleText:
+	
+
+BeautyIreneSeenText:
+	
+
+BeautyIreneBeatenText:
+	
+
+BeautyIreneAfterBattleText:
+	
+
+LassIngridSeenText:
+	
+
+LassIngridBeatenText:
+	
+
+LassIngridAfterBattleText:
+	
+
+BeautyJennaSeenText:
+	
+
+BeautyJennaBeatenText:
+	
+
+BeautyJennaAfterBattleText:
+	
+
+CooltrainerFVickiSeenText:
+	
+
+CooltrainerFVickiBeatenText:
+	
+
+CooltrainerFVickiAfterBattleText:
+	
 
 CeladonGym_MapEvents:
 	db 0, 0 ; filler
@@ -280,8 +311,10 @@ CeladonGym_MapEvents:
 
 	def_object_events
 	object_event  5,  3, SPRITE_ERIKA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonGymErikaScript, -1
-	object_event  7,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassMichelle, -1
-	object_event  2,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerTanya, -1
-	object_event  3,  5, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyJulia, -1
-	object_event  4, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsJoAndZoe1, -1
-	object_event  5, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsJoAndZoe2, -1
+	object_event  2, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassHelena, -1
+	object_event  7, 10, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBeautyHolly, -1
+	object_event  9,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerPicnickerRenee, -1
+	object_event  1,  5, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerBeautyIrene, -1
+	object_event  6,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassIngrid, -1
+	object_event  3,  3, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBeautyJenna, -1
+	object_event  5,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFVicki, -1
